@@ -26,6 +26,21 @@ export const metadata: Metadata = {
     description: "Capturamos el tipo de recuerdos que se vuelven más valiosos con el tiempo.",
     type: "website",
     locale: "es_MX",
+    siteName: "Arrebol Weddings",
+    images: [
+      {
+        url: "/images/gallery/TOP-SyP-116.webp",
+        width: 1200,
+        height: 630,
+        alt: "Arrebol Weddings - Fotografía y Video de Bodas",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Arrebol Weddings | Fotografía y Video de Bodas en México",
+    description: "Capturamos el tipo de recuerdos que se vuelven más valiosos con el tiempo.",
+    images: ["/images/gallery/TOP-SyP-116.webp"],
   },
 };
 

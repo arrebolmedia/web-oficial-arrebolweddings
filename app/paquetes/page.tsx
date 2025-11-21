@@ -5,13 +5,13 @@ import Button from "@/components/Button";
 import { content } from "@/lib/content";
 
 export const metadata: Metadata = {
-  title: "Paquetes | Arrebol Weddings",
+  title: "Colecciones | Arrebol Weddings",
   description:
     "Colecciones de fotografía y video para contar su boda de principio a fin. Desde celebraciones íntimas hasta grandes eventos.",
 };
 
 export default function Paquetes() {
-  const { paquetes } = content;
+  const { colecciones } = content;
 
   return (
     <div className="pt-20">
@@ -20,8 +20,8 @@ export default function Paquetes() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <FadeIn>
             <SectionHeader
-              title={paquetes.title}
-              subtitle={paquetes.subtitle}
+              title={colecciones.title}
+              subtitle={colecciones.subtitle}
             />
           </FadeIn>
         </div>
@@ -32,11 +32,11 @@ export default function Paquetes() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <FadeIn delay={200}>
             <p className="mb-12 text-lg text-[var(--foreground)]/80 leading-relaxed text-center max-w-3xl mx-auto">
-              {paquetes.intro}
+              {colecciones.intro}
             </p>
           </FadeIn>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {paquetes.collections.map((collection, index) => (
+            {colecciones.collections.map((collection, index) => (
               <FadeIn key={index} delay={index * 100}>
                 <div className="bg-white border border-[var(--border-subtle)] p-10 h-full flex flex-col">
                   {/* Header */}
@@ -87,8 +87,8 @@ export default function Paquetes() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <FadeIn>
-            <p className="text-lg text-[var(--foreground)]/80 leading-relaxed mb-8">
-              {paquetes.customNote}
+            <p className="text-lg text-[var(--foreground)]/80 leading-relaxed">
+              {colecciones.customNote}
             </p>
             <Button href="/contacto" variant="outline">
               Ir a contacto

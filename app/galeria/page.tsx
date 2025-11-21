@@ -145,6 +145,8 @@ export default function Galeria() {
                             fill
                             className="object-cover"
                             sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                            priority={image.index < 9}
+                            loading={image.index < 9 ? "eager" : "lazy"}
                           />
                         </div>
                       </FadeIn>
@@ -154,6 +156,25 @@ export default function Galeria() {
               ))}
               </div>
             )}
+          </div>
+        </section>
+
+        {/* WhatsApp CTA */}
+        <section className="py-16 bg-white">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <FadeIn>
+              <p className="text-lg text-[var(--foreground)]/80 leading-relaxed mb-8">
+                La manera más rápida de contactarnos es a través de WhatsApp ¡No dudes en escribirnos!
+              </p>
+              <a
+                href="https://wa.me/5217775001071?text=¡Hola!%20Deseo%20más%20información%20sobre%20sus%20servicios%20de%20fotografía%20y%20video"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block px-8 py-3 border border-[var(--foreground)] text-[var(--foreground)] text-sm tracking-widest uppercase hover:bg-[var(--foreground)] hover:text-white transition-all duration-300"
+              >
+                Contactar por WhatsApp
+              </a>
+            </FadeIn>
           </div>
         </section>
 

@@ -23,13 +23,27 @@ const FinalCta = () => {
                 {finalCta.subtitle}
               </p>
 
-              <div className="pt-4">
+              <div className="pt-4 space-y-4">
                 <Link
                   href="/contacto"
                   className="inline-block px-8 py-3 border border-[var(--foreground)] text-[var(--foreground)] text-sm tracking-widest uppercase hover:bg-[var(--foreground)] hover:text-white transition-all duration-300"
                 >
                   {finalCta.button}
                 </Link>
+
+                <div className="pt-6">
+                  <p className="text-sm text-[var(--foreground)]/70 mb-3">
+                    O escríbenos directamente por WhatsApp:
+                  </p>
+                  <a
+                    href="https://wa.me/5217775001071?text=¡Hola!%20Deseo%20más%20información%20sobre%20sus%20servicios%20de%20fotografía%20y%20video"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block px-8 py-3 border border-[var(--foreground)] text-[var(--foreground)] text-sm tracking-widest uppercase hover:bg-[var(--foreground)] hover:text-white transition-all duration-300"
+                  >
+                    Contactar por WhatsApp
+                  </a>
+                </div>
               </div>
             </div>
           </FadeIn>

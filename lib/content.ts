@@ -73,7 +73,7 @@ export const content = {
           author: "Carolina",
         },
         {
-          quote: "Sinceramente me sorprendió tanto profesionalismo, atención y flexibilidad. Quedamos más que satisfechas con las fotografías y video!! SIN DUDA recomiendo ampliamente a Anthony!!",
+          quote: "Sinceramente me sorprendió tanto profesionalismo, atención y flexibilidad. Quedamos más que satisfechas con las fotografías y video!! SIN DUDA recomiendo ampliamente a Brenda y Anthony!!",
           author: "Yetzy",
         },
         {
@@ -180,7 +180,6 @@ export const content = {
       "SYO-209.webp",
       "SYO-221.webp",
       "SYO-532.webp",
-      "SYO-574.webp",
       "SYO-654.webp",
       "SYO-716.webp",
       "SYO-726.webp",
@@ -223,33 +222,33 @@ export const content = {
     steps: [
       {
         title: "Primera llamada",
-        description: "Platicamos sobre su boda, su historia, qué les gusta y qué no. Revisamos disponibilidad de fecha y resolvemos dudas sobre paquetes, tiempos y forma de trabajo.",
+        description: "Platicamos a detalle sobre su boda, su historia y la esencia de lo que imaginan para ese día. Nos cuentan qué les gusta, qué prefieren evitar y cuáles son los momentos que consideran más importantes. También revisamos la disponibilidad de la fecha y resolvemos todas sus dudas sobre paquetes, coberturas, tiempos y nuestra forma de trabajar. Es una conversación cercana y sencilla, pensada para empezar a entender su estilo y lo que buscan en sus recuerdos.",
       },
       {
         title: "Firma de contrato y apartado de fecha",
-        description: "Una vez que deciden avanzar, firmamos un contrato claro y sencillo, y con el anticipo su fecha queda oficialmente reservada.",
+        description: "Una vez que deciden avanzar, formalizamos la reserva con un contrato claro, sencillo y sin letras pequeñas. Para asegurar su fecha, se realiza un anticipo del 30%, con lo cual queda oficialmente apartado en nuestro calendario. Desde ese momento, ustedes pueden relajarse: nosotros llevamos el control de tiempos y los mantenemos informados en cada etapa.",
       },
       {
         title: "Reunión de planeación",
-        description: "Unas semanas antes de la boda revisamos el timeline detallado: horarios, sedes, personas importantes, momentos clave y cualquier sorpresa que estén planeando.",
+        description: "Unas semanas antes de la boda, revisamos juntos el timeline detallado: horarios, sedes, clima estimado, personas importantes, momentos clave y cualquier sorpresa o dinámica especial que estén preparando. Este paso nos permite anticiparnos a lo que ocurrirá y asegurarnos de que cada instante significativo quede registrado sin estrés ni improvisaciones.",
       },
       {
         title: "El día de la boda",
-        description: "Llegamos con tiempo, nos coordinamos con su planner y el venue, y comenzamos a trabajar de forma discreta. Mezclamos una mirada documental con ciertos momentos guiados para asegurar retratos que atesoren.",
+        description: "Llegamos con tiempo y nos coordinamos con su wedding planner, con el venue y con los proveedores involucrados. Trabajamos de manera discreta, sin interrumpir y sin forzar situaciones. Nuestra mirada es principalmente documental, pero también guiamos ciertos momentos para asegurar retratos naturales, con buena luz y que realmente reflejen quiénes son. Ustedes solo tienen que vivir su día; nosotros nos encargamos del resto.",
       },
       {
         title: "Selección y edición",
-        description: "Después de la boda, hacemos una curaduría cuidadosa. Editamos cada imagen y construimos la narrativa del video para que todo tenga continuidad emocional.",
+        description: "Después de la boda, realizamos una curaduría cuidadosa en la que seleccionamos las mejores imágenes, aquellas que cuentan la historia con emoción y coherencia. Cada fotografía se edita una por una siguiendo un estilo atemporal. En paralelo, construimos la narrativa del video para que fluya y evoque el día completo, no solo los momentos principales.",
       },
       {
         title: "Entrega",
-        description: "Entregamos en una galería online privada y, dependiendo del paquete, en USB, álbum impreso o caja personalizada. Nuestro objetivo es que la experiencia de ver sus recuerdos sea tan especial como el día en sí.",
+        description: "Preparamos una galería online donde podrán ver, descargar y compartir su material. Dependiendo del paquete, también reciben álbum impreso o caja con impresiones. Nuestro objetivo es que la experiencia de entrega sea tan especial como la boda misma: limpia, ordenada y diseñada para que disfruten sus recuerdos todas las veces que quieran.",
       },
     ],
   },
-  paquetes: {
-    title: "Paquetes",
-    subtitle: "Colecciones de fotografía y video para contar su boda de principio a fin",
+  colecciones: {
+    title: "Colecciones",
+    subtitle: "Fotografía y video para contar su boda de principio a fin",
     intro: "Nuestras colecciones están pensadas para adaptarse a distintos tipos de boda: desde celebraciones íntimas en una sola locación, hasta grandes eventos en múltiples sedes y varios días. Todas incluyen fotografía y video, así como una curaduría cuidadosa de cada momento.",
     collections: [
       {
@@ -274,11 +273,12 @@ export const content = {
           "1 fotógrafo",
           "600–700 fotografías",
           "Galería digital",
-          "2 videógrafos",
+          "1 videógrafo",
           "Video de 30–40 minutos",
           "Versión 3–5 minutos",
           "Versión 1 minuto",
           'Photobook 8.5x11" (50 páginas)',
+          "Sesión pre boda",
         ],
         price: "$59,000 MXN",
         description: "Diseñada para una cobertura integral de bodas en una o varias locaciones, capturando cada detalle del día. Desde los preparativos hasta los momentos más espectaculares. Incluye una sesión previa que pueden usar para fotos casuales, el civil, rehearsal dinner o cualquier otro momento especial.",
@@ -324,6 +324,36 @@ export const content = {
       },
     ],
     customNote: "Si su boda tiene características muy específicas (bodas destino, celebraciones de varios días, eventos íntimos fuera de la ciudad), podemos ajustar cualquiera de estas colecciones o crear una propuesta a la medida. Escríbannos y lo diseñamos juntos.",
+    addons: [
+      {
+        name: "Hora extra (fotografía y video)",
+        price: "$8,500",
+      },
+      {
+        name: "Dron para tomas aéreas",
+        price: "$6,500",
+      },
+      {
+        name: 'Photobook 50 páginas (11x11")',
+        price: "$5,500",
+      },
+      {
+        name: "Caja para Photobook con USB",
+        price: "$1,500",
+      },
+      {
+        name: "Camarógrafo adicional",
+        price: "$7,000",
+      },
+      {
+        name: "Print Box con USB (50 fotografías)",
+        price: "$4,500",
+      },
+      {
+        name: "Creador de Contenido por 10 horas (reels & photos)",
+        price: "$7,000",
+      },
+    ],
   },
   contacto: {
     title: "Contacto",
