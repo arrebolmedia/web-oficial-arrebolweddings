@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import FadeIn from "@/components/FadeIn";
-import { content } from "@/lib/content";
+import { useLanguage } from "@/app/context/LanguageContext";
 
 interface ImageData {
   filename: string;
@@ -13,6 +13,7 @@ interface ImageData {
 }
 
 const GalleryPreview = () => {
+  const { content } = useLanguage();
   const { galeria } = content;
   const [columns, setColumns] = useState(3);
   const [imagesWithDimensions, setImagesWithDimensions] = useState<ImageData[]>([]);
@@ -94,7 +95,7 @@ const GalleryPreview = () => {
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-center items-center min-h-[400px]">
-            <p className="text-[var(--foreground)]/50">Cargando galería...</p>
+            <p className="text-[var(--foreground)]/50">{galeria.loading}</p>
           </div>
         </div>
       </section>
@@ -139,7 +140,7 @@ const GalleryPreview = () => {
               href="/galeria"
               className="inline-block px-8 py-3 border border-[var(--foreground)] text-[var(--foreground)] text-sm tracking-widest uppercase hover:bg-[var(--foreground)] hover:text-white transition-all duration-300"
             >
-              Ver galería completa
+              {galeria.viewFullGallery}
             </Link>
           </div>
         </FadeIn>

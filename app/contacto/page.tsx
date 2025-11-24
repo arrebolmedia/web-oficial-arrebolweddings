@@ -1,14 +1,13 @@
 "use client";
 
 import { useState } from "react";
-import type { Metadata } from "next";
 import Image from "next/image";
-import Navigation from "@/components/Navigation";
 import FadeIn from "@/components/FadeIn";
 import SectionHeader from "@/components/SectionHeader";
-import { content } from "@/lib/content";
+import { useLanguage } from "../context/LanguageContext";
 
 export default function Contacto() {
+  const { content } = useLanguage();
   const { contacto } = content;
   const [formData, setFormData] = useState({
     couple: "",
@@ -26,7 +25,7 @@ export default function Contacto() {
     // Form handling logic would go here
     console.log("Form submitted:", formData);
     alert(
-      "Gracias por su mensaje. Nos pondremos en contacto con ustedes pronto."
+      contacto.successMessage
     );
   };
 
@@ -194,7 +193,7 @@ export default function Contacto() {
                     onChange={handleChange}
                     className="w-full px-4 py-3 bg-white border border-[var(--border-subtle)] rounded-sm focus:outline-none focus:ring-2 focus:ring-[var(--accent-wine)] transition-all"
                   >
-                    <option value="">Seleccionar...</option>
+                    <option value="">{contacto.selectOption}</option>
                     {contacto.sourceOptions.map((option) => (
                       <option key={option} value={option}>
                         {option}
@@ -227,7 +226,7 @@ export default function Contacto() {
                   type="submit"
                   className="w-full px-8 py-3 border border-[var(--foreground)] text-[var(--foreground)] text-sm tracking-widest uppercase hover:bg-[var(--foreground)] hover:text-white transition-all duration-300"
                 >
-                  Enviar mensaje
+                  {contacto.submitButton}
                 </button>
               </form>
 
@@ -257,15 +256,15 @@ export default function Contacto() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <FadeIn delay={500}>
             <p className="text-lg text-[var(--foreground)]/80 leading-relaxed mb-8">
-              ¿Prefieres WhatsApp? ¡Es la forma más rápida de ponernos en contacto contigo!
+              {contacto.whatsappText}
             </p>
             <a
-              href="https://wa.me/5217775001071?text=¡Hola!%20Deseo%20más%20información%20sobre%20sus%20servicios%20de%20fotografía%20y%20video"
+              href={`https://wa.me/5217775001071?text=${encodeURIComponent(contacto.whatsappMessage)}`}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block px-8 py-3 border border-[var(--foreground)] text-[var(--foreground)] text-sm tracking-widest uppercase hover:bg-[var(--foreground)] hover:text-white transition-all duration-300"
             >
-              Contactar por WhatsApp
+              {contacto.whatsappButton}
             </a>
           </FadeIn>
         </div>

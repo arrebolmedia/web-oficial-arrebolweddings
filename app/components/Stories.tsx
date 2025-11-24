@@ -1,9 +1,12 @@
+"use client";
+
 import FadeIn from "@/components/FadeIn";
 import SectionHeader from "@/components/SectionHeader";
 import Button from "@/components/Button";
-import { content } from "@/lib/content";
+import { useLanguage } from "../context/LanguageContext";
 
 const Stories = () => {
+  const { content } = useLanguage();
   const { stories } = content.home;
 
   return (
@@ -34,7 +37,7 @@ const Stories = () => {
                     variant="outline"
                     className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-sm py-2 px-6 border-white text-white hover:bg-white hover:text-[var(--foreground)]"
                   >
-                    Ver historia
+                    {stories.viewStory}
                   </Button>
                 </div>
               </div>

@@ -1,6 +1,23 @@
-export const content = {
+export const contentEs = {
+  common: {
+    menu: "MENÚ",
+    close: "CERRAR",
+    viewMore: "Ver más",
+    loading: "Cargando...",
+    goToContact: "Ir a contacto",
+    navigation: {
+      home: "HOME",
+      gallery: "GALERÍA",
+      process: "EL PROCESO",
+      collections: "COLECCIONES",
+      contact: "CONTACTO",
+    },
+  },
   home: {
     hero: {
+      taglinePart1: "RECUERDOS",
+      taglinePart2: "que duran por",
+      taglinePart3: "GENERACIONES",
       title: "Capturamos el tipo de recuerdos que se vuelven más valiosos con el tiempo",
       subtitle: "En Arrebol Weddings contamos historias de amor que ya llevan un camino recorrido. No vemos la boda como un inicio, sino como la consolidación de todo lo que han vivido juntos.",
       cta1: "Ver nuestra galería",
@@ -9,6 +26,12 @@ export const content = {
     about: {
       title: "Recuerdos para toda la vida",
       text: "Su boda es mucho más que un compromiso; es la celebración de una historia de amor que está a punto de comenzar un nuevo capítulo. En cada mirada, en cada sonrisa y en cada lágrima de felicidad, hay un momento que merece ser guardado para siempre.\n\nNos apasiona contar historias a través de nuestras cámaras y formar parte de uno de los días más importantes de sus vidas. Cada detalle, desde los preparativos hasta la última canción de la noche, refleja la esencia de su amor.\n\nQueremos que cuando miren atrás, cada imagen los transporte a esos momentos mágicos. Para nosotros, capturar su historia es una forma de honrar la belleza de ese día, dejando una huella imborrable que durará toda la vida.",
+      quote: "Capturamos el tipo de imágenes que se vuelven más valiosos con el tiempo",
+    },
+    philosophy: {
+      line1: "Somos instantes que pasan, imágenes que traen nostalgia.",
+      line2: "Algún día seremos recuerdo, y la foto y el video serán el eco más fiel de lo que fuimos:",
+      line3: "la forma más sencilla de volver a un momento que ya no está.",
     },
     values: [
       {
@@ -27,6 +50,7 @@ export const content = {
     stories: {
       title: "Algunas de las historias que hemos tenido la dicha de contar",
       subtitle: "Cada boda es distinta, pero en todas buscamos lo mismo: que se reconozcan a ustedes mismos cuando se vean en sus recuerdos.",
+      viewStory: "Ver historia",
       featured: [
         { couple: "María & Carlos", venue: "Hacienda San Antonio, Querétaro" },
         { couple: "Andrea & Roberto", venue: "Casa de Piedra, San Miguel de Allende" },
@@ -110,12 +134,20 @@ export const content = {
       title: "¿Les gustaría que contemos su historia?",
       subtitle: "Escríbannos para revisar su fecha, conocer sus planes y construir juntos el recuerdo de ese día.",
       button: "Ir a contacto",
+      whatsappIntro: "O escríbenos directamente por WhatsApp:",
+      whatsappButton: "Contactar por WhatsApp",
+      whatsappMessage: "¡Hola! Deseo más información sobre sus servicios de fotografía y video",
     },
   },
   galeria: {
     title: "Galería",
     subtitle: "Una muestra de las historias que hemos contado",
     intro: "Aquí pueden ver un poco de nuestro trabajo en distintos venues, estilos de boda y horarios. Cada pareja tiene su propio ritmo, su propia luz y su propia forma de amar. Nuestro trabajo es encontrarla.",
+    viewFullGallery: "Ver galería completa",
+    loading: "Cargando galería...",
+    whatsappText: "La manera más rápida de contactarnos es a través de WhatsApp ¡No dudes en escribirnos!",
+    whatsappButton: "Contactar por WhatsApp",
+    whatsappMessage: "¡Hola! Deseo más información sobre sus servicios de fotografía y video",
     images: [
       "AyJ-109.webp",
       "AyJ-149.webp",
@@ -245,6 +277,9 @@ export const content = {
         description: "Preparamos una galería online donde podrán ver, descargar y compartir su material. Dependiendo del paquete, también reciben álbum impreso o caja con impresiones. Nuestro objetivo es que la experiencia de entrega sea tan especial como la boda misma: limpia, ordenada y diseñada para que disfruten sus recuerdos todas las veces que quieran.",
       },
     ],
+    whatsappText: "¿Listo para comenzar? Contáctanos por WhatsApp para agendar una videollamada.",
+    whatsappButton: "Contactar por WhatsApp",
+    whatsappMessage: "¡Hola! Deseo más información sobre sus servicios de fotografía y video",
   },
   colecciones: {
     title: "Colecciones",
@@ -324,6 +359,29 @@ export const content = {
       },
     ],
     customNote: "Si su boda tiene características muy específicas (bodas destino, celebraciones de varios días, eventos íntimos fuera de la ciudad), podemos ajustar cualquiera de estas colecciones o crear una propuesta a la medida. Escríbannos y lo diseñamos juntos.",
+    comparisonTitle: "Comparación de colecciones",
+    featuresTitle: "Características",
+    priceTitle: "Precio",
+    addonsTitle: "Adicionales",
+    checkAvailability: "[ Consultar disponibilidad ]",
+    comparisonLabels: {
+      coverage: "Horas de cobertura",
+      photographers: "Fotógrafos",
+      photos: "Fotografías",
+      videographers: "Videógrafos",
+      videoDuration: "Video (duración)",
+      shortVideo: "Video corto (3–5 min)",
+      oneMinuteVideo: "Video 1 minuto",
+      photobook: "Photobook",
+      preWedding: "Sesión pre boda",
+      postWedding: "Sesión post boda",
+      drone: "Dron para tomas aéreas",
+      contentCreator: "Creador de contenido (reels & photos)",
+      printBox: "Print box (50 fotografías)",
+    },
+    whatsappText: "¿Listo para reservar tu fecha? Escríbenos por WhatsApp y conversemos sobre tu boda.",
+    whatsappButton: "Contactar por WhatsApp",
+    whatsappMessage: "¡Hola! Deseo más información sobre sus servicios de fotografía y video",
     addons: [
       {
         name: "Hora extra (fotografía y video)",
@@ -377,6 +435,12 @@ export const content = {
       "Otro",
     ],
     disclaimer: "Respondemos personalmente cada mensaje y procuramos hacerlo en menos de 24–48 horas. Si no reciben respuesta, revisen su carpeta de spam o escríbannos directamente a: hola@arrebolweddings.com",
+    successMessage: "Gracias por su mensaje. Nos pondremos en contacto con ustedes pronto.",
+    selectOption: "Seleccionar...",
+    submitButton: "Enviar mensaje",
+    whatsappText: "¿Prefieres WhatsApp? ¡Es la forma más rápida de ponernos en contacto contigo!",
+    whatsappButton: "Contactar por WhatsApp",
+    whatsappMessage: "¡Hola! Deseo más información sobre sus servicios de fotografía y video",
   },
   footer: {
     tagline: "Recuerdos que se vuelven más valiosos con el tiempo",
@@ -386,3 +450,362 @@ export const content = {
     note: "Porque las mejores historias merecen ser contadas con cuidado.",
   },
 };
+
+export const contentEn = {
+  common: {
+    menu: "MENU",
+    close: "CLOSE",
+    viewMore: "View more",
+    loading: "Loading...",
+    goToContact: "Go to contact",
+    navigation: {
+      home: "HOME",
+      gallery: "GALLERY",
+      process: "THE PROCESS",
+      collections: "COLLECTIONS",
+      contact: "CONTACT",
+    },
+  },
+  home: {
+    hero: {
+      taglinePart1: "MEMORIES",
+      taglinePart2: "that last for",
+      taglinePart3: "GENERATIONS",
+      title: "We capture the kind of memories that become more valuable with time",
+      subtitle: "At Arrebol Weddings, we tell love stories that have already traveled a path. We don't see the wedding as a beginning, but as the consolidation of everything you have lived together.",
+      cta1: "View our gallery",
+      cta2: "Schedule a call",
+    },
+    about: {
+      title: "Memories for a lifetime",
+      text: "Your wedding is much more than a commitment; it is the celebration of a love story that is about to begin a new chapter. In every glance, every smile, and every tear of happiness, there is a moment that deserves to be kept forever.\n\nWe are passionate about telling stories through our cameras and being part of one of the most important days of your lives. Every detail, from the preparations to the last song of the night, reflects the essence of your love.\n\nWe want that when you look back, every image transports you to those magical moments. For us, capturing your story is a way of honoring the beauty of that day, leaving an indelible mark that will last a lifetime.",
+      quote: "We capture the kind of images that become more valuable with time",
+    },
+    philosophy: {
+      line1: "We are moments that pass, images that bring nostalgia.",
+      line2: "One day we will be a memory, and the photo and video will be the most faithful echo of what we were:",
+      line3: "the simplest way to return to a moment that is no longer there.",
+    },
+    values: [
+      {
+        title: "Memories age beautifully",
+        description: "We believe in a style that withstands passing trends so that your photos and videos continue to look current in many years.",
+      },
+      {
+        title: "Moments that flow",
+        description: "We don't force uncomfortable poses. We seek for everything to happen naturally and for the emotion to be genuine.",
+      },
+      {
+        title: "Close accompaniment",
+        description: "From the first call to the final delivery, we are present to answer questions, calm nerves, and help you enjoy the process.",
+      },
+    ],
+    stories: {
+      title: "Some of the stories we have had the joy of telling",
+      subtitle: "Every wedding is different, but in all of them we seek the same thing: that you recognize yourselves when you see your memories.",
+      viewStory: "View story",
+      featured: [
+        { couple: "María & Carlos", venue: "Hacienda San Antonio, Querétaro" },
+        { couple: "Andrea & Roberto", venue: "Casa de Piedra, San Miguel de Allende" },
+        { couple: "Sofía & Daniel", venue: "Viñedos La Redonda, Guanajuato" },
+        { couple: "Valeria & Alejandro", venue: "Hotel Matilda, San Miguel de Allende" },
+        { couple: "Fernanda & Luis", venue: "Rancho Las Sabinas, Guanajuato" },
+        { couple: "Paola & Miguel", venue: "Hacienda Sepúlveda, Querétaro" },
+      ],
+    },
+    process: {
+      title: "How we work",
+      steps: [
+        {
+          title: "First conversation",
+          description: "We get to know each other, you tell us your story, and we answer all your questions.",
+        },
+        {
+          title: "Planning and accompaniment",
+          description: "We review the wedding timeline, define priorities, and coordinate with your planner or venue.",
+        },
+        {
+          title: "The wedding day",
+          description: "We arrive early, work discreetly, and always look for the best light and the most significant moments.",
+        },
+      ],
+    },
+    testimonials: {
+      title: "What couples who have trusted us say",
+      items: [
+        {
+          quote: "We have no words to thank you for the joy it was to work with you. From the beginning you were accessible, kind and super professional. Having the video and photos with you guaranteed that our memories remain forever, just as we imagined them. Thanks for all the time to plan this, for the session and the save the date videos that everyone loved.",
+          author: "Cris",
+        },
+        {
+          quote: "From the day we contacted you we had impeccable attention, totally professional and more than recommended!",
+          author: "Karen",
+        },
+        {
+          quote: "Anthony and Brenda are very good people and photographers. They made our event special. At all times they were extremely kind and flexible. Highly recommended.",
+          author: "Andrea",
+        },
+        {
+          quote: "Anthony and Brenda captured our wedding in an incredible and very professional way, plus they are wonderful beings. Much talent!",
+          author: "Carolina",
+        },
+        {
+          quote: "Honestly, I was surprised by so much professionalism, attention and flexibility. We were more than satisfied with the photographs and video!! WITHOUT A DOUBT I highly recommend Brenda and Anthony!!",
+          author: "Yetzy",
+        },
+        {
+          quote: "Anthony captured our wedding and exceeded all our expectations. From all the photos to the video, Arrebol outdid itself. They are professional, kind and incredibly talented. I highly recommend using Arrebol for your wedding/engagement photos!",
+          author: "Valeria",
+        },
+        {
+          quote: "You will never regret it! Punctual, cheerful, it is very easy to pose naturally, excellent quality photos, attentive! We are very happy with their work and having hired them, without a doubt I will do it for another event I have.",
+          author: "Paula",
+        },
+        {
+          quote: "The Arrebol team was extremely clear and professional at all times. They were attentive all the time, made us feel very good during the session and the photos turned out beautiful, just like the album. We are looking to see each other again for our anniversary!",
+          author: "Guadalupe",
+        },
+        {
+          quote: "Anthony and Brenda are very good people and photographers. They made our event special. At all times they were extremely kind and flexible.",
+          author: "Andrick",
+        },
+        {
+          quote: "My wedding was in Temixco, I am from another state and they were always attentive and accessible. Incredible photos and video, it looks like a movie. The quality of our photos has no comparison, great work from your team. Thanks Arrebol.",
+          author: "Brenda",
+        },
+        {
+          quote: "Working with Arrebol was an absolute dream! The photos are stunning and tell our story perfectly.",
+          author: "Jonathan",
+        },
+        {
+          quote: "From the engagement shoot to the wedding day, they made us feel so comfortable and captured every special moment beautifully.",
+          author: "Tory",
+        },
+      ],
+    },
+    finalCta: {
+      title: "Would you like us to tell your story?",
+      subtitle: "Write to us to check your date, learn about your plans, and build together the memory of that day.",
+      button: "Go to contact",
+      whatsappIntro: "Or write to us directly on WhatsApp:",
+      whatsappButton: "Contact on WhatsApp",
+      whatsappMessage: "Hello! I would like more information about your photography and video services",
+    },
+  },
+  galeria: {
+    title: "Gallery",
+    subtitle: "A sample of the stories we have told",
+    intro: "Here you can see a bit of our work in different venues, wedding styles, and times. Every couple has their own rhythm, their own light, and their own way of loving. Our job is to find it.",
+    viewFullGallery: "View full gallery",
+    loading: "Loading gallery...",
+    whatsappText: "The fastest way to contact us is via WhatsApp. Don't hesitate to write to us!",
+    whatsappButton: "Contact on WhatsApp",
+    whatsappMessage: "Hello! I would like more information about your photography and video services",
+    images: contentEs.galeria.images,
+  },
+  proceso: {
+    title: "The process",
+    subtitle: "From the first call to the final delivery",
+    intro: "We like everything to be clear from the start. These are the stages we will go through together and what you can expect in each one.",
+    steps: [
+      {
+        title: "First call",
+        description: "We talk in detail about your wedding, your story, and the essence of what you imagine for that day. You tell us what you like, what you prefer to avoid, and what moments you consider most important. We also check date availability and answer all your questions about packages, coverage, times, and our way of working. It is a close and simple conversation, designed to start understanding your style and what you are looking for in your memories.",
+      },
+      {
+        title: "Contract signing and date reservation",
+        description: "Once you decide to move forward, we formalize the reservation with a clear, simple contract with no small print. To secure your date, a 30% advance payment is made, with which it is officially reserved in our calendar. From that moment, you can relax: we keep track of times and keep you informed at every stage.",
+      },
+      {
+        title: "Planning meeting",
+        description: "A few weeks before the wedding, we review the detailed timeline together: schedules, venues, estimated weather, important people, key moments, and any surprises or special dynamics you are preparing. This step allows us to anticipate what will happen and ensure that every significant moment is recorded without stress or improvisation.",
+      },
+      {
+        title: "The wedding day",
+        description: "We arrive early and coordinate with your wedding planner, the venue, and the providers involved. We work discreetly, without interrupting or forcing situations. Our gaze is mainly documentary, but we also guide certain moments to ensure natural portraits, with good light and that really reflect who you are. You just have to live your day; we take care of the rest.",
+      },
+      {
+        title: "Selection and editing",
+        description: "After the wedding, we perform a careful curation in which we select the best images, those that tell the story with emotion and coherence. Each photograph is edited one by one following a timeless style. In parallel, we build the video narrative so that it flows and evokes the entire day, not just the main moments.",
+      },
+      {
+        title: "Delivery",
+        description: "We prepare an online gallery where you can view, download, and share your material. Depending on the package, you also receive a printed album or box with prints. Our goal is for the delivery experience to be as special as the wedding itself: clean, organized, and designed for you to enjoy your memories as many times as you want.",
+      },
+    ],
+    whatsappText: "Ready to start? Contact us via WhatsApp to schedule a video call.",
+    whatsappButton: "Contact on WhatsApp",
+    whatsappMessage: "Hello! I would like more information about your photography and video services",
+  },
+  colecciones: {
+    title: "Collections",
+    subtitle: "Photography and video to tell your wedding from start to finish",
+    intro: "Our collections are designed to adapt to different types of weddings: from intimate celebrations in a single location to large events in multiple venues and several days. All include photography and video, as well as a careful curation of every moment.",
+    collections: [
+      {
+        name: "Collection One",
+        features: [
+          "8 hours of coverage",
+          "1 photographer",
+          "400–500 photographs",
+          "Digital gallery",
+          "1 videographer",
+          "20–30 minute video",
+          "1 minute version",
+          '8.5x11" Photobook (50 pages)',
+        ],
+        price: "$49,000 MXN",
+        description: "Ideal for intimate weddings in a single location, capturing preparations, ceremony, and reception. Designed to highlight the most special moments and personal connection of celebrations with up to 150 guests.",
+      },
+      {
+        name: "Collection Two",
+        features: [
+          "10 hours of coverage",
+          "1 photographer",
+          "600–700 photographs",
+          "Digital gallery",
+          "1 videographer",
+          "30–40 minute video",
+          "3–5 minute version",
+          "1 minute version",
+          '8.5x11" Photobook (50 pages)',
+          "Pre-wedding session",
+        ],
+        price: "$59,000 MXN",
+        description: "Designed for comprehensive coverage of weddings in one or multiple locations, capturing every detail of the day. From preparations to the most spectacular moments. Includes a previous session you can use for casual photos, civil ceremony, rehearsal dinner, or any other special moment.",
+      },
+      {
+        name: "Collection Three",
+        features: [
+          "12 hours of coverage",
+          "1 photographer",
+          "800–900 photographs",
+          "Digital gallery",
+          "1 videographer",
+          "50–60 minute video",
+          "3–5 minute version",
+          "1 minute version",
+          '11x11" Photobook (50 pages)',
+          "Pre-wedding session",
+          "Post-wedding session",
+        ],
+        price: "$69,000 MXN",
+        description: "Ideal for weddings held in multiple locations or over several days. Particularly suitable for extended party coverage. Includes a previous and a subsequent session, which can be used for whatever purpose you wish. Every moment is captured to have an extended memory of all aspects of your celebration.",
+      },
+      {
+        name: "Diamond Collection",
+        features: [
+          "12 hours of coverage",
+          "2 photographers",
+          "1000+ photographs",
+          "Digital gallery",
+          "2 videographers",
+          "45–60 minute video",
+          "3–5 minute version",
+          "1 minute version",
+          "Content creator (reels & photos)",
+          "Drone for aerial shots",
+          '12x12" Photobook (75 pages)',
+          "Print box (50 photographs)",
+          "Pre-wedding session",
+          "Post-wedding session",
+        ],
+        price: "$79,000 MXN",
+        description: "Designed to celebrate big, with coverage in multiple locations. With sessions before and after the wedding. Every detail is captured from multiple angles, allowing for a dynamic and precise vision. Recommended for large celebrations with more than 300 guests and for coverage aimed at social media.",
+      },
+    ],
+    customNote: "If your wedding has very specific characteristics (destination weddings, multi-day celebrations, intimate events out of town), we can adjust any of these collections or create a custom proposal. Write to us and we'll design it together.",
+    comparisonTitle: "Collection Comparison",
+    featuresTitle: "Features",
+    priceTitle: "Price",
+    addonsTitle: "Add-ons",
+    checkAvailability: "[ Check availability ]",
+    comparisonLabels: {
+      coverage: "Coverage hours",
+      photographers: "Photographers",
+      photos: "Photographs",
+      videographers: "Videographers",
+      videoDuration: "Video (duration)",
+      shortVideo: "Short video (3–5 min)",
+      oneMinuteVideo: "1 minute video",
+      photobook: "Photobook",
+      preWedding: "Pre-wedding session",
+      postWedding: "Post-wedding session",
+      drone: "Drone for aerial shots",
+      contentCreator: "Content creator (reels & photos)",
+      printBox: "Print box (50 photographs)",
+    },
+    whatsappText: "Ready to book your date? Write to us on WhatsApp and let's talk about your wedding.",
+    whatsappButton: "Contact on WhatsApp",
+    whatsappMessage: "Hello! I would like more information about your photography and video services",
+    addons: [
+      {
+        name: "Extra hour (photography and video)",
+        price: "$8,500",
+      },
+      {
+        name: "Drone for aerial shots",
+        price: "$6,500",
+      },
+      {
+        name: '50-page Photobook (11x11")',
+        price: "$5,500",
+      },
+      {
+        name: "Photobook Box with USB",
+        price: "$1,500",
+      },
+      {
+        name: "Additional videographer",
+        price: "$7,000",
+      },
+      {
+        name: "Print Box with USB (50 photographs)",
+        price: "$4,500",
+      },
+      {
+        name: "Content Creator for 10 hours (reels & photos)",
+        price: "$7,000",
+      },
+    ],
+  },
+  contacto: {
+    title: "Contact",
+    subtitle: "Tell us about your wedding",
+    intro: "We want to know more about you. All the details will help us better capture your day.",
+    fields: {
+      couple: "Couple's name",
+      email: "Email",
+      phone: "Phone",
+      date: "Tentative wedding date",
+      venue: "Venue (if you have one)",
+      guests: "Approximate number of guests",
+      source: "How did you hear about us",
+      message: "Message",
+    },
+    sourceOptions: [
+      "Instagram",
+      "Recommendation",
+      "Planner",
+      "Google Search",
+      "Other",
+    ],
+    disclaimer: "We personally answer every message and try to do so in less than 24–48 hours. If you don't receive a response, check your spam folder or write to us directly at: hola@arrebolweddings.com",
+    successMessage: "Thank you for your message. We will contact you soon.",
+    selectOption: "Select...",
+    submitButton: "Send message",
+    whatsappText: "Do you prefer WhatsApp? It's the fastest way to get in touch with you!",
+    whatsappButton: "Contact on WhatsApp",
+    whatsappMessage: "Hello! I would like more information about your photography and video services",
+  },
+  footer: {
+    tagline: "Memories that become more valuable with time",
+    email: "hola@arrebolweddings.com",
+    instagram: "@arrebolweddings",
+    copyright: "© 2025 Arrebol Weddings. All rights reserved.",
+    note: "Because the best stories deserve to be told with care.",
+  },
+};
+
+export const content = contentEs;
+

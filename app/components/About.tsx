@@ -1,8 +1,11 @@
+"use client";
+
 import FadeIn from "@/components/FadeIn";
 import Image from "next/image";
-import { content } from "@/lib/content";
+import { useLanguage } from "@/app/context/LanguageContext";
 
 const About = () => {
+  const { content } = useLanguage();
   const { about } = content.home;
 
   return (
@@ -38,7 +41,7 @@ const About = () => {
 
               <div className="pt-4">
                 <p className="font-[var(--font-heading)] text-xl text-[var(--accent-wine)] italic">
-                  Capturamos el tipo de imágenes que se vuelven más valiosas con el tiempo
+                  {about.quote}
                 </p>
               </div>
             </div>

@@ -1,16 +1,12 @@
-import type { Metadata } from "next";
+"use client";
+
 import Image from "next/image";
 import FadeIn from "@/components/FadeIn";
 import SectionHeader from "@/components/SectionHeader";
-import { content } from "@/lib/content";
-
-export const metadata: Metadata = {
-  title: "El Proceso | Arrebol Weddings",
-  description:
-    "De la primera llamada a la entrega final. Conoce cómo trabajamos y qué pueden esperar en cada etapa del proceso.",
-};
+import { useLanguage } from "../context/LanguageContext";
 
 export default function ElProceso() {
+  const { content } = useLanguage();
   const { proceso } = content;
 
   return (
@@ -82,15 +78,15 @@ export default function ElProceso() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <FadeIn delay={500}>
             <p className="text-lg text-[var(--foreground)]/80 leading-relaxed mb-8">
-              ¿Listo para comenzar? Contáctanos por WhatsApp para agendar una videollamada.
+              {proceso.whatsappText}
             </p>
             <a
-              href="https://wa.me/5217775001071?text=¡Hola!%20Deseo%20más%20información%20sobre%20sus%20servicios%20de%20fotografía%20y%20video"
+              href={`https://wa.me/5217775001071?text=${encodeURIComponent(proceso.whatsappMessage)}`}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block px-8 py-3 border border-[var(--foreground)] text-[var(--foreground)] text-sm tracking-widest uppercase hover:bg-[var(--foreground)] hover:text-white transition-all duration-300"
             >
-              Contactar por WhatsApp
+              {proceso.whatsappButton}
             </a>
           </FadeIn>
         </div>

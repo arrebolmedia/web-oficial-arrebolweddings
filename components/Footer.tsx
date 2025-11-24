@@ -1,7 +1,10 @@
+"use client";
+
 import Link from "next/link";
-import { content } from "@/lib/content";
+import { useLanguage } from "@/app/context/LanguageContext";
 
 const Footer = () => {
+  const { content } = useLanguage();
   const { footer } = content;
 
   return (
@@ -14,31 +17,31 @@ const Footer = () => {
               href="/"
               className="text-sm tracking-widest uppercase text-[var(--foreground)] hover:text-[var(--accent-wine)] transition-colors"
             >
-              HOME
+              {content.common.navigation.home}
             </Link>
             <Link
               href="/galeria"
               className="text-sm tracking-widest uppercase text-[var(--foreground)] hover:text-[var(--accent-wine)] transition-colors"
             >
-              GALERÍA
+              {content.common.navigation.gallery}
             </Link>
             <Link
               href="/el-proceso"
               className="text-sm tracking-widest uppercase text-[var(--foreground)] hover:text-[var(--accent-wine)] transition-colors"
             >
-              EL PROCESO
+              {content.common.navigation.process}
             </Link>
             <Link
               href="/colecciones"
               className="text-sm tracking-widest uppercase text-[var(--foreground)] hover:text-[var(--accent-wine)] transition-colors"
             >
-              COLECCIONES
+              {content.common.navigation.collections}
             </Link>
             <Link
               href="/contacto"
               className="text-sm tracking-widest uppercase text-[var(--foreground)] hover:text-[var(--accent-wine)] transition-colors"
             >
-              CONTACTO
+              {content.common.navigation.contact}
             </Link>
           </nav>
         </div>

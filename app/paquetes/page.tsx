@@ -1,17 +1,13 @@
-import type { Metadata } from "next";
+"use client";
+
 import FadeIn from "@/components/FadeIn";
 import SectionHeader from "@/components/SectionHeader";
 import Button from "@/components/Button";
-import { content } from "@/lib/content";
-
-export const metadata: Metadata = {
-  title: "Colecciones | Arrebol Weddings",
-  description:
-    "Colecciones de fotografía y video para contar su boda de principio a fin. Desde celebraciones íntimas hasta grandes eventos.",
-};
+import { useLanguage } from "../context/LanguageContext";
 
 export default function Paquetes() {
-  const { colecciones } = content;
+  const { content } = useLanguage();
+  const { colecciones, common } = content;
 
   return (
     <div className="pt-20">
@@ -73,7 +69,7 @@ export default function Paquetes() {
                       variant="outline"
                       className="w-full border border-[var(--foreground)] text-[var(--foreground)] hover:bg-[var(--foreground)] hover:text-white py-3"
                     >
-                      [ Consultar disponibilidad ]
+                      {colecciones.checkAvailability}
                     </Button>
                   </div>
                 </div>
@@ -91,7 +87,7 @@ export default function Paquetes() {
               {colecciones.customNote}
             </p>
             <Button href="/contacto" variant="outline">
-              Ir a contacto
+              {common.goToContact}
             </Button>
           </FadeIn>
         </div>

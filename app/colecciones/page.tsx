@@ -1,16 +1,12 @@
-import type { Metadata } from "next";
+"use client";
+
 import Link from "next/link";
 import FadeIn from "@/components/FadeIn";
 import SectionHeader from "@/components/SectionHeader";
-import { content } from "@/lib/content";
-
-export const metadata: Metadata = {
-  title: "Colecciones | Arrebol Weddings",
-  description:
-    "Colecciones de fotografía y video para contar su boda de principio a fin. Desde celebraciones íntimas hasta grandes eventos.",
-};
+import { useLanguage } from "../context/LanguageContext";
 
 export default function Colecciones() {
+  const { content } = useLanguage();
   const { colecciones } = content;
 
   return (
@@ -76,13 +72,13 @@ export default function Colecciones() {
           <div className="mt-16 overflow-x-auto hidden lg:block">
             <FadeIn delay={500}>
               <h3 className="font-[var(--font-heading)] text-3xl text-[var(--foreground)] text-center mb-8 uppercase">
-                Comparación de colecciones
+                {colecciones.comparisonTitle}
               </h3>
               <table className="w-full bg-white border border-[var(--border-subtle)]">
                 <thead>
                   <tr className="border-b border-[var(--border-subtle)]">
                     <th className="p-4 text-left font-[var(--font-heading)] text-lg text-[var(--foreground)] bg-[var(--background)]">
-                      Características
+                      {colecciones.featuresTitle}
                     </th>
                     {colecciones.collections.map((collection, index) => (
                       <th key={index} className="p-4 text-center font-[var(--font-heading)] text-lg text-[var(--foreground)] bg-[var(--background)] min-w-[180px]">
@@ -93,98 +89,98 @@ export default function Colecciones() {
                 </thead>
                 <tbody>
                   <tr className="border-b border-[var(--border-subtle)]">
-                    <td className="p-4 text-[var(--foreground)]/70">Horas de cobertura</td>
+                    <td className="p-4 text-[var(--foreground)]/70">{colecciones.comparisonLabels.coverage}</td>
                     <td className="p-4 text-center text-[var(--foreground)]">8</td>
                     <td className="p-4 text-center text-[var(--foreground)]">10</td>
                     <td className="p-4 text-center text-[var(--foreground)]">12</td>
                     <td className="p-4 text-center text-[var(--foreground)]">12</td>
                   </tr>
                   <tr className="border-b border-[var(--border-subtle)]">
-                    <td className="p-4 text-[var(--foreground)]/70">Fotógrafos</td>
+                    <td className="p-4 text-[var(--foreground)]/70">{colecciones.comparisonLabels.photographers}</td>
                     <td className="p-4 text-center text-[var(--foreground)]">1</td>
                     <td className="p-4 text-center text-[var(--foreground)]">1</td>
                     <td className="p-4 text-center text-[var(--foreground)]">1</td>
                     <td className="p-4 text-center text-[var(--foreground)]">2</td>
                   </tr>
                   <tr className="border-b border-[var(--border-subtle)]">
-                    <td className="p-4 text-[var(--foreground)]/70">Fotografías</td>
+                    <td className="p-4 text-[var(--foreground)]/70">{colecciones.comparisonLabels.photos}</td>
                     <td className="p-4 text-center text-[var(--foreground)]">400–500</td>
                     <td className="p-4 text-center text-[var(--foreground)]">600–700</td>
                     <td className="p-4 text-center text-[var(--foreground)]">800–900</td>
                     <td className="p-4 text-center text-[var(--foreground)]">1000+</td>
                   </tr>
                   <tr className="border-b border-[var(--border-subtle)]">
-                    <td className="p-4 text-[var(--foreground)]/70">Videógrafos</td>
+                    <td className="p-4 text-[var(--foreground)]/70">{colecciones.comparisonLabels.videographers}</td>
                     <td className="p-4 text-center text-[var(--foreground)]">1</td>
                     <td className="p-4 text-center text-[var(--foreground)]">1</td>
                     <td className="p-4 text-center text-[var(--foreground)]">1</td>
                     <td className="p-4 text-center text-[var(--foreground)]">2</td>
                   </tr>
                   <tr className="border-b border-[var(--border-subtle)]">
-                    <td className="p-4 text-[var(--foreground)]/70">Video (duración)</td>
+                    <td className="p-4 text-[var(--foreground)]/70">{colecciones.comparisonLabels.videoDuration}</td>
                     <td className="p-4 text-center text-[var(--foreground)]">20–30 min</td>
                     <td className="p-4 text-center text-[var(--foreground)]">30–40 min</td>
                     <td className="p-4 text-center text-[var(--foreground)]">50–60 min</td>
                     <td className="p-4 text-center text-[var(--foreground)]">45–60 min</td>
                   </tr>
                   <tr className="border-b border-[var(--border-subtle)]">
-                    <td className="p-4 text-[var(--foreground)]/70">Video corto (3–5 min)</td>
+                    <td className="p-4 text-[var(--foreground)]/70">{colecciones.comparisonLabels.shortVideo}</td>
                     <td className="p-4 text-center text-[var(--foreground)]">—</td>
                     <td className="p-4 text-center text-[var(--foreground)]">✓</td>
                     <td className="p-4 text-center text-[var(--foreground)]">✓</td>
                     <td className="p-4 text-center text-[var(--foreground)]">✓</td>
                   </tr>
                   <tr className="border-b border-[var(--border-subtle)]">
-                    <td className="p-4 text-[var(--foreground)]/70">Video 1 minuto</td>
+                    <td className="p-4 text-[var(--foreground)]/70">{colecciones.comparisonLabels.oneMinuteVideo}</td>
                     <td className="p-4 text-center text-[var(--foreground)]">✓</td>
                     <td className="p-4 text-center text-[var(--foreground)]">✓</td>
                     <td className="p-4 text-center text-[var(--foreground)]">✓</td>
                     <td className="p-4 text-center text-[var(--foreground)]">✓</td>
                   </tr>
                   <tr className="border-b border-[var(--border-subtle)]">
-                    <td className="p-4 text-[var(--foreground)]/70">Photobook</td>
+                    <td className="p-4 text-[var(--foreground)]/70">{colecciones.comparisonLabels.photobook}</td>
                     <td className="p-4 text-center text-[var(--foreground)] text-sm">8.5x11" (50 pág)</td>
                     <td className="p-4 text-center text-[var(--foreground)] text-sm">8.5x11" (50 pág)</td>
                     <td className="p-4 text-center text-[var(--foreground)] text-sm">11x11" (50 pág)</td>
                     <td className="p-4 text-center text-[var(--foreground)] text-sm">12x12" (75 pág)</td>
                   </tr>
                   <tr className="border-b border-[var(--border-subtle)]">
-                    <td className="p-4 text-[var(--foreground)]/70">Sesión pre boda</td>
+                    <td className="p-4 text-[var(--foreground)]/70">{colecciones.comparisonLabels.preWedding}</td>
                     <td className="p-4 text-center text-[var(--foreground)]">—</td>
                     <td className="p-4 text-center text-[var(--foreground)]">✓</td>
                     <td className="p-4 text-center text-[var(--foreground)]">✓</td>
                     <td className="p-4 text-center text-[var(--foreground)]">✓</td>
                   </tr>
                   <tr className="border-b border-[var(--border-subtle)]">
-                    <td className="p-4 text-[var(--foreground)]/70">Sesión post boda</td>
+                    <td className="p-4 text-[var(--foreground)]/70">{colecciones.comparisonLabels.postWedding}</td>
                     <td className="p-4 text-center text-[var(--foreground)]">—</td>
                     <td className="p-4 text-center text-[var(--foreground)]">—</td>
                     <td className="p-4 text-center text-[var(--foreground)]">✓</td>
                     <td className="p-4 text-center text-[var(--foreground)]">✓</td>
                   </tr>
                   <tr className="border-b border-[var(--border-subtle)]">
-                    <td className="p-4 text-[var(--foreground)]/70">Dron para tomas aéreas</td>
+                    <td className="p-4 text-[var(--foreground)]/70">{colecciones.comparisonLabels.drone}</td>
                     <td className="p-4 text-center text-[var(--foreground)]">—</td>
                     <td className="p-4 text-center text-[var(--foreground)]">—</td>
                     <td className="p-4 text-center text-[var(--foreground)]">—</td>
                     <td className="p-4 text-center text-[var(--foreground)]">✓</td>
                   </tr>
                   <tr className="border-b border-[var(--border-subtle)]">
-                    <td className="p-4 text-[var(--foreground)]/70">Creador de contenido (reels & photos)</td>
+                    <td className="p-4 text-[var(--foreground)]/70">{colecciones.comparisonLabels.contentCreator}</td>
                     <td className="p-4 text-center text-[var(--foreground)]">—</td>
                     <td className="p-4 text-center text-[var(--foreground)]">—</td>
                     <td className="p-4 text-center text-[var(--foreground)]">—</td>
                     <td className="p-4 text-center text-[var(--foreground)]">✓</td>
                   </tr>
                   <tr className="border-b border-[var(--border-subtle)]">
-                    <td className="p-4 text-[var(--foreground)]/70">Print box (50 fotografías)</td>
+                    <td className="p-4 text-[var(--foreground)]/70">{colecciones.comparisonLabels.printBox}</td>
                     <td className="p-4 text-center text-[var(--foreground)]">—</td>
                     <td className="p-4 text-center text-[var(--foreground)]">—</td>
                     <td className="p-4 text-center text-[var(--foreground)]">—</td>
                     <td className="p-4 text-center text-[var(--foreground)]">✓</td>
                   </tr>
                   <tr className="bg-[var(--background)]">
-                    <td className="p-4 font-[var(--font-heading)] text-lg text-[var(--foreground)]">Precio</td>
+                    <td className="p-4 font-[var(--font-heading)] text-lg text-[var(--foreground)]">{colecciones.priceTitle}</td>
                     {colecciones.collections.map((collection, index) => (
                       <td key={index} className="p-4 text-center">
                         <div className="text-2xl font-light text-[var(--foreground)]">{collection.price.split(' ')[0]}</div>
@@ -204,7 +200,7 @@ export default function Colecciones() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <FadeIn>
             <h2 className="font-[var(--font-heading)] text-3xl md:text-4xl text-[var(--foreground)] text-center mb-12 uppercase">
-              Adicionales
+              {colecciones.addonsTitle}
             </h2>
           </FadeIn>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -234,15 +230,15 @@ export default function Colecciones() {
               {colecciones.customNote}
             </p>
             <p className="text-lg text-[var(--foreground)]/80 leading-relaxed mb-8">
-              ¿Listo para reservar tu fecha? Escríbenos por WhatsApp y conversemos sobre tu boda.
+              {colecciones.whatsappText}
             </p>
             <a
-              href="https://wa.me/5217775001071?text=¡Hola!%20Deseo%20más%20información%20sobre%20sus%20servicios%20de%20fotografía%20y%20video"
+              href={`https://wa.me/5217775001071?text=${encodeURIComponent(colecciones.whatsappMessage)}`}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block px-8 py-3 border border-[var(--foreground)] text-[var(--foreground)] text-sm tracking-widest uppercase hover:bg-[var(--foreground)] hover:text-white transition-all duration-300"
             >
-              Contactar por WhatsApp
+              {colecciones.whatsappButton}
             </a>
           </FadeIn>
         </div>

@@ -1,10 +1,13 @@
+"use client";
+
 import FadeIn from "@/components/FadeIn";
 import Link from "next/link";
 import Image from "next/image";
 import SectionHeader from "@/components/SectionHeader";
-import { content } from "@/lib/content";
+import { useLanguage } from "@/app/context/LanguageContext";
 
 const Process = () => {
+  const { content } = useLanguage();
   const { process } = content.home;
 
   return (
@@ -14,7 +17,7 @@ const Process = () => {
           {/* Left Column - Text Content */}
           <div>
             <FadeIn>
-              <SectionHeader title="El proceso" />
+              <SectionHeader title={process.title} />
             </FadeIn>
 
             <div className="mt-16 space-y-12">
@@ -39,7 +42,7 @@ const Process = () => {
                   href="/el-proceso"
                   className="inline-block px-8 py-3 border border-[var(--foreground)] text-[var(--foreground)] text-sm tracking-widest uppercase hover:bg-[var(--foreground)] hover:text-white transition-all duration-300"
                 >
-                  Ver más
+                  {content.common.viewMore}
                 </Link>
               </div>
             </FadeIn>

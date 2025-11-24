@@ -4,9 +4,10 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { content } from "@/lib/content";
+import { useLanguage } from "@/app/context/LanguageContext";
 
 const HeroHeader = () => {
+  const { content, language, toggleLanguage } = useLanguage();
   const [isOpen, setIsOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [imagesLoaded, setImagesLoaded] = useState(false);
@@ -52,11 +53,11 @@ const HeroHeader = () => {
   }, [imagesLoaded, sliderImages.length]);
 
   const links = [
-    { href: "/", label: "HOME" },
-    { href: "/galeria", label: "GALERÍA" },
-    { href: "/el-proceso", label: "EL PROCESO" },
-    { href: "/colecciones", label: "COLECCIONES" },
-    { href: "/contacto", label: "CONTACTO" },
+    { href: "/", label: content.common.navigation.home },
+    { href: "/galeria", label: content.common.navigation.gallery },
+    { href: "/el-proceso", label: content.common.navigation.process },
+    { href: "/colecciones", label: content.common.navigation.collections },
+    { href: "/contacto", label: content.common.navigation.contact },
   ];
 
   const isActive = (href: string) => {
@@ -69,13 +70,24 @@ const HeroHeader = () => {
 
   return (
     <>
+      {/* Language Switcher - Fixed Left */}
+      <button
+        onClick={toggleLanguage}
+        className="fixed top-8 left-8 z-50 px-4 py-2 text-sm tracking-widest uppercase text-[var(--foreground)] transition-colors"
+        aria-label="Switch language"
+      >
+        <span className={language === "es" ? "font-bold" : "font-light hover:text-[var(--accent-wine)]"}>ES</span>
+        <span className="mx-2">|</span>
+        <span className={language === "en" ? "font-bold" : "font-light hover:text-[var(--accent-wine)]"}>ENG</span>
+      </button>
+
       {/* Hamburger Menu Button - Fixed */}
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="fixed top-8 right-8 z-50 px-4 py-2 text-sm tracking-widest uppercase text-[var(--foreground)] hover:text-[var(--accent-wine)] transition-colors"
         aria-label="Toggle menu"
       >
-        {isOpen ? "CERRAR" : "MENÚ"}
+        {isOpen ? content.common.close : content.common.menu}
       </button>
 
       {/* Full Screen Menu Overlay */}
@@ -116,7 +128,7 @@ const HeroHeader = () => {
         <div className="relative w-full max-w-[280px] md:max-w-[320px] lg:max-w-[360px] aspect-[3/4] mb-10 overflow-hidden bg-gray-200">
           {sliderImages.length === 0 || !imagesLoaded ? (
             <div className="absolute inset-0 flex items-center justify-center">
-              <p className="text-sm text-gray-400">Cargando...</p>
+              <p className="text-sm text-gray-400">{content.common.loading}</p>
             </div>
           ) : (
             sliderImages.map((image, index) => (
@@ -145,11 +157,11 @@ const HeroHeader = () => {
         {/* Tagline */}
         <div className="text-center">
           <p className="font-[var(--font-heading)] text-sm md:text-base text-[var(--foreground)] tracking-wider">
-            RECUERDOS{" "}
+            {content.home.hero.taglinePart1}{" "}
             <span className="italic font-light text-[var(--foreground)]/60">
-              que duran por
+              {content.home.hero.taglinePart2}
             </span>{" "}
-            GENERACIONES
+            {content.home.hero.taglinePart3}
           </p>
         </div>
       </section>

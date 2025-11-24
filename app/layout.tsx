@@ -4,6 +4,7 @@ import "./globals.css";
 import HeroHeader from "@/components/HeroHeader";
 import Footer from "@/components/Footer";
 import SmoothScroll from "@/app/components/SmoothScroll";
+import { LanguageProvider } from "@/app/context/LanguageContext";
 
 const playfair = Playfair_Display({
   variable: "--font-playfair",
@@ -55,10 +56,12 @@ export default function RootLayout({
         <link rel="stylesheet" href="https://use.typekit.net/kan4vqt.css" />
       </head>
       <body className="antialiased">
-        <SmoothScroll />
-        <HeroHeader />
-        <main>{children}</main>
-        <Footer />
+        <LanguageProvider>
+          <SmoothScroll />
+          <HeroHeader />
+          <main>{children}</main>
+          <Footer />
+        </LanguageProvider>
       </body>
     </html>
   );

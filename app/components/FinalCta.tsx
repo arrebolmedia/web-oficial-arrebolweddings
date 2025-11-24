@@ -1,9 +1,12 @@
+"use client";
+
 import FadeIn from "@/components/FadeIn";
 import Image from "next/image";
 import Link from "next/link";
-import { content } from "@/lib/content";
+import { useLanguage } from "../context/LanguageContext";
 
 const FinalCta = () => {
+  const { content } = useLanguage();
   const { finalCta } = content.home;
 
   return (
@@ -33,15 +36,15 @@ const FinalCta = () => {
 
                 <div className="pt-6">
                   <p className="text-sm text-[var(--foreground)]/70 mb-3">
-                    O escríbenos directamente por WhatsApp:
+                    {finalCta.whatsappIntro}
                   </p>
                   <a
-                    href="https://wa.me/5217775001071?text=¡Hola!%20Deseo%20más%20información%20sobre%20sus%20servicios%20de%20fotografía%20y%20video"
+                    href={`https://wa.me/5217775001071?text=${encodeURIComponent(finalCta.whatsappMessage)}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-block px-8 py-3 border border-[var(--foreground)] text-[var(--foreground)] text-sm tracking-widest uppercase hover:bg-[var(--foreground)] hover:text-white transition-all duration-300"
                   >
-                    Contactar por WhatsApp
+                    {finalCta.whatsappButton}
                   </a>
                 </div>
               </div>

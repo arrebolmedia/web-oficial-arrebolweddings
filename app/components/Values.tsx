@@ -1,7 +1,10 @@
+"use client";
+
 import FadeIn from "@/components/FadeIn";
-import { content } from "@/lib/content";
+import { useLanguage } from "../context/LanguageContext";
 
 const Values = () => {
+  const { content } = useLanguage();
   const { values } = content.home;
 
   return (

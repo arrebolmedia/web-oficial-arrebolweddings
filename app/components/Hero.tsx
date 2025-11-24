@@ -1,7 +1,10 @@
+"use client";
+
 import Button from "@/components/Button";
-import { content } from "@/lib/content";
+import { useLanguage } from "../context/LanguageContext";
 
 const Hero = () => {
+  const { content } = useLanguage();
   const { hero } = content.home;
 
   return (

@@ -3,8 +3,11 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import FadeIn from "@/components/FadeIn";
+import { useLanguage } from "@/app/context/LanguageContext";
 
 const Philosophy = () => {
+  const { content } = useLanguage();
+  const { philosophy } = content.home;
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [imagesLoaded, setImagesLoaded] = useState(false);
   
@@ -80,13 +83,13 @@ const Philosophy = () => {
             <FadeIn>
               <div className="text-white space-y-3 text-center max-w-4xl mx-auto">
                 <p className="text-base md:text-lg leading-snug uppercase">
-                  Somos instantes que pasan, imágenes que traen nostalgia.
+                  {philosophy.line1}
                 </p>
                 <p className="text-base md:text-lg leading-snug uppercase">
-                  Algún día seremos recuerdo, y la foto y el video serán el eco más fiel de lo que fuimos:
+                  {philosophy.line2}
                 </p>
                 <p className="text-base md:text-lg leading-snug uppercase">
-                  la forma más sencilla de volver a un momento que ya no está.
+                  {philosophy.line3}
                 </p>
               </div>
             </FadeIn>

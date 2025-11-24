@@ -3,9 +3,10 @@
 import { useState } from "react";
 import FadeIn from "@/components/FadeIn";
 import SectionHeader from "@/components/SectionHeader";
-import { content } from "@/lib/content";
+import { useLanguage } from "../context/LanguageContext";
 
 const Testimonials = () => {
+  const { content } = useLanguage();
   const { testimonials } = content.home;
   const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
 

@@ -4,7 +4,7 @@ import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import FadeIn from "@/components/FadeIn";
 import SectionHeader from "@/components/SectionHeader";
-import { content } from "@/lib/content";
+import { useLanguage } from "../context/LanguageContext";
 
 interface ImageData {
   filename: string;
@@ -13,6 +13,7 @@ interface ImageData {
 }
 
 export default function Galeria() {
+  const { content } = useLanguage();
   const { galeria } = content;
   const [selectedImage, setSelectedImage] = useState<ImageData | null>(null);
   const [columnHeights, setColumnHeights] = useState<number[]>([]);
@@ -119,7 +120,7 @@ export default function Galeria() {
             </FadeIn>
             {imagesWithDimensions.length === 0 ? (
               <div className="flex justify-center items-center min-h-[400px]">
-                <p className="text-[var(--foreground)]/50">Cargando galería...</p>
+                <p className="text-[var(--foreground)]/50">{galeria.loading}</p>
               </div>
             ) : (
               <div 
@@ -164,15 +165,15 @@ export default function Galeria() {
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <FadeIn>
               <p className="text-lg text-[var(--foreground)]/80 leading-relaxed mb-8">
-                La manera más rápida de contactarnos es a través de WhatsApp ¡No dudes en escribirnos!
+                {galeria.whatsappText}
               </p>
               <a
-                href="https://wa.me/5217775001071?text=¡Hola!%20Deseo%20más%20información%20sobre%20sus%20servicios%20de%20fotografía%20y%20video"
+                href={`https://wa.me/5217775001071?text=${encodeURIComponent(galeria.whatsappMessage)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block px-8 py-3 border border-[var(--foreground)] text-[var(--foreground)] text-sm tracking-widest uppercase hover:bg-[var(--foreground)] hover:text-white transition-all duration-300"
               >
-                Contactar por WhatsApp
+                {galeria.whatsappButton}
               </a>
             </FadeIn>
           </div>
