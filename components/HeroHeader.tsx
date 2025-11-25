@@ -52,16 +52,18 @@ const HeroHeader = () => {
     return () => clearInterval(interval);
   }, [imagesLoaded, sliderImages.length]);
 
+  const basePath = language === "en" ? "/en" : "";
+  
   const links = [
-    { href: "/", label: content.common.navigation.home },
-    { href: "/galeria", label: content.common.navigation.gallery },
-    { href: "/el-proceso", label: content.common.navigation.process },
-    { href: "/colecciones", label: content.common.navigation.collections },
-    { href: "/contacto", label: content.common.navigation.contact },
+    { href: `${basePath}/`, label: content.common.navigation.home },
+    { href: `${basePath}/galeria`, label: content.common.navigation.gallery },
+    { href: `${basePath}/el-proceso`, label: content.common.navigation.process },
+    { href: `${basePath}/colecciones`, label: content.common.navigation.collections },
+    { href: `${basePath}/contacto`, label: content.common.navigation.contact },
   ];
 
   const isActive = (href: string) => {
-    if (href === "/") return pathname === "/";
+    if (href === "/" || href === "/en/") return pathname === "/" || pathname === "/en" || pathname === "/en/";
     return pathname.startsWith(href);
   };
 
@@ -71,15 +73,21 @@ const HeroHeader = () => {
   return (
     <>
       {/* Language Switcher - Fixed Left */}
-      <button
-        onClick={toggleLanguage}
-        className="fixed top-8 left-8 z-50 px-4 py-2 text-sm tracking-widest uppercase text-[var(--foreground)] transition-colors"
-        aria-label="Switch language"
-      >
-        <span className={language === "es" ? "font-bold" : "font-light hover:text-[var(--accent-wine)]"}>ES</span>
+      <div className="fixed top-8 left-8 z-50 px-4 py-2 text-sm tracking-widest uppercase text-[var(--foreground)]">
+        <a 
+          href="/" 
+          className={language === "es" ? "font-bold" : "font-light hover:text-[var(--accent-wine)]"}
+        >
+          ES
+        </a>
         <span className="mx-2">|</span>
-        <span className={language === "en" ? "font-bold" : "font-light hover:text-[var(--accent-wine)]"}>ENG</span>
-      </button>
+        <a 
+          href="/en/" 
+          className={language === "en" ? "font-bold" : "font-light hover:text-[var(--accent-wine)]"}
+        >
+          ENG
+        </a>
+      </div>
 
       {/* Hamburger Menu Button - Fixed */}
       <button

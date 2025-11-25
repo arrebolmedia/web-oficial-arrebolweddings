@@ -4,8 +4,10 @@ import Link from "next/link";
 import { useLanguage } from "@/app/context/LanguageContext";
 
 const Footer = () => {
-  const { content } = useLanguage();
+  const { content, language } = useLanguage();
   const { footer } = content;
+  
+  const basePath = language === "en" ? "/en" : "";
 
   return (
     <footer className="border-t border-[var(--border-subtle)]">
@@ -14,31 +16,31 @@ const Footer = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <nav className="flex flex-wrap justify-center gap-x-12 gap-y-4">
             <Link
-              href="/"
+              href={`${basePath}/`}
               className="text-sm tracking-widest uppercase text-[var(--foreground)] hover:text-[var(--accent-wine)] transition-colors"
             >
               {content.common.navigation.home}
             </Link>
             <Link
-              href="/galeria"
+              href={`${basePath}/galeria`}
               className="text-sm tracking-widest uppercase text-[var(--foreground)] hover:text-[var(--accent-wine)] transition-colors"
             >
               {content.common.navigation.gallery}
             </Link>
             <Link
-              href="/el-proceso"
+              href={`${basePath}/el-proceso`}
               className="text-sm tracking-widest uppercase text-[var(--foreground)] hover:text-[var(--accent-wine)] transition-colors"
             >
               {content.common.navigation.process}
             </Link>
             <Link
-              href="/colecciones"
+              href={`${basePath}/colecciones`}
               className="text-sm tracking-widest uppercase text-[var(--foreground)] hover:text-[var(--accent-wine)] transition-colors"
             >
               {content.common.navigation.collections}
             </Link>
             <Link
-              href="/contacto"
+              href={`${basePath}/contacto`}
               className="text-sm tracking-widest uppercase text-[var(--foreground)] hover:text-[var(--accent-wine)] transition-colors"
             >
               {content.common.navigation.contact}
