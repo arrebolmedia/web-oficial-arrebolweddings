@@ -54,7 +54,13 @@ export default function RootLayout({
   return (
     <html lang="es" className={`${playfair.variable} ${poppins.variable}`}>
       <head>
-        <link rel="stylesheet" href="https://use.typekit.net/kan4vqt.css" />
+        <link
+          rel="preload"
+          as="image"
+          href="/images/gallery/TOP-SyP-324.webp"
+          type="image/webp"
+          fetchPriority="high"
+        />
       </head>
       <body className="antialiased">
         <LanguageProvider>

@@ -179,6 +179,8 @@ const HeroHeader = () => {
                   className="object-cover"
                   priority={index === 0}
                   loading={index === 0 ? "eager" : "lazy"}
+                  fetchPriority={index === 0 ? "high" : "auto"}
+                  sizes="(max-width: 768px) 280px, (max-width: 1024px) 320px, 360px"
                 />
               </div>
             ))
