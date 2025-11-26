@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Playfair_Display, Poppins } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import HeroHeader from "@/components/HeroHeader";
 import Footer from "@/components/Footer";
@@ -62,8 +63,7 @@ export default function RootLayout({
           fetchPriority="high"
         />
         <link rel="preconnect" href="https://use.typekit.net" crossOrigin="anonymous" />
-        <link rel="stylesheet" href="https://use.typekit.net/kan4vqt.css" media="print" onLoad="this.media='all'" />
-        <noscript><link rel="stylesheet" href="https://use.typekit.net/kan4vqt.css" /></noscript>
+        <link rel="stylesheet" href="https://use.typekit.net/kan4vqt.css" />
       </head>
       <body className="antialiased">
         <LanguageProvider>
