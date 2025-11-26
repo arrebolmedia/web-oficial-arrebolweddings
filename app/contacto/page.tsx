@@ -19,14 +19,43 @@ export default function Contacto() {
     source: "",
     message: "",
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Form handling logic would go here
-    console.log("Form submitted:", formData);
-    alert(
-      contacto.successMessage
-    );
+    setIsSubmitting(true);
+    setSubmitStatus("idle");
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setSubmitStatus("success");
+        setFormData({
+          couple: "",
+          email: "",
+          phone: "",
+          date: "",
+          venue: "",
+          guests: "",
+          source: "",
+          message: "",
+        });
+      } else {
+        setSubmitStatus("error");
+      }
+    } catch {
+      setSubmitStatus("error");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (
@@ -54,9 +83,9 @@ export default function Contacto() {
 
       {/* Form */}
       <section className="py-16 bg-[var(--background)]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <FadeIn delay={200}>
-            <p className="mb-12 text-lg text-[var(--foreground)]/80 leading-relaxed text-center">
+            <p className="mb-10 text-lg text-[var(--foreground)]/80 leading-relaxed text-center max-w-2xl mx-auto">
               {contacto.intro}
             </p>
           </FadeIn>
@@ -64,133 +93,100 @@ export default function Contacto() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
             {/* Form Column */}
             <FadeIn delay={300}>
-              <form onSubmit={handleSubmit} className="space-y-6">
-                {/* Couple Name */}
-                <div>
-                  <label
-                    htmlFor="couple"
-                    className="block text-sm font-medium text-[var(--foreground)] mb-2"
-                  >
-                    {contacto.fields.couple}
-                  </label>
-                  <input
-                    type="text"
-                    id="couple"
-                    name="couple"
-                    required
-                    value={formData.couple}
-                    onChange={handleChange}
-                    className="w-full px-4 py-3 bg-white border border-[var(--border-subtle)] rounded-sm focus:outline-none focus:ring-2 focus:ring-[var(--accent-wine)] transition-all"
-                  />
+              <form onSubmit={handleSubmit} className="space-y-1">
+                {/* Row 1: Couple & Email */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="group">
+                    <input
+                      type="text"
+                      id="couple"
+                      name="couple"
+                      required
+                      placeholder={contacto.fields.couple}
+                      value={formData.couple}
+                      onChange={handleChange}
+                      className="w-full py-3 bg-transparent border-b border-[var(--foreground)]/20 focus:border-[var(--foreground)] outline-none transition-colors placeholder:text-[var(--foreground)]/40 placeholder:text-sm text-[var(--foreground)]"
+                    />
+                  </div>
+                  <div className="group">
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      required
+                      placeholder={contacto.fields.email}
+                      value={formData.email}
+                      onChange={handleChange}
+                      className="w-full py-3 bg-transparent border-b border-[var(--foreground)]/20 focus:border-[var(--foreground)] outline-none transition-colors placeholder:text-[var(--foreground)]/40 placeholder:text-sm text-[var(--foreground)]"
+                    />
+                  </div>
                 </div>
 
-                {/* Email */}
-                <div>
-                  <label
-                    htmlFor="email"
-                    className="block text-sm font-medium text-[var(--foreground)] mb-2"
-                  >
-                    {contacto.fields.email}
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    required
-                    value={formData.email}
-                    onChange={handleChange}
-                    className="w-full px-4 py-3 bg-white border border-[var(--border-subtle)] rounded-sm focus:outline-none focus:ring-2 focus:ring-[var(--accent-wine)] transition-all"
-                  />
+                {/* Row 2: Phone & Date */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="group">
+                    <input
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      placeholder={contacto.fields.phone}
+                      value={formData.phone}
+                      onChange={handleChange}
+                      className="w-full py-3 bg-transparent border-b border-[var(--foreground)]/20 focus:border-[var(--foreground)] outline-none transition-colors placeholder:text-[var(--foreground)]/40 placeholder:text-sm text-[var(--foreground)]"
+                    />
+                  </div>
+                  <div className="group">
+                    <input
+                      type="text"
+                      id="date"
+                      name="date"
+                      placeholder={contacto.fields.date}
+                      value={formData.date}
+                      onChange={handleChange}
+                      onFocus={(e) => e.target.type = 'date'}
+                      onBlur={(e) => { if (!e.target.value) e.target.type = 'text' }}
+                      className="w-full py-3 bg-transparent border-b border-[var(--foreground)]/20 focus:border-[var(--foreground)] outline-none transition-colors placeholder:text-[var(--foreground)]/40 placeholder:text-sm text-[var(--foreground)]"
+                    />
+                  </div>
                 </div>
 
-                {/* Phone */}
-                <div>
-                  <label
-                    htmlFor="phone"
-                    className="block text-sm font-medium text-[var(--foreground)] mb-2"
-                  >
-                    {contacto.fields.phone}
-                  </label>
-                  <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    value={formData.phone}
-                    onChange={handleChange}
-                    className="w-full px-4 py-3 bg-white border border-[var(--border-subtle)] rounded-sm focus:outline-none focus:ring-2 focus:ring-[var(--accent-wine)] transition-all"
-                  />
+                {/* Row 3: Venue & Guests */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="group">
+                    <input
+                      type="text"
+                      id="venue"
+                      name="venue"
+                      placeholder={contacto.fields.venue}
+                      value={formData.venue}
+                      onChange={handleChange}
+                      className="w-full py-3 bg-transparent border-b border-[var(--foreground)]/20 focus:border-[var(--foreground)] outline-none transition-colors placeholder:text-[var(--foreground)]/40 placeholder:text-sm text-[var(--foreground)]"
+                    />
+                  </div>
+                  <div className="group">
+                    <input
+                      type="text"
+                      id="guests"
+                      name="guests"
+                      placeholder={contacto.fields.guests}
+                      value={formData.guests}
+                      onChange={handleChange}
+                      className="w-full py-3 bg-transparent border-b border-[var(--foreground)]/20 focus:border-[var(--foreground)] outline-none transition-colors placeholder:text-[var(--foreground)]/40 placeholder:text-sm text-[var(--foreground)]"
+                    />
+                  </div>
                 </div>
 
-                {/* Date */}
+                {/* Row 4: Source */}
                 <div>
-                  <label
-                    htmlFor="date"
-                    className="block text-sm font-medium text-[var(--foreground)] mb-2"
-                  >
-                    {contacto.fields.date}
-                  </label>
-                  <input
-                    type="date"
-                    id="date"
-                    name="date"
-                    value={formData.date}
-                    onChange={handleChange}
-                    className="w-full px-4 py-3 bg-white border border-[var(--border-subtle)] rounded-sm focus:outline-none focus:ring-2 focus:ring-[var(--accent-wine)] transition-all"
-                  />
-                </div>
-
-                {/* Venue */}
-                <div>
-                  <label
-                    htmlFor="venue"
-                    className="block text-sm font-medium text-[var(--foreground)] mb-2"
-                  >
-                    {contacto.fields.venue}
-                  </label>
-                  <input
-                    type="text"
-                    id="venue"
-                    name="venue"
-                    value={formData.venue}
-                    onChange={handleChange}
-                    className="w-full px-4 py-3 bg-white border border-[var(--border-subtle)] rounded-sm focus:outline-none focus:ring-2 focus:ring-[var(--accent-wine)] transition-all"
-                  />
-                </div>
-
-                {/* Guests */}
-                <div>
-                  <label
-                    htmlFor="guests"
-                    className="block text-sm font-medium text-[var(--foreground)] mb-2"
-                  >
-                    {contacto.fields.guests}
-                  </label>
-                  <input
-                    type="text"
-                    id="guests"
-                    name="guests"
-                    value={formData.guests}
-                    onChange={handleChange}
-                    className="w-full px-4 py-3 bg-white border border-[var(--border-subtle)] rounded-sm focus:outline-none focus:ring-2 focus:ring-[var(--accent-wine)] transition-all"
-                  />
-                </div>
-
-                {/* Source */}
-                <div>
-                  <label
-                    htmlFor="source"
-                    className="block text-sm font-medium text-[var(--foreground)] mb-2"
-                  >
-                    {contacto.fields.source}
-                  </label>
                   <select
                     id="source"
                     name="source"
                     value={formData.source}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 bg-white border border-[var(--border-subtle)] rounded-sm focus:outline-none focus:ring-2 focus:ring-[var(--accent-wine)] transition-all"
+                    className="w-full py-3 bg-transparent border-b border-[var(--foreground)]/20 focus:border-[var(--foreground)] outline-none transition-colors text-sm text-[var(--foreground)]/40 focus:text-[var(--foreground)]"
+                    style={{ color: formData.source ? 'var(--foreground)' : undefined }}
                   >
-                    <option value="">{contacto.selectOption}</option>
+                    <option value="">{contacto.fields.source}</option>
                     {contacto.sourceOptions.map((option) => (
                       <option key={option} value={option}>
                         {option}
@@ -199,43 +195,53 @@ export default function Contacto() {
                   </select>
                 </div>
 
-                {/* Message */}
+                {/* Row 5: Message */}
                 <div>
-                  <label
-                    htmlFor="message"
-                    className="block text-sm font-medium text-[var(--foreground)] mb-2"
-                  >
-                    {contacto.fields.message}
-                  </label>
                   <textarea
                     id="message"
                     name="message"
-                    rows={6}
+                    rows={3}
                     required
+                    placeholder={contacto.fields.message}
                     value={formData.message}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 bg-white border border-[var(--border-subtle)] rounded-sm focus:outline-none focus:ring-2 focus:ring-[var(--accent-wine)] transition-all resize-none"
+                    className="w-full py-3 bg-transparent border-b border-[var(--foreground)]/20 focus:border-[var(--foreground)] outline-none transition-colors resize-none placeholder:text-[var(--foreground)]/40 placeholder:text-sm text-[var(--foreground)]"
                   />
                 </div>
 
                 {/* Submit Button */}
-                <button
-                  type="submit"
-                  className="w-full px-8 py-3 border border-[var(--foreground)] text-[var(--foreground)] text-sm tracking-widest uppercase hover:bg-[var(--foreground)] hover:text-white transition-all duration-300"
-                >
-                  {contacto.submitButton}
-                </button>
-              </form>
+                <div className="pt-6">
+                  <button
+                    type="submit"
+                    disabled={isSubmitting}
+                    className="px-10 py-3 border border-[var(--foreground)] text-[var(--foreground)] text-sm tracking-widest uppercase hover:bg-[var(--foreground)] hover:text-white transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+                  >
+                    {isSubmitting ? "Enviando..." : contacto.submitButton}
+                  </button>
+                </div>
 
-              {/* Disclaimer */}
-              <p className="mt-8 text-sm text-[var(--foreground)]/60 leading-relaxed text-center">
-                {contacto.disclaimer}
-              </p>
+                {/* Status Messages */}
+                {submitStatus === "success" && (
+                  <p className="pt-4 text-sm text-green-700">
+                    {contacto.successMessage}
+                  </p>
+                )}
+                {submitStatus === "error" && (
+                  <p className="pt-4 text-sm text-red-700">
+                    Error al enviar. Por favor intenta de nuevo o escríbenos a hola@arrebolweddings.com
+                  </p>
+                )}
+
+                {/* Disclaimer */}
+                <p className="pt-6 text-xs text-[var(--foreground)]/50 leading-relaxed">
+                  {contacto.disclaimer}
+                </p>
+              </form>
             </FadeIn>
 
             {/* Image Column */}
             <FadeIn delay={400}>
-              <div className="relative aspect-[4/5] max-w-lg mx-auto lg:mx-0 lg:ml-auto sticky top-8">
+              <div className="relative aspect-[3/4] w-full sticky top-24">
                 <Image
                   src="/images/gallery/SyP-273.webp"
                   alt="Contact Arrebol Weddings"

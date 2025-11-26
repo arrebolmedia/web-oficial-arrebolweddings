@@ -432,7 +432,7 @@ export const contentEs = {
       phone: "Teléfono",
       date: "Fecha tentativa de la boda",
       venue: "Lugar / venue (si ya lo tienen)",
-      guests: "Número aproximado de invitados",
+      guests: "Número de invitados",
       source: "Cómo nos conocieron",
       message: "Mensaje",
     },
