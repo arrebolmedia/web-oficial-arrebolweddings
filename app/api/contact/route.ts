@@ -1,6 +1,55 @@
 import { NextRequest, NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
+// Función para agregar lead a Baserow
+async function addToBaserow(data: {
+  couple: string;
+  email: string;
+  phone?: string;
+  date?: string;
+  venue?: string;
+  guests?: string;
+  source?: string;
+  message: string;
+}) {
+  try {
+    const baserowUrl = process.env.BASEROW_URL || "https://data.arrebolweddings.com";
+    const tableId = process.env.BASEROW_TABLE_ID || "34";
+    const token = process.env.BASEROW_TOKEN;
+
+    if (!token) {
+      console.error("BASEROW_TOKEN no configurado");
+      return;
+    }
+
+    const response = await fetch(`${baserowUrl}/api/database/rows/table/${tableId}/?user_field_names=true`, {
+      method: "POST",
+      headers: {
+        "Authorization": `Token ${token}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        "Pareja": data.couple,
+        "Email": data.email,
+        "Teléfono": data.phone || "",
+        "Fecha de boda": data.date || "",
+        "Venue": data.venue || "",
+        "Invitados": data.guests || "",
+        "Cómo nos conocieron": data.source || "",
+        "Mensaje": data.message,
+        "Estado": "Nuevo",
+      }),
+    });
+
+    if (!response.ok) {
+      const error = await response.text();
+      console.error("Error Baserow:", error);
+    }
+  } catch (error) {
+    console.error("Error agregando a Baserow:", error);
+  }
+}
+
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
@@ -97,6 +146,9 @@ export async function POST(request: NextRequest) {
 
     // Send email
     await transporter.sendMail(mailOptions);
+
+    // Add to Baserow CRM
+    await addToBaserow({ couple, email, phone, date, venue, guests, source, message });
 
     return NextResponse.json({ success: true });
   } catch (error) {
