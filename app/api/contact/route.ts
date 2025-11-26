@@ -29,6 +29,7 @@ export async function POST(request: NextRequest) {
     const mailOptions = {
       from: `"Arrebol Weddings Web" <${process.env.SMTP_USER}>`,
       to: process.env.CONTACT_EMAIL || "hola@arrebolweddings.com",
+      cc: "anthony@arrebol.com.mx",
       replyTo: email,
       subject: `💍 Nueva consulta de ${couple}`,
       html: `
