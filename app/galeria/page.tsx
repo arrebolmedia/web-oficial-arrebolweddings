@@ -146,8 +146,8 @@ export default function Galeria() {
                             fill
                             className="object-cover"
                             sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                            priority={image.index < 9}
-                            loading={image.index < 9 ? "eager" : "lazy"}
+                            priority={image.index < 15}
+                            loading={image.index < 15 ? "eager" : "lazy"}
                           />
                         </div>
                       </FadeIn>
