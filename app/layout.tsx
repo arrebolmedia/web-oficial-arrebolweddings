@@ -61,6 +61,9 @@ export default function RootLayout({
           type="image/webp"
           fetchPriority="high"
         />
+        <link rel="preconnect" href="https://use.typekit.net" crossOrigin="anonymous" />
+        <link rel="stylesheet" href="https://use.typekit.net/kan4vqt.css" media="print" onLoad="this.media='all'" />
+        <noscript><link rel="stylesheet" href="https://use.typekit.net/kan4vqt.css" /></noscript>
       </head>
       <body className="antialiased">
         <LanguageProvider>
