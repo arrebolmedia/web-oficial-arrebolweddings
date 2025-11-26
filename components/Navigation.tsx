@@ -3,12 +3,17 @@
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useLanguage } from "@/app/context/LanguageContext";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
   const lastScrollY = useRef(0);
   const pathname = usePathname();
+  const { language, setLanguage } = useLanguage();
+  const isHome = pathname === "/";
+
+  console.log('Navigation - pathname:', pathname, 'isHome:', isHome);
 
   const links = [
     { href: "/", label: "Home" },
@@ -51,14 +56,41 @@ const Navigation = () => {
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 bg-[var(--background)]/95 backdrop-blur-sm border-b border-[var(--border-subtle)] transition-opacity duration-500 ${isVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Logo centrado arriba */}
-        <div className="flex justify-center py-6 border-b border-[var(--border-subtle)]">
+        {/* Fila superior: Logo centrado (solo si no es home) + Selector idioma derecha */}
+        <div className={`relative flex justify-center items-center border-b border-[var(--border-subtle)] ${isHome ? 'py-4' : 'py-6'}`}>
+          {/* DEBUG: Mostrar siempre para verificar */}
           <Link 
             href="/" 
             className="font-[var(--font-heading)] text-3xl md:text-4xl text-[var(--foreground)] hover:text-[var(--accent-wine)] transition-colors"
+            style={{ fontWeight: 300 }}
           >
-            Arrebol Weddings
+            ARREBOL WEDDINGS {isHome ? '(HOME)' : '(NOT HOME)'}
           </Link>
+          
+          {/* Selector de idioma - siempre en la derecha */}
+          <div className="absolute right-0 top-1/2 -translate-y-1/2 flex items-center gap-2">
+            <button
+              onClick={() => setLanguage('es')}
+              className={`text-sm font-medium transition-colors ${
+                language === 'es'
+                  ? 'text-[var(--accent-wine)]'
+                  : 'text-[var(--foreground)]/60 hover:text-[var(--foreground)]'
+              }`}
+            >
+              ES
+            </button>
+            <span className="text-[var(--foreground)]/40">|</span>
+            <button
+              onClick={() => setLanguage('en')}
+              className={`text-sm font-medium transition-colors ${
+                language === 'en'
+                  ? 'text-[var(--accent-wine)]'
+                  : 'text-[var(--foreground)]/60 hover:text-[var(--foreground)]'
+              }`}
+            >
+              EN
+            </button>
+          </div>
         </div>
 
         {/* Navegación horizontal centrada abajo */}
@@ -80,9 +112,33 @@ const Navigation = () => {
           </div>
         </div>
 
-        {/* Mobile: Logo y botón en línea */}
+        {/* Mobile: Selector idioma y botón hamburguesa */}
         <div className="md:hidden flex justify-between items-center py-4">
-          <div className="flex-1"></div>
+          {/* Selector de idioma en mobile */}
+          <div className="flex items-center gap-2">
+            <button
+              onClick={() => setLanguage('es')}
+              className={`text-sm font-medium transition-colors ${
+                language === 'es'
+                  ? 'text-[var(--accent-wine)]'
+                  : 'text-[var(--foreground)]/60 hover:text-[var(--foreground)]'
+              }`}
+            >
+              ES
+            </button>
+            <span className="text-[var(--foreground)]/40">|</span>
+            <button
+              onClick={() => setLanguage('en')}
+              className={`text-sm font-medium transition-colors ${
+                language === 'en'
+                  ? 'text-[var(--accent-wine)]'
+                  : 'text-[var(--foreground)]/60 hover:text-[var(--foreground)]'
+              }`}
+            >
+              EN
+            </button>
+          </div>
+          
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="p-2 text-[var(--foreground)] hover:text-[var(--accent-wine)] transition-colors"

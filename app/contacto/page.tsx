@@ -43,17 +43,14 @@ export default function Contacto() {
   return (
     <>
       <div>
-      {/* Header */}
-      <section className="py-24 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <FadeIn>
-            <SectionHeader
-              title={contacto.title}
-              subtitle={contacto.subtitle}
-            />
-          </FadeIn>
-        </div>
-      </section>
+      {/* Header con imagen de fondo */}
+      <FadeIn>
+        <SectionHeader
+          title={contacto.title}
+          subtitle={contacto.subtitle}
+          backgroundImage="/images/gallery/TOP-AyJ-500.webp"
+        />
+      </FadeIn>
 
       {/* Form */}
       <section className="py-16 bg-[var(--background)]">

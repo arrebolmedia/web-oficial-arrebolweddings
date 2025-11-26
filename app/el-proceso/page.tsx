@@ -12,14 +12,14 @@ export default function ElProceso() {
   return (
     <>
       <div>
-      {/* Header */}
-      <section className="py-24 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <FadeIn>
-            <SectionHeader title={proceso.title} subtitle={proceso.subtitle} />
-          </FadeIn>
-        </div>
-      </section>
+      {/* Header con imagen de fondo */}
+      <FadeIn>
+        <SectionHeader 
+          title={proceso.title} 
+          subtitle={proceso.subtitle}
+          backgroundImage="/images/gallery/TOP-SyD-162.webp"
+        />
+      </FadeIn>
 
       {/* Steps */}
       <section className="py-16 bg-[var(--background)]">

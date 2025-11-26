@@ -12,17 +12,14 @@ export default function Colecciones() {
   return (
     <>
       <div>
-      {/* Header */}
-      <section className="py-24 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <FadeIn>
-            <SectionHeader
-              title={colecciones.title}
-              subtitle={colecciones.subtitle}
-            />
-          </FadeIn>
-        </div>
-      </section>
+      {/* Header con imagen de fondo */}
+      <FadeIn>
+        <SectionHeader
+          title={colecciones.title}
+          subtitle={colecciones.subtitle}
+          backgroundImage="/images/gallery/TOP-PyP-505.webp"
+        />
+      </FadeIn>
 
       {/* Collections */}
       <section className="py-16 bg-[var(--background)]">

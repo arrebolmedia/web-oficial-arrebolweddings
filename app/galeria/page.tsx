@@ -98,17 +98,14 @@ export default function Galeria() {
   return (
     <>
       <div>
-        {/* Header */}
-        <section className="py-24 bg-white">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <FadeIn>
-              <SectionHeader
-                title={galeria.title}
-                subtitle={galeria.subtitle}
-              />
-            </FadeIn>
-          </div>
-        </section>
+        {/* Header con imagen de fondo */}
+        <FadeIn>
+          <SectionHeader
+            title={galeria.title}
+            subtitle={galeria.subtitle}
+            backgroundImage="/images/gallery/TOP-KyB-236.webp"
+          />
+        </FadeIn>
 
         {/* Gallery Masonry */}
         <section className="py-16 bg-[var(--background)]">

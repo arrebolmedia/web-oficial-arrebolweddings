@@ -95,21 +95,47 @@ const HeroHeader = () => {
 
   const { hero } = content.home;
   const isHomePage = pathname === "/";
+  const isBlogPage = pathname.startsWith("/blog");
+  const shouldUseDarkNav = isHomePage || isBlogPage;
+  
+  const [hasScrolled, setHasScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setHasScrolled(window.scrollY > 100);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
     <>
-      {/* Language Switcher - Fixed Left */}
-      <div className={`fixed top-8 left-8 z-50 px-4 py-2 text-sm tracking-widest uppercase text-[var(--foreground)] transition-opacity duration-500 ${isVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
+      {/* Logo centrado arriba - Solo en páginas que NO son home */}
+      {!isHomePage && (
+        <div className={`fixed top-0 left-0 right-0 z-40 flex justify-center items-center py-6 transition-opacity duration-500 ${isVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
+          <Link 
+            href="/" 
+            className={`text-xl md:text-2xl transition-all duration-300 hover:opacity-70 ${shouldUseDarkNav || hasScrolled ? 'text-[var(--foreground)]' : 'text-white'}`}
+            style={{ fontFamily: 'benton-modern-display-conden, serif', fontWeight: 300 }}
+          >
+            ARREBOL WEDDINGS
+          </Link>
+        </div>
+      )}
+
+      {/* Language Switcher - Fixed Top Left */}
+      <div className={`fixed top-8 left-8 z-50 text-sm tracking-widest uppercase transition-all duration-500 ${isVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'} ${shouldUseDarkNav || hasScrolled ? 'text-[var(--foreground)]' : 'text-white'}`}>
         <button 
           onClick={() => setLanguage("es")}
-          className={language === "es" ? "font-bold" : "font-light hover:text-[var(--accent-wine)]"}
+          className={language === "es" ? "font-bold" : "font-light hover:opacity-70"}
         >
           ES
         </button>
         <span className="mx-2">|</span>
         <button 
           onClick={() => setLanguage("en")}
-          className={language === "en" ? "font-bold" : "font-light hover:text-[var(--accent-wine)]"}
+          className={language === "en" ? "font-bold" : "font-light hover:opacity-70"}
         >
           EN
         </button>
@@ -118,7 +144,7 @@ const HeroHeader = () => {
       {/* Hamburger Menu Button - Fixed */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className={`fixed top-8 right-8 z-50 px-4 py-2 text-sm tracking-widest uppercase text-[var(--foreground)] hover:text-[var(--accent-wine)] transition-all duration-500 ${isVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}
+        className={`fixed top-8 right-8 z-50 text-sm tracking-widest uppercase hover:opacity-70 transition-all duration-500 ${isVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'} ${shouldUseDarkNav || hasScrolled ? 'text-[var(--foreground)]' : 'text-white'}`}
         aria-label="Toggle menu"
       >
         {isOpen ? content.common.close : content.common.menu}
