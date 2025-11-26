@@ -4,6 +4,7 @@ import "./globals.css";
 import HeroHeader from "@/components/HeroHeader";
 import Footer from "@/components/Footer";
 import SmoothScroll from "@/app/components/SmoothScroll";
+import CookieAlert from "@/components/CookieAlert";
 import { LanguageProvider } from "@/app/context/LanguageContext";
 
 const playfair = Playfair_Display({
@@ -58,6 +59,7 @@ export default function RootLayout({
       <body className="antialiased">
         <LanguageProvider>
           <SmoothScroll />
+          <CookieAlert />
           <HeroHeader />
           <main>{children}</main>
           <Footer />

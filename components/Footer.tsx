@@ -7,8 +7,6 @@ const Footer = () => {
   const { content, language } = useLanguage();
   const { footer } = content;
   
-  const basePath = language === "en" ? "/en" : "";
-
   return (
     <footer className="border-t border-[var(--border-subtle)]">
       {/* Navigation Menu */}
@@ -16,31 +14,31 @@ const Footer = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <nav className="flex flex-wrap justify-center gap-x-12 gap-y-4">
             <Link
-              href={`${basePath}/`}
+              href={`/`}
               className="text-sm tracking-widest uppercase text-[var(--foreground)] hover:text-[var(--accent-wine)] transition-colors"
             >
               {content.common.navigation.home}
             </Link>
             <Link
-              href={`${basePath}/galeria`}
+              href={`/galeria`}
               className="text-sm tracking-widest uppercase text-[var(--foreground)] hover:text-[var(--accent-wine)] transition-colors"
             >
               {content.common.navigation.gallery}
             </Link>
             <Link
-              href={`${basePath}/el-proceso`}
+              href={`/el-proceso`}
               className="text-sm tracking-widest uppercase text-[var(--foreground)] hover:text-[var(--accent-wine)] transition-colors"
             >
               {content.common.navigation.process}
             </Link>
             <Link
-              href={`${basePath}/colecciones`}
+              href={`/colecciones`}
               className="text-sm tracking-widest uppercase text-[var(--foreground)] hover:text-[var(--accent-wine)] transition-colors"
             >
               {content.common.navigation.collections}
             </Link>
             <Link
-              href={`${basePath}/contacto`}
+              href={`/contacto`}
               className="text-sm tracking-widest uppercase text-[var(--foreground)] hover:text-[var(--accent-wine)] transition-colors"
             >
               {content.common.navigation.contact}
@@ -87,6 +85,12 @@ const Footer = () => {
               <p className="text-xs text-[var(--foreground)]/60">
                 {footer.copyright}
               </p>
+              <Link 
+                href="/politica-de-privacidad" 
+                className="text-[10px] text-[var(--foreground)]/40 hover:text-[var(--accent-wine)] transition-colors mt-1 block"
+              >
+                {content.common.privacyPolicy.title}
+              </Link>
             </div>
           </div>
         </div>

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
@@ -9,11 +9,33 @@ import { useLanguage } from "@/app/context/LanguageContext";
 const HeroHeader = () => {
   const { content, language, toggleLanguage } = useLanguage();
   const [isOpen, setIsOpen] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
+  const lastScrollY = useRef(0);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [imagesLoaded, setImagesLoaded] = useState(false);
   const [loadedCount, setLoadedCount] = useState(0);
   const [sliderImages, setSliderImages] = useState<string[]>([]);
   const pathname = usePathname();
+
+  // Scroll detection logic
+  useEffect(() => {
+    const controlNavbar = () => {
+      if (typeof window !== 'undefined') {
+        const currentScrollY = window.scrollY;
+        
+        if (currentScrollY > lastScrollY.current && currentScrollY > 100) {
+          setIsVisible(false);
+        } else {
+          setIsVisible(true);
+        }
+        
+        lastScrollY.current = currentScrollY;
+      }
+    };
+
+    window.addEventListener('scroll', controlNavbar);
+    return () => window.removeEventListener('scroll', controlNavbar);
+  }, []);
 
   // Seleccionar imágenes TOP-: primera siempre TOP-SyP-324, las demás randomizadas
   useEffect(() => {
@@ -52,18 +74,19 @@ const HeroHeader = () => {
     return () => clearInterval(interval);
   }, [imagesLoaded, sliderImages.length]);
 
-  const basePath = language === "en" ? "/en" : "";
+  const { setLanguage } = useLanguage();
   
   const links = [
-    { href: `${basePath}/`, label: content.common.navigation.home },
-    { href: `${basePath}/galeria`, label: content.common.navigation.gallery },
-    { href: `${basePath}/el-proceso`, label: content.common.navigation.process },
-    { href: `${basePath}/colecciones`, label: content.common.navigation.collections },
-    { href: `${basePath}/contacto`, label: content.common.navigation.contact },
+    { href: `/`, label: content.common.navigation.home },
+    { href: `/galeria`, label: content.common.navigation.gallery },
+    { href: `/el-proceso`, label: content.common.navigation.process },
+    { href: `/colecciones`, label: content.common.navigation.collections },
+    { href: `/blog`, label: content.common.navigation.blog },
+    { href: `/contacto`, label: content.common.navigation.contact },
   ];
 
   const isActive = (href: string) => {
-    if (href === "/" || href === "/en/") return pathname === "/" || pathname === "/en" || pathname === "/en/";
+    if (href === "/") return pathname === "/";
     return pathname.startsWith(href);
   };
 
@@ -73,26 +96,26 @@ const HeroHeader = () => {
   return (
     <>
       {/* Language Switcher - Fixed Left */}
-      <div className="fixed top-8 left-8 z-50 px-4 py-2 text-sm tracking-widest uppercase text-[var(--foreground)]">
-        <a 
-          href="/" 
+      <div className={`fixed top-8 left-8 z-50 px-4 py-2 text-sm tracking-widest uppercase text-[var(--foreground)] transition-opacity duration-500 ${isVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
+        <button 
+          onClick={() => setLanguage("es")}
           className={language === "es" ? "font-bold" : "font-light hover:text-[var(--accent-wine)]"}
         >
           ES
-        </a>
+        </button>
         <span className="mx-2">|</span>
-        <a 
-          href="/en/" 
+        <button 
+          onClick={() => setLanguage("en")}
           className={language === "en" ? "font-bold" : "font-light hover:text-[var(--accent-wine)]"}
         >
-          ENG
-        </a>
+          EN
+        </button>
       </div>
 
       {/* Hamburger Menu Button - Fixed */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="fixed top-8 right-8 z-50 px-4 py-2 text-sm tracking-widest uppercase text-[var(--foreground)] hover:text-[var(--accent-wine)] transition-colors"
+        className={`fixed top-8 right-8 z-50 px-4 py-2 text-sm tracking-widest uppercase text-[var(--foreground)] hover:text-[var(--accent-wine)] transition-all duration-500 ${isVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}
         aria-label="Toggle menu"
       >
         {isOpen ? content.common.close : content.common.menu}

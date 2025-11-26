@@ -1,11 +1,13 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
+  const lastScrollY = useRef(0);
   const pathname = usePathname();
 
   const links = [
@@ -13,6 +15,7 @@ const Navigation = () => {
     { href: "/galeria", label: "Galería" },
     { href: "/el-proceso", label: "El Proceso" },
     { href: "/colecciones", label: "Colecciones" },
+    { href: "/blog", label: "Blog" },
     { href: "/contacto", label: "Contacto" },
   ];
 
@@ -21,8 +24,32 @@ const Navigation = () => {
     return pathname.startsWith(href);
   };
 
+  useEffect(() => {
+    const controlNavbar = () => {
+      if (typeof window !== 'undefined') {
+        const currentScrollY = window.scrollY;
+        
+        // Ocultar si bajamos y pasamos de 100px
+        if (currentScrollY > lastScrollY.current && currentScrollY > 100) {
+          setIsVisible(false);
+        } else {
+          // Mostrar si subimos
+          setIsVisible(true);
+        }
+        
+        lastScrollY.current = currentScrollY;
+      }
+    };
+
+    window.addEventListener('scroll', controlNavbar);
+
+    return () => {
+      window.removeEventListener('scroll', controlNavbar);
+    };
+  }, []);
+
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-[var(--background)]/95 backdrop-blur-sm border-b border-[var(--border-subtle)]">
+    <nav className={`fixed top-0 left-0 right-0 z-50 bg-[var(--background)]/95 backdrop-blur-sm border-b border-[var(--border-subtle)] transition-opacity duration-500 ${isVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Logo centrado arriba */}
         <div className="flex justify-center py-6 border-b border-[var(--border-subtle)]">

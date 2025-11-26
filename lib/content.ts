@@ -10,7 +10,16 @@ export const contentEs = {
       gallery: "GALERÍA",
       process: "EL PROCESO",
       collections: "COLECCIONES",
+      blog: "BLOG",
       contact: "CONTACTO",
+    },
+    cookieAlert: {
+      message: "Utilizamos cookies para asegurar que tengas la mejor experiencia en nuestro sitio web.",
+      button: "Aceptar",
+    },
+    privacyPolicy: {
+      title: "Política de Privacidad",
+      content: "Contenido de la política de privacidad...",
     },
   },
   home: {
@@ -463,7 +472,16 @@ export const contentEn = {
       gallery: "GALLERY",
       process: "THE PROCESS",
       collections: "COLLECTIONS",
+      blog: "BLOG",
       contact: "CONTACT",
+    },
+    cookieAlert: {
+      message: "We use cookies to ensure that you have the best experience on our website.",
+      button: "Accept",
+    },
+    privacyPolicy: {
+      title: "Privacy Policy",
+      content: "Privacy policy content...",
     },
   },
   home: {
