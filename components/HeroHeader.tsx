@@ -37,30 +37,33 @@ const HeroHeader = () => {
     return () => window.removeEventListener('scroll', controlNavbar);
   }, []);
 
-  // Seleccionar imágenes TOP-: primera siempre TOP-SyP-324, las demás randomizadas
+  // Seleccionar imágenes TOP-: primera siempre TOP-SyP-324-hero (optimizada), las demás randomizadas
   useEffect(() => {
     const topImages = content.galeria.images.filter(img => img.startsWith('TOP-'));
-    const firstImage = 'TOP-SyP-324.webp';
-    const otherImages = topImages.filter(img => img !== firstImage).sort(() => Math.random() - 0.5);
+    const firstImage = 'TOP-SyP-324-hero.webp';
+    const regularFirstImage = 'TOP-SyP-324.webp';
+    const otherImages = topImages.filter(img => img !== regularFirstImage).sort(() => Math.random() - 0.5);
     setSliderImages([firstImage, ...otherImages]);
   }, []);
 
-  // Precargar imágenes
+  // Precargar solo la primera imagen para LCP rápido
   useEffect(() => {
     if (sliderImages.length === 0) return;
     
-    let count = 0;
-    sliderImages.forEach((image) => {
-      const img = document.createElement('img');
-      img.onload = () => {
-        count++;
-        setLoadedCount(count);
-        if (count === sliderImages.length) {
-          setImagesLoaded(true);
-        }
-      };
-      img.src = `/images/gallery/${image}`;
-    });
+    // Solo precargar la primera imagen
+    const firstImg = document.createElement('img');
+    firstImg.onload = () => {
+      setImagesLoaded(true);
+      
+      // Precargar las demás imágenes en segundo plano después
+      setTimeout(() => {
+        sliderImages.slice(1).forEach((image) => {
+          const img = document.createElement('img');
+          img.src = `/images/gallery/${image}`;
+        });
+      }, 1000);
+    };
+    firstImg.src = `/images/gallery/${sliderImages[0]}`;
   }, [sliderImages]);
 
   // Auto-avanzar el slider cada 4 segundos (solo cuando las imágenes estén cargadas)

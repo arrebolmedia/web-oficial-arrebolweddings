@@ -58,7 +58,7 @@ export default function RootLayout({
         <link
           rel="preload"
           as="image"
-          href="/images/gallery/TOP-SyP-324.webp"
+          href="/images/gallery/TOP-SyP-324-hero.webp"
           type="image/webp"
           fetchPriority="high"
         />
