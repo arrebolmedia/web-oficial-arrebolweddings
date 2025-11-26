@@ -22,6 +22,28 @@ async function addToBaserow(data: {
       return;
     }
 
+    // Mapear "Cómo nos conocieron" a los IDs de Canal en Baserow
+    const canalMap: Record<string, number> = {
+      "Instagram": 54,
+      "Recomendación": 57,
+      "Recommendation": 57,
+      "Planner": 57,
+      "Búsqueda en Google": 55, // Sitio Web
+      "Google Search": 55,
+      "Otro": 55, // Sitio Web por defecto
+      "Other": 55,
+    };
+
+    const canalId = data.source ? canalMap[data.source] || 55 : 55; // Default: Sitio Web
+
+    // Construir notas con toda la info adicional
+    const notas = [
+      `Email: ${data.email}`,
+      data.guests ? `Invitados: ${data.guests}` : null,
+      data.source ? `Nos conocieron por: ${data.source}` : null,
+      `\nMensaje:\n${data.message}`,
+    ].filter(Boolean).join("\n");
+
     const response = await fetch(`${baserowUrl}/api/database/rows/table/${tableId}/?user_field_names=true`, {
       method: "POST",
       headers: {
@@ -29,15 +51,14 @@ async function addToBaserow(data: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        "Pareja": data.couple,
-        "Email": data.email,
+        "Nombre": data.couple,
         "Teléfono": data.phone || "",
-        "Fecha de boda": data.date || "",
+        "Status": 39, // "Sin contactar"
+        "Canal": canalId,
+        "Notas": notas,
+        "Fecha del Evento": data.date || null,
         "Venue": data.venue || "",
-        "Invitados": data.guests || "",
-        "Cómo nos conocieron": data.source || "",
-        "Mensaje": data.message,
-        "Estado": "Nuevo",
+        "Tipo": 85, // "Boda"
       }),
     });
 
