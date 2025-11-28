@@ -254,6 +254,11 @@ export const contentEs = {
       "_MG_1308.webp",
       "_MG_1430.webp",
       "_MG_1471.webp",
+      "SandJ-207.webp",
+      "SandJ-214.webp",
+      "SandJ-404.webp",
+      "SandJ-414.webp",
+      "SandJ-857.webp",
     ],
   },
   proceso: {
