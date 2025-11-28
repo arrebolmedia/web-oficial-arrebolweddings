@@ -72,7 +72,7 @@ const HeroHeader = () => {
     
     const interval = setInterval(() => {
       setCurrentImageIndex((prev) => (prev + 1) % sliderImages.length);
-    }, 4000);
+    }, 3000);
 
     return () => clearInterval(interval);
   }, [imagesLoaded, sliderImages.length]);
