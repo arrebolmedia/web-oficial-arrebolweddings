@@ -233,6 +233,111 @@ Y por eso, todas las dudas merecen ser escuchadas… y resueltas.`,
   },
   {
     id: "2",
+    slug: "el-novio-tambien-importa",
+    title: "El novio también importa: la otra mitad de la historia",
+    excerpt: "A veces, sin darnos cuenta, la narrativa de una boda se inclina hacia un solo lado: el de la novia. Pero la realidad es otra, mucho más completa y más justa: El novio es igual de importante.",
+    content: `A veces, sin darnos cuenta, la narrativa de una boda se inclina hacia un solo lado: el de la novia. Lo hemos visto en blogs, en listas, en recomendaciones, en Pinterest, en conversaciones familiares. Todo gira en torno a su vestido, su maquillaje, sus emociones, su preparación.
+
+Pero la realidad es otra, mucho más completa y más justa:
+
+El novio es igual de importante.
+Su historia también cuenta.
+Su emoción también existe.
+Su camino hacia el altar también merece luz.
+
+Y cuando reconocemos eso, la boda cambia. Se vuelve más honesta, más equilibrada, más auténtica.
+
+El novio no es un invitado especial: es protagonista
+
+En muchas bodas, el novio adopta un rol silencioso casi por inercia.
+No porque quiera, sino porque el entorno lo empuja:
+menos fotos, menos preparación, menos preguntas, menos momentos pensados para él.
+
+Pero detrás de ese traje perfectamente elegido hay alguien que siente, que espera, que recuerda, que se emociona, que se cuestiona, que respira profundo antes de ver a la persona que eligió para siempre.
+
+El novio también vive su propio "first look", incluso si no hay un first look literal.
+Lo vive por dentro:
+cuando se ajusta la corbata,
+cuando un amigo le dice algo que lo quiebra,
+cuando respira antes de entrar,
+cuando escucha la música sonar,
+cuando ve la silueta de su pareja al final del pasillo.
+
+Todo eso también importa.
+
+El getting ready del novio: más que un trámite
+
+Muchos creen que el getting ready del novio "no es tan necesario".
+Pero en realidad, es un momento clave:
+
+• La convivencia con sus amigos más cercanos.
+
+• Las risas, los nervios y las bromas.
+
+• La emoción contenida.
+
+• Los detalles que él eligió: reloj, perfume, mancuernillas, corbata.
+
+• Las palabras que solo se dicen entre hombres antes de un momento así.
+
+Documentar esto le da dimensión a la historia.
+El novio no aparece "a mitad del cuento": está desde el inicio.
+
+Sus votos también pesan, su emoción también se siente
+
+Cuando los novios hablan, a veces la voz se quiebra de una forma que no se espera.
+A veces su vulnerabilidad aparece de golpe:
+una mirada, una respiración, un abrazo, un "no puedo creer que ya estamos aquí".
+
+La boda es de dos.
+El amor no se construye en un solo lado.
+La emoción tampoco.
+
+Las familias también lo viven con él
+
+La mamá del novio, el papá del novio, los hermanos, los amigos que crecieron con él…
+Ellos también están despidiendo una etapa y abrazando otra.
+
+Es un momento grande, personal, íntimo.
+Y merece ser contado.
+
+La importancia de integrarlo en la narrativa visual
+
+En Arrebol siempre queremos escuchar su voz.
+No solo la de la novia.
+Por eso preguntamos, conversamos, observamos su dinámica juntos.
+
+El novio aporta ritmo, humor, calma, intención, fuerza.
+Aporta historia.
+
+Cuando está presente en la documentación —de verdad presente— todo hace más sentido:
+las fotos, la película, el relato completo.
+
+No falta una mitad.
+No queda un hueco.
+No se inclina la balanza.
+
+Porque la boda es de dos. La historia es de dos. El amor es de dos.
+
+El novio no está "ahí también".
+Está ahí igual.
+
+Su emoción importa.
+Sus nervios importan.
+Su forma de amar importa.
+Su historia importa.
+Y sobre todo, su lugar en este día importa tanto como el de la novia.
+
+Honrar eso —en fotos, en video, en narrativa— hace que la boda se sienta verdadera.
+
+No solo completa.
+Plena.`,
+    coverImage: "/images/gallery/TOP-PyP-505.webp",
+    category: "Tips",
+    date: "Diciembre 3, 2025",
+  },
+  {
+    id: "3",
     slug: "el-first-look-por-que-ayuda",
     title: "El First Look: por qué puede ayudar (y por qué a veces no hace falta)",
     excerpt: "El First Look es uno de esos momentos que disfruto muchísimo capturar, no solo por lo emocional, sino por lo práctico que resulta para el flujo de toda la boda.",
@@ -260,7 +365,7 @@ Si estás buscando un momento íntimo, bonito, útil y que realmente mejore tu e
     date: "Noviembre 25, 2024",
   },
   {
-    id: "3",
+    id: "4",
     slug: "esperar-hasta-el-altar",
     title: "Esperar hasta el altar: la magia del primer encuentro en la ceremonia",
     excerpt: "Hay parejas que sienten, desde el principio, que quieren verse por primera vez justo en el altar. Ese momento tiene una potencia emocional única.",
@@ -302,7 +407,7 @@ Si te imaginas caminando hacia la ceremonia y viéndolo todo por primera vez en 
     date: "Noviembre 25, 2024",
   },
   {
-    id: "4",
+    id: "5",
     slug: "apolo-dioniso-amor-verdadero",
     title: "Apolo, Dioniso y el surgimiento del verdadero amor",
     excerpt: "A veces pienso que el matrimonio no es solo un acuerdo ni un ritual, sino una pequeña obra trágica en el sentido más antiguo y profundo.",
@@ -322,7 +427,7 @@ Y quizá, en esa mezcla, en ese equilibrio frágil y hermoso, es donde aparece l
     date: "Noviembre 25, 2024",
   },
   {
-    id: "5",
+    id: "6",
     slug: "consejos-disfrutar-boda-fotos",
     title: "Consejos para disfrutar tu boda y salir increíble en tus fotos",
     excerpt: "El día de tu boda está lleno de momentos únicos, y nuestra intención siempre es que lo vivas de la manera más ligera, natural y bonita posible.",
@@ -380,7 +485,7 @@ Si sigues estas recomendaciones, no solo lucirás increíble en tus fotos: te va
     date: "Noviembre 25, 2024",
   },
   {
-    id: "6",
+    id: "7",
     slug: "cuando-algo-no-sale-perfecto",
     title: "Shit Happens: por qué tu boda sigue siendo el mejor día de tu vida",
     excerpt: "Hay una verdad que nadie te dice con suficiente claridad: en todas las bodas pasa algo fuera de control. Siempre. Sin excepción.",
@@ -437,7 +542,7 @@ vienen de lo auténtico.`,
     date: "Noviembre 25, 2024",
   },
   {
-    id: "7",
+    id: "8",
     slug: "tu-boda-tu-estilo-inspiracion",
     title: "Tu boda, tu estilo: por qué sí aceptamos inspiración, ideas y referencias",
     excerpt: "En Arrebol Weddings tenemos un estilo claro, una manera muy nuestra de ver la luz, de narrar, de encontrar momentos reales. Pero también sabemos algo fundamental: tu boda es tuya, no nuestra.",
@@ -512,7 +617,7 @@ entre lo que ustedes imaginan y lo que nosotros sabemos crear.`,
     date: "Noviembre 26, 2025",
   },
   {
-    id: "8",
+    id: "9",
     slug: "damas-de-honor-verdadero-papel",
     title: "Damas de honor: su verdadero papel (y lo que nadie se atreve a decir)",
     excerpt: "Hablemos claro: las damas de honor no están ahí solamente para ponerse un vestido bonito y salir coordinadas en fotos. O al menos, no deberían.",
@@ -596,10 +701,10 @@ Por la amistad, por los años compartidos, por el cariño real.
 Tu papel es acompañarla, sostenerla y ayudarla a disfrutar el día con tranquilidad. Y si lo haces desde ese lugar, no solo tendrás fotos increíbles: serás parte de uno de los recuerdos más valiosos que ella guardará del día.`,
     coverImage: "/images/gallery/TOP-AyJ-178.webp",
     category: "Tips",
-    date: "Noviembre 26, 2025",
+    date: "Diciembre 3, 2025",
   },
   {
-    id: "9",
+    id: "10",
     slug: "importancia-tomar-decisiones-a-tiempo",
     title: "La importancia de tomar decisiones a tiempo",
     excerpt: "Hay un momento en el que todas las parejas se dan cuenta de lo mismo: la boda no se disfruta el día del evento… si no se preparó con tranquilidad antes.",
@@ -699,7 +804,7 @@ las fotos, los abrazos, las risas, los silencios, la ceremonia, el baile… todo
     date: "Diciembre 3, 2025",
   },
   {
-    id: "10",
+    id: "11",
     slug: "recomendaciones-ceremonia-religiosa",
     title: "Recomendaciones para la ceremonia religiosa: cómo vivirla con calma y hacerla aún más especial",
     excerpt: "La ceremonia religiosa suele ser el corazón emocional de la boda. Es el momento donde todo se aterriza: las promesas, la familia, la historia que los trajo hasta aquí.",
