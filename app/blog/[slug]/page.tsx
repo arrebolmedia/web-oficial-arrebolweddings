@@ -60,15 +60,18 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                 // Check if paragraph starts with a number followed by a period (e.g., "1. ", "2. ")
                 const isNumberedHeading = /^\d+\.\s/.test(trimmed);
                 
-                // Check if it's a short line that looks like a heading (no period at end, under 80 chars, single line)
+                // Check if it's a short line that looks like a heading
+                // Must be between 35-80 chars, single line, no punctuation at end
+                // This excludes short list items like "edición profesional"
                 const isTitleLike = !trimmed.includes('\n') && 
                                     trimmed.length < 80 && 
-                                    trimmed.length > 10 &&
+                                    trimmed.length > 35 &&
                                     !trimmed.endsWith('.') && 
                                     !trimmed.endsWith('?') &&
                                     !trimmed.endsWith('!') &&
                                     !trimmed.endsWith('"') &&
                                     !trimmed.endsWith(')') &&
+                                    !trimmed.endsWith(':') &&
                                     !trimmed.startsWith('—') &&
                                     !trimmed.startsWith('"') &&
                                     /[a-záéíóúñ]$/i.test(trimmed);
