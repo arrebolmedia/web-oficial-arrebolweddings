@@ -54,45 +54,70 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           
           <div className="space-y-6 text-[var(--foreground)]/70 font-light">
             {post.content ? (
-              post.content.split('\n\n').map((paragraph, index) => {
-                const trimmed = paragraph.trim();
+              (() => {
+                const paragraphs = post.content.split('\n\n');
+                const elements: React.ReactNode[] = [];
+                let i = 0;
                 
-                // Check if paragraph starts with a number followed by a period (e.g., "1. ", "2. ")
-                const isNumberedHeading = /^\d+\.\s/.test(trimmed);
-                
-                // Check if it's a short line that looks like a heading
-                // Must be between 35-80 chars, single line, no punctuation at end
-                // This excludes short list items like "edición profesional"
-                const isTitleLike = !trimmed.includes('\n') && 
-                                    trimmed.length < 80 && 
-                                    trimmed.length > 35 &&
-                                    !trimmed.endsWith('.') && 
-                                    !trimmed.endsWith('?') &&
-                                    !trimmed.endsWith('!') &&
-                                    !trimmed.endsWith('"') &&
-                                    !trimmed.endsWith(')') &&
-                                    !trimmed.endsWith(':') &&
-                                    !trimmed.startsWith('—') &&
-                                    !trimmed.startsWith('"') &&
-                                    /[a-záéíóúñ]$/i.test(trimmed);
-                
-                if (isNumberedHeading || isTitleLike) {
-                  return (
-                    <h2 
-                      key={index} 
-                      className="text-2xl md:text-3xl mt-12 mb-4 text-[var(--foreground)] font-[var(--font-heading)]"
-                    >
-                      {trimmed}
-                    </h2>
-                  );
+                while (i < paragraphs.length) {
+                  const trimmed = paragraphs[i].trim();
+                  
+                  // Check if this is the start of a bullet list
+                  if (trimmed.startsWith('•')) {
+                    const listItems: string[] = [];
+                    while (i < paragraphs.length && paragraphs[i].trim().startsWith('•')) {
+                      listItems.push(paragraphs[i].trim().substring(1).trim());
+                      i++;
+                    }
+                    elements.push(
+                      <ul key={`list-${i}`} className="list-disc list-inside space-y-2 my-6 ml-4">
+                        {listItems.map((item, idx) => (
+                          <li key={idx} className="text-[var(--foreground)]/70">{item}</li>
+                        ))}
+                      </ul>
+                    );
+                    continue;
+                  }
+                  
+                  // Check if paragraph starts with a number followed by a period (e.g., "1. ", "2. ")
+                  const isNumberedHeading = /^\d+\.\s/.test(trimmed);
+                  
+                  // Check if it's a short line that looks like a heading
+                  // Must be between 35-80 chars, single line, no punctuation at end
+                  // This excludes short list items like "edición profesional"
+                  const isTitleLike = !trimmed.includes('\n') && 
+                                      trimmed.length < 80 && 
+                                      trimmed.length > 35 &&
+                                      !trimmed.endsWith('.') && 
+                                      !trimmed.endsWith('?') &&
+                                      !trimmed.endsWith('!') &&
+                                      !trimmed.endsWith('"') &&
+                                      !trimmed.endsWith(')') &&
+                                      !trimmed.endsWith(':') &&
+                                      !trimmed.startsWith('—') &&
+                                      !trimmed.startsWith('"') &&
+                                      /[a-záéíóúñ]$/i.test(trimmed);
+                  
+                  if (isNumberedHeading || isTitleLike) {
+                    elements.push(
+                      <h2 
+                        key={i} 
+                        className="text-2xl md:text-3xl mt-12 mb-4 text-[var(--foreground)] font-[var(--font-heading)]"
+                      >
+                        {trimmed}
+                      </h2>
+                    );
+                  } else {
+                    elements.push(
+                      <p key={i} className="whitespace-pre-line">
+                        {paragraphs[i]}
+                      </p>
+                    );
+                  }
+                  i++;
                 }
-                
-                return (
-                  <p key={index} className="whitespace-pre-line">
-                    {paragraph}
-                  </p>
-                );
-              })
+                return elements;
+              })()
             ) : (
               <>
                 <p>

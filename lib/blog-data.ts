@@ -103,19 +103,19 @@ Decidir tarde suele llevar a elegir entre lo que queda disponible… no entre lo
 
 Porque detrás hay mucho más que un clic:
 
-edición profesional
+• edición profesional
 
-color y narrativa
+• color y narrativa
 
-sonido y música
+• sonido y música
 
-plataforma de entrega
+• plataforma de entrega
 
-selección entre miles de imágenes
+• selección entre miles de imágenes
 
-equipo de respaldo
+• equipo de respaldo
 
-horas de trabajo después del evento
+• horas de trabajo después del evento
 
 El costo real no es por lo que hacemos ese día, sino por lo que queda para siempre.
 
