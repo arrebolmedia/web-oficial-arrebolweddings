@@ -55,16 +55,31 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           <div className="space-y-6 text-[var(--foreground)]/70 font-light">
             {post.content ? (
               post.content.split('\n\n').map((paragraph, index) => {
-                // Check if paragraph starts with a number followed by a period (e.g., "1. ", "2. ")
-                const isNumberedHeading = /^\d+\.\s/.test(paragraph.trim());
+                const trimmed = paragraph.trim();
                 
-                if (isNumberedHeading) {
+                // Check if paragraph starts with a number followed by a period (e.g., "1. ", "2. ")
+                const isNumberedHeading = /^\d+\.\s/.test(trimmed);
+                
+                // Check if it's a short line that looks like a heading (no period at end, under 80 chars, single line)
+                const isTitleLike = !trimmed.includes('\n') && 
+                                    trimmed.length < 80 && 
+                                    trimmed.length > 10 &&
+                                    !trimmed.endsWith('.') && 
+                                    !trimmed.endsWith('?') &&
+                                    !trimmed.endsWith('!') &&
+                                    !trimmed.endsWith('"') &&
+                                    !trimmed.endsWith(')') &&
+                                    !trimmed.startsWith('—') &&
+                                    !trimmed.startsWith('"') &&
+                                    /[a-záéíóúñ]$/i.test(trimmed);
+                
+                if (isNumberedHeading || isTitleLike) {
                   return (
                     <h2 
                       key={index} 
                       className="text-2xl md:text-3xl mt-12 mb-4 text-[var(--foreground)] font-[var(--font-heading)]"
                     >
-                      {paragraph.trim()}
+                      {trimmed}
                     </h2>
                   );
                 }
