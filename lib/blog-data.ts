@@ -20,6 +20,219 @@ function calculateReadTime(text: string): string {
 const rawPosts = [
   {
     id: "1",
+    slug: "dudas-que-todos-los-novios-tienen",
+    title: "Las dudas que todos los novios tienen (aunque no siempre las digan)",
+    excerpt: "Una guía honesta para entender las objeciones más comunes al contratar foto y video de boda. Elegir a quien documentará tu boda no es una compra simple: es confiarle a alguien la memoria emocional de uno de los días más importantes de tu vida.",
+    content: `Elegir a quien documentará tu boda no es una compra simple: es confiarle a alguien la memoria emocional de uno de los días más importantes de tu vida.
+Por eso es normal tener dudas. Normal tener miedos. Normal preguntarse si es la mejor elección.
+
+Después de acompañar a decenas de parejas, reunimos aquí las objeciones más comunes —las que todos sienten, incluso si no las dicen. No están para convencerte de nada, sino para darte claridad y tranquilidad.
+
+1. "Está fuera de nuestro presupuesto…"
+
+La mayoría de las parejas desconoce lo que realmente implica foto y video profesional.
+No es solo "tomar fotos": es edición, color, sonido, narrativa, backups, equipo, horas de selección y la experiencia de anticiparse a momentos irrepetibles.
+
+El precio no refleja solo el día de la boda, sino el valor emocional de lo que quedará cuando el día termine.
+
+2. "Mi primo toma fotos, ¿podríamos contratarlo a él?"
+
+Un hobby es hermoso, pero no reemplaza la experiencia profesional.
+
+Un fotógrafo de bodas sabe trabajar bajo presión, con poca luz, con retrasos, con cambios inesperados. Sabe cuándo acercarse, cuándo desaparecer, cómo guiar sin estorbar.
+
+Un familiar puede amar la fotografía, pero no carga con la responsabilidad de un día irrepetible.
+
+3. "¿Y si no nos gustan las fotos?"
+
+Este miedo no es técnico: es emocional.
+
+Por eso la conexión es tan importante.
+Un buen equipo no busca poses forzadas, sino expresiones reales: su forma de mirarse, caminar, tocarse, reír.
+
+La fotogenia no es genética.
+Es comodidad.
+
+4. "¿Nos va a quitar mucho tiempo?"
+
+Un equipo experimentado fluye con la boda, no la detiene.
+Guía sin presionar.
+Se adapta sin invadir.
+Acompaña sin imponer.
+
+No deberías sentir que la boda gira en torno a la cámara.
+
+5. "No queremos poses incómodas."
+
+Nadie quiere poses incómodas, y nadie las necesita.
+Las mejores fotos nacen de gestos mínimos: caminar, abrazarse, hablar, respirar.
+
+Nosotros dirigimos lo indispensable; ustedes viven el momento.
+
+6. "No queremos estar todo el día frente a la cámara."
+
+Tampoco queremos eso para ustedes.
+
+Un buen fotógrafo sabe cuándo registrar y cuándo dar espacio.
+El día no debe sentirse como una producción: debe sentirse como su boda.
+
+7. "¿De verdad necesitamos video?"
+
+Cuando ven su video, lo entienden.
+
+El sonido de los votos, las voces de la familia, la música del momento, la risa que en foto solo se intuye…
+El video no repite la foto: completa la memoria.
+
+8. "¿Respetarán nuestras ideas e inspiraciones?"
+
+Sí.
+Las ideas no complican: enriquecen.
+
+Ustedes sueñan el qué.
+Nosotros resolvemos el cómo.
+La inspiración es bienvenida mientras mantengamos coherencia de estilo.
+
+9. "Podemos decidir más adelante…"
+
+Este es el pensamiento que más parejas lamentan después.
+
+Las fechas se llenan antes de lo que creen, especialmente en temporada alta.
+Decidir tarde suele llevar a elegir entre lo que queda disponible… no entre lo que querían.
+
+10. "¿Por qué cuesta tanto?"
+
+Porque detrás hay mucho más que un clic:
+
+edición profesional
+
+color y narrativa
+
+sonido y música
+
+plataforma de entrega
+
+selección entre miles de imágenes
+
+equipo de respaldo
+
+horas de trabajo después del evento
+
+El costo real no es por lo que hacemos ese día, sino por lo que queda para siempre.
+
+11. "Nos da miedo firmar un contrato que no entendamos."
+
+El contrato es claridad.
+Protege a ambas partes, define expectativas y evita sorpresas.
+Saber exactamente qué incluye, qué no incluye, tiempos, entregas y políticas… da tranquilidad.
+
+12. "¿Cómo será el trato durante la boda?"
+
+Este miedo es más común de lo que imaginas.
+
+Un buen equipo es empático, respetuoso, atento y discreto.
+Ayuda sin imponerse. Crea paz, no tensión.
+La actitud suma tanto como el resultado.
+
+13. "No queremos sentirnos en un set de grabación."
+
+Tampoco nosotros.
+La boda es una experiencia, no una película.
+
+La cámara debe acompañar, nunca protagonizar.
+
+14. "¿Y si algo les pasa el día de la boda?"
+
+Un equipo profesional tiene protocolo, respaldo, equipo duplicado, red de apoyo y soluciones ante emergencias.
+
+La confianza no está en que "no pase nada", sino en tener un plan si pasa.
+
+15. "¿Estas fotos son realmente de bodas completas?"
+
+Duda válida.
+
+Por eso es importante ver historias completas, no solo highlights.
+La boda real, con sus retos, su luz, sus tiempos y su emoción auténtica, habla más que cualquier reel perfecto.
+
+16. "Queremos ahorrar…"
+
+Es natural.
+Pero pocas inversiones emocionales duran tanto como la documentación de la boda.
+
+No es gasto del día.
+Es memoria de vida.
+
+17. "¿Vamos a perder mucho tiempo con fotos familiares?"
+
+No.
+Con una lista clara y alguien coordinando, puede resolverse en 10–15 minutos.
+Lo importante es tener orden, no prisa.
+
+18. "Tememos que no entiendan nuestro estilo."
+
+La solución es simple: hablarlo.
+Mostrar referencias.
+Alinear expectativas.
+
+La claridad previa evita decepciones.
+
+19. "¿Y si no conectamos con ustedes?"
+
+No hay buen resultado sin buena conexión.
+Es fundamental sentirse cómodos, escuchados y en confianza.
+La conexión se nota en el trato… y se revela en las fotos.
+
+20. "No somos fotogénicos."
+
+Lo escuchamos todo el tiempo.
+
+La fotogenia no es belleza.
+Es seguridad emocional, guía mínima y un ambiente cómodo.
+De eso nos encargamos nosotros.
+
+21. "No sabemos posar."
+
+Perfecto.
+Las mejores fotos no se posan; se viven.
+Nadie llega sabiendo. Para eso estamos.
+
+22. "¿Podremos ver avances?"
+
+Explicar el proceso y los tiempos ayuda a disminuir ansiedad.
+A veces mostramos una imagen seleccionada para tranquilizar, sin comprometer el flujo de trabajo.
+
+23. "Vimos tantas opciones que ya no sabemos elegir."
+
+Es normal.
+La saturación confunde.
+
+La decisión suele aclararse con dos preguntas:
+
+¿Quién nos hace sentir tranquilos?
+
+¿Qué estilo nos sigue gustando incluso después de días?
+
+El instinto es más sabio de lo que parece.
+
+La verdad detrás de todas las objeciones
+
+Las objeciones no son problemas: son señales.
+Son ventanas a lo que la pareja necesita para sentirse segura.
+
+Cuando se responden con honestidad, la contratación deja de ser un trámite y se vuelve un encuentro:
+un puente entre lo que ustedes sueñan y lo que nosotros sabemos crear.
+
+Porque documentar una boda no es solo registrar imágenes.
+Es cuidar su historia.
+Es honrarla.
+Es entender que ese día no se repite.
+
+Y por eso, todas las dudas merecen ser escuchadas… y resueltas.`,
+    coverImage: "/images/gallery/TOP-SyP-116.webp",
+    category: "Tips",
+    date: "Diciembre 3, 2025",
+  },
+  {
+    id: "2",
     slug: "el-first-look-por-que-ayuda",
     title: "El First Look: por qué puede ayudar (y por qué a veces no hace falta)",
     excerpt: "El First Look es uno de esos momentos que disfruto muchísimo capturar, no solo por lo emocional, sino por lo práctico que resulta para el flujo de toda la boda.",
@@ -47,7 +260,7 @@ Si estás buscando un momento íntimo, bonito, útil y que realmente mejore tu e
     date: "Noviembre 25, 2024",
   },
   {
-    id: "2",
+    id: "3",
     slug: "esperar-hasta-el-altar",
     title: "Esperar hasta el altar: la magia del primer encuentro en la ceremonia",
     excerpt: "Hay parejas que sienten, desde el principio, que quieren verse por primera vez justo en el altar. Ese momento tiene una potencia emocional única.",
@@ -89,7 +302,7 @@ Si te imaginas caminando hacia la ceremonia y viéndolo todo por primera vez en 
     date: "Noviembre 25, 2024",
   },
   {
-    id: "3",
+    id: "4",
     slug: "apolo-dioniso-amor-verdadero",
     title: "Apolo, Dioniso y el surgimiento del verdadero amor",
     excerpt: "A veces pienso que el matrimonio no es solo un acuerdo ni un ritual, sino una pequeña obra trágica en el sentido más antiguo y profundo.",
@@ -109,7 +322,7 @@ Y quizá, en esa mezcla, en ese equilibrio frágil y hermoso, es donde aparece l
     date: "Noviembre 25, 2024",
   },
   {
-    id: "4",
+    id: "5",
     slug: "consejos-disfrutar-boda-fotos",
     title: "Consejos para disfrutar tu boda y salir increíble en tus fotos",
     excerpt: "El día de tu boda está lleno de momentos únicos, y nuestra intención siempre es que lo vivas de la manera más ligera, natural y bonita posible.",
@@ -167,7 +380,7 @@ Si sigues estas recomendaciones, no solo lucirás increíble en tus fotos: te va
     date: "Noviembre 25, 2024",
   },
   {
-    id: "5",
+    id: "6",
     slug: "cuando-algo-no-sale-perfecto",
     title: "Shit Happens: por qué tu boda sigue siendo el mejor día de tu vida",
     excerpt: "Hay una verdad que nadie te dice con suficiente claridad: en todas las bodas pasa algo fuera de control. Siempre. Sin excepción.",
@@ -224,7 +437,7 @@ vienen de lo auténtico.`,
     date: "Noviembre 25, 2024",
   },
   {
-    id: "6",
+    id: "7",
     slug: "tu-boda-tu-estilo-inspiracion",
     title: "Tu boda, tu estilo: por qué sí aceptamos inspiración, ideas y referencias",
     excerpt: "En Arrebol Weddings tenemos un estilo claro, una manera muy nuestra de ver la luz, de narrar, de encontrar momentos reales. Pero también sabemos algo fundamental: tu boda es tuya, no nuestra.",
@@ -299,7 +512,7 @@ entre lo que ustedes imaginan y lo que nosotros sabemos crear.`,
     date: "Noviembre 26, 2025",
   },
   {
-    id: "7",
+    id: "8",
     slug: "damas-de-honor-verdadero-papel",
     title: "Damas de honor: su verdadero papel (y lo que nadie se atreve a decir)",
     excerpt: "Hablemos claro: las damas de honor no están ahí solamente para ponerse un vestido bonito y salir coordinadas en fotos. O al menos, no deberían.",
@@ -386,7 +599,7 @@ Tu papel es acompañarla, sostenerla y ayudarla a disfrutar el día con tranquil
     date: "Noviembre 26, 2025",
   },
   {
-    id: "8",
+    id: "9",
     slug: "importancia-tomar-decisiones-a-tiempo",
     title: "La importancia de tomar decisiones a tiempo",
     excerpt: "Hay un momento en el que todas las parejas se dan cuenta de lo mismo: la boda no se disfruta el día del evento… si no se preparó con tranquilidad antes.",
@@ -486,7 +699,7 @@ las fotos, los abrazos, las risas, los silencios, la ceremonia, el baile… todo
     date: "Diciembre 3, 2025",
   },
   {
-    id: "9",
+    id: "10",
     slug: "recomendaciones-ceremonia-religiosa",
     title: "Recomendaciones para la ceremonia religiosa: cómo vivirla con calma y hacerla aún más especial",
     excerpt: "La ceremonia religiosa suele ser el corazón emocional de la boda. Es el momento donde todo se aterriza: las promesas, la familia, la historia que los trajo hasta aquí.",
