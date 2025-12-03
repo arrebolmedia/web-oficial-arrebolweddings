@@ -52,9 +52,29 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             {post.excerpt}
           </p>
           
-          <div className="space-y-6 text-[var(--foreground)]/70 font-light whitespace-pre-line">
+          <div className="space-y-6 text-[var(--foreground)]/70 font-light">
             {post.content ? (
-              post.content
+              post.content.split('\n\n').map((paragraph, index) => {
+                // Check if paragraph starts with a number followed by a period (e.g., "1. ", "2. ")
+                const isNumberedHeading = /^\d+\.\s/.test(paragraph.trim());
+                
+                if (isNumberedHeading) {
+                  return (
+                    <h2 
+                      key={index} 
+                      className="text-2xl md:text-3xl mt-12 mb-4 text-[var(--foreground)] font-[var(--font-heading)]"
+                    >
+                      {paragraph.trim()}
+                    </h2>
+                  );
+                }
+                
+                return (
+                  <p key={index} className="whitespace-pre-line">
+                    {paragraph}
+                  </p>
+                );
+              })
             ) : (
               <>
                 <p>
