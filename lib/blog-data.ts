@@ -255,7 +255,7 @@ En cambio, al tener ya sus fotos listas y al pasar por el coctel, llegan a la ce
 Y al final, lo más valioso para mí es ver cómo un First Look transforma el día. Las parejas llegan a la ceremonia con otra energía: más tranquilos, más presentes y con menos prisa. A veces incluso me dicen: "Qué bueno que lo hicimos, porque si no, sí hubiéramos andado corriendo todo el día."
 
 Si estás buscando un momento íntimo, bonito, útil y que realmente mejore tu experiencia, el First Look es una de las mejores decisiones que puedes tomar. Y si lo hacemos juntos, te aseguro que va a ser un respiro en medio de todo y uno de los recuerdos más sólidos de tu video.`,
-    coverImage: "/images/gallery/TOP-SyP-116.webp",
+    coverImage: "/images/gallery/TOP-CyD-67.webp",
     category: "Tips",
     date: "Noviembre 25, 2024",
   },
