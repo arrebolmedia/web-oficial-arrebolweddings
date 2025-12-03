@@ -485,6 +485,115 @@ las fotos, los abrazos, las risas, los silencios, la ceremonia, el baile… todo
     category: "Tips",
     date: "Diciembre 3, 2025",
   },
+  {
+    id: "9",
+    slug: "recomendaciones-ceremonia-religiosa",
+    title: "Recomendaciones para la ceremonia religiosa: cómo vivirla con calma y hacerla aún más especial",
+    excerpt: "La ceremonia religiosa suele ser el corazón emocional de la boda. Es el momento donde todo se aterriza: las promesas, la familia, la historia que los trajo hasta aquí.",
+    content: `La ceremonia religiosa suele ser el corazón emocional de la boda. Es el momento donde todo se aterriza: las promesas, la familia, la historia que los trajo hasta aquí.
+Y aunque parezca muy formal, también es un espacio lleno de detalles que pueden hacer una enorme diferencia tanto en la experiencia como en las fotos y el video.
+
+Estas son nuestras recomendaciones para vivirla con tranquilidad y sacarle el mayor brillo posible.
+
+1. Lleguen con tiempo (pero no demasiado)
+
+Llegar tarde genera tensión innecesaria, pero llegar demasiado temprano también puede causar ansiedad.
+Lo ideal es llegar con 10–15 minutos de anticipación, para que respiren, se acomoden y nadie tenga que correr.
+
+Ese respiro previo les ayuda a conectar con el momento antes de entrar.
+
+2. Entren despacio: cada paso importa
+
+En las ceremonias religiosas, la entrada tiene un peso simbólico enorme.
+
+Entrar lento, presente y con calma hace que:
+
+La emoción se asiente.
+
+Las fotos sean más bonitas.
+
+La familia pueda verlos con claridad.
+
+Nosotros podamos capturar cada gesto.
+
+No es caminar para llegar: es caminar para sentir.
+
+3. Miren a sus seres queridos… y a su pareja
+
+En el trayecto al altar, muchas personas caminan mirando al piso por nervios.
+Pero este momento es uno de los más emotivos.
+
+Levanten la mirada.
+Busquen caras conocidas.
+Reciban la emoción.
+Y apenas puedan, mírenla o mírenlo a los ojos.
+
+Esa primera mirada es magia pura.
+
+4. No contengan emociones
+
+Si lloran, lloran.
+Si se ríen, se ríen.
+Si les tiembla la voz, está perfecto.
+
+Las ceremonias religiosas no son un examen de compostura.
+Son un ritual de amor. Y las emociones reales hacen que la experiencia sea profunda… y que las fotos y video se sientan auténticos.
+
+5. Practiquen cómo se colocarán en el altar
+
+Una postura simple puede mejorar muchísimo la estética del momento:
+
+Pies ligeramente abiertos, no completamente juntos.
+
+Cuerpos rectos pero relajados.
+
+Miradas alternando entre la pareja y el momento.
+
+Evitar cubrirse mutuamente en momentos clave.
+
+Son detalles pequeños, pero se notan mucho en foto y video.
+
+6. Involucren a su familia con intención
+
+El momento de las lecturas, ofrendas, arras, anillos o lazo puede ser profundamente emotivo si quienes participan saben cuándo y cómo hacerlo.
+
+Asignar roles claros evita confusiones o retrasos.
+
+Y no está de más recordarles:
+
+"Respiren, háganlo con calma, disfruten estar aquí."
+
+7. El beso: tómense un segundo más
+
+Las parejas suelen dar un beso tan rápido que nadie lo ve —ni la familia, ni la cámara.
+
+Dense un beso bonito, natural, no exagerado…
+pero no fugaz.
+
+Ese segundo extra hace toda la diferencia.
+
+8. La salida: caminen lento y disfruten el ruido bonito
+
+La salida es uno de los momentos más alegres: música, aplausos, pétalos, burbujas, abrazos.
+
+Caminen sin prisa.
+Mírense.
+Rían.
+Gócense el instante.
+
+Es el cierre perfecto del rito.
+
+9. Recuerden: la ceremonia no es para que salga perfecta, sino para que se sienta verdadera
+
+La ceremonia religiosa es un espacio íntimo dentro de la estructura formal.
+Y aunque esté llena de momentos importantes, lo más bonito ocurre cuando ustedes se permiten vivirla, no solo pasar por ella.
+
+Si la viven desde adentro, si se permiten sentir, si respiran y se miran…
+todo lo demás cae en su lugar.`,
+    coverImage: "/images/gallery/SandJ-414.webp",
+    category: "Tips",
+    date: "Diciembre 3, 2025",
+  },
 ];
 
 export const blogPosts: BlogPost[] = rawPosts.map((post) => ({
