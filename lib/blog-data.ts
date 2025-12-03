@@ -385,6 +385,106 @@ Tu papel es acompañarla, sostenerla y ayudarla a disfrutar el día con tranquil
     category: "Tips",
     date: "Noviembre 26, 2025",
   },
+  {
+    id: "8",
+    slug: "importancia-tomar-decisiones-a-tiempo",
+    title: "La importancia de tomar decisiones a tiempo",
+    excerpt: "Hay un momento en el que todas las parejas se dan cuenta de lo mismo: la boda no se disfruta el día del evento… si no se preparó con tranquilidad antes.",
+    content: `Hay un momento en el que todas las parejas se dan cuenta de lo mismo:
+la boda no se disfruta el día del evento… si no se preparó con tranquilidad antes.
+
+Y no hablo de planeación meticulosa ni de revisar cada detalle obsesivamente. Me refiero a algo más simple, más profundo y mucho más importante:
+
+Tomar decisiones a tiempo.
+
+Suena técnico, pero en realidad es emocional:
+la anticipación reduce el estrés, mejora el resultado y te deja vivir tu boda con una libertad que no se puede comprar.
+
+1. Tomar decisiones temprano no es ser "intenso": es ser inteligente
+
+Cuando una pareja pospone decisiones ("luego vemos esto", "aún falta", "más adelante lo definimos"), pasa algo silencioso:
+
+El estrés se acumula en el aire.
+No en el día, sino en ustedes.
+
+De pronto, todas las decisiones pequeñas se juntan:
+la música, los tiempos, la logística, los proveedores, colores, detalles, permisos, flores, etc.
+
+Lo que pudo resolverse con calma… termina resolviéndose con prisa.
+Y la prisa roba algo muy valioso: claridad emocional.
+
+2. Decidir temprano = menos estrés en la recta final
+
+Cuando las decisiones ya están tomadas con semanas o meses de anticipación, llega una sensación deliciosa que pocas parejas imaginan:
+
+La libertad de disfrutar la boda antes de que empiece.
+
+El último mes ya no se siente como un examen final.
+Se siente como una cuenta regresiva bonita.
+
+Y el día de la boda… respiran.
+No piensan en proveedores, ni en detalles, ni en pagos, ni en pendientes.
+Solo en vivir.
+
+3. Decidir temprano mejora el resultado de todo
+
+Es simple: cuando hay tiempo, hay calidad.
+
+Los proveedores pueden planear mejor.
+
+Los ajustes se hacen sin urgencia.
+
+Las ideas se refinan.
+
+Las sorpresas se organizan con cariño, no con caos.
+
+El timeline fluye.
+
+La producción es más ordenada.
+
+Y ustedes tienen la mente clara para expresarnos lo que realmente quieren.
+
+La belleza de una boda se cocina lento.
+
+4. Tomar decisiones con tiempo libera la emoción del día
+
+Cuando llegamos a la boda vemos claramente quién decidió a tiempo y quién no.
+Se nota en todo:
+
+La novia respira más profundo.
+
+El novio está más relajado.
+
+Las familias disfrutan sin correr.
+
+Nosotros capturamos momentos más naturales porque la pareja no está pensando en pendientes.
+
+Tomar decisiones temprano no es un acto administrativo:
+es un acto de amor propio.
+
+Les da permiso de estar presentes.
+
+Porque el día de la boda no es para correr.
+No es para apagar incendios.
+No es para buscar soluciones.
+Es para mirarse.
+Para sentir.
+Para vivir.
+
+La decisión más importante que puedes tomar es ésta: decidir a tiempo.
+
+No para cumplir expectativas.
+No para complacer a nadie.
+No para tener la "boda perfecta".
+
+Sino para tener la boda que se siente bien, la que se vive con calma y presencia, la que se recuerda sin tensión.
+
+Y cuando ustedes están tranquilos, todo se vuelve más bonito:
+las fotos, los abrazos, las risas, los silencios, la ceremonia, el baile… todo fluye.`,
+    coverImage: "/images/gallery/SandJ-207.webp",
+    category: "Tips",
+    date: "Diciembre 3, 2025",
+  },
 ];
 
 export const blogPosts: BlogPost[] = rawPosts.map((post) => ({

@@ -170,7 +170,7 @@ export default function Colecciones() {
                     <td className="p-4 text-center text-[var(--foreground)]">✓</td>
                   </tr>
                   <tr className="border-b border-[var(--border-subtle)]">
-                    <td className="p-4 text-[var(--foreground)]/70">{colecciones.comparisonLabels.printBox}</td>
+                    <td className="p-4 text-[var(--foreground)]/70">{colecciones.comparisonLabels.digitalInvitation}</td>
                     <td className="p-4 text-center text-[var(--foreground)]">—</td>
                     <td className="p-4 text-center text-[var(--foreground)]">—</td>
                     <td className="p-4 text-center text-[var(--foreground)]">—</td>
