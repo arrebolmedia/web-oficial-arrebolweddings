@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import SectionHeader from "@/components/SectionHeader";
 
 export const metadata: Metadata = {
   title: "Política de Privacidad | Arrebol Weddings",
@@ -8,21 +9,15 @@ export const metadata: Metadata = {
 
 export default function PrivacyPolicyPage() {
   return (
-    <main className="min-h-screen bg-[var(--background)] pt-32 pb-20 px-6 md:px-12 lg:px-24">
-      <div className="max-w-4xl mx-auto">
-        {/* Header */}
-        <div className="mb-16 text-center">
-          <span className="block text-xs tracking-[0.3em] uppercase text-[var(--foreground)]/50 mb-4">
-            Legal
-          </span>
-          <h1 className="font-[var(--font-heading)] text-4xl md:text-6xl text-[var(--foreground)] mb-6">
-            Política de Privacidad
-          </h1>
-          <p className="text-sm text-[var(--foreground)]/60">
-            Última actualización: enero 2026
-          </p>
-        </div>
+    <main className="min-h-screen bg-[var(--background)]">
+      {/* Header con imagen de fondo */}
+      <SectionHeader
+        title="Política de Privacidad"
+        subtitle="Última actualización: enero 2026"
+        backgroundImage="/images/gallery/SyP-273.webp"
+      />
 
+      <div className="max-w-4xl mx-auto px-6 md:px-12 lg:px-24 py-20">
         {/* Content */}
         <article className="prose prose-lg max-w-none text-[var(--foreground)]/80 space-y-8">
           <p className="text-lg leading-relaxed">
