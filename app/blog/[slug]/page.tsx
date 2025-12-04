@@ -2,6 +2,7 @@ import { blogPosts } from "@/lib/blog-data";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import type { Metadata } from "next";
 
 interface BlogPostPageProps {
   params: Promise<{
@@ -13,6 +14,43 @@ export function generateStaticParams() {
   return blogPosts.map((post) => ({
     slug: post.slug,
   }));
+}
+
+export async function generateMetadata({ params }: BlogPostPageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const post = blogPosts.find((p) => p.slug === slug);
+
+  if (!post) {
+    return {
+      title: "Post no encontrado | Arrebol Weddings",
+    };
+  }
+
+  return {
+    title: `${post.title} | Arrebol Weddings`,
+    description: post.excerpt,
+    openGraph: {
+      title: post.title,
+      description: post.excerpt,
+      type: "article",
+      locale: "es_MX",
+      siteName: "Arrebol Weddings",
+      images: [
+        {
+          url: post.coverImage,
+          width: 1200,
+          height: 630,
+          alt: post.title,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post.title,
+      description: post.excerpt,
+      images: [post.coverImage],
+    },
+  };
 }
 
 export default async function BlogPostPage({ params }: BlogPostPageProps) {

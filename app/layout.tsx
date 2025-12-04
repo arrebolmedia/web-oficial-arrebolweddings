@@ -22,6 +22,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://arrebolweddings.com"),
   title: "Arrebol Weddings | Fotografía y Video de Bodas en México",
   description: "Capturamos el tipo de recuerdos que se vuelven más valiosos con el tiempo. Fotografía y video de bodas en México con un estilo cercano, honesto y sin poses.",
   openGraph: {
