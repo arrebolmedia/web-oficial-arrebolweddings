@@ -4,6 +4,7 @@ import About from "@/app/components/About";
 import Philosophy from "@/app/components/Philosophy";
 import Process from "@/app/components/Process";
 import Testimonials from "@/app/components/Testimonials";
+import BlogPreview from "@/app/components/BlogPreview";
 import FinalCta from "@/app/components/FinalCta";
 
 export const metadata: Metadata = {
@@ -20,6 +21,7 @@ export default function Home() {
       <Philosophy />
       <Process />
       <Testimonials />
+      <BlogPreview />
       <FinalCta />
     </>
   );

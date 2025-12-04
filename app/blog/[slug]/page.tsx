@@ -66,6 +66,14 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
   const prevPost = currentIndex < blogPosts.length - 1 ? blogPosts[currentIndex + 1] : null;
   const nextPost = currentIndex > 0 ? blogPosts[currentIndex - 1] : null;
 
+  // Get random related posts (excluding current, prev, and next)
+  const excludeIds = [post.id, prevPost?.id, nextPost?.id].filter(Boolean);
+  const availablePosts = blogPosts.filter((p) => !excludeIds.includes(p.id));
+  
+  // Shuffle and pick 3
+  const shuffled = [...availablePosts].sort(() => Math.random() - 0.5);
+  const relatedPosts = shuffled.slice(0, 3);
+
   return (
     <article className="min-h-screen bg-[var(--background)] pt-24 pb-20">
       {/* Hero Section */}
@@ -205,8 +213,58 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         </div>
       </div>
 
+      {/* Related Posts Section */}
+      {relatedPosts.length > 0 && (
+        <div className="py-20 bg-[var(--foreground)]/[0.02]">
+          <div className="max-w-7xl mx-auto px-6 md:px-12">
+            <div className="text-center mb-12">
+              <p className="text-xs tracking-[0.3em] uppercase text-[var(--foreground)]/60 mb-4">
+                SIGUE LEYENDO
+              </p>
+              <h2 className="font-[var(--font-heading)] text-3xl md:text-4xl">
+                También te puede interesar
+              </h2>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {relatedPosts.map((relatedPost) => (
+                <Link 
+                  key={relatedPost.id} 
+                  href={`/blog/${relatedPost.slug}`}
+                  className="group"
+                >
+                  <article className="h-full flex flex-col">
+                    <div className="relative aspect-[3/4] overflow-hidden mb-6">
+                      <Image
+                        src={relatedPost.coverImage}
+                        alt={relatedPost.title}
+                        fill
+                        className="object-cover transition-transform duration-700 group-hover:scale-105"
+                      />
+                      <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
+                    </div>
+                    
+                    <div className="flex-1 flex flex-col">
+                      <p className="text-xs tracking-[0.2em] uppercase text-[var(--foreground)]/50 mb-3">
+                        {relatedPost.category}
+                      </p>
+                      <h3 className="font-[var(--font-heading)] text-xl md:text-2xl mb-3 group-hover:text-[var(--accent-wine)] transition-colors duration-300 line-clamp-2">
+                        {relatedPost.title}
+                      </h3>
+                      <p className="font-light text-sm text-[var(--foreground)]/60 line-clamp-3">
+                        {relatedPost.excerpt}
+                      </p>
+                    </div>
+                  </article>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* Navigation Back */}
-      <div className="max-w-3xl mx-auto px-6 md:px-12 pb-20">
+      <div className="max-w-3xl mx-auto px-6 md:px-12 pt-16 pb-20">
         {/* Previous/Next Navigation */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
           {prevPost ? (
