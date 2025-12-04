@@ -233,6 +233,138 @@ Y por eso, todas las dudas merecen ser escuchadas… y resueltas.`,
   },
   {
     id: "2",
+    slug: "recomendaciones-fotos-save-the-date",
+    title: "Recomendaciones para tus fotos \"Save The Date\"",
+    excerpt: "La sesión Save The Date es el primer capítulo visual de su boda. No son solo imágenes bonitas para redes o invitaciones: son un retrato de quienes son como pareja fuera del vestido, el traje, los nervios y la ceremonia.",
+    content: `La sesión Save The Date es el primer capítulo visual de su boda. No son solo imágenes bonitas para redes o invitaciones: son un retrato de quienes son como pareja fuera del vestido, el traje, los nervios y la ceremonia. Por eso vale la pena prepararlas con calma y disfrutarlas como un momento íntimo antes de todo lo demás.
+
+Aquí te dejamos recomendaciones para que la sesión fluya y se sienta auténtica.
+
+1. Elijan una locación que les diga algo (o que al menos se sienta ustedes)
+
+No tiene que ser espectacular, solo resonar con su esencia como pareja. Puede ser:
+
+• Un café que aman
+
+• Un parque que frecuentan
+
+• Su ciudad favorita
+
+• Un espacio moderno y minimalista
+
+• Un lugar con naturaleza
+
+• Su hogar si quieren algo íntimo
+
+La locación no cuenta la historia por ustedes, pero sí la sostiene.
+
+2. Vístanse como ustedes —solo un poquito más cuidados
+
+No es una sesión editorial, pero tampoco el domingo casual. Recomendamos:
+
+• Colores neutros o tierras
+
+• Evitar logos grandes
+
+• Que combinen sin ser iguales
+
+• Outfits cómodos para moverse
+
+• Una segunda muda para variedad
+
+La clave es verse auténticos, no disfrazados.
+
+3. Vengan relajados: esto no es un examen de poses
+
+La mayoría llega con nervios o con la idea de que "no saben posar". Pero las mejores fotos salen cuando:
+
+• Caminan
+
+• Conversan
+
+• Se abrazan
+
+• Se ríen
+
+• Se miran
+
+• Se olvidan un poco de la cámara
+
+Nosotros guiamos lo mínimo necesario. La naturalidad manda.
+
+4. Traigan un elemento que los represente (si quieren)
+
+No es obligatorio, pero puede sumar:
+
+• Un libro significativo
+
+• Su mascota
+
+• Sombreros o chamarras
+
+• Una flor
+
+• Algo de su historia (polaroids, boletos, etc.)
+
+Un detalle puede darle personalidad sin que parezca producción.
+
+5. La sesión dura poco… pero vale mucho
+
+Las Save The Date suelen durar entre 45 y 60 minutos. Suficiente para lograr:
+
+• Fotos cálidas
+
+• Imágenes que conectan con su personalidad
+
+• Material para invitaciones
+
+• Contenido para redes
+
+• Recuerdos previos a la boda
+
+Es una sesión ligera, pero emocionalmente valiosa.
+
+6. Sean puntuales con la luz
+
+La luz lo cambia todo. Recomendamos:
+
+• Golden hour antes del atardecer
+
+• O temprano en la mañana
+
+Si no es posible hacerlo así por agenda, no hay de qué preocuparse, nosotros haremos que funcione a cualquier hora del día.
+
+7. Permítanse disfrutar la sesión como una cita
+
+Lo más bonito es que no hay público ni protocolo. Solo ustedes. Si la viven como una salida juntos —caminar, abrazarse, bromear— la cámara lo siente.
+
+8. Confíen en el proceso —ustedes traen la historia, nosotros la hacemos visible
+
+Ustedes aportan la conexión y la energía. Nosotros ponemos la luz, los encuadres, la dirección suave y el estilo Arrebol.
+
+El resultado aparece cuando ambas partes fluyen.
+
+En resumen
+
+• Elijan un lugar que resuene con ustedes.
+
+• Vístanse como ustedes, solo más cuidados.
+
+• Sean naturales, no perfectos.
+
+• Usen la luz correcta.
+
+• Añadan un detalle personal si quieren.
+
+• Disfruten el momento.
+
+Las fotos Save The Date no son un trámite previo. Son el primer retrato de quienes son, justo antes de convertirse en esposos.`,
+    coverImage: "/images/gallery/TOP-CyD-41.webp",
+    category: "Tips",
+    date: "Diciembre 4, 2025",
+  },
+  {
+    id: "3",
     slug: "el-novio-tambien-importa",
     title: "El novio también importa: la otra mitad de la historia",
     excerpt: "A veces, sin darnos cuenta, la narrativa de una boda se inclina hacia un solo lado: el de la novia. Pero la realidad es otra, mucho más completa y más justa: El novio es igual de importante.",
@@ -337,7 +469,7 @@ Plena.`,
     date: "Diciembre 3, 2025",
   },
   {
-    id: "3",
+    id: "4",
     slug: "el-first-look-por-que-ayuda",
     title: "El First Look: por qué puede ayudar (y por qué a veces no hace falta)",
     excerpt: "El First Look es uno de esos momentos que disfruto muchísimo capturar, no solo por lo emocional, sino por lo práctico que resulta para el flujo de toda la boda.",
@@ -365,7 +497,7 @@ Si estás buscando un momento íntimo, bonito, útil y que realmente mejore tu e
     date: "Noviembre 25, 2024",
   },
   {
-    id: "4",
+    id: "5",
     slug: "esperar-hasta-el-altar",
     title: "Esperar hasta el altar: la magia del primer encuentro en la ceremonia",
     excerpt: "Hay parejas que sienten, desde el principio, que quieren verse por primera vez justo en el altar. Ese momento tiene una potencia emocional única.",
@@ -407,7 +539,7 @@ Si te imaginas caminando hacia la ceremonia y viéndolo todo por primera vez en 
     date: "Noviembre 25, 2024",
   },
   {
-    id: "5",
+    id: "6",
     slug: "apolo-dioniso-amor-verdadero",
     title: "Apolo, Dioniso y el surgimiento del verdadero amor",
     excerpt: "A veces pienso que el matrimonio no es solo un acuerdo ni un ritual, sino una pequeña obra trágica en el sentido más antiguo y profundo.",
@@ -427,7 +559,7 @@ Y quizá, en esa mezcla, en ese equilibrio frágil y hermoso, es donde aparece l
     date: "Noviembre 25, 2024",
   },
   {
-    id: "6",
+    id: "7",
     slug: "consejos-disfrutar-boda-fotos",
     title: "Consejos para disfrutar tu boda y salir increíble en tus fotos",
     excerpt: "El día de tu boda está lleno de momentos únicos, y nuestra intención siempre es que lo vivas de la manera más ligera, natural y bonita posible.",
@@ -485,7 +617,7 @@ Si sigues estas recomendaciones, no solo lucirás increíble en tus fotos: te va
     date: "Noviembre 25, 2024",
   },
   {
-    id: "7",
+    id: "8",
     slug: "cuando-algo-no-sale-perfecto",
     title: "Shit Happens: por qué tu boda sigue siendo el mejor día de tu vida",
     excerpt: "Hay una verdad que nadie te dice con suficiente claridad: en todas las bodas pasa algo fuera de control. Siempre. Sin excepción.",
@@ -542,7 +674,7 @@ vienen de lo auténtico.`,
     date: "Noviembre 25, 2024",
   },
   {
-    id: "8",
+    id: "9",
     slug: "tu-boda-tu-estilo-inspiracion",
     title: "Tu boda, tu estilo: por qué sí aceptamos inspiración, ideas y referencias",
     excerpt: "En Arrebol Weddings tenemos un estilo claro, una manera muy nuestra de ver la luz, de narrar, de encontrar momentos reales. Pero también sabemos algo fundamental: tu boda es tuya, no nuestra.",
@@ -617,7 +749,7 @@ entre lo que ustedes imaginan y lo que nosotros sabemos crear.`,
     date: "Noviembre 26, 2025",
   },
   {
-    id: "9",
+    id: "10",
     slug: "damas-de-honor-verdadero-papel",
     title: "Damas de honor: su verdadero papel (y lo que nadie se atreve a decir)",
     excerpt: "Hablemos claro: las damas de honor no están ahí solamente para ponerse un vestido bonito y salir coordinadas en fotos. O al menos, no deberían.",
@@ -704,7 +836,7 @@ Tu papel es acompañarla, sostenerla y ayudarla a disfrutar el día con tranquil
     date: "Diciembre 3, 2025",
   },
   {
-    id: "10",
+    id: "11",
     slug: "importancia-tomar-decisiones-a-tiempo",
     title: "La importancia de tomar decisiones a tiempo",
     excerpt: "Hay un momento en el que todas las parejas se dan cuenta de lo mismo: la boda no se disfruta el día del evento… si no se preparó con tranquilidad antes.",
@@ -804,7 +936,7 @@ las fotos, los abrazos, las risas, los silencios, la ceremonia, el baile… todo
     date: "Diciembre 3, 2025",
   },
   {
-    id: "11",
+    id: "12",
     slug: "recomendaciones-ceremonia-religiosa",
     title: "Recomendaciones para la ceremonia religiosa: cómo vivirla con calma y hacerla aún más especial",
     excerpt: "La ceremonia religiosa suele ser el corazón emocional de la boda. Es el momento donde todo se aterriza: las promesas, la familia, la historia que los trajo hasta aquí.",
