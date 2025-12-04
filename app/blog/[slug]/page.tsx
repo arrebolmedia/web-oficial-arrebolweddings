@@ -61,6 +61,11 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     notFound();
   }
 
+  // Find previous and next posts
+  const currentIndex = blogPosts.findIndex((p) => p.slug === slug);
+  const prevPost = currentIndex < blogPosts.length - 1 ? blogPosts[currentIndex + 1] : null;
+  const nextPost = currentIndex > 0 ? blogPosts[currentIndex - 1] : null;
+
   return (
     <article className="min-h-screen bg-[var(--background)] pt-24 pb-20">
       {/* Hero Section */}
@@ -202,10 +207,45 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
       {/* Navigation Back */}
       <div className="max-w-3xl mx-auto px-6 md:px-12 pb-20">
-        <div className="pt-12 border-t border-[var(--foreground)]/10 flex justify-between items-center">
+        {/* Previous/Next Navigation */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+          {prevPost ? (
+            <Link 
+              href={`/blog/${prevPost.slug}`}
+              className="group p-6 border border-[var(--foreground)]/10 hover:border-[var(--accent-wine)]/30 transition-colors duration-300"
+            >
+              <span className="text-xs tracking-widest uppercase text-[var(--foreground)]/50 mb-2 block">
+                ← Anterior
+              </span>
+              <span className="font-[var(--font-heading)] text-lg group-hover:text-[var(--accent-wine)] transition-colors duration-300 line-clamp-2">
+                {prevPost.title}
+              </span>
+            </Link>
+          ) : (
+            <div />
+          )}
+          {nextPost ? (
+            <Link 
+              href={`/blog/${nextPost.slug}`}
+              className="group p-6 border border-[var(--foreground)]/10 hover:border-[var(--accent-wine)]/30 transition-colors duration-300 text-right"
+            >
+              <span className="text-xs tracking-widest uppercase text-[var(--foreground)]/50 mb-2 block">
+                Siguiente →
+              </span>
+              <span className="font-[var(--font-heading)] text-lg group-hover:text-[var(--accent-wine)] transition-colors duration-300 line-clamp-2">
+                {nextPost.title}
+              </span>
+            </Link>
+          ) : (
+            <div />
+          )}
+        </div>
+
+        {/* Back to Blog */}
+        <div className="pt-8 border-t border-[var(--foreground)]/10 flex justify-center">
           <Link 
             href="/blog"
-            className="text-xs tracking-widest uppercase hover:text-[var(--accent-wine)] transition-colors duration-300 flex items-center gap-2"
+            className="text-xs tracking-widest uppercase hover:text-[var(--accent-wine)] transition-colors duration-300"
           >
             ← Volver al Blog
           </Link>
