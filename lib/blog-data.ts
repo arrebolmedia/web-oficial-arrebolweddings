@@ -359,7 +359,7 @@ En resumen
 • Disfruten el momento.
 
 Las fotos Save The Date no son un trámite previo. Son el primer retrato de quienes son, justo antes de convertirse en esposos.`,
-    coverImage: "/images/gallery/TOP-CyD-41.webp",
+    coverImage: "/images/gallery/CyD-38.webp",
     category: "Tips",
     date: "Diciembre 4, 2025",
   },
