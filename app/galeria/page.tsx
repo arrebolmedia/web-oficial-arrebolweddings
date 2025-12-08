@@ -6,49 +6,108 @@ import FadeIn from "@/components/FadeIn";
 import SectionHeader from "@/components/SectionHeader";
 import { useLanguage } from "../context/LanguageContext";
 
-interface ImageData {
+interface MediaData {
   filename: string;
   index: number;
   aspectRatio: number;
+  type: 'image' | 'video';
 }
+
+type FilterType = 'all' | 'photos' | 'clips';
+
+// Lista de videos disponibles
+const videoFiles = [
+  "clip00086729.mp4", "clip00088550.mp4", "clip00088938.mp4",
+  "clip2_00086400.mp4", "clip2_00086546.mp4", "clip2_00086810.mp4",
+  "clip2_00086973.mp4", "clip2_00087810.mp4",
+  "ZOOM_clip3_00086765.mp4", "ZOOM_clip3_00088702.mp4", "ZOOM_clip3_00092678.mp4",
+  "clip4_00086769.mp4", "clip4_00087082.mp4", "clip4_00087271.mp4",
+];
 
 export default function Galeria() {
   const { content } = useLanguage();
   const { galeria } = content;
-  const [selectedImage, setSelectedImage] = useState<ImageData | null>(null);
+  const [selectedMedia, setSelectedMedia] = useState<MediaData | null>(null);
   const [columnHeights, setColumnHeights] = useState<number[]>([]);
   const [columns, setColumns] = useState(3);
-  const [imagesWithDimensions, setImagesWithDimensions] = useState<ImageData[]>([]);
+  const [mediaWithDimensions, setMediaWithDimensions] = useState<MediaData[]>([]);
+  const [activeFilter, setActiveFilter] = useState<FilterType>('all');
   const containerRef = useRef<HTMLDivElement>(null);
 
-  // Cargar dimensiones de las imágenes
+  // Cargar dimensiones de las imágenes y videos
   useEffect(() => {
-    const shuffledImages = [...galeria.images].sort(() => Math.random() - 0.5);
-
-    const loadImageDimensions = async () => {
+    const loadMediaDimensions = async () => {
+      // Cargar imágenes
+      const shuffledImages = [...galeria.images].sort(() => Math.random() - 0.5);
       const imagesData = await Promise.all(
         shuffledImages.map((filename, index) => {
-          return new Promise<ImageData>((resolve) => {
+          return new Promise<MediaData>((resolve) => {
             const img = document.createElement('img');
             img.onload = () => {
               const aspectRatio = img.width / img.height;
-              resolve({ filename, index, aspectRatio });
+              resolve({ filename, index, aspectRatio, type: 'image' });
             };
             img.onerror = () => {
-              // Default to 4:5 if image fails to load
-              resolve({ filename, index, aspectRatio: 0.8 });
+              resolve({ filename, index, aspectRatio: 0.8, type: 'image' });
             };
             img.src = `/images/gallery/${filename}`;
           });
         })
       );
-      setImagesWithDimensions(imagesData);
+
+      // Cargar videos
+      const shuffledVideos = [...videoFiles].sort(() => Math.random() - 0.5);
+      const videosData = await Promise.all(
+        shuffledVideos.map((filename, index) => {
+          return new Promise<MediaData>((resolve) => {
+            const video = document.createElement('video');
+            video.onloadedmetadata = () => {
+              const aspectRatio = video.videoWidth / video.videoHeight;
+              resolve({ filename, index: imagesData.length + index, aspectRatio, type: 'video' });
+            };
+            video.onerror = () => {
+              resolve({ filename, index: imagesData.length + index, aspectRatio: 16/9, type: 'video' });
+            };
+            video.src = `/videos/optimized/${filename}`;
+          });
+        })
+      );
+
+      // Mezclar imágenes y videos distribuyéndolos
+      const allMedia: MediaData[] = [];
+      let imageIndex = 0;
+      let videoIndex = 0;
+      let photosSinceLastVideo = 0;
+
+      while (imageIndex < imagesData.length || videoIndex < videosData.length) {
+        // Agregar un video cada 4-6 fotos
+        if (videoIndex < videosData.length && photosSinceLastVideo >= 4) {
+          allMedia.push({ ...videosData[videoIndex], index: allMedia.length });
+          videoIndex++;
+          photosSinceLastVideo = 0;
+        } else if (imageIndex < imagesData.length) {
+          allMedia.push({ ...imagesData[imageIndex], index: allMedia.length });
+          imageIndex++;
+          photosSinceLastVideo++;
+        } else if (videoIndex < videosData.length) {
+          allMedia.push({ ...videosData[videoIndex], index: allMedia.length });
+          videoIndex++;
+        }
+      }
+
+      setMediaWithDimensions(allMedia);
     };
 
-    loadImageDimensions();
+    loadMediaDimensions();
   }, [galeria.images]);
 
-  const allImages = imagesWithDimensions;
+  // Filtrar media según el filtro activo
+  const filteredMedia = mediaWithDimensions.filter(media => {
+    if (activeFilter === 'all') return true;
+    if (activeFilter === 'photos') return media.type === 'image';
+    if (activeFilter === 'clips') return media.type === 'video';
+    return true;
+  });
 
   // Calcular número de columnas basado en el ancho de la ventana
   useEffect(() => {
@@ -74,26 +133,26 @@ export default function Galeria() {
     return heights.indexOf(Math.min(...heights));
   };
 
-  // Organizar imágenes en columnas
-  const organizeImages = () => {
-    if (imagesWithDimensions.length === 0) return [];
+  // Organizar media en columnas
+  const organizeMedia = () => {
+    if (filteredMedia.length === 0) return [];
     
-    const imageColumns: ImageData[][] = Array.from({ length: columns }, () => []);
+    const mediaColumns: MediaData[][] = Array.from({ length: columns }, () => []);
     const heights = new Array(columns).fill(0);
 
-    imagesWithDimensions.forEach((image) => {
+    filteredMedia.forEach((media) => {
       const shortestCol = getShortestColumn(heights);
-      imageColumns[shortestCol].push(image);
+      mediaColumns[shortestCol].push(media);
       // Usar el aspect ratio real para calcular la altura
-      const isVertical = image.aspectRatio < 1;
+      const isVertical = media.aspectRatio < 1;
       const baseHeight = isVertical ? 400 : 300;
       heights[shortestCol] += baseHeight;
     });
 
-    return imageColumns;
+    return mediaColumns;
   };
 
-  const imageColumns = organizeImages();
+  const mediaColumns = organizeMedia();
 
   return (
     <>
@@ -111,11 +170,48 @@ export default function Galeria() {
         <section className="py-16 bg-[var(--background)]">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <FadeIn delay={200}>
-              <p className="mb-12 text-lg text-[var(--foreground)]/80 leading-relaxed text-center max-w-3xl mx-auto">
+              <p className="mb-8 text-lg text-[var(--foreground)]/80 leading-relaxed text-center max-w-3xl mx-auto">
                 {galeria.intro}
               </p>
             </FadeIn>
-            {imagesWithDimensions.length === 0 ? (
+
+            {/* Filter Menu */}
+            <FadeIn delay={300}>
+              <div className="flex justify-center gap-8 mb-12">
+                <button
+                  onClick={() => setActiveFilter('all')}
+                  className={`text-sm tracking-widest uppercase transition-all duration-300 pb-2 border-b-2 ${
+                    activeFilter === 'all'
+                      ? 'text-[var(--foreground)] border-[var(--foreground)]'
+                      : 'text-[var(--foreground)]/50 border-transparent hover:text-[var(--foreground)]/80'
+                  }`}
+                >
+                  TODO
+                </button>
+                <button
+                  onClick={() => setActiveFilter('photos')}
+                  className={`text-sm tracking-widest uppercase transition-all duration-300 pb-2 border-b-2 ${
+                    activeFilter === 'photos'
+                      ? 'text-[var(--foreground)] border-[var(--foreground)]'
+                      : 'text-[var(--foreground)]/50 border-transparent hover:text-[var(--foreground)]/80'
+                  }`}
+                >
+                  FOTOGRAFÍAS
+                </button>
+                <button
+                  onClick={() => setActiveFilter('clips')}
+                  className={`text-sm tracking-widest uppercase transition-all duration-300 pb-2 border-b-2 ${
+                    activeFilter === 'clips'
+                      ? 'text-[var(--foreground)] border-[var(--foreground)]'
+                      : 'text-[var(--foreground)]/50 border-transparent hover:text-[var(--foreground)]/80'
+                  }`}
+                >
+                  CLIPS
+                </button>
+              </div>
+            </FadeIn>
+
+            {mediaWithDimensions.length === 0 ? (
               <div className="flex justify-center items-center min-h-[400px]">
                 <p className="text-[var(--foreground)]/50">{galeria.loading}</p>
               </div>
@@ -124,28 +220,39 @@ export default function Galeria() {
                 ref={containerRef}
                 className="flex gap-4"
               >
-              {imageColumns.map((column, colIndex) => (
+              {mediaColumns.map((column, colIndex) => (
                 <div key={colIndex} className="flex-1 flex flex-col gap-4">
-                  {column.map((image) => {
+                  {column.map((media) => {
                     // Determinar el aspect ratio basado en la orientación
-                    const isVertical = image.aspectRatio < 1;
+                    const isVertical = media.aspectRatio < 1;
                     const aspectClass = isVertical ? 'aspect-[4/5]' : 'aspect-[3/2]';
                     
                     return (
-                      <FadeIn key={image.index} delay={image.index * 50}>
+                      <FadeIn key={`${media.type}-${media.filename}`} delay={media.index * 50}>
                         <div
                           className={`relative overflow-hidden cursor-pointer bg-gray-200 ${aspectClass}`}
-                          onClick={() => setSelectedImage(image)}
+                          onClick={() => setSelectedMedia(media)}
                         >
-                          <Image
-                            src={`/images/gallery/${image.filename}`}
-                            alt="Arrebol Weddings"
-                            fill
-                            className="object-cover"
-                            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                            priority={image.index < 15}
-                            loading={image.index < 15 ? "eager" : "lazy"}
-                          />
+                          {media.type === 'image' ? (
+                            <Image
+                              src={`/images/gallery/${media.filename}`}
+                              alt="Arrebol Weddings"
+                              fill
+                              className="object-cover"
+                              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                              priority={media.index < 15}
+                              loading={media.index < 15 ? "eager" : "lazy"}
+                            />
+                          ) : (
+                            <video
+                              src={`/videos/optimized/${media.filename}`}
+                              className="w-full h-full object-cover"
+                              autoPlay
+                              muted
+                              loop
+                              playsInline
+                            />
+                          )}
                         </div>
                       </FadeIn>
                     );
@@ -153,6 +260,44 @@ export default function Galeria() {
                 </div>
               ))}
               </div>
+            )}
+
+            {/* CTA para Fotografías - Pic-Time */}
+            {activeFilter === 'photos' && (
+              <FadeIn delay={400}>
+                <div className="mt-16 text-center">
+                  <p className="text-lg text-[var(--foreground)]/80 leading-relaxed mb-6 max-w-2xl mx-auto">
+                    Explora nuestras galerías completas de bodas en nuestra plataforma de entrega de fotos, donde encontrarás cientos de imágenes de cada celebración.
+                  </p>
+                  <a
+                    href="https://arrebol.pic-time.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block px-8 py-3 border border-[var(--foreground)] text-[var(--foreground)] text-sm tracking-widest uppercase hover:bg-[var(--foreground)] hover:text-white transition-all duration-300"
+                  >
+                    Ver galerías completas en Pic-Time
+                  </a>
+                </div>
+              </FadeIn>
+            )}
+
+            {/* CTA para Clips - Vidflow */}
+            {activeFilter === 'clips' && (
+              <FadeIn delay={400}>
+                <div className="mt-16 text-center">
+                  <p className="text-lg text-[var(--foreground)]/80 leading-relaxed mb-6 max-w-2xl mx-auto">
+                    Conoce cómo entregamos los videos a nuestras parejas. Esta galería muestra un ejemplo completo con todas las versiones finales.
+                  </p>
+                  <a
+                    href="https://galleries.vidflow.co/karymeybrian"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block px-8 py-3 border border-[var(--foreground)] text-[var(--foreground)] text-sm tracking-widest uppercase hover:bg-[var(--foreground)] hover:text-white transition-all duration-300"
+                  >
+                    Ver galería completa en Vidflow
+                  </a>
+                </div>
+              </FadeIn>
             )}
           </div>
         </section>
@@ -177,27 +322,42 @@ export default function Galeria() {
         </section>
 
         {/* Lightbox */}
-        {selectedImage && (
+        {selectedMedia && (
           <div
             className="fixed inset-0 z-50 bg-black/95 flex items-center justify-center p-4"
-            onClick={() => setSelectedImage(null)}
+            onClick={() => setSelectedMedia(null)}
           >
             <button
               className="absolute top-4 right-4 text-white text-4xl hover:text-[var(--accent-blush)] transition-colors"
-              onClick={() => setSelectedImage(null)}
+              onClick={() => setSelectedMedia(null)}
             >
               ×
             </button>
             <div className="max-w-5xl w-full">
-              <div className="relative aspect-[4/5] md:aspect-[3/2] rounded-sm overflow-hidden">
-                <Image
-                  src={`/images/gallery/${selectedImage.filename}`}
-                  alt="Arrebol Weddings"
-                  fill
-                  className="object-contain"
-                  sizes="(max-width: 768px) 100vw, 80vw"
-                />
-              </div>
+              {selectedMedia.type === 'image' ? (
+                <div className="relative aspect-[4/5] md:aspect-[3/2] rounded-sm overflow-hidden">
+                  <Image
+                    src={`/images/gallery/${selectedMedia.filename}`}
+                    alt="Arrebol Weddings"
+                    fill
+                    className="object-contain"
+                    sizes="(max-width: 768px) 100vw, 80vw"
+                  />
+                </div>
+              ) : (
+                <div className="relative aspect-video rounded-sm overflow-hidden">
+                  <video
+                    src={`/videos/optimized/${selectedMedia.filename}`}
+                    className="w-full h-full object-contain"
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    controls
+                    onClick={(e) => e.stopPropagation()}
+                  />
+                </div>
+              )}
             </div>
           </div>
         )}
