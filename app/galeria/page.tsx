@@ -187,7 +187,7 @@ export default function Galeria() {
                       : 'text-[var(--foreground)]/50 border-transparent hover:text-[var(--foreground)]/80'
                   }`}
                 >
-                  TODO
+                  {galeria.filters.all}
                 </button>
                 <button
                   onClick={() => setActiveFilter('photos')}
@@ -197,7 +197,7 @@ export default function Galeria() {
                       : 'text-[var(--foreground)]/50 border-transparent hover:text-[var(--foreground)]/80'
                   }`}
                 >
-                  FOTOGRAFÍAS
+                  {galeria.filters.photos}
                 </button>
                 <button
                   onClick={() => setActiveFilter('clips')}
@@ -207,7 +207,7 @@ export default function Galeria() {
                       : 'text-[var(--foreground)]/50 border-transparent hover:text-[var(--foreground)]/80'
                   }`}
                 >
-                  CLIPS
+                  {galeria.filters.clips}
                 </button>
               </div>
             </FadeIn>
@@ -268,7 +268,7 @@ export default function Galeria() {
               <FadeIn delay={400}>
                 <div className="mt-16 text-center">
                   <p className="text-lg text-[var(--foreground)]/80 leading-relaxed mb-6 max-w-2xl mx-auto">
-                    Explora nuestras galerías completas de bodas en nuestra plataforma de entrega de fotos, donde encontrarás cientos de imágenes de cada celebración.
+                    {galeria.picTime.text}
                   </p>
                   <a
                     href="https://arrebol.pic-time.com"
@@ -276,7 +276,7 @@ export default function Galeria() {
                     rel="noopener noreferrer"
                     className="inline-block px-8 py-3 border border-[var(--foreground)] text-[var(--foreground)] text-sm tracking-widest uppercase hover:bg-[var(--foreground)] hover:text-white transition-all duration-300"
                   >
-                    Ver galerías completas en Pic-Time
+                    {galeria.picTime.button}
                   </a>
                 </div>
               </FadeIn>
@@ -287,7 +287,7 @@ export default function Galeria() {
               <FadeIn delay={400}>
                 <div className="mt-16 text-center">
                   <p className="text-lg text-[var(--foreground)]/80 leading-relaxed mb-6 max-w-2xl mx-auto">
-                    Conoce cómo entregamos los videos a nuestras parejas. Esta galería muestra un ejemplo completo con todas las versiones finales.
+                    {galeria.vidflow.text}
                   </p>
                   <a
                     href="https://galleries.vidflow.co/karymeybrian"
@@ -295,7 +295,7 @@ export default function Galeria() {
                     rel="noopener noreferrer"
                     className="inline-block px-8 py-3 border border-[var(--foreground)] text-[var(--foreground)] text-sm tracking-widest uppercase hover:bg-[var(--foreground)] hover:text-white transition-all duration-300"
                   >
-                    Ver galería completa en Vidflow
+                    {galeria.vidflow.button}
                   </a>
                 </div>
               </FadeIn>

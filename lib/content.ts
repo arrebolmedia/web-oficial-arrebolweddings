@@ -157,6 +157,19 @@ export const contentEs = {
     whatsappText: "La manera más rápida de contactarnos es a través de WhatsApp ¡No dudes en escribirnos!",
     whatsappButton: "Contactar por WhatsApp",
     whatsappMessage: "¡Hola! Deseo más información sobre sus servicios de fotografía y video",
+    filters: {
+      all: "TODO",
+      photos: "FOTOGRAFÍAS",
+      clips: "CLIPS",
+    },
+    picTime: {
+      text: "Explora nuestras galerías completas de bodas en nuestra plataforma de entrega de fotos, donde encontrarás cientos de imágenes de cada celebración.",
+      button: "Ver galerías completas en Pic-Time",
+    },
+    vidflow: {
+      text: "Conoce cómo entregamos los videos a nuestras parejas. Esta galería muestra un ejemplo completo con todas las versiones finales.",
+      button: "Ver galería completa en Vidflow",
+    },
     images: [
       "AyJ-109.webp",
       "AyJ-149.webp",
@@ -449,6 +462,17 @@ export const contentEs = {
     whatsappButton: "Contactar por WhatsApp",
     whatsappMessage: "¡Hola! Deseo más información sobre sus servicios de fotografía y video",
   },
+  blog: {
+    title: "NUESTRO BLOG",
+    subtitle: "Reflexiones sobre bodas",
+    description: "Reflexiones sobre bodas, amor y todo lo que hay en medio. Artículos para ayudarte a planear, decidir y disfrutar tu camino al altar.",
+    readMore: "Ver más artículos",
+    relatedPosts: "También te puede interesar",
+    navigation: {
+      previous: "← Anterior",
+      next: "Siguiente →",
+    },
+  },
   footer: {
     tagline: "Recuerdos que se vuelven más valiosos con el tiempo",
     email: "hola@arrebolweddings.com",
@@ -617,6 +641,19 @@ export const contentEn = {
     whatsappText: "The fastest way to contact us is via WhatsApp. Don't hesitate to write to us!",
     whatsappButton: "Contact on WhatsApp",
     whatsappMessage: "Hello! I would like more information about your photography and video services",
+    filters: {
+      all: "ALL",
+      photos: "PHOTOS",
+      clips: "CLIPS",
+    },
+    picTime: {
+      text: "Explore our complete wedding galleries on our photo delivery platform, where you'll find hundreds of images from each celebration.",
+      button: "View full galleries on Pic-Time",
+    },
+    vidflow: {
+      text: "See how we deliver videos to our couples. This gallery shows a complete example with all the final versions.",
+      button: "View full gallery on Vidflow",
+    },
     images: contentEs.galeria.images,
   },
   proceso: {
@@ -813,6 +850,17 @@ export const contentEn = {
     whatsappText: "Do you prefer WhatsApp? It's the fastest way to get in touch with you!",
     whatsappButton: "Contact on WhatsApp",
     whatsappMessage: "Hello! I would like more information about your photography and video services",
+  },
+  blog: {
+    title: "OUR BLOG",
+    subtitle: "Reflections on weddings",
+    description: "Reflections on weddings, love, and everything in between. Articles to help you plan, decide, and enjoy your journey to the altar.",
+    readMore: "See more articles",
+    relatedPosts: "You may also like",
+    navigation: {
+      previous: "← Previous",
+      next: "Next →",
+    },
   },
   footer: {
     tagline: "Memories that become more valuable with time",
