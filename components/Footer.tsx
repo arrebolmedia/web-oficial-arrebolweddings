@@ -38,6 +38,12 @@ const Footer = () => {
               {content.common.navigation.collections}
             </Link>
             <Link
+              href={`/blog`}
+              className="text-sm tracking-widest uppercase text-[var(--foreground)] hover:text-[var(--accent-wine)] transition-colors"
+            >
+              {content.common.navigation.blog}
+            </Link>
+            <Link
               href={`/contacto`}
               className="text-sm tracking-widest uppercase text-[var(--foreground)] hover:text-[var(--accent-wine)] transition-colors"
             >

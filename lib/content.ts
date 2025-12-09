@@ -170,6 +170,11 @@ export const contentEs = {
       text: "Conoce cómo entregamos los videos a nuestras parejas. Esta galería muestra un ejemplo completo con todas las versiones finales.",
       button: "Ver galería completa en Vidflow",
     },
+    combined: {
+      text: "Explora nuestras galerías completas de bodas. Cada pareja recibe su galería de fotos en Pic-Time y su entrega de video en Vidflow.",
+      picTimeButton: "Ver fotos en Pic-Time",
+      vidflowButton: "Ver videos en Vidflow",
+    },
     images: [
       "AyJ-109.webp",
       "AyJ-149.webp",
@@ -472,6 +477,24 @@ export const contentEs = {
       previous: "← Anterior",
       next: "Siguiente →",
     },
+    preview: {
+      subtitle: "NUESTRO BLOG",
+      title: "Consejos, ideas e inspiración",
+      description: "Reflexiones sobre bodas, amor y todo lo que hay en medio. Artículos para ayudarte a planear, decidir y disfrutar tu camino al altar.",
+      cta: "Ver todas las entradas",
+    },
+    page: {
+      journal: "Journal",
+      heroTitle: "Historias & Inspiración",
+      heroDescription: "Un espacio dedicado a compartir bodas reales, consejos de planificación y la belleza detrás de cada detalle.",
+      latestPosts: "Últimas Publicaciones",
+      postsPage: "Publicaciones - Página",
+      articles: "artículos",
+      ctaTitle: "¿Planeando tu boda?",
+      ctaDescription: "Escríbenos para revisar tu fecha, conocer tus planes y construir juntos el recuerdo de ese día.",
+      ctaButton: "Contactar por WhatsApp",
+      ctaMessage: "Hola! Vengo del blog y quisiera más información",
+    },
   },
   footer: {
     tagline: "Recuerdos que se vuelven más valiosos con el tiempo",
@@ -653,6 +676,11 @@ export const contentEn = {
     vidflow: {
       text: "See how we deliver videos to our couples. This gallery shows a complete example with all the final versions.",
       button: "View full gallery on Vidflow",
+    },
+    combined: {
+      text: "Explore our complete wedding galleries. Each couple receives their photo gallery on Pic-Time and their video delivery on Vidflow.",
+      picTimeButton: "View photos on Pic-Time",
+      vidflowButton: "View videos on Vidflow",
     },
     images: contentEs.galeria.images,
   },
@@ -860,6 +888,24 @@ export const contentEn = {
     navigation: {
       previous: "← Previous",
       next: "Next →",
+    },
+    preview: {
+      subtitle: "OUR BLOG",
+      title: "Tips, ideas & inspiration",
+      description: "Reflections on weddings, love, and everything in between. Articles to help you plan, decide, and enjoy your journey to the altar.",
+      cta: "View all posts",
+    },
+    page: {
+      journal: "Journal",
+      heroTitle: "Stories & Inspiration",
+      heroDescription: "A space dedicated to sharing real weddings, planning tips, and the beauty behind every detail.",
+      latestPosts: "Latest Posts",
+      postsPage: "Posts - Page",
+      articles: "articles",
+      ctaTitle: "Planning your wedding?",
+      ctaDescription: "Write to us to check your date, learn about your plans, and build together the memory of that day.",
+      ctaButton: "Contact on WhatsApp",
+      ctaMessage: "Hello! I come from the blog and would like more information",
     },
   },
   footer: {

@@ -31,7 +31,6 @@ const videoFiles = [
   "clip4_00087271.mp4",
   "clip5_00086622.mp4",
   "clip5_00088046.mp4",
-  "clip5_00088504.mp4",
   "clip5_00090626.mp4",
 ];
 

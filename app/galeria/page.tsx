@@ -22,7 +22,7 @@ const videoFiles = [
   "clip2_00086973.mp4", "clip2_00087810.mp4",
   "ZOOM_clip3_00086765.mp4", "ZOOM_clip3_00088702.mp4", "ZOOM_clip3_00092678.mp4",
   "clip4_00086769.mp4", "clip4_00087082.mp4", "clip4_00087271.mp4",
-  "clip5_00086622.mp4", "clip5_00088046.mp4", "clip5_00088504.mp4", "clip5_00090626.mp4",
+  "clip5_00086622.mp4", "clip5_00088046.mp4", "clip5_00090626.mp4",
 ];
 
 export default function Galeria() {
@@ -261,6 +261,35 @@ export default function Galeria() {
                 </div>
               ))}
               </div>
+            )}
+
+            {/* CTA para TODO - Ambos botones */}
+            {activeFilter === 'all' && (
+              <FadeIn delay={400}>
+                <div className="mt-16 text-center">
+                  <p className="text-lg text-[var(--foreground)]/80 leading-relaxed mb-6 max-w-2xl mx-auto">
+                    {galeria.combined.text}
+                  </p>
+                  <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a
+                      href="https://arrebol.pic-time.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block px-8 py-3 border border-[var(--foreground)] text-[var(--foreground)] text-sm tracking-widest uppercase hover:bg-[var(--foreground)] hover:text-white transition-all duration-300"
+                    >
+                      {galeria.combined.picTimeButton}
+                    </a>
+                    <a
+                      href="https://galleries.vidflow.co/karymeybrian"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block px-8 py-3 border border-[var(--foreground)] text-[var(--foreground)] text-sm tracking-widest uppercase hover:bg-[var(--foreground)] hover:text-white transition-all duration-300"
+                    >
+                      {galeria.combined.vidflowButton}
+                    </a>
+                  </div>
+                </div>
+              </FadeIn>
             )}
 
             {/* CTA para Fotografías - Pic-Time */}

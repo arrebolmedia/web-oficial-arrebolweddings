@@ -10,18 +10,20 @@ const Navigation = () => {
   const [isVisible, setIsVisible] = useState(true);
   const lastScrollY = useRef(0);
   const pathname = usePathname();
-  const { language, setLanguage } = useLanguage();
+  const { language, setLanguage, content } = useLanguage();
   const isHome = pathname === "/";
 
   console.log('Navigation - pathname:', pathname, 'isHome:', isHome);
 
+  const { navigation } = content.common;
+
   const links = [
-    { href: "/", label: "Home" },
-    { href: "/galeria", label: "Galería" },
-    { href: "/el-proceso", label: "El Proceso" },
-    { href: "/colecciones", label: "Colecciones" },
-    { href: "/blog", label: "Blog" },
-    { href: "/contacto", label: "Contacto" },
+    { href: "/", label: navigation.home },
+    { href: "/galeria", label: navigation.gallery },
+    { href: "/el-proceso", label: navigation.process },
+    { href: "/colecciones", label: navigation.collections },
+    { href: "/blog", label: navigation.blog },
+    { href: "/contacto", label: navigation.contact },
   ];
 
   const isActive = (href: string) => {

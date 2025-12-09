@@ -6,27 +6,11 @@ import { blogPosts } from "@/lib/blog-data";
 import { useLanguage } from "@/app/context/LanguageContext";
 
 export default function BlogPreview() {
-  const { language } = useLanguage();
+  const { content } = useLanguage();
+  const { blog } = content;
   
   // Get the 3 most recent posts
   const recentPosts = blogPosts.slice(0, 3);
-
-  const content = {
-    es: {
-      subtitle: "NUESTRO BLOG",
-      title: "Consejos, ideas e inspiración",
-      description: "Reflexiones sobre bodas, amor y todo lo que hay en medio. Artículos para ayudarte a planear, decidir y disfrutar tu camino al altar.",
-      cta: "Ver todas las entradas",
-    },
-    en: {
-      subtitle: "OUR BLOG",
-      title: "Tips, ideas & inspiration",
-      description: "Reflections on weddings, love, and everything in between. Articles to help you plan, decide, and enjoy your journey to the altar.",
-      cta: "View all posts",
-    },
-  };
-
-  const t = content[language];
 
   return (
     <section className="py-24 md:py-32 bg-[var(--foreground)]/[0.02]">
@@ -34,13 +18,13 @@ export default function BlogPreview() {
         {/* Header */}
         <div className="text-center mb-16">
           <p className="text-xs tracking-[0.3em] uppercase text-[var(--foreground)]/60 mb-4">
-            {t.subtitle}
+            {blog.preview.subtitle}
           </p>
           <h2 className="font-[var(--font-heading)] text-4xl md:text-5xl lg:text-6xl mb-6">
-            {t.title}
+            {blog.preview.title}
           </h2>
           <p className="font-light text-[var(--foreground)]/70 max-w-2xl mx-auto">
-            {t.description}
+            {blog.preview.description}
           </p>
         </div>
 
@@ -87,7 +71,7 @@ export default function BlogPreview() {
             href="/blog"
             className="inline-block text-xs tracking-widest uppercase border border-[var(--foreground)] px-10 py-4 hover:bg-[var(--foreground)] hover:text-[var(--background)] transition-colors duration-300"
           >
-            {t.cta}
+            {blog.preview.cta}
           </Link>
         </div>
       </div>
