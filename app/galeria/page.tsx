@@ -22,6 +22,7 @@ const videoFiles = [
   "clip2_00086973.mp4", "clip2_00087810.mp4",
   "ZOOM_clip3_00086765.mp4", "ZOOM_clip3_00088702.mp4", "ZOOM_clip3_00092678.mp4",
   "clip4_00086769.mp4", "clip4_00087082.mp4", "clip4_00087271.mp4",
+  "clip5_00086622.mp4", "clip5_00088046.mp4", "clip5_00088504.mp4", "clip5_00090626.mp4",
 ];
 
 export default function Galeria() {
