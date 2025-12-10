@@ -54,6 +54,19 @@ export default function RootLayout({
     <html lang="es" className={`${playfair.variable} ${poppins.variable}`}>
       <head>
         <link rel="stylesheet" href="https://use.typekit.net/kan4vqt.css" />
+        {/* Google Analytics (gtag.js) */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-PEMT34VP9H"
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-PEMT34VP9H');`,
+          }}
+        />
         {/* Google Tag Manager */}
         <script
           dangerouslySetInnerHTML={{
