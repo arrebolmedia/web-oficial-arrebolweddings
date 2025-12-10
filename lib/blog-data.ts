@@ -1044,6 +1044,1460 @@ todo lo demás cae en su lugar.`,
     category: "Tips",
     date: "Diciembre 3, 2025",
   },
+  {
+    id: "13",
+    slug: "decisiones-que-mas-impactan-tu-boda",
+    title: "Antes de todo: las decisiones que más impactan tu boda (y casi nadie menciona)",
+    excerpt: "Las decisiones verdaderamente importantes —las que determinan el nivel de estrés, la fluidez del día y la calidad de toda la experiencia— se toman muchísimo antes de pensar en flores o decoración.",
+    content: `Cuando una pareja comienza a planear su boda, lo natural es pensar en flores, decoración, vestido, música… pero las decisiones verdaderamente importantes —las que determinan el nivel de estrés, la fluidez del día y la calidad de toda la experiencia— se toman muchísimo antes.
+
+Aquí te comparto las elecciones clave que casi nadie te explica, pero que hacen que una boda sea ligera, coherente y disfrutable.
+
+## 1. Definir una fecha… estratégica, no solo simbólica
+
+Elegir la fecha no es escoger un número bonito.
+Importa el clima, la temporada, la disponibilidad de venues y proveedores, el presupuesto, la agenda familiar e incluso la hora de la puesta del sol.
+
+Una fecha bien elegida simplifica todo.
+Una mal elegida complica más de lo que imaginas.
+
+## 2. Elegir el venue antes que cualquier otra cosa
+
+El venue determina:
+
+• La estética general
+• La iluminación del día
+• Los horarios permitidos
+• El tipo de ceremonia
+• El plan en caso de lluvia
+• El número de invitados
+• La logística de montaje
+• El tipo de foto y video posibles
+
+Elegir primero el venue es como elegir primero el lienzo antes de pintar: todo lo demás se construye a partir de ahí.
+
+## 3. Definir prioridades reales, no ideales
+
+¿Es más importante la música?
+¿La fotografía y el video?
+¿La comida?
+¿La ambientación?
+¿La fiesta?
+¿La ceremonia?
+
+Una boda no puede tenerlo todo al mismo nivel —y está bien.
+Hay que decidir qué es lo más importante para ustedes dos.
+
+Una boda clara en prioridades se siente coherente.
+Una boda que quiere abarcar todo se siente dispersa.
+
+## 4. Elegir el equipo de documentación (foto y video) temprano
+
+No porque sea "urgente", sino porque define:
+
+• El estilo emocional del recuerdo
+• La narrativa del día
+• La forma de planear el timeline
+• El ritmo de los getting ready y la sesión de pareja
+• La tranquilidad de saber que el día está documentado por profesionales
+
+Y sí: los mejores proveedores se agotan primero.
+
+## 5. Fijar un presupuesto honesto (y flexible)
+
+No se trata de ser rígidos, sino reales.
+
+Un buen presupuesto:
+
+• Tiene topes claros
+• Tiene margen para imprevistos
+• Se ajusta a prioridades
+• Evita estrés innecesario
+• Permite contratar calidad, no urgencia
+
+Mucho del estrés de boda viene de presupuestos mal planteados, no de costos altos.
+
+## 6. Decidir qué tipo de experiencia quieren que sea su boda
+
+No hablo del estilo visual, sino de la sensación.
+
+¿Quieren una boda íntima?
+¿Una fiesta enorme?
+¿Algo relajado?
+¿Algo elegante?
+¿Algo familiar?
+¿Algo energético?
+
+La atmósfera deseada influye en el venue, música, iluminación, código de vestimenta, tiempos, discurso y en toda la producción.
+
+## 7. Elegir quiénes serán parte del proceso… y quiénes no
+
+No todos deben opinar.
+No todos deben decidir.
+No todos deben acompañar.
+
+Elegir quiénes estarán en:
+
+• las pruebas de vestido
+• las decisiones económicas
+• la selección de proveedores
+• el getting ready
+• las conversaciones clave
+
+hace toda la diferencia entre una boda fluida y una boda enredada.
+
+## 8. Alinear expectativas entre ustedes dos
+
+Las bodas con más paz no son las más caras ni las más producidas; son las que empiezan con una conversación honesta:
+
+"¿Qué esperas del día?"
+"¿Qué te preocupa?"
+"¿Qué deseas que sí pase?"
+"¿Qué te daría igual?"
+
+Alinear visión evita discusiones, malos entendidos y decisiones apresuradas.
+
+## 9. Tener claro qué NO quieren
+
+Esto es igual de importante que definir lo que sí quieren.
+
+¿No quieren una boda protocolaria?
+¿No quieren tener mil fotos familiares?
+¿No quieren un ambiente formal?
+¿No quieren estar horas posando?
+¿No quieren discursos eternos?
+
+Decir NO a tiempo ahorra cansancio y protege la esencia del día.
+
+## 10. Decidir disfrutar el proceso, no solo el evento
+
+Planear una boda puede acercar a una pareja o desgastarla.
+
+Las parejas que disfrutan planean así:
+
+• Dan espacio a la anticipación, no a la ansiedad
+• Deciden temprano
+• Delegan
+• Escogen proveedores en los que confían y luego sueltan el control
+• Toman pausas
+• No se comparan con bodas ajenas
+
+La mejor boda no es la más perfecta:
+es la que se vivió con más calma y verdad.
+
+## En resumen
+
+Las decisiones más importantes se toman al principio, no al final.
+Y una boda planeada desde claridad y calma se siente así: ligera, coherente, inolvidable.`,
+    coverImage: "/images/gallery/TOP-SyP-116.webp",
+    category: "Tips",
+    date: "Diciembre 10, 2025",
+  },
+  {
+    id: "14",
+    slug: "como-elegir-proveedores-sin-volverte-loco",
+    title: "Cómo elegir a tus proveedores sin volverte loco: una guía honesta y sin presión",
+    excerpt: "Entre tanta recomendación, tantas opiniones familiares y tantas opciones en redes, elegir proveedores puede sentirse abrumador. Esta guía te ayuda a tomar decisiones claras y alineadas con lo que realmente importa.",
+    content: `Elegir proveedores es una de las decisiones más importantes de toda la planeación. Son quienes sostienen la experiencia de tu boda: la música, la comida, el ambiente, la coordinación, la documentación…
+Pero entre tanta recomendación, tantas opiniones familiares y tantas opciones en redes, elegir puede sentirse abrumador.
+
+Esta guía existe para ayudarte a tomar decisiones claras, tranquilas y alineadas con lo que realmente importa para ustedes.
+
+## 1. Empiecen por la energía, no por el precio
+
+Un presupuesto es importante, sí.
+Pero antes de eso, pregúntense:
+
+• ¿Conectan con esta persona?
+• ¿Les inspira confianza?
+• ¿Sienten claridad al hablar?
+• ¿Su comunicación es amable y profesional?
+• ¿Se alinean con su visión del día?
+
+Un proveedor puede ser excelente técnicamente, pero si la energía no fluye, el proceso será pesado.
+
+## 2. Evalúen experiencia real, no solo estética
+
+En redes todo se ve bonito.
+La verdadera pregunta es: ¿Pueden manejar una boda real?
+
+Mira si:
+
+• Tienen bodas completas para mostrar, no solo highlights
+• Han trabajado en venues similares al tuyo
+• Saben resolver en condiciones difíciles (lluvia, poca luz, retrasos)
+• Pueden adaptarse a diferentes temperamentos y familias
+
+La estética enamora, pero la experiencia sostiene.
+
+## 3. Lean entre líneas cuando hablen con ellos
+
+Hay señales que dicen mucho:
+
+• ¿Contestan a tiempo?
+• ¿Explican con claridad?
+• ¿Se interesan en ustedes dos o solo hablan de ellos mismos?
+• ¿Resuelven dudas con paciencia?
+• ¿Escuchan más de lo que venden?
+
+La manera en que te tratan antes de contratar es un espejo del trato durante toda la boda.
+
+## 4. No contraten por presión ni por "oferta limitada"
+
+Las bodas se disfrutan más cuando las decisiones se toman con calma, no con miedo.
+Si un proveedor usa urgencia exagerada, presión emocional o tácticas incómodas, es una señal de alerta.
+
+Un profesional de verdad no necesita manipular: inspira confianza.
+
+## 5. Busquen coherencia entre portafolio, estilo y personalidad
+
+Tu boda debe sentirse armoniosa.
+Un proveedor cuyo estilo visual o de trabajo no coincide con lo que ustedes buscan generará tensión innecesaria.
+
+Pregúntense:
+
+• ¿Este estilo se parece a lo que imaginamos?
+• ¿Podría ver esto como parte de nuestra historia?
+• ¿Nos emociona o solo nos parece "bonito"?
+
+La emoción es una brújula más precisa que cualquier checklist.
+
+## 6. Pidan claridad contractual: la transparencia es parte del servicio
+
+Un proveedor confiable tiene contratos claros con:
+
+• Alcance del servicio
+• Qué está incluido y qué no
+• Tiempos de entrega
+• Políticas de cambio o cancelación
+• Responsabilidades de ambas partes
+
+Un contrato es tranquilidad, no desconfianza.
+
+## 7. Valoren a quienes acompañan, no solo a quienes producen
+
+En la boda, el proveedor no solo "trabaja":
+convive contigo, te acompaña, interactúa con tu familia, participa en momentos íntimos.
+
+Elegir gente amable, respetuosa y empática es tan importante como elegir calidad técnica.
+
+## 8. Consideren el proceso, no solo el resultado
+
+Un proveedor confiable:
+
+• Planea contigo
+• Responde preguntas
+• Da seguimiento
+• Se coordina con los demás
+• Te orienta cuando tienes dudas
+
+Una boda fluida es el resultado de un equipo que sabe trabajar unido.
+
+## 9. Confíen en su intuición: casi siempre es correcta
+
+Si algo no vibra, no vibra.
+Si algo sí vibra, aunque cueste un poco más, probablemente valga la pena.
+
+Tu intuición no es emocional… es información acumulada que tu mente procesa más rápido que tu razón.
+
+## 10. No busquen al "mejor proveedor": busquen al adecuado para ustedes
+
+No hay un ranking universal.
+Hay compatibilidad, confianza, estilo y energía.
+
+El mejor proveedor es el que te hace sentir seguro, escuchado y tranquilo desde la primera conversación.
+
+## En resumen
+
+Elegir proveedores no debería sentirse como un mar de opciones infinitas.
+Cuando se busca lo esencial —conexión, experiencia, claridad, coherencia y confianza— las decisiones se vuelven más simples.
+
+Una boda es un trabajo de equipo.
+Y cuando eliges bien a tu equipo, todo fluye: antes, durante y después del día.`,
+    coverImage: "/images/gallery/KyB-285.webp",
+    category: "Tips",
+    date: "Diciembre 10, 2025",
+  },
+  {
+    id: "15",
+    slug: "necesito-un-wedding-planner",
+    title: "¿Necesito un wedding planner? Verdades y mitos que deberías conocer",
+    excerpt: "Una de las primeras dudas al planear una boda es si realmente necesitan un wedding planner. La verdad es que no es imprescindible para todas las bodas, pero sí puede transformar la experiencia de muchas.",
+    content: `Una de las primeras dudas que surgen al planear una boda es:
+"¿De verdad necesitamos un wedding planner?"
+
+Algunas parejas sienten que pueden con todo.
+Otras creen que un planner es un lujo innecesario.
+Y otras no tienen claro qué hace realmente.
+
+La verdad es que un planner NO es imprescindible para todas las bodas… pero SÍ puede transformar por completo la experiencia de muchas de ellas.
+
+Aquí te explicamos, con honestidad, lo que un planner hace, lo que NO hace y cuándo sí conviene tener uno.
+
+## MITO 1: "Un wedding planner es solo para bodas grandes."
+
+En realidad, lo que importa no es el tamaño, sino la complejidad.
+
+Una boda pequeña con muchos detalles puede requerir más coordinación que una boda grande pero sencilla.
+Un planner no se contrata por el número de invitados, sino por la cantidad de elementos que deben funcionar en armonía.
+
+## MITO 2: "El planner solo ve decoración."
+
+No.
+Un decorador ve decoración.
+Un planner ve todo:
+
+• Tiempos
+• Logística
+• Proveedores
+• Montaje
+• Flujo de invitados
+• Coordinación del día
+• Solución de imprevistos
+• Comunicación con familia y staff
+• Orden y ritmo del evento
+
+El planner es el director de orquesta de la boda.
+
+## MITO 3: "Nosotros podemos coordinar el día."
+
+Es posible… pero desgastante.
+
+El día de la boda no está hecho para solucionar problemas, tomar decisiones, contestar llamadas ni dar instrucciones.
+Está hecho para vivirlo, para conectarse, para emocionarse.
+
+Coordinar y disfrutar son tareas incompatibles.
+
+## MITO 4: "El planner es un gasto extra."
+
+Más bien es una inversión que ahorra estrés y, muchas veces, dinero:
+
+• Evita pagos duplicados
+• Revisa contratos
+• Negocia horarios y servicios
+• Evita errores costosos
+• Sugiere proveedores confiables
+• Optimiza tiempos de montaje y desmontaje
+
+No siempre se nota en el presupuesto, pero sí en la tranquilidad.
+
+## Verdad 1: El planner protege su visión del día
+
+El planner traduce lo que ustedes sueñan en un plan realista, ordenado y ejecutable.
+No deja que su visión se diluya entre opiniones externas o entre cientos de microdecisiones.
+
+Es un filtro, un aliado y un guardián del estilo.
+
+## Verdad 2: El planner resuelve problemas antes de que los veas
+
+Si se rompe algo, llueve, un proveedor se retrasa, un invitado importante no llega, una decoración se mueve…
+tú no deberías enterarte.
+
+Y ese es uno de los superpoderes del planner:
+eliminar problemas antes de que se conviertan en estrés.
+
+## Verdad 3: El planner hace que el día fluya
+
+Cuando hay un profesional coordinando:
+
+• No hay retrasos innecesarios
+• Los proveedores saben dónde y cuándo actuar
+• El timeline se respeta
+• Todo tiene ritmo
+• Ustedes pueden disfrutar sin pensar en nada práctico
+
+Una boda fluida se siente distinta.
+Se siente ligera.
+
+## Verdad 4: No todas las parejas lo necesitan
+
+Hay parejas:
+
+• Muy organizadas
+• Con bodas pequeñas
+• Con pocos proveedores
+• Sin decoraciones complejas
+• En venues que incluyen coordinación completa
+
+En esos casos, un planner puede ser opcional.
+
+Pero si su boda incluye detalles, dinámica familiar compleja, montaje grande, muchos proveedores o desean cero estrés…
+sí vale la pena considerarlo.
+
+## En resumen
+
+Un wedding planner no es obligatorio, pero sí puede ser la diferencia entre una boda que "sale bien" y una boda que ustedes viven plenamente, sin cargar con logística, estrés ni decisiones de último minuto.
+
+Un planner no hace magia.
+Hace estructura.
+Y cuando la estructura está resuelta, la pareja puede dedicarse a lo único que importa ese día:
+
+estar presentes.`,
+    coverImage: "/images/gallery/PyC-275.webp",
+    category: "Tips",
+    date: "Diciembre 10, 2025",
+  },
+  {
+    id: "16",
+    slug: "timeline-secreto-boda-fluida",
+    title: "El timeline: el secreto para una boda fluida, sin prisas y sin caos",
+    excerpt: "De todas las herramientas en la planeación de una boda, el timeline es el más subestimado y al mismo tiempo, el más poderoso. Un buen timeline es la estructura invisible que permite que el día fluya con calma.",
+    content: `De todas las herramientas en la planeación de una boda, el timeline es el más subestimado… y al mismo tiempo, el más poderoso.
+Un buen timeline no es una lista rígida de horarios: es la estructura invisible que permite que el día fluya con calma, intención y belleza.
+
+Las bodas más tranquilas no son las que salen "perfectamente puntuales", sino las que fueron pensadas con tiempo real, con colchones inteligentes y con un ritmo que acompaña la emoción del día.
+
+Aquí te explicamos cómo se construye un timeline que no solo funcione, sino que te deje disfrutar.
+
+## 1. Empieza por lo inamovible
+
+Antes de pensar en maquillaje, fotos y coctel, define las horas que NO pueden cambiar:
+
+• Hora de la ceremonia religiosa o civil
+• Hora de la recepción
+• Hora de acceso de proveedores
+• Hora del banquete
+• Restricciones del venue (música, montaje, desmontaje)
+
+Estas horas son los pilares.
+Todo lo demás se acomoda alrededor.
+
+## 2. Entiende el tiempo real, no el "tiempo ideal"
+
+Hay dos tipos de tiempos:
+
+**Tiempo ideal:**
+lo que todos creen que tardarán (peinado: 30 minutos, maquillaje: 40, vestido: 10…).
+
+**Tiempo real:**
+lo que realmente pasa —y siempre es más.
+
+En promedio:
+
+• Maquillaje + peinado: 1.5 a 2 horas
+• Vestido: 15 a 25 minutos
+• Traslados: siempre tardan más
+• Fotos familiares: 10 a 20 minutos
+• Sesión de pareja: 20 a 40 minutos
+
+Un timeline realista reduce estrés.
+Uno idealista genera caos.
+
+## 3. Incluye colchones estratégicos
+
+Pequeños márgenes evitan grandes problemas.
+
+Colchón de:
+
+• 10 minutos entre maquillaje y fotos
+• 15 minutos antes de la ceremonia
+• 5 minutos antes de fotos familiares
+• 10 minutos antes de entrada a recepción
+
+Esos minutos de "aire" absorben cualquier retraso sin que ustedes lo noten.
+
+## 4. Respeta los momentos emocionales
+
+El timeline no debe ser una carrera.
+
+Deja espacio para:
+
+• abrazar a tu mamá
+• respirar antes de entrar al altar
+• leer una carta
+• reír con tus damas o amigos
+• mirar el lugar antes de entrar
+
+Las mejores fotos nacen de estos momentos no apresurados.
+
+## 5. No subestimes los traslados
+
+Mover un vestido grande, un velo, un séquito y un fotógrafo es más lento de lo que parece.
+Un trayecto de 5 minutos suele tomar 15 en una boda real.
+
+Siempre considera el triple.
+Nunca falla.
+
+## 6. Define tiempos de foto y video con tu equipo
+
+Un buen timeline no se hace solo: se hace en diálogo con foto y video.
+
+Nosotros sabemos:
+
+• cuánta luz queda
+• cuánto tiempo necesitan ustedes para relajarse
+• cuánto espacio dejan los proveedores
+• qué fotos necesitan más tiempo y cuáles no
+
+Esto hace que la documentación fluya sin invadir.
+
+## 7. Los invitados también influyen
+
+Las bodas nunca son solo logística: son comportamiento humano.
+
+Esto pasa casi siempre:
+
+• Los invitados tardan en sentarse
+• Las familias se dispersan
+• Los padrinos no están donde deberían
+• Las fotos grupales cuestan más tiempo de lo esperado
+
+Un timeline flexible anticipa esto sin frustración.
+
+## 8. Un buen timeline también piensa en ustedes dos
+
+El objetivo no es llegar a la fiesta rápido.
+Es que la pareja:
+
+• coma
+• beba agua
+• descanse
+• disfrute
+• no corra
+• no se maree
+• no pase hambre
+• llegue con energía al baile
+
+Una boda no se debe sobrevivir: se debe vivir.
+
+## 9. La clave: un timeline hecho por profesionales, no por suposiciones
+
+Muchos timelines se hacen copiando bodas ajenas o siguiendo ideas de internet.
+Pero cada boda es distinta:
+
+• distinta luz
+• distinta distancia
+• distinta familia
+• distinto venue
+• distinto estilo
+
+Un timeline personalizado evita el caos del día.
+
+## 10. Un timeline no es para controlarlo todo… es para liberarlos
+
+El objetivo no es que todo sea rígido.
+El objetivo es que ustedes dos no piensen en nada técnico ese día.
+
+Un timeline bien hecho:
+
+• protege su tranquilidad
+• reduce retrasos
+• evita decisiones apresuradas
+• coordina proveedores
+• mantiene la ceremonia y recepción en ritmo
+• asegura momentos importantes sin presión
+
+Cuando la estructura está resuelta, lo único que queda es disfrutar.
+
+## En resumen
+
+Un buen timeline es invisible para ustedes, pero visible en cómo se sienten:
+ligeros, tranquilos, presentes.
+
+La magia del día no surge del control…
+surge del espacio que el timeline les permite vivir.`,
+    coverImage: "/images/gallery/SYO-792.webp",
+    category: "Tips",
+    date: "Diciembre 10, 2025",
+  },
+  {
+    id: "17",
+    slug: "importancia-de-tomar-decisiones-a-tiempo",
+    title: "La importancia de tomar decisiones a tiempo (y cómo eso transforma toda la boda)",
+    excerpt: "La mayor parte del estrés no viene del día de la boda, sino de decisiones tomadas tarde. Decidir temprano le da a cada etapa el espacio necesario para que fluya con calma.",
+    content: `Hay una verdad que casi nadie te dice al empezar a planear tu boda:
+la mayor parte del estrés no viene del día de la boda… sino de decisiones tomadas tarde.
+
+Tomar decisiones a tiempo no significa obsesionarse, ni adelantar cada detalle.
+Significa darle a cada etapa el espacio necesario para que fluya, para que ustedes puedan disfrutar el proceso y para que el día llegue con calma, no con prisa.
+
+Aquí te explicamos por qué decidir temprano cambia todo.
+
+## 1. Decidir a tiempo reduce el 80% del estrés
+
+Cuando una pareja deja todo para "más adelante", sucede algo silencioso:
+
+• Las decisiones se acumulan
+• El margen de error se reduce
+• Los proveedores se saturan
+• Las opciones se cierran
+• La presión aumenta
+
+Y un proceso que pudo ser ligero se vuelve abrumador.
+
+En cambio, cuando deciden con anticipación, cada etapa se vuelve manejable.
+
+## 2. Las mejores opciones se eligen cuando no hay prisa
+
+El tiempo es un lujo.
+
+Cuando no hay prisa, pueden:
+
+• comparar con calma
+• evaluar estilos
+• elegir proveedores por confianza, no por disponibilidad
+• evitar decisiones desesperadas
+• negociar en mejores condiciones
+
+Las mejores decisiones raramente nacen del "tenemos que resolver esto hoy".
+
+## 3. Tomar decisiones temprano mejora la calidad de los proveedores
+
+Muchos proveedores —foto, video, música, decoración, coordinación— dependen de planeación previa para lograr resultados de alto nivel.
+
+Cuando se decide con tiempo:
+
+• pueden diseñar mejor
+• pueden sugerir mejoras
+• pueden planear logística real
+• pueden trabajar con luz adecuada
+• pueden resolver imprevistos sin comprometer la experiencia
+
+La anticipación se traduce directamente en calidad.
+
+## 4. Ustedes disfrutan más el proceso (y se sienten más conectados)
+
+Cuando cada decisión se toma con espacio suficiente, ocurre algo hermoso:
+
+La pareja deja de "apagar fuegos"
+y empieza a "construir su boda".
+
+Decidir temprano permite:
+
+• conversaciones tranquilas
+• validar expectativas
+• definir prioridades reales
+• evitar discusiones por prisa
+• mantener armonía familiar
+
+El proceso se vuelve parte del recuerdo, no la causa del desgaste.
+
+## 5. El día de la boda se vive con libertad, no con pendientes
+
+Cuando las decisiones están cerradas con anticipación:
+
+• nadie les pregunta dónde va algo
+• no tienen que aprobar nada a último minuto
+• no deben resolver problemas
+• no están preocupados por contratos
+• no corren para fotos o sesiones
+• no sienten que "todavía falta algo"
+
+Y entonces aparece algo valioso:
+presencia emocional.
+
+El día fluye sin distracciones porque todo lo importante ya está resuelto.
+
+## 6. Tomar decisiones tarde siempre cuesta más: dinero, energía o calidad
+
+Esto es una constante en bodas:
+
+• Los proveedores disponibles no siempre son los ideales
+• Los precios suben conforme se acerca la fecha
+• Los tiempos ajustados obligan a soluciones rápidas, no cuidadas
+• Los invitados reciben información tarde
+• La logística se aprieta
+• La pareja se estresa sin necesidad
+
+Esperar no es ahorrar:
+esperar es complicar.
+
+## 7. La anticipación protege contra imprevistos
+
+Ninguna boda está libre de sorpresas:
+
+• lluvia
+• tráfico
+• retrasos en proveedores
+• cambios en familia
+• ajustes del venue
+
+Pero cuando las decisiones principales ya están tomadas, esos imprevistos no afectan lo esencial.
+
+El proceso se vuelve más ágil y las soluciones son más claras.
+
+## 8. Tomar decisiones temprano es una muestra de amor hacia ustedes mismos
+
+Planear con calma no es un acto administrativo.
+Es un acto de cuidado.
+
+Les permite:
+
+• disfrutar su compromiso
+• compartir decisiones sin tensión
+• sentirse acompañados por sus proveedores
+• vivir el día sin carga mental
+
+La boda no es un examen que deben pasar.
+Es un momento que deben experimentar plenamente.
+
+## En resumen
+
+Tomar decisiones a tiempo cambia todo:
+
+• reduce estrés
+• mejora calidad
+• da libertad
+• protege la visión del día
+• fortalece la relación
+• permite disfrutar
+
+Una boda planeada con anticipación no solo se ve mejor en fotos:
+se siente mejor en el alma.`,
+    coverImage: "/images/gallery/TOP-KyB-236.webp",
+    category: "Tips",
+    date: "Diciembre 10, 2025",
+  },
+  {
+    id: "18",
+    slug: "guia-definitiva-getting-ready",
+    title: "La guía definitiva para el getting ready: luz, orden, personas y tranquilidad",
+    excerpt: "El getting ready es el inicio de la historia del día, donde nacen los nervios bonitos, las risas sinceras y los primeros momentos que realmente cuentan. Una guía para que este momento fluya con calma.",
+    content: `El getting ready no es un simple "ponerse guapos".
+Es el inicio de la historia del día, la atmósfera donde nacen los nervios bonitos, las risas sinceras, los abrazos inesperados y los primeros momentos que realmente cuentan.
+
+Un getting ready bien planeado hace que todo fluya; uno descuidado puede generar estrés que se arrastra durante horas.
+Aquí te dejamos una guía clara para que este momento se sienta ligero, estético y profundamente humano.
+
+## 1. Elijan el espacio correcto: luz y orden por encima de lujo
+
+No necesitan un cuarto enorme ni una locación fancy.
+Necesitan:
+
+• Buena luz natural (una ventana grande cambia todo)
+• Un espacio ordenado
+• Un área dedicada para maquillaje y peinado
+• Un rincón limpio para fotos
+
+La luz y el orden son más importantes que la decoración.
+Un cuarto hermoso pero oscuro complica todo.
+
+## 2. Mantengan el espacio limpio y con intención
+
+El caos visual afecta más de lo que parece.
+Recomendamos:
+
+• Tender la cama
+• Guardar bolsas, cajas y ropa
+• Separar basura o empaques
+• Dejar una mesa libre para detalles
+• Preparar una percha bonita para el vestido o traje
+
+Un espacio limpio reduce estrés y mejora fotos automáticamente.
+
+## 3. Lleguen a tiempo y sin prisa
+
+El tiempo es un factor decisivo.
+
+Peinado y maquillaje siempre tardan más de lo que dicen.
+Vestirse también.
+
+Lo ideal:
+
+• Iniciar maquillaje 2 a 3 horas antes
+• Terminar una hora antes del timeline
+• Vestirse con calma, no corriendo
+
+Cuando hay prisa, se siente. Cuando hay calma, se ve.
+
+## 4. Estén acompañados por las personas correctas
+
+En el getting ready deben estar quienes suman, no quienes presionan.
+
+Elijan personas que:
+
+• los tranquilicen
+• los hagan reír
+• no critiquen cada detalle
+• no traigan prisa innecesaria
+• respeten sus decisiones
+
+La energía del cuarto define cómo arrancan emocionalmente el día.
+
+## 5. Dejen listos sus detalles para foto y video
+
+Reúnan todo en un solo lugar:
+
+**Para la novia:**
+
+• Vestido
+• Velo
+• Zapatos
+• Aretes
+• Tocado
+• Perfume
+• Ramo
+• Invitaciones
+• Anillos
+
+**Para el novio:**
+
+• Traje
+• Corbata o moño
+• Mancuernillas
+• Reloj
+• Perfume
+• Zapatos
+• Anillos (si él los lleva)
+
+Esto ahorra tiempo y permite capturar detalles hermosos sin interrumpirlos.
+
+## 6. No desayunen "algo rápido": coman bien
+
+Es común que por nervios la novia o el novio coman casi nada.
+Pero el getting ready puede durar horas y el cuerpo necesita energía.
+
+Coman algo real:
+
+• Fruta
+• Pan
+• Yogurt
+• Un sándwich ligero
+• Jugos o café
+
+No quieren llegar a la ceremonia mareados, con dolor de cabeza o sin energía.
+
+## 7. Dejen espacio para pequeños momentos emocionales
+
+El getting ready es perfecto para:
+
+• entregar una carta
+• recibir un regalo
+• un abrazo con mamá o papá
+• un momento a solas
+• una foto con damas o amigos
+• una respiración profunda antes de todo
+
+Estos momentos, sin prisa, enriquecen la narrativa del día.
+
+## 8. Si habrá first look, coordínenlo con calma
+
+El first look depende 100% de un getting ready fluido.
+Si alguien se retrasa, la luz se complica o se acortan tiempos.
+
+Hablen con foto y video para asegurarlo sin prisa.
+
+## 9. El getting ready del novio también importa
+
+Muchos creen que "el novio solo se viste y ya".
+Pero su getting ready también cuenta una historia:
+
+• sus amigos
+• su familia
+• su estilo
+• sus nervios
+• sus silencios
+• sus risas
+
+Documentarlo equilibra la narrativa completa de la boda.
+
+## 10. La clave: calma en el ambiente, claridad en los tiempos
+
+Un getting ready bien planeado se siente así:
+
+• sin carreras
+• sin gritos
+• sin rush
+• sin decisiones de último minuto
+• sin ansiedad por los tiempos
+
+Y esa calma inicial acompaña el resto del día.
+
+## En resumen
+
+El getting ready es más que una preparación:
+es la primera escena de su historia.
+
+Cuiden la luz, el orden, el tiempo, la energía del cuarto y los detalles.
+Y sobre todo: vívanlo. El día empieza ahí.`,
+    coverImage: "/images/gallery/KandE-151.webp",
+    category: "Tips",
+    date: "Diciembre 10, 2025",
+  },
+  {
+    id: "19",
+    slug: "protocolo-emocional-presion-familiar",
+    title: "Protocolo emocional: cómo manejar la presión familiar sin perder su esencia",
+    excerpt: "Las expectativas, opiniones y tradiciones de las familias pueden sumar o convertirse en fuente de tensión. Esta guía te ayuda a navegar todo eso sin perder tu esencia ni tu paz mental.",
+    content: `La planeación de una boda no solo implica proveedores, presupuestos y logística.
+También implica algo mucho más complejo y profundamente humano: familias.
+
+Las expectativas, opiniones, tradiciones, deseos y emociones de las familias pueden sumar… o pueden convertirse en una fuente de tensión.
+Y no porque quieran hacer daño, sino porque una boda despierta recuerdos, deseos, miedos y símbolos que cada familia interpreta distinto.
+
+Este artículo existe para ayudarte a navegar todo eso sin perder tu esencia ni tu paz mental.
+
+## 1. Reconozcan algo importante: la presión es normal
+
+Que alguien opine no significa que estén haciendo algo mal.
+Que una mamá quiera decidir flores o una tía sugiera cambiar horarios no es raro.
+
+Las bodas activan:
+
+• nostalgia
+• orgullo
+• expectativas culturales
+• ideas de "cómo debe ser"
+• inseguridades
+• ganas de participar
+
+Saber esto ayuda a no tomarlo personal.
+
+## 2. Alineen su núcleo: ustedes dos primero
+
+Antes de hablar con cualquier familia, hablen entre ustedes:
+
+• ¿Qué es esencial para nosotros?
+• ¿Qué es negociable?
+• ¿Qué no estamos dispuestos a cambiar?
+• ¿Qué tradiciones sí queremos incluir?
+• ¿Qué cosas son realmente importantes para cada uno?
+
+Una pareja alineada resiste tormentas externas con mucha más facilidad.
+
+## 3. Establezcan límites claros, suaves y constantes
+
+Los límites no son bruscos; son consistentes.
+
+Ejemplos de límites amables:
+
+• "Aprecio tu opinión, pero esa decisión la tomaremos nosotros."
+• "Gracias por la sugerencia; lo vamos a considerar, pero ya tenemos algo pensado."
+• "Entiendo que lo imagines diferente, pero esto es lo que nos hace sentido a nosotros."
+
+Los límites funcionan cuando son:
+
+• respetuosos
+• firmes
+• repetidos sin enojo
+
+La clave es ser coherentes.
+
+## 4. Definan un canal para las decisiones (y cierren los demás)
+
+Las parejas que se ven abrumadas suelen tener 4, 6 o 10 personas opinando.
+Eso no es sostenible.
+
+Elijan:
+
+• una persona por familia que reciba y transmita información
+• o directamente que todas las decisiones pasen por ustedes dos
+
+El orden reduce conflicto.
+
+## 5. No intenten complacer a todos: es imposible
+
+Si tratan de agradar a todos:
+
+• pierden su esencia
+• se desgastan emocionalmente
+• toman decisiones por presión, no por deseo
+• la boda deja de sentirse suya
+
+Complacer a todos es renunciar a ustedes.
+Y esa renuncia termina cobrando factura emocional.
+
+## 6. Diferencien entre deseo familiar… y presión familiar
+
+No todo lo que opina la familia es presión.
+A veces solo es cariño mal comunicado.
+
+**Deseo familiar:**
+"Me encantaría que usaras el tocado que fue de tu abuela."
+
+**Presión familiar:**
+"Tienes que usarlo, en nuestra familia siempre se hace así."
+
+La diferencia es grande.
+
+Reconocerla ayuda a responder con más calma.
+
+## 7. Permitan que la familia participe, pero con intención
+
+La clave no es excluir a la familia, sino dirigir su energía hacia algo útil:
+
+• elegir lecturas para la ceremonia
+• ayudar con organización de invitados
+• participar en algún ritual
+• colaborar en un detalle emocional
+• apoyar en logística pequeña
+
+Cuando la familia siente que aporta, opina menos sobre lo que no le corresponde.
+
+## 8. No respondan desde el enojo: respondan desde la claridad
+
+Las discusiones familiares durante una boda suelen nacer de respuestas impulsivas.
+Respirar antes de contestar cambia todo.
+
+Una respuesta clara vale más que una discusión emocional.
+
+## 9. Si un tema se vuelve conflicto constante, pongan una regla definitiva
+
+Ejemplo:
+
+"Ya hablamos de esto y esta será la decisión final."
+
+Es respetuoso, firme y cierra el ciclo.
+
+## 10. Recuerden lo esencial: la boda es suya, la celebración es compartida
+
+La boda pertenece a la pareja.
+La celebración pertenece a todos.
+
+La clave está en equilibrar:
+
+• respeto a las familias
+• autonomía de la pareja
+• claridad de decisiones
+• límites sanos
+
+Cuando ustedes están en paz, la boda fluye.
+Y cuando la boda fluye, la familia también se relaja.
+
+## En resumen
+
+La presión familiar no se elimina.
+Se maneja.
+
+Con límites claros, comunicación honesta, decisiones alineadas y cariño firme, la pareja puede proteger su esencia sin romper vínculos.
+
+Planeen con cabeza, amen con calma y recuerden siempre:
+la boda se construye a dos, no a veinte.`,
+    coverImage: "/images/gallery/SandJ-207.webp",
+    category: "Tips",
+    date: "Diciembre 10, 2025",
+  },
+  {
+    id: "20",
+    slug: "que-hacer-si-llueve-dia-de-tu-boda",
+    title: "Qué hacer si llueve el día de tu boda: la guía que tranquiliza a cualquiera",
+    excerpt: "La lluvia no arruina una boda. Solo cambia el plan. El clima es la variable más impredecible, pero también una de las más manejables cuando la pareja está preparada.",
+    content: `Hay una frase que repetimos mucho en bodas porque es profundamente cierta:
+La lluvia no arruina una boda. Solo cambia el plan.
+
+El clima es la variable más impredecible de todas, pero también una de las más manejables cuando la pareja está preparada y el equipo profesional sabe lo que hace.
+
+Aquí te dejamos una guía honesta, práctica y tranquilizadora para manejar la lluvia sin perder la magia del día.
+
+## 1. Acepten esta verdad: nadie puede controlar el clima
+
+No el planner.
+No el venue.
+No el fotógrafo.
+No la pareja.
+
+Aceptar esta realidad libera estrés y da paso a una actitud más flexible.
+Una boda no se define por el cielo, se define por cómo se vive el momento.
+
+## 2. El plan B no es un "plan secundario": es parte de un buen diseño
+
+Un buen venue y un buen equipo siempre tienen un plan B preparado:
+
+• Carpas de calidad
+• Toldos transparentes
+• Terrazas techadas
+• Salones listos
+• Zonas de resguardo
+• Equipo que sabe moverse rápido
+
+El error no es tener plan B.
+El error es ignorarlo.
+
+Un plan B bien hecho puede ser igual de bello —o más íntimo— que el plan original.
+
+## 3. La lluvia puede crear fotos espectaculares
+
+Lo decimos con total experiencia:
+la lluvia tiene una estética única.
+
+• Reflejos en el piso
+• Colores más saturados
+• Luz suave y romántica
+• Paraguas transparentes hermosos
+• Texturas atmosféricas
+• Oportunidades creativas increíbles
+
+Algunas de las fotos más memorables que hemos hecho han sido bajo lluvia.
+
+## 4. Confíen en su equipo: ellos saben cómo adaptarse
+
+Los profesionales trabajan con lluvia todo el tiempo.
+Saben:
+
+• cómo proteger cámaras y audio
+• cómo mover invitados
+• cómo reorganizar fotos familiares
+• cómo ajustar el timeline
+• cómo usar la luz a su favor
+• cómo mantenerlos tranquilos mientras reorganizan todo
+
+La pareja solo debe hacer una cosa: confiar y respirar.
+
+## 5. La actitud de ustedes define la energía del resto
+
+Si ustedes lo toman con calma:
+
+• la familia se relaja
+• los invitados se contagian
+• el equipo trabaja más fluido
+• la boda mantiene su alegría
+
+Si ustedes se estresan, todos lo sienten.
+
+La lluvia no define el día.
+Su actitud sí.
+
+## 6. Prepárense con pequeños detalles que hacen gran diferencia
+
+Recomendamos:
+
+• Paraguas transparentes (fotogénicos y prácticos)
+• Toallas pequeñas
+• Calzado alternativo si el piso es complicado
+• Un mini kit para retoque
+• Tiempo extra en el timeline
+
+Estos detalles evitan incomodidades y mantienen la estética del día.
+
+## 7. Ajusten expectativas sin sacrificar la emoción
+
+La lluvia puede implicar cambios, sí:
+
+• quizá menos fotos exteriores
+• quizá traslados más lentos
+• quizá un montaje movido de lugar
+
+Pero no afecta:
+
+• sus votos
+• su unión
+• su celebración
+• su convivencia
+• su historia
+• su amor
+
+La boda sigue siendo la boda.
+Solo se volvió más íntima, más cinematográfica y más inesperada.
+
+## 8. Algunas de las mejores bodas han tenido lluvia
+
+Es real.
+La lluvia:
+
+• une a los invitados
+• genera momentos espontáneos
+• crea escenas que no estaban planeadas y resultan memorables
+• convierte la boda en algo único e irrepetible
+
+A veces lo "imperfecto" es lo que la hace inolvidable.
+
+## En resumen
+
+La lluvia puede cambiar la logística, pero nunca cambia el significado.
+Con un buen plan, un equipo sólido y una actitud relajada, la lluvia se vuelve parte de la historia, no un obstáculo.
+
+Una boda no necesita sol para ser hermosa.
+Necesita amor, presencia y ganas de celebrar… y eso no se moja.`,
+    coverImage: "/images/gallery/AyJ-394.webp",
+    category: "Tips",
+    date: "Diciembre 10, 2025",
+  },
+  {
+    id: "21",
+    slug: "que-hacer-despues-de-la-boda",
+    title: "La boda no termina en el último baile: qué hacer después del evento",
+    excerpt: "Los días posteriores a la boda son un espacio íntimo, emocional y práctico donde ocurren decisiones, gestos y cierres que completan la experiencia. Una guía sobre lo que sucede después del gran día.",
+    content: `Para muchas parejas, la boda parece terminar cuando se apaga la música y los invitados se despiden. Pero en realidad, hay una etapa igual de importante —y muchas veces olvidada— que ocurre después del evento.
+
+Los días posteriores son un espacio íntimo, emocional y práctico donde ocurren decisiones, gestos y cierres que completan la experiencia de la boda.
+
+Aquí te dejamos una guía honesta y clara sobre lo que sucede después del "gran día" y cómo vivirlo sin estrés.
+
+## 1. Tómense un día para descansar (de verdad)
+
+Dormir, hidratarse, comer bien y simplemente estar juntos.
+El cuerpo y la mente necesitan bajar de la energía intensa del día anterior.
+
+Este descanso no es un lujo: es parte del proceso.
+
+## 2. Revisen los pagos finales con proveedores
+
+Algunos proveedores tienen saldos pendientes por:
+
+• horas extra
+• transportes
+• materiales adicionales
+• servicios extendidos
+
+Revisar esto con calma evita malos entendidos y cierra el ciclo profesional con claridad.
+
+## 3. Aromanticen algunos detalles importantes
+
+Pueden:
+
+• guardar la invitación
+• conservar una flor del ramo
+• guardar una carta, ticket o nota del día
+• elegir un objeto simbólico
+
+No es obligatorio, pero ayuda a mantener viva la memoria.
+
+## 4. Organicen los regalos y sobres sin prisa
+
+Lo ideal es:
+
+• abrirlos juntos
+• llevar un registro de quién regaló qué
+• guardar sobres en un solo sitio
+• definir qué compras harán con esos regalos
+
+Este punto suele causar caos si no se organiza desde el inicio.
+
+## 5. Envíen agradecimientos (breves pero sinceros)
+
+Un mensaje corto a quienes:
+
+• viajaron desde lejos
+• hicieron esfuerzos especiales
+• participaron en la ceremonia
+• ayudaron durante la planeación
+
+No necesita ser formal: basta con que sea genuino.
+
+## 6. Definan la selección de fotos y álbum con calma
+
+La mayoría de proveedores entrega un primer avance, una galería o un pre-selection.
+Tómenlo con:
+
+• café
+• música
+• cero prisa
+
+Elegir fotos para álbum o video es un acto emocional.
+Denle su espacio.
+
+## 7. Disfruten la transición emocional
+
+Después de la boda hay un pequeño "vacío" normal:
+meses de planeación terminan de golpe.
+Es completamente natural.
+
+Algunas parejas sienten:
+
+• nostalgia
+• alivio
+• emoción
+• cansancio
+• silencio emocional
+
+No es falta de amor.
+Es el cuerpo cerrando un capítulo gigante.
+
+## 8. Hablen de lo que más disfrutaron (y guárdenlo)
+
+Una conversación que vale oro:
+
+• ¿Cuál fue tu momento favorito?
+• ¿Qué te sorprendió?
+• ¿Qué te hizo llorar o reír?
+• ¿Qué te gustaría revivir?
+
+Estas memorias íntimas se vuelven parte de la historia que contarán en el futuro.
+
+## 9. Organicen cualquier trámite pendiente
+
+Según el tipo de ceremonia, puede haber:
+
+• actas
+• firmas
+• citas civiles
+• registro de matrimonio religioso o civil
+• seguros o cambios administrativos
+
+No lo dejen para mucho después.
+Todo es más fácil cuando aún están en modo post-boda.
+
+## 10. Reencuadren algo esencial: su boda no terminó… recién comienza la vida juntos
+
+La boda fue un capítulo.
+Hermoso, intenso, único.
+
+Pero lo realmente importante viene después: construir una vida compartida con calma, gozo y presencia.
+
+El "después de la boda" no es un cierre.
+Es una puerta.
+
+## En resumen
+
+Después de la boda hay decisiones prácticas y procesos emocionales que vale la pena vivir con atención.
+Con calma, orden y amor, esta etapa puede sentirse tan especial como el mismo día del evento.`,
+    coverImage: "/images/gallery/TOP-SyD-162.webp",
+    category: "Tips",
+    date: "Diciembre 10, 2025",
+  },
+  {
+    id: "22",
+    slug: "preguntas-antes-de-empezar-planeacion",
+    title: "Las preguntas que deberías hacerte antes de empezar la planeación (pero nadie te dice)",
+    excerpt: "Antes de elegir flores, venue o música, hay algo más importante: preguntarse qué quieren realmente de su boda. No desde Pinterest ni tradiciones, sino desde ustedes dos.",
+    content: `Antes de elegir flores, venue, menú o música, hay algo más importante que la mayoría de las parejas pasa por alto:
+preguntarse qué quieren realmente de su boda.
+
+No desde Pinterest.
+No desde tradiciones.
+No desde lo que esperan los demás.
+Sino desde ustedes dos: su historia, su ritmo, sus valores y su forma única de amar.
+
+Estas preguntas son el ancla que evitará que la planeación se vuelva caótica, costosa o estresante.
+Son la base de una boda auténtica.
+
+## 1. ¿Qué queremos sentir el día de nuestra boda?
+
+No "qué queremos que se vea", sino qué queremos sentir.
+
+• ¿Tranquilidad?
+• ¿Euforia?
+• ¿Intimidad?
+• ¿Elegancia?
+• ¿Espontaneidad?
+• ¿Éxito?
+• ¿Cercanía familiar?
+
+La emoción deseada define más cosas que cualquier moodboard.
+
+## 2. ¿Qué es lo más importante para nosotros dos?
+
+No todo puede tener la misma prioridad, y está bien.
+
+Quizá lo esencial sea:
+
+• la ceremonia
+• la música
+• la fiesta
+• el ambiente
+• la comida
+• la fotografía y video
+• la familia
+• la espiritualidad
+• la estética
+
+Elegir prioridades es elegir claridad.
+
+## 3. ¿Qué NO queremos?
+
+Decir "no" antes de tiempo libera muchísimo estrés.
+
+• no queremos una boda rígida
+• no queremos gastar en cosas que no nos emocionan
+• no queremos tradiciones que no significan nada para nosotros
+• no queremos presiones familiares
+• no queremos correr todo el día
+
+El "no" es un acto de autoconservación emocional.
+
+## 4. ¿Qué recuerda cada uno de las mejores bodas a las que ha asistido?
+
+Hagan memoria.
+
+• ¿Qué les encantó?
+• ¿Qué los hizo sentir incómodos?
+• ¿Qué momentos se quedaron en la mente por días?
+
+Las experiencias pasadas son espejos de lo que buscan en su propio día.
+
+## 5. ¿Qué tipo de ambiente soñamos para nuestra boda?
+
+No se trata del color o del estilo visual, sino de la atmósfera:
+
+• íntima
+• grande
+• relajada
+• elegante
+• moderna
+• bohemia
+• familiar
+• festiva
+
+La atmósfera determina casi todas las decisiones posteriores.
+
+## 6. ¿Qué tan involucrados queremos estar en la planeación?
+
+Algunas parejas disfrutan cada detalle.
+Otras prefieren delegar.
+
+Respuestas posibles:
+
+• "Queremos decidir lo esencial y delegar lo operativo."
+• "Queremos estar en todo."
+• "Queremos involucrarnos lo mínimo, solo lo importante."
+
+No hay una correcta.
+Solo la que evita desgaste.
+
+## 7. ¿Qué queremos que nuestros invitados vivan?
+
+Una boda no es solo para la pareja: es una experiencia compartida.
+
+• buena comida
+• buena música
+• comodidad
+• fluidez
+• momentos emotivos
+• sorpresas
+• cero esperas innecesarias
+
+Visualizar esto ayuda muchísimo en la planeación de logística.
+
+## 8. ¿Cómo queremos recordar la boda dentro de 10 años?
+
+Pocas preguntas alinean tanto como esta.
+
+Imaginen juntos:
+
+• el tipo de fotos que quieren ver
+• el tipo de video que quieren revivir
+• la sensación que desean conservar
+• los momentos que imaginan recordando
+
+Pensar a futuro aclara decisiones del presente.
+
+## 9. ¿Cuál es nuestra relación con el presupuesto?
+
+Más allá de un número, analicen:
+
+• qué límites económicos son reales
+• en qué sí vale la pena invertir
+• en qué preferimos ahorrar
+• qué compromisos financieros queremos evitar
+
+Un presupuesto claro evita tensiones y decisiones impulsivas.
+
+## 10. ¿Cómo vamos a tomar decisiones cuando no estemos de acuerdo?
+
+Todas las parejas, sin excepción, se encuentran con decisiones difíciles.
+
+Acordar desde el inicio cómo resolverán diferencias ayuda a:
+
+• evitar discusiones desgastantes
+• mantener buena comunicación
+• sentir el proceso como un proyecto juntos
+
+Puede ser tan simple como:
+"Si algo es muy importante para ti y a mí no me afecta, lo apoyamos."
+O:
+"Si ambos opinamos distinto pero nos da igual, elegimos lo más práctico."
+
+## En resumen
+
+Antes de comenzar con flores, estilos o proveedores, la verdadera planeación empieza con preguntas profundas.
+Son las preguntas que alinean, que ordenan, que dan sentido y que protegen la esencia del día.
+
+Las bodas que más se disfrutan no son las más producidas:
+son las más conscientes.`,
+    coverImage: "/images/gallery/CyD-75.webp",
+    category: "Tips",
+    date: "Diciembre 10, 2025",
+  },
 ];
 
 export const blogPosts: BlogPost[] = rawPosts.map((post) => ({
