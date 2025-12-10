@@ -37,7 +37,7 @@ const HeroHeader = () => {
     return () => window.removeEventListener('scroll', controlNavbar);
   }, []);
 
-  // Seleccionar imágenes TOP-: primera siempre TOP-SyP-324-hero (optimizada), las demás randomizadas
+  // Seleccionar im├ígenes TOP-: primera siempre TOP-SyP-324-hero (optimizada), las dem├ís randomizadas
   useEffect(() => {
     const topImages = content.galeria.images.filter(img => img.startsWith('TOP-'));
     const firstImage = 'TOP-SyP-324-hero.webp';
@@ -46,7 +46,7 @@ const HeroHeader = () => {
     setSliderImages([firstImage, ...otherImages]);
   }, []);
 
-  // Precargar solo la primera imagen para LCP rápido
+  // Precargar solo la primera imagen para LCP r├ípido
   useEffect(() => {
     if (sliderImages.length === 0) return;
     
@@ -55,7 +55,7 @@ const HeroHeader = () => {
     firstImg.onload = () => {
       setImagesLoaded(true);
       
-      // Precargar las demás imágenes en segundo plano después
+      // Precargar las dem├ís im├ígenes en segundo plano despu├®s
       setTimeout(() => {
         sliderImages.slice(1).forEach((image) => {
           const img = document.createElement('img');
@@ -66,7 +66,7 @@ const HeroHeader = () => {
     firstImg.src = `/images/gallery/${sliderImages[0]}`;
   }, [sliderImages]);
 
-  // Auto-avanzar el slider cada 4 segundos (solo cuando las imágenes estén cargadas)
+  // Auto-avanzar el slider cada 4 segundos (solo cuando las im├ígenes est├®n cargadas)
   useEffect(() => {
     if (!imagesLoaded || sliderImages.length === 0) return;
     
@@ -111,7 +111,7 @@ const HeroHeader = () => {
 
   return (
     <>
-      {/* Logo centrado arriba - Solo en páginas que NO son home */}
+      {/* Logo centrado arriba - Solo en p├íginas que NO son home */}
       {!isHomePage && (
         <div className={`fixed top-0 left-0 right-0 z-40 flex justify-center items-center py-6 transition-opacity duration-500 ${isVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
           <Link 

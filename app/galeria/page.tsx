@@ -35,10 +35,10 @@ export default function Galeria() {
   const [activeFilter, setActiveFilter] = useState<FilterType>('all');
   const containerRef = useRef<HTMLDivElement>(null);
 
-  // Cargar dimensiones de las imágenes y videos
+  // Cargar dimensiones de las im├ígenes y videos
   useEffect(() => {
     const loadMediaDimensions = async () => {
-      // Cargar imágenes
+      // Cargar im├ígenes
       const shuffledImages = [...galeria.images].sort(() => Math.random() - 0.5);
       const imagesData = await Promise.all(
         shuffledImages.map((filename, index) => {
@@ -74,7 +74,7 @@ export default function Galeria() {
         })
       );
 
-      // Mezclar imágenes y videos distribuyéndolos
+      // Mezclar im├ígenes y videos distribuy├®ndolos
       const allMedia: MediaData[] = [];
       let imageIndex = 0;
       let videoIndex = 0;
@@ -102,7 +102,7 @@ export default function Galeria() {
     loadMediaDimensions();
   }, [galeria.images]);
 
-  // Filtrar media según el filtro activo
+  // Filtrar media seg├║n el filtro activo
   const filteredMedia = mediaWithDimensions.filter(media => {
     if (activeFilter === 'all') return true;
     if (activeFilter === 'photos') return media.type === 'image';
@@ -110,7 +110,7 @@ export default function Galeria() {
     return true;
   });
 
-  // Calcular número de columnas basado en el ancho de la ventana
+  // Calcular n├║mero de columnas basado en el ancho de la ventana
   useEffect(() => {
     const updateColumns = () => {
       const width = window.innerWidth;
@@ -129,7 +129,7 @@ export default function Galeria() {
     setColumnHeights(new Array(columns).fill(0));
   }, [columns]);
 
-  // Función para obtener la columna más corta
+  // Funci├│n para obtener la columna m├ís corta
   const getShortestColumn = (heights: number[]) => {
     return heights.indexOf(Math.min(...heights));
   };
@@ -224,7 +224,7 @@ export default function Galeria() {
               {mediaColumns.map((column, colIndex) => (
                 <div key={colIndex} className="flex-1 flex flex-col gap-4">
                   {column.map((media) => {
-                    // Determinar el aspect ratio basado en la orientación
+                    // Determinar el aspect ratio basado en la orientaci├│n
                     const isVertical = media.aspectRatio < 1;
                     const aspectClass = isVertical ? 'aspect-[4/5]' : 'aspect-[3/2]';
                     
@@ -292,7 +292,7 @@ export default function Galeria() {
               </FadeIn>
             )}
 
-            {/* CTA para Fotografías - Pic-Time */}
+            {/* CTA para Fotograf├¡as - Pic-Time */}
             {activeFilter === 'photos' && (
               <FadeIn delay={400}>
                 <div className="mt-16 text-center">
@@ -361,7 +361,7 @@ export default function Galeria() {
               className="absolute top-4 right-4 text-white text-4xl hover:text-[var(--accent-blush)] transition-colors"
               onClick={() => setSelectedMedia(null)}
             >
-              ×
+              ├ù
             </button>
             <div className="max-w-5xl w-full">
               {selectedMedia.type === 'image' ? (

@@ -6,8 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint",
-    "audit:translations": "node scripts/audit-translations.js"
+    "lint": "eslint"
   },
   "dependencies": {
     "@studio-freight/lenis": "^1.0.42",

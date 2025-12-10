@@ -101,9 +101,9 @@ export default function Colecciones() {
                   </tr>
                   <tr className="border-b border-[var(--border-subtle)]">
                     <td className="p-4 text-[var(--foreground)]/70">{colecciones.comparisonLabels.photos}</td>
-                    <td className="p-4 text-center text-[var(--foreground)]">400–500</td>
-                    <td className="p-4 text-center text-[var(--foreground)]">600–700</td>
-                    <td className="p-4 text-center text-[var(--foreground)]">800–900</td>
+                    <td className="p-4 text-center text-[var(--foreground)]">400ÔÇô500</td>
+                    <td className="p-4 text-center text-[var(--foreground)]">600ÔÇô700</td>
+                    <td className="p-4 text-center text-[var(--foreground)]">800ÔÇô900</td>
                     <td className="p-4 text-center text-[var(--foreground)]">1000+</td>
                   </tr>
                   <tr className="border-b border-[var(--border-subtle)]">
@@ -115,66 +115,66 @@ export default function Colecciones() {
                   </tr>
                   <tr className="border-b border-[var(--border-subtle)]">
                     <td className="p-4 text-[var(--foreground)]/70">{colecciones.comparisonLabels.videoDuration}</td>
-                    <td className="p-4 text-center text-[var(--foreground)]">20–30 min</td>
-                    <td className="p-4 text-center text-[var(--foreground)]">30–40 min</td>
-                    <td className="p-4 text-center text-[var(--foreground)]">50–60 min</td>
-                    <td className="p-4 text-center text-[var(--foreground)]">45–60 min</td>
+                    <td className="p-4 text-center text-[var(--foreground)]">20ÔÇô30 min</td>
+                    <td className="p-4 text-center text-[var(--foreground)]">30ÔÇô40 min</td>
+                    <td className="p-4 text-center text-[var(--foreground)]">50ÔÇô60 min</td>
+                    <td className="p-4 text-center text-[var(--foreground)]">45ÔÇô60 min</td>
                   </tr>
                   <tr className="border-b border-[var(--border-subtle)]">
                     <td className="p-4 text-[var(--foreground)]/70">{colecciones.comparisonLabels.shortVideo}</td>
-                    <td className="p-4 text-center text-[var(--foreground)]">—</td>
-                    <td className="p-4 text-center text-[var(--foreground)]">✓</td>
-                    <td className="p-4 text-center text-[var(--foreground)]">✓</td>
-                    <td className="p-4 text-center text-[var(--foreground)]">✓</td>
+                    <td className="p-4 text-center text-[var(--foreground)]">ÔÇö</td>
+                    <td className="p-4 text-center text-[var(--foreground)]">Ô£ô</td>
+                    <td className="p-4 text-center text-[var(--foreground)]">Ô£ô</td>
+                    <td className="p-4 text-center text-[var(--foreground)]">Ô£ô</td>
                   </tr>
                   <tr className="border-b border-[var(--border-subtle)]">
                     <td className="p-4 text-[var(--foreground)]/70">{colecciones.comparisonLabels.oneMinuteVideo}</td>
-                    <td className="p-4 text-center text-[var(--foreground)]">✓</td>
-                    <td className="p-4 text-center text-[var(--foreground)]">✓</td>
-                    <td className="p-4 text-center text-[var(--foreground)]">✓</td>
-                    <td className="p-4 text-center text-[var(--foreground)]">✓</td>
+                    <td className="p-4 text-center text-[var(--foreground)]">Ô£ô</td>
+                    <td className="p-4 text-center text-[var(--foreground)]">Ô£ô</td>
+                    <td className="p-4 text-center text-[var(--foreground)]">Ô£ô</td>
+                    <td className="p-4 text-center text-[var(--foreground)]">Ô£ô</td>
                   </tr>
                   <tr className="border-b border-[var(--border-subtle)]">
                     <td className="p-4 text-[var(--foreground)]/70">{colecciones.comparisonLabels.photobook}</td>
-                    <td className="p-4 text-center text-[var(--foreground)] text-sm">8.5x11" (50 pág)</td>
-                    <td className="p-4 text-center text-[var(--foreground)] text-sm">8.5x11" (50 pág)</td>
-                    <td className="p-4 text-center text-[var(--foreground)] text-sm">11x11" (50 pág)</td>
-                    <td className="p-4 text-center text-[var(--foreground)] text-sm">12x12" (75 pág)</td>
+                    <td className="p-4 text-center text-[var(--foreground)] text-sm">8.5x11" (50 p├íg)</td>
+                    <td className="p-4 text-center text-[var(--foreground)] text-sm">8.5x11" (50 p├íg)</td>
+                    <td className="p-4 text-center text-[var(--foreground)] text-sm">11x11" (50 p├íg)</td>
+                    <td className="p-4 text-center text-[var(--foreground)] text-sm">12x12" (75 p├íg)</td>
                   </tr>
                   <tr className="border-b border-[var(--border-subtle)]">
                     <td className="p-4 text-[var(--foreground)]/70">{colecciones.comparisonLabels.preWedding}</td>
-                    <td className="p-4 text-center text-[var(--foreground)]">—</td>
-                    <td className="p-4 text-center text-[var(--foreground)]">✓</td>
-                    <td className="p-4 text-center text-[var(--foreground)]">✓</td>
-                    <td className="p-4 text-center text-[var(--foreground)]">✓</td>
+                    <td className="p-4 text-center text-[var(--foreground)]">ÔÇö</td>
+                    <td className="p-4 text-center text-[var(--foreground)]">Ô£ô</td>
+                    <td className="p-4 text-center text-[var(--foreground)]">Ô£ô</td>
+                    <td className="p-4 text-center text-[var(--foreground)]">Ô£ô</td>
                   </tr>
                   <tr className="border-b border-[var(--border-subtle)]">
                     <td className="p-4 text-[var(--foreground)]/70">{colecciones.comparisonLabels.postWedding}</td>
-                    <td className="p-4 text-center text-[var(--foreground)]">—</td>
-                    <td className="p-4 text-center text-[var(--foreground)]">—</td>
-                    <td className="p-4 text-center text-[var(--foreground)]">✓</td>
-                    <td className="p-4 text-center text-[var(--foreground)]">✓</td>
+                    <td className="p-4 text-center text-[var(--foreground)]">ÔÇö</td>
+                    <td className="p-4 text-center text-[var(--foreground)]">ÔÇö</td>
+                    <td className="p-4 text-center text-[var(--foreground)]">Ô£ô</td>
+                    <td className="p-4 text-center text-[var(--foreground)]">Ô£ô</td>
                   </tr>
                   <tr className="border-b border-[var(--border-subtle)]">
                     <td className="p-4 text-[var(--foreground)]/70">{colecciones.comparisonLabels.drone}</td>
-                    <td className="p-4 text-center text-[var(--foreground)]">—</td>
-                    <td className="p-4 text-center text-[var(--foreground)]">—</td>
-                    <td className="p-4 text-center text-[var(--foreground)]">—</td>
-                    <td className="p-4 text-center text-[var(--foreground)]">✓</td>
+                    <td className="p-4 text-center text-[var(--foreground)]">ÔÇö</td>
+                    <td className="p-4 text-center text-[var(--foreground)]">ÔÇö</td>
+                    <td className="p-4 text-center text-[var(--foreground)]">ÔÇö</td>
+                    <td className="p-4 text-center text-[var(--foreground)]">Ô£ô</td>
                   </tr>
                   <tr className="border-b border-[var(--border-subtle)]">
                     <td className="p-4 text-[var(--foreground)]/70">{colecciones.comparisonLabels.contentCreator}</td>
-                    <td className="p-4 text-center text-[var(--foreground)]">—</td>
-                    <td className="p-4 text-center text-[var(--foreground)]">—</td>
-                    <td className="p-4 text-center text-[var(--foreground)]">—</td>
-                    <td className="p-4 text-center text-[var(--foreground)]">✓</td>
+                    <td className="p-4 text-center text-[var(--foreground)]">ÔÇö</td>
+                    <td className="p-4 text-center text-[var(--foreground)]">ÔÇö</td>
+                    <td className="p-4 text-center text-[var(--foreground)]">ÔÇö</td>
+                    <td className="p-4 text-center text-[var(--foreground)]">Ô£ô</td>
                   </tr>
                   <tr className="border-b border-[var(--border-subtle)]">
                     <td className="p-4 text-[var(--foreground)]/70">{colecciones.comparisonLabels.digitalInvitation}</td>
-                    <td className="p-4 text-center text-[var(--foreground)]">—</td>
-                    <td className="p-4 text-center text-[var(--foreground)]">—</td>
-                    <td className="p-4 text-center text-[var(--foreground)]">—</td>
-                    <td className="p-4 text-center text-[var(--foreground)]">✓</td>
+                    <td className="p-4 text-center text-[var(--foreground)]">ÔÇö</td>
+                    <td className="p-4 text-center text-[var(--foreground)]">ÔÇö</td>
+                    <td className="p-4 text-center text-[var(--foreground)]">ÔÇö</td>
+                    <td className="p-4 text-center text-[var(--foreground)]">Ô£ô</td>
                   </tr>
                   <tr className="bg-[var(--background)]">
                     <td className="p-4 font-[var(--font-heading)] text-lg text-[var(--foreground)]">{colecciones.priceTitle}</td>

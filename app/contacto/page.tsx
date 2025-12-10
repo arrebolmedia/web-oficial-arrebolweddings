@@ -228,7 +228,7 @@ export default function Contacto() {
                 )}
                 {submitStatus === "error" && (
                   <p className="pt-4 text-sm text-red-700">
-                    Error al enviar. Por favor intenta de nuevo o escríbenos a hola@arrebolweddings.com
+                    Error al enviar. Por favor intenta de nuevo o escr├¡benos a hola@arrebolweddings.com
                   </p>
                 )}
 

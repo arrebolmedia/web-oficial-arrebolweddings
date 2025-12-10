@@ -8,9 +8,9 @@ import BlogPreview from "@/app/components/BlogPreview";
 import FinalCta from "@/app/components/FinalCta";
 
 export const metadata: Metadata = {
-  title: "Arrebol Weddings | Fotografía y Video de Bodas en México",
+  title: "Arrebol Weddings | Fotograf├¡a y Video de Bodas en M├®xico",
   description:
-    "Capturamos el tipo de recuerdos que se vuelven más valiosos con el tiempo. Fotografía y video de bodas en México con un estilo cercano, honesto y sin poses.",
+    "Capturamos el tipo de recuerdos que se vuelven m├ís valiosos con el tiempo. Fotograf├¡a y video de bodas en M├®xico con un estilo cercano, honesto y sin poses.",
 };
 
 export default function Home() {

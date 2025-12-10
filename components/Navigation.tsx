@@ -95,7 +95,7 @@ const Navigation = () => {
           </div>
         </div>
 
-        {/* Navegación horizontal centrada abajo */}
+        {/* Navegaci├│n horizontal centrada abajo */}
         <div className="hidden md:flex justify-center items-center h-16">
           <div className="flex space-x-8">
             {links.map((link) => (
@@ -114,7 +114,7 @@ const Navigation = () => {
           </div>
         </div>
 
-        {/* Mobile: Selector idioma y botón hamburguesa */}
+        {/* Mobile: Selector idioma y bot├│n hamburguesa */}
         <div className="md:hidden flex justify-between items-center py-4">
           {/* Selector de idioma en mobile */}
           <div className="flex items-center gap-2">

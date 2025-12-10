@@ -75,7 +75,7 @@ const Footer = () => {
               >
                 {footer.email}
               </a>
-              <span className="mx-2">•</span>
+              <span className="mx-2">ÔÇó</span>
               <a
                 href="https://instagram.com/arrebolweddings"
                 target="_blank"

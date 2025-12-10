@@ -107,7 +107,7 @@ export async function POST(request: NextRequest) {
           <h1 style="color: #5a4a3a; font-weight: 300; border-bottom: 1px solid #d4c5b5; padding-bottom: 10px;">
             Nueva consulta de boda
           </h1>
-          
+
           <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
             <tr>
               <td style="padding: 10px 0; color: #8a7a6a; width: 140px;">Pareja:</td>
@@ -152,12 +152,12 @@ export async function POST(request: NextRequest) {
             </tr>
             ` : ''}
           </table>
-          
+
           <div style="background-color: white; padding: 20px; border-left: 3px solid #d4c5b5; margin: 20px 0;">
             <p style="color: #8a7a6a; margin: 0 0 10px 0; font-size: 14px;">Mensaje:</p>
             <p style="color: #5a4a3a; margin: 0; line-height: 1.6; white-space: pre-wrap;">${message}</p>
           </div>
-          
+
           <p style="color: #8a7a6a; font-size: 12px; text-align: center; margin-top: 30px;">
             Este mensaje fue enviado desde el formulario de contacto de arrebolweddings.com
           </p>

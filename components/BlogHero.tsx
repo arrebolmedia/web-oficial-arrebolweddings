@@ -40,7 +40,7 @@ const BlogHero = ({ post }: BlogHeroProps) => {
               href={`/blog/${post.slug}`}
               className="inline-block text-sm tracking-widest uppercase border border-[var(--foreground)] px-8 py-4 hover:bg-[var(--foreground)] hover:text-[var(--background)] transition-all duration-300"
             >
-              Leer Artículo
+              Leer Art├¡culo
             </Link>
           </div>
         </div>

@@ -35,7 +35,7 @@ const Process = () => {
               ))}
             </div>
 
-            {/* Ver más button */}
+            {/* Ver m├ís button */}
             <FadeIn delay={500}>
               <div className="mt-12">
                 <Link
