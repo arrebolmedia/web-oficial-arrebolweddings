@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { blogPosts } from "@/lib/blog-data";
 import BlogHero from "@/components/BlogHero";
 import BlogCard from "@/components/BlogCard";
@@ -8,6 +9,9 @@ import { useLanguage } from "@/app/context/LanguageContext";
 
 const POSTS_PER_PAGE = 9;
 
+const CATEGORIES = ["Todos", "Real Weddings", "Tips", "Inspiración"] as const;
+type Category = typeof CATEGORIES[number];
+
 interface BlogPageContentProps {
   currentPage: number;
 }
@@ -15,11 +19,17 @@ interface BlogPageContentProps {
 export default function BlogPageContent({ currentPage }: BlogPageContentProps) {
   const { content } = useLanguage();
   const { blog } = content;
+  const [activeCategory, setActiveCategory] = useState<Category>("Todos");
 
-  // Use the first post as the featured hero post (only on page 1)
-  const featuredPost = blogPosts[0];
+  // Filter posts by category
+  const filteredPosts = activeCategory === "Todos" 
+    ? blogPosts 
+    : blogPosts.filter(post => post.category === activeCategory);
+
+  // Use the first filtered post as the featured hero post (only on page 1)
+  const featuredPost = filteredPosts[0];
   // Get all posts except the featured one for pagination
-  const allGridPosts = blogPosts.slice(1);
+  const allGridPosts = filteredPosts.slice(1);
   
   // Calculate pagination
   const totalPosts = allGridPosts.length;
@@ -47,8 +57,25 @@ export default function BlogPageContent({ currentPage }: BlogPageContentProps) {
           </p>
         </div>
 
-        {/* Featured Post - Only show on first page */}
-        {validCurrentPage === 1 && <BlogHero post={featuredPost} />}
+        {/* Category Filter Tabs */}
+        <div className="flex flex-wrap justify-center gap-3 mb-12">
+          {CATEGORIES.map((category) => (
+            <button
+              key={category}
+              onClick={() => setActiveCategory(category)}
+              className={`px-5 py-2 text-xs tracking-widest uppercase transition-all duration-300 ${
+                activeCategory === category
+                  ? "bg-[var(--foreground)] text-[var(--background)]"
+                  : "border border-[var(--foreground)]/20 text-[var(--foreground)]/70 hover:border-[var(--foreground)] hover:text-[var(--foreground)]"
+              }`}
+            >
+              {category}
+            </button>
+          ))}
+        </div>
+
+        {/* Featured Post - Only show on first page and if there are posts */}
+        {validCurrentPage === 1 && featuredPost && <BlogHero post={featuredPost} />}
 
         {/* Blog Grid */}
         <div className="mt-20 md:mt-32">
@@ -57,15 +84,21 @@ export default function BlogPageContent({ currentPage }: BlogPageContentProps) {
               {validCurrentPage === 1 ? blog.page.latestPosts : `${blog.page.postsPage} ${validCurrentPage}`}
             </h2>
             <span className="hidden md:block text-xs tracking-widest uppercase text-[var(--foreground)]/50">
-              {totalPosts} {blog.page.articles}
+              {filteredPosts.length} {blog.page.articles}
             </span>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16">
-            {paginatedPosts.map((post) => (
-              <BlogCard key={post.id} post={post} />
-            ))}
-          </div>
+          {paginatedPosts.length > 0 ? (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16">
+              {paginatedPosts.map((post) => (
+                <BlogCard key={post.id} post={post} />
+              ))}
+            </div>
+          ) : (
+            <div className="text-center py-16 text-[var(--foreground)]/50">
+              <p className="text-lg">No hay artículos en esta categoría aún.</p>
+            </div>
+          )}
 
           {/* Pagination */}
           {totalPages > 1 && (
