@@ -69,7 +69,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
   // Get random related posts (excluding current, prev, and next)
   const excludeIds = [post.id, prevPost?.id, nextPost?.id].filter(Boolean);
   const availablePosts = blogPosts.filter((p) => !excludeIds.includes(p.id));
-
+  
   // Shuffle and pick 3
   const shuffled = [...availablePosts].sort(() => Math.random() - 0.5);
   const relatedPosts = shuffled.slice(0, 3);
@@ -102,17 +102,17 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           <p className="lead text-xl md:text-2xl font-light text-[var(--foreground)]/80 mb-12 leading-relaxed">
             {post.excerpt}
           </p>
-
+          
           <div className="space-y-6 text-[var(--foreground)]/70 font-light">
             {post.content ? (
               (() => {
                 const paragraphs = post.content.split('\n\n');
                 const elements: React.ReactNode[] = [];
                 let i = 0;
-
+                
                 while (i < paragraphs.length) {
                   const trimmed = paragraphs[i].trim();
-
+                  
                   // Check if this is the start of a bullet list
                   if (trimmed.startsWith('•')) {
                     const listItems: string[] = [];
@@ -129,17 +129,17 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                     );
                     continue;
                   }
-
+                  
                   // Check if paragraph starts with a number followed by a period (e.g., "1. ", "2. ")
                   const isNumberedHeading = /^\d+\.\s/.test(trimmed);
-
+                  
                   // Check if it's a short line that looks like a heading
                   // Must be between 35-80 chars, single line, no punctuation at end
                   // This excludes short list items like "edición profesional"
-                  const isTitleLike = !trimmed.includes('\n') &&
-                                      trimmed.length < 80 &&
+                  const isTitleLike = !trimmed.includes('\n') && 
+                                      trimmed.length < 80 && 
                                       trimmed.length > 35 &&
-                                      !trimmed.endsWith('.') &&
+                                      !trimmed.endsWith('.') && 
                                       !trimmed.endsWith('?') &&
                                       !trimmed.endsWith('!') &&
                                       !trimmed.endsWith('"') &&
@@ -148,11 +148,11 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                                       !trimmed.startsWith('—') &&
                                       !trimmed.startsWith('"') &&
                                       /[a-záéíóúñ]$/i.test(trimmed);
-
+                  
                   if (isNumberedHeading || isTitleLike) {
                     elements.push(
-                      <h2
-                        key={i}
+                      <h2 
+                        key={i} 
                         className="text-2xl md:text-3xl mt-12 mb-4 text-[var(--foreground)] font-[var(--font-heading)]"
                       >
                         {trimmed}
@@ -202,8 +202,8 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           <p className="font-light mb-8 max-w-md mx-auto px-4">
             Escríbenos para revisar tu fecha, conocer tus planes y construir juntos el recuerdo de ese día.
           </p>
-          <a
-            href="https://wa.me/5217775001071?text=Hola!%20Vengo%20del%20blog%20y%20quisiera%20m%C3%A1s%20informaci%C3%B3n"
+          <a 
+            href="https://wa.me/5217775001071?text=Hola!%20Vengo%20del%20blog%20y%20quisiera%20m%C3%A1s%20informaci%C3%B3n" 
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block text-xs tracking-widest uppercase bg-[var(--foreground)] text-[var(--background)] px-8 py-3 border border-[var(--foreground)] hover:bg-[var(--background)] hover:text-[var(--foreground)] transition-colors duration-300"
@@ -228,8 +228,8 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {relatedPosts.map((relatedPost) => (
-                <Link
-                  key={relatedPost.id}
+                <Link 
+                  key={relatedPost.id} 
                   href={`/blog/${relatedPost.slug}`}
                   className="group"
                 >
@@ -243,7 +243,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                       />
                       <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
                     </div>
-
+                    
                     <div className="flex-1 flex flex-col">
                       <p className="text-xs tracking-[0.2em] uppercase text-[var(--foreground)]/50 mb-3">
                         {relatedPost.category}
@@ -268,7 +268,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         {/* Previous/Next Navigation */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
           {prevPost ? (
-            <Link
+            <Link 
               href={`/blog/${prevPost.slug}`}
               className="group p-6 border border-[var(--foreground)]/10 hover:border-[var(--accent-wine)]/30 transition-colors duration-300"
             >
@@ -283,7 +283,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             <div />
           )}
           {nextPost ? (
-            <Link
+            <Link 
               href={`/blog/${nextPost.slug}`}
               className="group p-6 border border-[var(--foreground)]/10 hover:border-[var(--accent-wine)]/30 transition-colors duration-300 text-right"
             >
@@ -301,7 +301,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
         {/* Back to Blog */}
         <div className="pt-8 border-t border-[var(--foreground)]/10 flex justify-center">
-          <Link
+          <Link 
             href="/blog"
             className="text-xs tracking-widest uppercase hover:text-[var(--accent-wine)] transition-colors duration-300"
           >

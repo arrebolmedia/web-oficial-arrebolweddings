@@ -40,7 +40,7 @@ const GalleryPreview = () => {
   const [columns, setColumns] = useState(3);
   const [mediaWithDimensions, setMediaWithDimensions] = useState<MediaData[]>([]);
 
-  // Cargar dimensiones de las im├ígenes y videos
+  // Cargar dimensiones de las imágenes y videos
   useEffect(() => {
     // Shuffle images and pick some
     const shuffledImages = [...galeria.images]
@@ -119,7 +119,7 @@ const GalleryPreview = () => {
   
   const displayMedia = mediaWithDimensions;
 
-  // Calcular n├║mero de columnas basado en el ancho de la ventana
+  // Calcular número de columnas basado en el ancho de la ventana
   useEffect(() => {
     const updateColumns = () => {
       const width = window.innerWidth;
@@ -133,7 +133,7 @@ const GalleryPreview = () => {
     return () => window.removeEventListener('resize', updateColumns);
   }, []);
 
-  // Funci├│n para obtener la columna m├ís corta
+  // Función para obtener la columna más corta
   const getShortestColumn = (heights: number[]) => {
     return heights.indexOf(Math.min(...heights));
   };
@@ -159,7 +159,7 @@ const GalleryPreview = () => {
 
   const mediaColumns = organizeMedia();
 
-  // No renderizar hasta que las dimensiones est├®n cargadas
+  // No renderizar hasta que las dimensiones estén cargadas
   if (mediaWithDimensions.length === 0) {
     return (
       <section className="py-16 bg-white">
@@ -179,7 +179,7 @@ const GalleryPreview = () => {
           {mediaColumns.map((column, colIndex) => (
             <div key={colIndex} className="flex-1 flex flex-col gap-4">
               {column.map((media) => {
-                // Determinar el aspect ratio basado en la orientaci├│n
+                // Determinar el aspect ratio basado en la orientación
                 const isVertical = media.aspectRatio < 1;
                 const aspectClass = isVertical ? 'aspect-[4/5]' : 'aspect-[3/2]';
                 
@@ -216,7 +216,7 @@ const GalleryPreview = () => {
           ))}
         </div>
 
-        {/* Ver m├ís */}
+        {/* Ver más */}
         <FadeIn delay={500}>
           <div className="text-center mt-12">
             <Link

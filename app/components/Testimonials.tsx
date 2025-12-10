@@ -30,7 +30,7 @@ const Testimonials = () => {
                   "{testimonial.quote}"
                 </p>
                 <p className="font-medium text-[var(--accent-wine)] mt-4">
-                  ÔÇö {testimonial.author}
+                  — {testimonial.author}
                 </p>
               </div>
             </FadeIn>

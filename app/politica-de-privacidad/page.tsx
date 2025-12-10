@@ -2,9 +2,9 @@ import { Metadata } from "next";
 import SectionHeader from "@/components/SectionHeader";
 
 export const metadata: Metadata = {
-  title: "Pol├¡tica de Privacidad | Arrebol Weddings",
+  title: "Política de Privacidad | Arrebol Weddings",
   description:
-    "Pol├¡tica de privacidad y protecci├│n de datos personales de Arrebol Weddings.",
+    "Política de privacidad y protección de datos personales de Arrebol Weddings.",
 };
 
 export default function PrivacyPolicyPage() {
@@ -12,8 +12,8 @@ export default function PrivacyPolicyPage() {
     <main className="min-h-screen bg-[var(--background)]">
       {/* Header con imagen de fondo */}
       <SectionHeader
-        title="Pol├¡tica de Privacidad"
-        subtitle="├Ültima actualizaci├│n: enero 2026"
+        title="Política de Privacidad"
+        subtitle="Última actualización: enero 2026"
         backgroundImage="/images/gallery/SyP-273.webp"
       />
 
@@ -22,16 +22,16 @@ export default function PrivacyPolicyPage() {
         <article className="prose prose-lg max-w-none text-[var(--foreground)]/80 space-y-8">
           <p className="text-lg leading-relaxed">
             En Arrebol Weddings, valoramos profundamente la privacidad y
-            protecci├│n de los datos personales de nuestros clientes, prospectos
-            y visitantes de nuestro sitio web. Este documento explica c├│mo
+            protección de los datos personales de nuestros clientes, prospectos
+            y visitantes de nuestro sitio web. Este documento explica cómo
             recopilamos, utilizamos, resguardamos y, en su caso, compartimos la
-            informaci├│n que nos proporcionas.
+            información que nos proporcionas.
           </p>
 
           <p>
-            Esta Pol├¡tica de Privacidad se emite en cumplimiento de la Ley
-            Federal de Protecci├│n de Datos Personales en Posesi├│n de los
-            Particulares (LFPDPPP) vigente en M├®xico.
+            Esta Política de Privacidad se emite en cumplimiento de la Ley
+            Federal de Protección de Datos Personales en Posesión de los
+            Particulares (LFPDPPP) vigente en México.
           </p>
 
           {/* Section 1 */}
@@ -45,11 +45,11 @@ export default function PrivacyPolicyPage() {
             </p>
             <p>
               Para asuntos relacionados con privacidad, solicitudes de acceso,
-              rectificaci├│n, cancelaci├│n u oposici├│n (ARCO), puedes contactarnos
+              rectificación, cancelación u oposición (ARCO), puedes contactarnos
               en:
             </p>
             <p className="font-medium">
-              ­ƒô® Correo de contacto:{" "}
+              📩 Correo de contacto:{" "}
               <a
                 href="mailto:hola@arrebolweddings.com"
                 className="underline hover:text-[var(--foreground)]"
@@ -66,7 +66,7 @@ export default function PrivacyPolicyPage() {
             </h2>
             <p>
               Arrebol Weddings recopila los siguientes datos personales, ya sea
-              de manera directa (formularios, correo, WhatsApp) o autom├ítica
+              de manera directa (formularios, correo, WhatsApp) o automática
               (cookies):
             </p>
 
@@ -75,27 +75,27 @@ export default function PrivacyPolicyPage() {
             </h3>
             <ul className="list-disc pl-6 space-y-1">
               <li>Nombre completo</li>
-              <li>Tel├®fono</li>
-              <li>Correo electr├│nico</li>
+              <li>Teléfono</li>
+              <li>Correo electrónico</li>
               <li>Fecha de la boda</li>
               <li>Nombre de la pareja</li>
-              <li>Informaci├│n sobre proveedores</li>
+              <li>Información sobre proveedores</li>
               <li>Preferencias o inspiraciones visuales</li>
-              <li>Informaci├│n enviada mediante formularios del sitio web</li>
+              <li>Información enviada mediante formularios del sitio web</li>
               <li>
-                Archivos multimedia proporcionados por los clientes (im├ígenes,
+                Archivos multimedia proporcionados por los clientes (imágenes,
                 videos, referencias)
               </li>
             </ul>
 
             <h3 className="font-semibold text-[var(--foreground)] mt-6 mb-3">
-              Datos recolectados autom├íticamente:
+              Datos recolectados automáticamente:
             </h3>
             <ul className="list-disc pl-6 space-y-1">
-              <li>Cookies y tecnolog├¡as de seguimiento</li>
-              <li>Anal├¡ticas de uso (Google Analytics)</li>
+              <li>Cookies y tecnologías de seguimiento</li>
+              <li>Analíticas de uso (Google Analytics)</li>
               <li>
-                Informaci├│n de rendimiento de campa├▒as (Meta Pixel y
+                Información de rendimiento de campañas (Meta Pixel y
                 herramientas similares)
               </li>
             </ul>
@@ -110,35 +110,35 @@ export default function PrivacyPolicyPage() {
             <h2 className="font-[var(--font-heading)] text-2xl md:text-3xl text-[var(--foreground)] mb-4">
               3. Finalidades del tratamiento de datos
             </h2>
-            <p>Los datos personales recabados ser├ín utilizados para:</p>
+            <p>Los datos personales recabados serán utilizados para:</p>
 
             <h3 className="font-semibold text-[var(--foreground)] mt-6 mb-3">
-              Finalidades primarias (necesarias para la prestaci├│n del
+              Finalidades primarias (necesarias para la prestación del
               servicio):
             </h3>
             <ul className="list-disc pl-6 space-y-1">
               <li>Establecer contacto comercial.</li>
-              <li>Preparar propuestas fotogr├íficas y de video.</li>
+              <li>Preparar propuestas fotográficas y de video.</li>
               <li>
-                Gestionar el proceso de contrataci├│n y firma de acuerdos.
+                Gestionar el proceso de contratación y firma de acuerdos.
               </li>
-              <li>Organizar log├¡stica de cobertura de la boda.</li>
-              <li>Entregar material fotogr├ífico y videogr├ífico final.</li>
-              <li>Emitir facturaci├│n y comprobantes fiscales.</li>
-              <li>Mantener comunicaci├│n operativa con el cliente.</li>
+              <li>Organizar logística de cobertura de la boda.</li>
+              <li>Entregar material fotográfico y videográfico final.</li>
+              <li>Emitir facturación y comprobantes fiscales.</li>
+              <li>Mantener comunicación operativa con el cliente.</li>
             </ul>
 
             <h3 className="font-semibold text-[var(--foreground)] mt-6 mb-3">
               Finalidades secundarias (opcionales):
             </h3>
             <ul className="list-disc pl-6 space-y-1">
-              <li>Env├¡o de newsletter o comunicaciones de inter├®s.</li>
+              <li>Envío de newsletter o comunicaciones de interés.</li>
               <li>
-                Estad├¡sticas internas, an├ílisis de rendimiento y mejora de
+                Estadísticas internas, análisis de rendimiento y mejora de
                 servicios.
               </li>
               <li>
-                Gesti├│n de remarketing o publicidad digital (cuando el usuario
+                Gestión de remarketing o publicidad digital (cuando el usuario
                 lo acepte).
               </li>
             </ul>
@@ -175,7 +175,7 @@ export default function PrivacyPolicyPage() {
                 Plataformas de entrega de contenido (como Pic-Time u otras
                 similares)
               </li>
-              <li>Software de administraci├│n o CRM</li>
+              <li>Software de administración o CRM</li>
               <li>Servicios de almacenamiento en la nube</li>
             </ul>
             <p className="mt-4">
@@ -192,7 +192,7 @@ export default function PrivacyPolicyPage() {
             <p className="font-medium">
               Arrebol Weddings no vende ni comercializa datos personales.
             </p>
-            <p className="mt-4">Solo podremos compartir informaci├│n cuando:</p>
+            <p className="mt-4">Solo podremos compartir información cuando:</p>
             <ul className="list-disc pl-6 space-y-1 mt-4">
               <li>
                 Sea necesario para completar servicios contratados (por ejemplo,
@@ -206,14 +206,14 @@ export default function PrivacyPolicyPage() {
             </ul>
             <p className="mt-4">
               Todas las transferencias se realizan con las medidas de seguridad
-              necesarias para proteger tu informaci├│n.
+              necesarias para proteger tu información.
             </p>
           </section>
 
           {/* Section 6 */}
           <section className="pt-8 border-t border-[var(--foreground)]/10">
             <h2 className="font-[var(--font-heading)] text-2xl md:text-3xl text-[var(--foreground)] mb-4">
-              6. Derechos ARCO (Acceso, Rectificaci├│n, Cancelaci├│n y Oposici├│n)
+              6. Derechos ARCO (Acceso, Rectificación, Cancelación y Oposición)
             </h2>
             <p>Como titular de datos personales, tienes derecho a:</p>
             <ul className="list-disc pl-6 space-y-1 mt-4">
@@ -226,18 +226,18 @@ export default function PrivacyPolicyPage() {
               </li>
               <li>
                 <strong>Cancelar</strong> tus datos cuando consideres que no se
-                requieren para alguna de las finalidades se├▒aladas.
+                requieren para alguna de las finalidades señaladas.
               </li>
               <li>
                 <strong>Oponerte</strong> al tratamiento de los mismos para
-                finalidades espec├¡ficas.
+                finalidades específicas.
               </li>
             </ul>
             <p className="mt-4">
               Para ejercer cualquiera de estos derechos, escribe a:
             </p>
             <p className="font-medium">
-              ­ƒô®{" "}
+              📩{" "}
               <a
                 href="mailto:hola@arrebolweddings.com"
                 className="underline hover:text-[var(--foreground)]"
@@ -246,7 +246,7 @@ export default function PrivacyPolicyPage() {
               </a>
             </p>
             <p className="mt-4">
-              Tu solicitud ser├í atendida conforme a los plazos y requisitos
+              Tu solicitud será atendida conforme a los plazos y requisitos
               establecidos por la LFPDPPP.
             </p>
           </section>
@@ -254,17 +254,17 @@ export default function PrivacyPolicyPage() {
           {/* Section 7 */}
           <section className="pt-8 border-t border-[var(--foreground)]/10">
             <h2 className="font-[var(--font-heading)] text-2xl md:text-3xl text-[var(--foreground)] mb-4">
-              7. Uso de cookies y tecnolog├¡as similares
+              7. Uso de cookies y tecnologías similares
             </h2>
             <p>Nuestro sitio web puede utilizar:</p>
             <ul className="list-disc pl-6 space-y-1 mt-4">
-              <li>Cookies de sesi├│n</li>
-              <li>Cookies anal├¡ticas</li>
+              <li>Cookies de sesión</li>
+              <li>Cookies analíticas</li>
               <li>Cookies de publicidad (como Meta Pixel)</li>
             </ul>
             <p className="mt-4">
               Los usuarios pueden deshabilitar las cookies desde la
-              configuraci├│n de su navegador. Esto podr├¡a limitar algunas
+              configuración de su navegador. Esto podría limitar algunas
               funciones del sitio.
             </p>
           </section>
@@ -275,19 +275,19 @@ export default function PrivacyPolicyPage() {
               8. Medidas de seguridad
             </h2>
             <p>
-              Arrebol Weddings implementa medidas t├®cnicas, administrativas y
-              f├¡sicas para proteger los datos personales contra:
+              Arrebol Weddings implementa medidas técnicas, administrativas y
+              físicas para proteger los datos personales contra:
             </p>
             <ul className="list-disc pl-6 space-y-1 mt-4">
-              <li>P├®rdida</li>
+              <li>Pérdida</li>
               <li>Acceso no autorizado</li>
               <li>Uso indebido</li>
-              <li>Modificaci├│n</li>
-              <li>Destrucci├│n</li>
+              <li>Modificación</li>
+              <li>Destrucción</li>
             </ul>
             <p className="mt-4">
-              Aun as├¡, ning├║n sistema es completamente invulnerable; en caso de
-              detectar alguna vulneraci├│n, se notificar├í a los usuarios
+              Aun así, ningún sistema es completamente invulnerable; en caso de
+              detectar alguna vulneración, se notificará a los usuarios
               afectados conforme a la ley aplicable.
             </p>
           </section>
@@ -295,34 +295,34 @@ export default function PrivacyPolicyPage() {
           {/* Section 9 */}
           <section className="pt-8 border-t border-[var(--foreground)]/10">
             <h2 className="font-[var(--font-heading)] text-2xl md:text-3xl text-[var(--foreground)] mb-4">
-              9. Conservaci├│n de datos
+              9. Conservación de datos
             </h2>
             <p>
-              Los datos personales se conservar├ín ├║nicamente por el tiempo
+              Los datos personales se conservarán únicamente por el tiempo
               necesario para cumplir con:
             </p>
             <ul className="list-disc pl-6 space-y-1 mt-4">
-              <li>Las finalidades descritas en esta pol├¡tica</li>
+              <li>Las finalidades descritas en esta política</li>
               <li>Obligaciones legales y fiscales</li>
-              <li>Intereses leg├¡timos relacionados con servicios contratados</li>
+              <li>Intereses legítimos relacionados con servicios contratados</li>
             </ul>
             <p className="mt-4">
-              Posteriormente ser├ín eliminados o anonimizados de forma segura.
+              Posteriormente serán eliminados o anonimizados de forma segura.
             </p>
           </section>
 
           {/* Section 10 */}
           <section className="pt-8 border-t border-[var(--foreground)]/10">
             <h2 className="font-[var(--font-heading)] text-2xl md:text-3xl text-[var(--foreground)] mb-4">
-              10. Modificaciones a esta Pol├¡tica de Privacidad
+              10. Modificaciones a esta Política de Privacidad
             </h2>
             <p>
-              Arrebol Weddings podr├í actualizar o modificar este documento en
-              cualquier momento. La versi├│n vigente siempre estar├í disponible en
+              Arrebol Weddings podrá actualizar o modificar este documento en
+              cualquier momento. La versión vigente siempre estará disponible en
               nuestro sitio web.
             </p>
             <p className="mt-2">
-              La fecha de la ├║ltima actualizaci├│n aparece al inicio del
+              La fecha de la última actualización aparece al inicio del
               documento.
             </p>
           </section>
@@ -330,12 +330,12 @@ export default function PrivacyPolicyPage() {
           {/* Section 11 */}
           <section className="pt-8 border-t border-[var(--foreground)]/10">
             <h2 className="font-[var(--font-heading)] text-2xl md:text-3xl text-[var(--foreground)] mb-4">
-              11. Aceptaci├│n
+              11. Aceptación
             </h2>
             <p>
               Al utilizar nuestros servicios, acceder a nuestro sitio web o
-              proporcionarnos tus datos personales, reconoces haber le├¡do y
-              aceptado los t├®rminos de esta Pol├¡tica de Privacidad.
+              proporcionarnos tus datos personales, reconoces haber leído y
+              aceptado los términos de esta Política de Privacidad.
             </p>
           </section>
         </article>
