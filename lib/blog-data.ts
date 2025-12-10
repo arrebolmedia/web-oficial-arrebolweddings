@@ -2766,6 +2766,1135 @@ Y cuando dos personas se miran sin máscaras, el amor florece de una manera que 
     category: "Inspiración",
     date: "Diciembre 10, 2025",
   },
+  {
+    id: "25",
+    slug: "el-encuentro-verdadero",
+    title: "El encuentro verdadero: cuando dos mundos internos se miran sin miedo",
+    excerpt: "El amor ocurre cuando dos personas se encuentran de verdad. No cuando se gustan. No cuando coinciden. El encuentro real sucede cuando un mundo interno se asoma a otro sin miedo, sin máscaras y sin la necesidad de demostrar nada.",
+    content: `Hay un concepto bellísimo que atraviesa la psicología humanista y la filosofía del encuentro:
+el amor ocurre cuando dos personas se encuentran de verdad.
+
+No cuando se gustan.
+No cuando coinciden.
+No cuando todo fluye fácil.
+
+El encuentro —el real— sucede cuando un mundo interno se asoma a otro sin miedo, sin máscaras y sin la necesidad de demostrar nada.
+
+Es un instante breve y eterno a la vez:
+un destello de humanidad compartida.
+
+En Arrebol lo vemos constantemente.
+Es casi imperceptible, pero existe:
+ese momento donde la pareja se mira como si por fin se reconociera.
+
+## 1. Un encuentro no es una mirada: es un reconocimiento
+
+Martin Buber lo llamaba relación Yo–Tú.
+Rogers lo entendía como una relación de persona a persona, no de rol a rol.
+
+Un encuentro ocurre cuando:
+
+• dejo de verte como "mi pareja"
+• y empiezo a verte como un ser humano vivo, sensible, único
+
+No te veo como "novio" o "novia", sino como tú, completo, irrepetible.
+
+Es un acto de presencia radical.
+
+## 2. Para que exista encuentro, debe existir apertura
+
+El encuentro exige algo que da miedo:
+abrirse.
+
+Significa:
+
+• permitir que el otro vea tu emoción real
+• soltar el control por un instante
+• dejar de pensar en cómo te ves
+• confiar en que el otro sostendrá lo que aparece
+
+No hay encuentro sin vulnerabilidad.
+La coraza impide el paso.
+
+## 3. El encuentro verdadero tiene un ritmo distinto
+
+No es eufórico.
+No es teatral.
+No es cinematográfico.
+
+Es más sutil y mucho más potente:
+
+• un suspiro compartido
+• una sonrisa que suaviza el cuerpo
+• un abrazo donde ambos se apoyan de verdad
+• un silencio que no incomoda
+• una mirada que dice "aquí estoy"
+
+Es un momento con densidad emocional.
+
+## 4. Lo vemos en bodas todo el tiempo
+
+Hay instantes que no aparecen en los programas ni en los timelapses:
+
+• cuando uno ve al otro antes del first look y respira más hondo
+• cuando en la ceremonia se toman las manos por debajo del atril
+• cuando el papá o la mamá mira a la pareja y suelta una lágrima silenciosa
+• cuando en el baile, por un segundo, dejan de escuchar la música y solo se ven
+
+Esos momentos no se posan:
+se revelan.
+
+Y ahí está el encuentro.
+
+## 5. El encuentro transforma a quienes participan en él
+
+Rogers decía que un encuentro genuino tiene un efecto terapéutico.
+No porque cure heridas, sino porque permite que lo verdadero emerja.
+
+Cuando alguien se siente realmente visto:
+
+• baja defensas
+• crece confianza
+• surge ternura
+• aparece calma
+• se abre el corazón
+
+Un encuentro auténtico reorganiza algo dentro.
+
+## 6. Casarse es, en esencia, un acto de encuentro
+
+El matrimonio no es solo una ceremonia;
+es un pacto para encontrarse una y otra vez,
+en las versiones luminosas y en las versiones difíciles.
+
+Porque habrá días de distancia, cansancio, ruido, estrés.
+Y aun así, el encuentro sigue siendo posible.
+
+El matrimonio sostiene la promesa de volver al centro:
+al "nosotros" que se reconoce.
+
+## 7. El encuentro solo existe en la verdad, no en la actuación
+
+Si intentamos controlar la impresión que damos:
+
+• perdemos espontaneidad
+• ocultamos vulnerabilidad
+• impedimos la conexión
+• mantenemos distancia emocional
+
+Un encuentro requiere autenticidad.
+Requiere dejar que el otro vea incluso lo que nos da miedo mostrar.
+
+## 8. El encuentro es la raíz del amor profundo
+
+El enamoramiento puede ocurrir sin encuentro.
+La pasión también.
+
+Pero el amor, el que madura y se sostiene,
+solo nace cuando dos personas se permiten ver y ser vistas.
+
+Ese instante es pequeño, pero suficiente.
+Ahí empieza una vida compartida.
+
+## En resumen
+
+Un encuentro verdadero no es un acto romántico.
+Es un acto humano.
+Es la magia más simple y más poderosa que aparece cuando dos personas se miran sin miedo.
+
+En cada boda, en cada abrazo, en cada mirada que capturamos, buscamos eso:
+el instante donde el mundo se detiene un poco
+y dos almas se reconocen.`,
+    coverImage: "/images/gallery/RandK-177.webp",
+    category: "Inspiración",
+    date: "Diciembre 10, 2025",
+  },
+  {
+    id: "26",
+    slug: "la-vulnerabilidad-como-puerta-al-amor",
+    title: "La vulnerabilidad como puerta al amor",
+    excerpt: "El amor profundo no nace de la perfección, sino de la vulnerabilidad. La capacidad de mostrarnos como somos —inseguros, emocionados, sensibles, humanos— es lo que abre espacio a un vínculo real.",
+    content: `Hay una verdad que la psicología humanista repite una y otra vez:
+el amor profundo no nace de la perfección, sino de la vulnerabilidad.
+
+La capacidad de mostrarnos como somos —inseguros, emocionados, sensibles, humanos— es lo que abre espacio a un vínculo real.
+No porque sea cómodo, sino porque es verdadero.
+
+En la vida diaria, solemos protegernos:
+evitamos decir lo que sentimos, disfrazamos miedo con humor, reemplazamos fragilidad con control.
+Pero la vulnerabilidad es lo contrario:
+es dejar que el otro nos vea en aquello que también nos asusta mostrar.
+
+Y ahí, justamente ahí, aparece el amor.
+
+## 1. La vulnerabilidad no es debilidad: es disponibilidad emocional
+
+Carl Rogers lo decía así:
+una relación profunda solo ocurre cuando uno está psicológicamente abierto a la experiencia.
+
+Eso significa:
+
+• reconocer lo que sentimos
+• atrevernos a expresarlo
+• permitir que el otro se acerque
+• aceptar nuestra humanidad tal como es
+
+La vulnerabilidad no nos rompe.
+Nos abre.
+
+## 2. Sin vulnerabilidad, solo existe actuación
+
+Si ocultamos lo que sentimos:
+
+• la relación se llena de tensión
+• se acumulan silencios duros
+• la pareja interpreta en lugar de comprender
+• el vínculo se vuelve estratégico, no auténtico
+
+Cuando no mostramos lo que realmente sentimos, el amor se vuelve fachada.
+
+## 3. La vulnerabilidad crea intimidad, no la destruye
+
+La intimidad verdadera no surge de la perfección, sino de la honestidad emotiva.
+
+Aparece cuando decimos:
+
+• "Tengo miedo."
+• "Estoy feliz."
+• "Me duele esto."
+• "Necesito que estés conmigo."
+• "No estoy bien hoy."
+• "Te extraño."
+
+Ese tipo de comunicación no es dramática.
+Es humana.
+
+## 4. En las bodas, la vulnerabilidad está en todas partes (aunque pocos la nombren)
+
+Lo vemos cada fin de semana:
+
+• la mirada del novio antes de ver a la novia
+• la respiración temblorosa de quien está a punto de dar un voto
+• la mamá que esconde una lágrima
+• la novia que ríe y llora al mismo tiempo
+• el abrazo del padre que por fin suelta a su hija
+• el silencio profundo antes del "sí"
+
+La boda no es un espectáculo:
+es un escenario emocional donde la vulnerabilidad florece sin permiso.
+
+Y las fotos más hermosas nacen ahí.
+
+## 5. Mostrar vulnerabilidad es invitar al otro a cuidar aquello que es sensible
+
+Cuando decimos lo que sentimos, le decimos al otro:
+
+"Esto es importante para mí."
+"Esto me duele."
+"Esto me mueve."
+"Esto me hace feliz."
+
+El otro entonces puede responder con cuidado, ternura, presencia.
+La vulnerabilidad guía al otro hacia donde más necesitamos ser sostenidos.
+
+## 6. La vulnerabilidad conecta porque nos vuelve reconocibles
+
+Todos tenemos miedo.
+Todos dudamos.
+Todos amamos imperfectamente.
+
+Cuando mostramos vulnerabilidad, el otro deja de vernos como ideal y empieza a vernos como humano.
+Y eso, paradójicamente, nos acerca más.
+
+El amor no crece entre dioses, crece entre humanos.
+
+## 7. El matrimonio es un espacio donde la vulnerabilidad debe tener hogar
+
+Casarse no es prometer no fallar.
+Es prometer que cuando fallemos, hablaremos.
+Que cuando nos sintamos frágiles, pediremos apoyo.
+Que cuando nos duela algo, no nos esconderemos.
+
+El matrimonio fuerte no es el que evita la vulnerabilidad,
+sino el que la sostiene.
+
+## 8. La vulnerabilidad es la puerta, no el obstáculo
+
+Las personas a veces creen:
+
+"Si muestro esto… se alejará."
+"Si digo esto… pensarán menos de mí."
+"Si revelo esto… voy a parecer débil."
+
+Pero el amor auténtico responde distinto.
+Responde con cercanía.
+
+La vulnerabilidad no espanta al amor.
+Lo convoca.
+
+## En resumen
+
+La vulnerabilidad es el acto de abrir el corazón sin garantías.
+Es el puente más arriesgado… y el más hermoso.
+
+Es decir:
+"Te dejo verme, incluso en aquello que yo mismo estoy aprendiendo a abrazar."
+
+Y cuando dos personas se permiten eso, la relación se vuelve un hogar emocional donde lo verdadero puede florecer sin miedo.`,
+    coverImage: "/images/gallery/TandM-224.webp",
+    category: "Inspiración",
+    date: "Diciembre 10, 2025",
+  },
+  {
+    id: "27",
+    slug: "amor-y-libertad-equilibrio-esencial",
+    title: "Amor y libertad: un equilibrio esencial según la psicología existencial",
+    excerpt: "El amor auténtico no es posesión, fusión ni control. Es elección voluntaria, consciente, renovada. Porque cuando una relación sacrifica la libertad, nace el resentimiento. Y cuando sacrifica el amor, nace la distancia.",
+    content: `Hay dos fuerzas que a veces se perciben como opuestas, pero que en una relación sana se necesitan mutuamente:
+el amor y la libertad.
+
+Rollo May, Fromm y gran parte de la psicología existencial insistían en que un amor auténtico no es posesión, fusión ni control.
+Un amor auténtico es elección.
+Elección voluntaria, consciente, renovada.
+
+Porque cuando una relación sacrifica la libertad, nace el resentimiento.
+Y cuando sacrifica el amor, nace la distancia.
+El arte está en mantenerlas vivas a la vez.
+
+## 1. Amar no es absorber al otro; es permitir que exista plenamente
+
+Erich Fromm decía que amar no es "tener", sino "ser con".
+
+La libertad en el amor significa:
+
+• que cada uno pueda crecer
+• que cada uno conserve su identidad
+• que no haya miedo a expresarse
+• que la relación no aplaste la individualidad
+• que el vínculo enriquezca, no limite
+
+Una relación que exige renuncias esenciales deja de ser hogar y se vuelve jaula.
+
+## 2. Una relación madura es una relación elegida, no asumida
+
+Rollo May hablaba del amor como un acto de valentía:
+elegir a alguien sin garantías, pero desde la libertad interna.
+
+Elegir no por presión,
+no por miedo,
+no por costumbre,
+sino porque el corazón y la voluntad coinciden.
+
+En una relación libre, la pareja puede decir:
+"Estoy aquí porque quiero estar, no porque debo estar."
+
+Eso es amor adulto.
+
+## 3. La libertad nutre el deseo, no lo amenaza
+
+Algunas personas sienten que amar es "atar" al otro para no perderlo.
+Pero la libertad, lejos de alejarnos, fortalece el deseo.
+
+Cuando una persona se sabe libre:
+
+• ama sin miedo
+• entrega sin cálculo
+• regresa por voluntad, no por obligación
+• se siente visto, no usado
+• disfruta más la relación
+
+El deseo necesita aire, no cadenas.
+
+## 4. En las bodas vemos este equilibrio todo el tiempo
+
+Lo vemos en pequeños gestos:
+
+• cuando uno escucha al otro sin interrumpir
+• cuando se sonríen como si ambos siguieran siendo individuos con historia
+• cuando uno respeta el ritmo, la emoción o el silencio del otro
+• cuando se toman de la mano, pero sin apretar
+• cuando la ceremonia refleja sus valores, no los de todos los demás
+
+Las bodas más hermosas son las que surgen de dos libertades que deciden encontrarse.
+
+## 5. Amar desde la libertad es amar sin miedo
+
+La libertad no elimina el compromiso; lo vuelve auténtico.
+
+Una relación libre permite:
+
+• hablar sin temor a ser juzgado
+• pedir sin temor a parecer "needy"
+• equivocarse sin sentirse condenado
+• cambiar sin sentir que la identidad está confiscada
+
+La libertad emocional es el espacio donde el amor puede respirar.
+
+## 6. El compromiso no contradice la libertad; la profundiza
+
+Comprometerse no es perderse.
+Es elegir un camino compartido.
+
+La libertad interna se transforma en libertad compartida:
+dos personas que se acompañan sin invadirse,
+que se fortalecen sin disolverse,
+que se modifican sin perder esencia.
+
+Esa es la madurez afectiva.
+
+## 7. Amar libremente exige responsabilidad
+
+Los existencialistas lo repetían:
+la libertad sin responsabilidad es capricho.
+La libertad con responsabilidad es amor.
+
+Responsabilidad afectiva significa:
+
+• cuidar el impacto emocional de mis actos
+• comunicar lo necesario
+• sostener mis elecciones
+• estar para el otro cuando lo necesita
+
+La libertad en pareja no es un "yo primero",
+sino un "yo contigo".
+
+## 8. La libertad crea un amor más fuerte, no más frágil
+
+Cuando la relación se sostiene desde el control, cualquier movimiento la amenaza.
+Cuando se sostiene desde la libertad, es flexible, adaptable, viva.
+
+El amor libre no teme la expansión del otro,
+la celebra.
+No teme la diferencia,
+la respeta.
+No teme el cambio,
+lo acompaña.
+
+## En resumen
+
+El amor auténtico necesita libertad,
+y la libertad auténtica necesita amor.
+
+Cuando dos personas se eligen desde ese equilibrio —sin control, sin miedo, sin posesión— algo profundamente humano ocurre:
+
+El amor deja de ser un refugio inseguro
+y se convierte en un espacio donde ambos pueden crecer,
+expandirse
+y encontrarse una y otra vez.`,
+    coverImage: "/images/gallery/PyC-186.webp",
+    category: "Inspiración",
+    date: "Diciembre 10, 2025",
+  },
+  {
+    id: "28",
+    slug: "el-amor-como-proceso-de-crecimiento-mutuo",
+    title: "El amor como proceso de crecimiento mutuo",
+    excerpt: "En la psicología humanista, el amor no es un estado; es un proceso. Un movimiento continuo que transforma a quienes lo viven. Las relaciones que duran son las que permiten que cada persona crezca.",
+    content: `En la psicología humanista, especialmente en el trabajo de Carl Rogers y Abraham Maslow, hay una idea preciosa:
+el amor no es un estado; es un proceso.
+
+Un proceso de crecimiento, descubrimiento y expansión.
+Un movimiento continuo que transforma a quienes lo viven.
+
+Las relaciones que duran no son las que se mantienen iguales,
+sino las que permiten que cada persona crezca —y que la relación crezca con ellas.
+
+## 1. El amor real no es estático: evoluciona
+
+Maslow afirmaba que las relaciones más sanas son aquellas que permiten la autorrealización.
+Es decir, relaciones donde:
+
+• puedes ser tú mismo sin miedo
+• puedes cambiar sin culpa
+• puedes equivocarte sin ser castigado
+• puedes expandirte sin perder pertenencia
+
+El amor crece porque permite que tú crezcas.
+
+## 2. Crecer no es separarse: es transformarse juntos
+
+A veces tememos que si uno de los dos cambia, la relación se rompa.
+Pero en el amor sano ocurre lo contrario:
+
+las transformaciones se vuelven parte del vínculo.
+
+Crecer juntos no significa crecer al mismo ritmo,
+sino acompañarse con curiosidad y cariño mientras cada uno avanza en su propio camino.
+
+## 3. El crecimiento mutuo se sostiene en dos pilares: aceptación y empatía
+
+Rogers decía que las relaciones que facilitan el desarrollo humano tienen tres condiciones:
+
+• Autenticidad
+• Aceptación incondicional
+• Empatía profunda
+
+Cuando estas condiciones están presentes, la relación se vuelve un espacio fértil,
+una tierra donde las raíces pueden profundizar y las ramas pueden extenderse.
+
+## 4. Las parejas que crecen juntas no temen las conversaciones difíciles
+
+El crecimiento no es lineal.
+A veces implica:
+
+• hablar de miedos
+• reconocer errores
+• nombrar necesidades
+• revisar hábitos
+• ajustar expectativas
+
+Las parejas maduras no evitan estos temas;
+los abrazan.
+
+Porque saben que lo que se habla, crece.
+Y lo que se calla, se endurece.
+
+## 5. Lo vemos todo el tiempo en bodas
+
+A veces, durante los votos, aparece esta idea sin que la pareja la nombre:
+
+"Quiero caminar contigo en todo lo que la vida traiga."
+
+"Quiero acompañarte mientras nos convertimos en quienes seremos."
+
+"Prometo crecer contigo y para nosotros."
+
+El matrimonio no congela el amor;
+lo abre al futuro.
+
+## 6. El crecimiento mutuo implica libertad compartida
+
+Maslow decía que el amor maduro es aquel donde dos personas se apoyan mutuamente hacia la plenitud.
+
+Eso significa:
+
+• respetar procesos personales
+• celebrar logros individuales
+• permitir espacios de soledad
+• acompañar sin invadir
+• motivar sin presionar
+
+El amor se vuelve un catalizador de expansión,
+no un muro que limita.
+
+## 7. Crecer juntos no significa nunca fallar: significa volver a encontrarse
+
+En el proceso aparecerán:
+
+• desacuerdos
+• etapas de cansancio
+• distancias temporales
+• confusiones
+• aprendizajes incómodos
+
+Pero las parejas que crecen juntas no esperan perfección.
+Esperan sinceridad, voluntad, y un regreso constante al "nosotros".
+
+## 8. El amor que crece es un amor que escucha
+
+Escuchar no es esperar tu turno para hablar.
+Escuchar es:
+
+• dejar entrar el mundo del otro
+• comprender sin juzgar
+• sostener sin intentar corregir
+• permitir que el otro exista en su experiencia
+
+Ese tipo de escucha crea cambios profundos.
+
+## En resumen
+
+El amor no se mantiene vivo por inercia.
+Se mantiene vivo porque ambos siguen creciendo
+—como individuos y como pareja—
+y permiten que la relación sea un espacio donde ese crecimiento es posible.
+
+El matrimonio no es un destino final.
+Es un proceso en movimiento constante.
+
+Y cuando dos personas entienden esto,
+el amor deja de ser un lugar al que se llega
+para convertirse en un viaje que se camina juntos.`,
+    coverImage: "/images/gallery/Sofía-y-Pablo-198.webp",
+    category: "Inspiración",
+    date: "Diciembre 10, 2025",
+  },
+  {
+    id: "29",
+    slug: "el-arte-de-escuchar-en-pareja",
+    title: "El arte de escuchar en pareja: empatía que sostiene una vida juntos",
+    excerpt: "Escuchar no es oír palabras. No es esperar tu turno. Escuchar es entrar en el mundo del otro sin intentar corregirlo, arreglarlo o juzgarlo. Este tipo de escucha cambia a las personas y a las parejas.",
+    content: `Hay algo que transforma radicalmente una relación, mucho más que los grandes gestos o las fechas especiales:
+la capacidad de escuchar de verdad.
+
+Escuchar no es oír palabras.
+No es esperar tu turno.
+No es preparar mentalmente una respuesta.
+
+Escuchar —desde la psicología humanista— es entrar en el mundo del otro sin intentar corregirlo, arreglarlo o juzgarlo.
+Es comprender su experiencia desde adentro, no desde tus supuestos.
+
+Este tipo de escucha cambia a las personas.
+Y cambia a las parejas.
+
+## 1. La mayoría de los conflictos no provienen de lo que se dice, sino de lo que no se escucha
+
+Muchos malentendidos surgen así:
+
+• uno expresa algo vulnerable
+• el otro responde desde la defensiva
+• ambos se sienten no comprendidos
+• se empujan emocionalmente
+• el diálogo se rompe
+
+Pero cuando alguien se siente escuchado, el conflicto se suaviza.
+La tensión baja.
+Empieza a haber espacio para el cariño.
+
+## 2. Escuchar es un acto de amor, no una técnica
+
+Carl Rogers decía que la empatía profunda no es una habilidad mecánica, sino una forma de estar con el otro.
+
+Implica:
+
+• presencia real
+• curiosidad genuina
+• paciencia
+• apertura emocional
+• respeto por la experiencia ajena
+
+Escuchar es sostener.
+Es permitir que el otro exista en su verdad sin que eso sea una amenaza.
+
+## 3. Las parejas que se escuchan construyen vínculos más fuertes y más seguros
+
+Cuando uno escucha con empatía, el otro siente:
+
+• "lo que siento importa"
+• "no estoy solo en este proceso"
+• "puedo hablar sin miedo a ser herido"
+• "aquí me puedo mostrar"
+• "aquí me puedo quedar"
+
+Ese clima emocional es oxígeno para el amor.
+
+## 4. Escuchar no es solucionar
+
+A veces creemos que amar es resolver.
+Ayudar.
+Dar consejos.
+Proponer caminos.
+
+Pero muchas veces el otro no busca soluciones,
+busca comprensión.
+
+Frases que conectan:
+
+• "Entiendo por qué te sientes así."
+• "Estoy contigo."
+• "Tiene sentido lo que dices."
+• "Gracias por compartirlo."
+
+La comprensión calma lo que ninguna solución puede calmar.
+
+## 5. En las bodas, la escucha aparece en detalles casi invisibles
+
+Lo vemos en:
+
+• el novio que detecta el nervio de la novia y la toma de la mano sin decir nada
+• la novia que escucha las emociones del otro al escribir los votos
+• la pareja que se detiene para conectar en medio del caos del día
+• el abrazo que llega justo cuando las palabras no alcanzan
+
+La boda fluye mejor cuando ambos se escuchan.
+El matrimonio también.
+
+## 6. Escuchar también es escuchar lo que no se dice
+
+La empatía profunda incluye lo no verbal:
+
+• el tono de voz
+• la postura corporal
+• las pausas largas
+• el brillo de la mirada
+• la tensión en los hombros
+
+El cuerpo habla más honesto que el lenguaje.
+Escuchar con el corazón es captar ese nivel.
+
+## 7. La escucha transforma incluso los momentos difíciles
+
+Cuando dos personas se escuchan:
+
+• las discusiones se vuelven más cortas
+• los resentimientos duran menos
+• los acuerdos son más claros
+• la conexión se mantiene incluso en desacuerdos
+
+La escucha no evita los conflictos;
+los vuelve fértiles.
+
+## 8. Escuchar es permitir que haya "nosotros" sin que desaparezca el "yo"
+
+La relación crece cuando ambos pueden hablar,
+y ambos pueden entender.
+No cuando uno domina el diálogo.
+
+La escucha equilibrada crea igualdad emocional.
+
+## En resumen
+
+Escuchar es una forma de amar.
+Una de las más profundas.
+Una de las más transformadoras.
+
+Cuando una pareja se escucha desde la empatía —no desde la prisa, la defensa o la solución—,
+el vínculo se vuelve más humano, más seguro y más íntimo.
+
+Porque amar es, en gran parte,
+permitir que el otro sea escuchado
+en lo que siente, lo que piensa
+y lo que todavía no sabe cómo decir.`,
+    coverImage: "/images/gallery/KyB-163.webp",
+    category: "Inspiración",
+    date: "Diciembre 10, 2025",
+  },
+  {
+    id: "30",
+    slug: "la-ternura-la-forma-mas-inteligente-del-amor",
+    title: "La ternura: la forma más inteligente del amor",
+    excerpt: "La ternura es inteligencia emocional en su forma más pura. Es sensibilidad afinada. Es percepción fina del mundo del otro. Es la capacidad de responder con humanidad, incluso cuando la vida se pone intensa.",
+    content: `La ternura es una de las fuerzas más subestimadas dentro de una relación.
+No es cursilería, no es debilidad y no es sólo un gesto bonito.
+
+La ternura es inteligencia emocional en su forma más pura.
+Es sensibilidad afinada.
+Es percepción fina del mundo del otro.
+Es la capacidad de responder con humanidad, incluso cuando la vida se pone intensa.
+
+En la psicología humanista, la ternura aparece como una forma de relación que favorece el crecimiento, la confianza y el encuentro auténtico.
+Y en las bodas, la ternura está en todas partes.
+
+## 1. La ternura entiende lo que la razón no alcanza
+
+La ternura reconoce lo que el otro siente antes de que lo diga.
+A veces es:
+
+• acomodar un mechón con cuidado
+• ofrecer agua sin que lo pidan
+• ajustar un saco
+• tomar la mano cuando el corazón late más rápido
+• abrazar sin hacer ruido
+
+La ternura es un lenguaje silencioso, pero profundamente claro.
+
+## 2. La ternura no infantiliza: dignifica
+
+Existe la idea equivocada de que la ternura "suaviza demasiado" la relación.
+Pero en realidad, dignifica.
+
+Dignifica porque reconoce la humanidad del otro.
+Dignifica porque no usa la fuerza para imponerse.
+Dignifica porque mira con cuidado lo que es frágil.
+
+La ternura no reduce;
+acompaña.
+
+## 3. La ternura requiere valentía
+
+Ser tierno no es fácil.
+Implica vulnerabilidad.
+Implica bajar defensas.
+Implica mostrar afecto sin cinismo.
+
+La ternura es valiente porque expone.
+Y también porque invita al otro a hacer lo mismo.
+
+## 4. En las bodas, la ternura aparece como un hilo invisible
+
+Lo vemos todo el tiempo:
+
+• cuando uno seca la lágrima del otro
+• cuando ajustan el velo o la corbata con cuidado
+• cuando en medio del nervio, uno sonríe para tranquilizar al otro
+• cuando se abrazan antes de leer los votos
+• cuando se miran como si el resto del mundo dejara de existir
+
+La ternura sostiene momentos que, sin ella, serían demasiado intensos para transitar.
+
+## 5. La ternura es inteligencia afectiva
+
+La ternura sabe cuándo hablar y cuándo callar.
+Sabe cuándo consolar y cuándo dejar espacio.
+Sabe cuándo intervenir y cuándo simplemente acompañar.
+
+No surge del instinto solamente;
+surge de la comprensión profunda del otro.
+
+Es una mezcla perfecta entre empatía y acción suave.
+
+## 6. La ternura transforma la vida cotidiana
+
+El matrimonio se construye en pequeños actos, no en grandes declaraciones.
+
+La ternura aparece en:
+
+• un mensaje breve
+• un café preparado sin pedirlo
+• una manta puesta sobre los hombros
+• un "¿ya comiste?" sincero
+• un "hoy te noto cansado, ¿qué necesitas?"
+
+El amor se vuelve habitable cuando la ternura lo recorre.
+
+## 7. La ternura sostiene incluso los desacuerdos
+
+Una pareja tierna no es una pareja que nunca discute.
+Es una pareja que discute sin destruir.
+
+La ternura permite decir:
+
+• "Esto me dolió."
+• "Intentemos entendernos."
+• "No somos enemigos."
+• "Sigamos hablando."
+
+La ternura baja la defensiva.
+Abre caminos.
+
+## 8. Ser tierno es ver al otro en su humanidad completa
+
+Imperfecto.
+Emocional.
+Cambiando.
+Aprendiendo.
+Intentando ser mejor.
+
+La ternura es reconocer esa humanidad y decir:
+"Estoy contigo."
+
+## En resumen
+
+La ternura no es un adorno del amor.
+Es su forma más inteligente.
+
+Es la sensibilidad que permite que dos personas se encuentren sin armaduras,
+que atraviesen el mundo sin lastimarse,
+y que construyan una vida donde el cuidado no es obligación,
+sino elección.
+
+La ternura sostiene lo que es frágil
+y realza lo que es hermoso.
+
+Por eso, cuando la vemos a través del lente,
+sabemos que estamos ante algo extraordinario.`,
+    coverImage: "/images/gallery/KandE-285.webp",
+    category: "Inspiración",
+    date: "Diciembre 10, 2025",
+  },
+  {
+    id: "31",
+    slug: "el-amor-real-no-pide-perfeccion-pide-presencia",
+    title: "El amor real no pide perfección, pide presencia",
+    excerpt: "El amor real no nace de la perfección. Nace de la presencia. La presencia es estar emocionalmente, estar con disponibilidad, estar con atención. Estar incluso cuando no sabemos exactamente qué hacer.",
+    content: `Vivimos en una época donde la perfección parece una expectativa:
+la boda perfecta, la relación perfecta, las fotos perfectas, la vida perfecta para mostrar.
+
+Pero el amor real —el que sostiene, el que acompaña, el que madura— no nace de la perfección.
+Nace de la presencia.
+
+La presencia es estar.
+Estar emocionalmente, estar con disponibilidad, estar con atención.
+Estar incluso cuando no sabemos exactamente qué hacer.
+
+El amor real no necesita que todo salga impecable;
+necesita que el otro esté ahí.
+
+## 1. La perfección genera distancia; la presencia genera conexión
+
+Las parejas que buscan "hacer todo perfecto" suelen vivir en tensión.
+La energía se va en:
+
+• no fallar
+• no mostrar vulnerabilidad
+• no equivocarse
+• no salirse del guion
+
+Y sin quererlo, dejan menos espacio para la espontaneidad y la ternura.
+
+La presencia, en cambio, acerca.
+Es un "estoy aquí contigo", sin disfraces ni exigencias.
+
+## 2. La presencia permite ver y ser visto
+
+Carl Rogers decía que uno de los mayores regalos que podemos dar es escuchar y mirar al otro sin juzgarlo.
+
+La presencia implica:
+
+• reconocer emociones
+• notar gestos
+• darle importancia al mundo interno del otro
+• poner atención sin prisa
+• ofrecer espacio seguro
+
+En una relación, ser visto es profundamente sanador.
+
+## 3. La perfección bloquea la vulnerabilidad; la presencia la sostiene
+
+La búsqueda de perfección crea armaduras.
+"No puedo sentir esto."
+"No debo llorar."
+"No quiero que se note que estoy nervioso."
+
+Pero el amor necesita vulnerabilidad para respirar.
+
+La presencia dice:
+"Puedes sentir.
+Puedes ser humano.
+Puedo estar contigo."
+
+## 4. En una boda, lo más memorable no es lo perfecto: es lo verdadero
+
+Lo vemos cada fin de semana.
+
+El momento inolvidable no es:
+
+• la foto técnicamente impecable
+• el ritual sin errores
+• el discurso perfectamente leído
+
+Lo inolvidable es:
+
+• la risa nerviosa
+• la lágrima inesperada
+• el abrazo largo
+• la mirada que dice más que mil poses
+• el temblor de la voz antes del "sí"
+
+Eso es presencia.
+Eso es lo que hace que una foto trascienda.
+
+## 5. El amor real acepta la imperfección como parte de la vida compartida
+
+No siempre estarán sincronizados.
+No siempre tendrán respuestas.
+No siempre actuarán "bien".
+
+Y está bien.
+
+La presencia permite decir:
+
+• "Aquí estoy."
+• "Sigamos hablando."
+• "No te dejo solo."
+• "Esto lo resolvemos juntos."
+
+La imperfección es parte del camino,
+no una amenaza.
+
+## 6. La presencia crea hogar emocional
+
+Un hogar emocional no es un lugar físico.
+Es un clima que se construye con:
+
+• miradas que sostienen
+• palabras que cuidan
+• silencios que acompañan
+• gestos que reconfortan
+
+Cuando hay presencia, la relación se vuelve un refugio seguro.
+
+## 7. La perfección busca control; la presencia busca encuentro
+
+La perfección intenta predecir, organizar, anticipar.
+La presencia se mueve en la espontaneidad, en el "aquí y ahora".
+
+El amor florece en ese terreno vivo.
+En la conversación inesperada.
+En la risa que aparece sin aviso.
+En la emoción que surge sin pedir permiso.
+
+## 8. La presencia hace que la vida cotidiana también sea amorosa
+
+No solo en los momentos grandes,
+también en:
+
+• preparar café
+• mandar mensaje
+• preguntar "¿cómo estás de verdad?"
+• recordar detalles
+• abrazar sin motivo
+
+El amor real habita lo diario.
+
+## En resumen
+
+El amor auténtico no exige perfección.
+No la necesita.
+Lo que busca es presencia:
+la disponibilidad emocional de estar ahí,
+de mirar al otro con humanidad,
+de sostener y dejarse sostener.
+
+El matrimonio no pide que todo salga sin errores.
+Pide que dos personas se encuentren una y otra vez
+con honestidad, cariño y presencia.`,
+    coverImage: "/images/gallery/RandK-256.webp",
+    category: "Inspiración",
+    date: "Diciembre 10, 2025",
+  },
+  {
+    id: "32",
+    slug: "que-vemos-sobre-el-amor-cuando-documentamos-bodas",
+    title: "¿Qué vemos sobre el amor cuando documentamos cientos de bodas? (una lectura humanista)",
+    excerpt: "Después de tantas bodas, hay algo que podemos decir con certeza: el amor es mucho más humano, más cálido y más sencillo de lo que la gente imagina. El amor florece cuando las personas se sienten vistas, aceptadas y acompañadas.",
+    content: `Hay algo profundamente privilegiado en dedicarnos a esto:
+pasamos horas, días enteros, observando el amor en su estado más vulnerable, más espontáneo y más real.
+
+No desde teorías.
+No desde ideas abstractas.
+Desde la vida misma.
+Desde gestos, miradas, silencios, manos que se buscan, voces que tiemblan.
+
+Y después de tantas bodas, hay algo que podemos decir con certeza:
+el amor es mucho más humano, más cálido y más sencillo de lo que la gente imagina.
+
+La psicología humanista tiene razón:
+el amor florece cuando las personas se sienten vistas, aceptadas y acompañadas.
+
+Y eso es lo que vemos, una y otra vez, a través de la lente.
+
+## 1. El amor está en los detalles, no en los grandes montajes
+
+Las parejas a veces creen que lo más emocional ocurre:
+
+• en los votos
+• en la ceremonia
+• en el primer baile
+
+Pero nosotros lo vemos en otros lugares:
+
+• en cómo se acomodan la ropa mutuamente
+• en cómo respiran juntos para calmarse
+• en cómo se miran cuando creen que nadie los observa
+• en cómo uno se acerca cuando el otro está nervioso
+
+El amor se revela en lo cotidiano, incluso en un día extraordinario.
+
+## 2. El amor auténtico aparece cuando la gente deja de actuar
+
+La cámara atrapa lo que es real y detecta lo que es pose.
+Y lo más bello ocurre cuando la pareja deja de sostener una imagen y simplemente se permite sentir.
+
+Vemos el amor en:
+
+• la risa que no estaba planeada
+• la lágrima que sorprende a quien la llora
+• la torpeza hermosa de caminar hacia el altar
+• el abrazo que dura más de lo socialmente esperado
+
+La autenticidad siempre gana.
+Siempre.
+
+## 3. Las parejas fuertes se escuchan, incluso sin palabras
+
+Hay diálogos silenciosos que solo una cámara puede capturar:
+
+• una mirada que dice "aquí estoy"
+• un gesto que dice "no te preocupes"
+• un toque suave que dice "yo te sostengo"
+
+Rogers decía que la empatía profunda no requiere palabras.
+Las parejas que más conectan lo demuestran constantemente.
+
+## 4. La vulnerabilidad es el lenguaje del amor verdadero
+
+En los momentos más significativos de una boda, siempre hay vulnerabilidad:
+
+• manos que tiemblan
+• voces que quiebran
+• respiraciones profundas
+• lágrimas que llegan sin permiso
+
+Es en esa vulnerabilidad donde el amor se muestra sin filtros,
+donde el corazón habla antes que la mente.
+
+## 5. El amor no perfecciona a nadie: humaniza
+
+Lo vemos cuando:
+
+• uno ayuda al otro a respirar en el first look
+• uno se ríe de sus propios nervios
+• ambos aceptan cosas que no salieron como esperaban
+• se abrazan incluso cuando están agotados
+
+La perfección nunca ha sido la esencia del amor.
+La humanidad sí.
+
+## 6. El matrimonio es un acto de encuentro y de libertad al mismo tiempo
+
+Lo vemos en cada pareja que decide casarse:
+
+No se están perdiendo.
+Se están eligiendo.
+
+Y lo hacen desde una libertad emocional que dice:
+
+"Puedo ser yo contigo."
+"Puedo crecer contigo."
+"Puedo sentir contigo."
+"Puedo equivocarme contigo."
+
+Ese tipo de elección es profundamente humana.
+Profundamente valiente.
+
+## 7. Lo que más nos conmueve no es la estética: es la verdad
+
+Las fotos impecables son hermosas, sí.
+Pero lo que realmente nos conmueve es la verdad que aparece en ellas:
+
+• la emoción genuina
+• la ternura espontánea
+• el encuentro sincero
+• la mirada que revela historia
+
+La estética embellece.
+La verdad conmueve.
+
+## 8. Después de tantas bodas, seguimos creyendo en el amor
+
+No porque todo sea perfecto.
+No porque todo sea fácil.
+Sino porque lo humano —lo realmente humano— siempre aparece.
+
+En cada pareja hay una historia que se encuentra,
+dos mundos internos que se cruzan,
+dos libertades que se acompañan,
+dos vulnerabilidades que hacen hogar.
+
+Eso es amor.
+
+## En resumen
+
+Documentar bodas nos ha enseñado que el amor no necesita grandilocuencia,
+ni perfección,
+ni guiones.
+
+Necesita presencia.
+Necesita autenticidad.
+Necesita vulnerabilidad.
+Necesita libertad.
+Necesita escucha.
+Necesita ternura.
+
+Lo demás son adornos hermosos, pero secundarios.
+
+El amor real ocurre en el corazón mismo de lo humano.
+Y por eso nos sigue conmoviendo cada vez que lo vemos.`,
+    coverImage: "/images/gallery/Sofía-y-Pablo-108.webp",
+    category: "Inspiración",
+    date: "Diciembre 10, 2025",
+  },
 ];
 
 export const blogPosts: BlogPost[] = rawPosts.map((post) => ({
