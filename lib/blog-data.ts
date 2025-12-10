@@ -1189,7 +1189,7 @@ es la que se vivió con más calma y verdad.
 
 Las decisiones más importantes se toman al principio, no al final.
 Y una boda planeada desde claridad y calma se siente así: ligera, coherente, inolvidable.`,
-    coverImage: "/images/gallery/TOP-SyP-116.webp",
+    coverImage: "/images/gallery/SyP-217.webp",
     category: "Tips",
     date: "Diciembre 10, 2025",
   },
@@ -1744,7 +1744,7 @@ Tomar decisiones a tiempo cambia todo:
 
 Una boda planeada con anticipación no solo se ve mejor en fotos:
 se siente mejor en el alma.`,
-    coverImage: "/images/gallery/TOP-KyB-236.webp",
+    coverImage: "/images/gallery/KyB-304.webp",
     category: "Tips",
     date: "Diciembre 10, 2025",
   },
@@ -2063,7 +2063,7 @@ Con límites claros, comunicación honesta, decisiones alineadas y cariño firme
 
 Planeen con cabeza, amen con calma y recuerden siempre:
 la boda se construye a dos, no a veinte.`,
-    coverImage: "/images/gallery/SandJ-207.webp",
+    coverImage: "/images/gallery/SandJ-857.webp",
     category: "Tips",
     date: "Diciembre 10, 2025",
   },
@@ -2331,7 +2331,7 @@ Es una puerta.
 
 Después de la boda hay decisiones prácticas y procesos emocionales que vale la pena vivir con atención.
 Con calma, orden y amor, esta etapa puede sentirse tan especial como el mismo día del evento.`,
-    coverImage: "/images/gallery/TOP-SyD-162.webp",
+    coverImage: "/images/gallery/SyD-96.webp",
     category: "Tips",
     date: "Diciembre 10, 2025",
   },
