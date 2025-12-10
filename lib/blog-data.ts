@@ -2629,6 +2629,143 @@ es el fundamento silencioso que hará que lo prometido ese día siga vivo muchos
     category: "Inspiración",
     date: "Diciembre 10, 2025",
   },
+  {
+    id: "24",
+    slug: "amar-desde-la-autenticidad",
+    title: "Amar desde la autenticidad: por qué las relaciones florecen cuando dejamos de actuar",
+    excerpt: "En el Enfoque Centrado en la Persona, Carl Rogers hablaba de una cualidad esencial para que una relación sea profunda, real y transformadora: la congruencia. Es decir, que lo que siento, lo que pienso y lo que muestro estén alineados.",
+    content: `En el Enfoque Centrado en la Persona, Carl Rogers hablaba de una cualidad esencial para que una relación sea profunda, real y transformadora:
+la congruencia.
+La autenticidad.
+
+Es decir:
+que lo que siento, lo que pienso y lo que muestro estén alineados.
+
+Y aunque suene sencillo, en la vida real nos enseñan a hacer lo contrario:
+a decir "todo bien" cuando no lo está,
+a sonreír cuando hay miedo,
+a callar para evitar conflicto,
+a mostrarnos seguros cuando nos sentimos frágiles.
+
+Pero el amor no ocurre en las máscaras.
+El amor ocurre cuando aparece lo verdadero.
+
+## 1. La autenticidad no es "decir todo": es permitir que te vean
+
+Ser auténtico no significa desbordarse, ni compartirlo todo, ni dramatizar.
+Significa permitir que el otro vea quién eres en realidad.
+
+Que vea:
+
+• tu risa espontánea
+• tu silencio incómodo
+• tu torpeza al hablar cuando estás nervioso
+• tu capacidad de llorar sin vergüenza
+• tu emoción auténtica al elegir a esa persona
+• tus dudas humanas
+
+La autenticidad es mostrarse sin adornos.
+
+## 2. Las relaciones se dañan más por lo que no se dice que por lo que se dice
+
+Cuando actuamos, la relación pierde oxígeno.
+Se llena de:
+
+• tensiones implícitas
+• pequeñas frustraciones
+• suposiciones
+• distancias invisibles
+
+La autenticidad abre ventanas.
+Deja que entre aire fresco.
+
+## 3. Amar autenticidad es amar realidad, no fantasía
+
+El amor auténtico no busca perfección.
+Busca presencia.
+
+Las parejas que mejor se llevan no son las que "nunca pelean";
+son las que hablan con honestidad, incluso cuando es incómodo.
+
+Son las que no necesitan actuar para ser aceptadas.
+
+## 4. Las bodas revelan autenticidad (mucho más de lo que parece)
+
+En Arrebol lo vemos constantemente:
+el getting ready, la ceremonia, los votos, el primer encuentro…
+esos momentos no permiten actuación prolongada.
+
+La emoción verdadera se escapa:
+
+• en la voz que tiembla
+• en la mirada que se ilumina antes de ver al otro
+• en el abrazo que dura más de lo socialmente esperado
+• en el gesto sutil de quien acompaña y sostiene
+
+La cámara ve autenticidad.
+Y lo más bello: la autenticidad siempre es fotogénica.
+
+## 5. La autenticidad invita autenticidad
+
+Cuando tú te muestras, el otro se siente a salvo para mostrarse también.
+
+Es un efecto contagioso:
+
+• si uno habla desde el corazón, el otro baja defensas
+• si uno pide lo que necesita, el otro aprende a hacerlo
+• si uno muestra vulnerabilidad, el otro deja de actuar fuerte
+
+La autenticidad crea un clima emocional nutritivo.
+
+## 6. Ser auténtico es una forma de amor hacia uno mismo y hacia el otro
+
+Cuando dejamos de actuar:
+
+• reducimos ansiedad
+• evitamos resentimientos acumulados
+• creamos relaciones más ligeras
+• abrimos espacio para la ternura
+• fortalecemos el vínculo desde la verdad
+
+La autenticidad es el puente más sólido entre dos personas.
+
+## 7. Autenticidad no significa rigidez; significa coherencia
+
+No se trata de "así soy y punto".
+Eso es inmadurez.
+
+La autenticidad humanista es flexible:
+invita al diálogo, al crecimiento, a la responsabilidad afectiva.
+
+Es decir:
+
+"Esto soy hoy.
+Esto siento ahora.
+Y estoy disponible para construir contigo."
+
+## 8. El matrimonio como un acto de autenticidad continuada
+
+Casarse no es solo prometer amor.
+Es prometer verdad.
+
+Prometer que lo que ocurra, se hablará.
+Prometer que lo que duela, se nombrará.
+Prometer que lo que cambie, se acompañará.
+
+La autenticidad sostiene matrimonios porque los mantiene vivos.
+Sin ella, se vuelven actuación.
+
+## En resumen
+
+Amar desde la autenticidad es permitir que te vean.
+Es soltar la actuación que aprendimos para sobrevivir.
+Es elegir un tipo de relación donde lo verdadero es más importante que lo perfecto.
+
+Y cuando dos personas se miran sin máscaras, el amor florece de una manera que ninguna puesta en escena puede igualar.`,
+    coverImage: "/images/gallery/KandE-217.webp",
+    category: "Inspiración",
+    date: "Diciembre 10, 2025",
+  },
 ];
 
 export const blogPosts: BlogPost[] = rawPosts.map((post) => ({
