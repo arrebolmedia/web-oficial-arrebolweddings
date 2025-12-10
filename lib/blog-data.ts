@@ -2498,6 +2498,137 @@ son las más conscientes.`,
     category: "Tips",
     date: "Diciembre 10, 2025",
   },
+  {
+    id: "23",
+    slug: "amor-como-aceptacion-incondicional-carl-rogers",
+    title: "El amor como aceptación incondicional: la enseñanza más poderosa de Carl Rogers",
+    excerpt: "Las personas florecen cuando se sienten aceptadas tal como son. Carl Rogers lo llamó aceptación positiva incondicional: mirar al otro sin máscaras, sin condiciones y sin el deseo de transformarlo.",
+    content: `Hay una idea central de la psicología humanista que, cuando la entiendes, te cambia la forma de amar:
+las personas florecen cuando se sienten aceptadas tal como son.
+
+Carl Rogers lo llamó aceptación positiva incondicional.
+No significa aprobar todo, ni evitar límites, ni renunciar a uno mismo.
+Significa algo mucho más profundo:
+
+mirar al otro sin máscaras, sin condiciones y sin el deseo de transformarlo en otra cosa.
+
+En Arrebol, lo vemos todos los fines de semana:
+las parejas que más se disfrutan son las que no se exigen perfección, sino presencia.
+
+## 1. El amor no exige; acompaña
+
+La aceptación incondicional no es pasiva.
+Es un acto activo de presencia.
+
+Es decirle al otro, explícitamente o no:
+
+• "No necesitas ser perfecto para ser amado."
+• "Puedo ver tus dudas sin juzgarlas."
+• "Puedes contarme tus miedos sin que eso nos rompa."
+• "No necesito que cambies para quererte."
+
+Es un terreno fértil donde el otro se siente libre de crecer.
+
+## 2. Cuando no hay aceptación, aparece la actuación
+
+Rogers decía que cuando una persona siente que solo será amada si…, empieza a actuar.
+
+Se convierte en:
+
+• la versión complaciente
+• la versión "fuerte"
+• la versión "que no molesta"
+• la versión que oculta
+• la versión que calla
+
+Pero el amor no es una obra de teatro.
+Y sostener una actuación desgasta más que cualquier conflicto real.
+
+## 3. Amar es permitir que el otro sea
+
+La frase de Rogers más hermosa es esta:
+
+"Cuando acepto al otro tal como es, entonces puede cambiar."
+
+El cambio aparece cuando no es exigido.
+Cuando no es una demanda.
+Cuando no es condición para recibir amor.
+
+Aceptamos primero.
+Crecemos después.
+
+## 4. La boda como espacio de aceptación profunda
+
+El matrimonio no garantiza aceptación automática; la construye.
+Es una promesa de presencia, no de perfección.
+
+En las bodas lo vemos en detalles:
+
+• la mirada que dice "aquí estoy, no te escondas"
+• la mano que toma otra mano cuando tiembla
+• el abrazo que sostiene más que decora
+• el voto que reconoce lo bueno y lo frágil
+
+La aceptación se ve.
+Tiene cuerpo.
+Tiene gesto.
+
+Y cuando una pareja la siente, se relaja.
+La boda fluye.
+La vida también.
+
+## 5. La aceptación no es cegüera: es una forma de amor valiente
+
+Aceptar no es ignorar lo difícil.
+Tampoco es renunciar a límites sanos.
+
+La aceptación humanista dice:
+
+"Puedo ver tus luces y tus sombras.
+No necesito negarlas para amarte.
+Y puedo caminar contigo mientras crecemos, no contra ti."
+
+Eso es valentía afectiva.
+
+## 6. Aceptar es permitir que lo real tenga lugar
+
+Una pareja que se acepta no teme:
+
+• mostrarse vulnerable
+• pedir ayuda
+• llorar
+• fallar
+• hablar con honestidad
+• decir "esto me dolió" sin miedo a perder al otro
+
+La aceptación crea un clima emocional donde lo real puede aparecer sin que la relación se rompa.
+
+## 7. El amor que acepta es el amor que libera
+
+Aceptar al otro, y ser aceptado, tiene un efecto inmediato:
+
+se respira mejor.
+
+Se aflojan los hombros.
+Se relaja la mirada.
+Se suavizan las palabras.
+El hogar se vuelve un lugar habitable.
+
+En una relación donde ambos se sienten aceptados, la vida se expande, no se contrae.
+
+## En resumen
+
+La aceptación incondicional no es un concepto académico:
+es una forma de amar que sostiene, suaviza y profundiza.
+
+Es la base de las relaciones que duran porque son reales, no perfectas.
+
+Y en una boda —donde todo es celebración, emoción y futuro— la aceptación no es solo un ideal romántico:
+es el fundamento silencioso que hará que lo prometido ese día siga vivo muchos años después.`,
+    coverImage: "/images/gallery/Sofía-y-Pablo-276.webp",
+    category: "Inspiración",
+    date: "Diciembre 10, 2025",
+  },
 ];
 
 export const blogPosts: BlogPost[] = rawPosts.map((post) => ({

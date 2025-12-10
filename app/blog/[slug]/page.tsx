@@ -106,27 +106,92 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           <div className="space-y-6 text-[var(--foreground)]/70 font-light">
             {post.content ? (
               (() => {
+                // Helper function to process inline markdown (**bold**)
+                const processInlineMarkdown = (text: string): React.ReactNode => {
+                  const parts = text.split(/(\*\*[^*]+\*\*)/g);
+                  return parts.map((part, idx) => {
+                    if (part.startsWith('**') && part.endsWith('**')) {
+                      return <strong key={idx} className="font-medium text-[var(--foreground)]">{part.slice(2, -2)}</strong>;
+                    }
+                    return part;
+                  });
+                };
+
+                // Helper function to process a paragraph that may contain bullet lists
+                const processParagraphWithLists = (paragraph: string, keyPrefix: number): React.ReactNode[] => {
+                  const lines = paragraph.split('\n');
+                  const result: React.ReactNode[] = [];
+                  let currentListItems: string[] = [];
+                  let regularLines: string[] = [];
+                  let subKey = 0;
+
+                  const flushRegularLines = () => {
+                    if (regularLines.length > 0) {
+                      result.push(
+                        <p key={`${keyPrefix}-p-${subKey++}`} className="whitespace-pre-line">
+                          {processInlineMarkdown(regularLines.join('\n'))}
+                        </p>
+                      );
+                      regularLines = [];
+                    }
+                  };
+
+                  const flushList = () => {
+                    if (currentListItems.length > 0) {
+                      result.push(
+                        <ul key={`${keyPrefix}-ul-${subKey++}`} className="list-disc list-inside space-y-2 my-6 ml-4">
+                          {currentListItems.map((item, idx) => (
+                            <li key={idx} className="text-[var(--foreground)]/70">{processInlineMarkdown(item)}</li>
+                          ))}
+                        </ul>
+                      );
+                      currentListItems = [];
+                    }
+                  };
+
+                  for (const line of lines) {
+                    const trimmedLine = line.trim();
+                    if (trimmedLine.startsWith('•')) {
+                      flushRegularLines();
+                      currentListItems.push(trimmedLine.substring(1).trim());
+                    } else {
+                      flushList();
+                      if (trimmedLine) {
+                        regularLines.push(line);
+                      }
+                    }
+                  }
+
+                  flushList();
+                  flushRegularLines();
+
+                  return result;
+                };
+
                 const paragraphs = post.content.split('\n\n');
                 const elements: React.ReactNode[] = [];
-                let i = 0;
                 
-                while (i < paragraphs.length) {
+                for (let i = 0; i < paragraphs.length; i++) {
                   const trimmed = paragraphs[i].trim();
+                  if (!trimmed) continue;
                   
-                  // Check if this is the start of a bullet list
-                  if (trimmed.startsWith('•')) {
-                    const listItems: string[] = [];
-                    while (i < paragraphs.length && paragraphs[i].trim().startsWith('•')) {
-                      listItems.push(paragraphs[i].trim().substring(1).trim());
-                      i++;
-                    }
+                  // Check for markdown heading (## )
+                  if (trimmed.startsWith('## ')) {
+                    const headingText = trimmed.substring(3).trim();
                     elements.push(
-                      <ul key={`list-${i}`} className="list-disc list-inside space-y-2 my-6 ml-4">
-                        {listItems.map((item, idx) => (
-                          <li key={idx} className="text-[var(--foreground)]/70">{item}</li>
-                        ))}
-                      </ul>
+                      <h2 
+                        key={i} 
+                        className="text-2xl md:text-3xl mt-12 mb-4 text-[var(--foreground)] font-[var(--font-heading)]"
+                      >
+                        {headingText}
+                      </h2>
                     );
+                    continue;
+                  }
+
+                  // Check if paragraph contains bullet items (multi-line with •)
+                  if (trimmed.includes('•')) {
+                    elements.push(...processParagraphWithLists(paragraphs[i], i));
                     continue;
                   }
                   
@@ -135,7 +200,6 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                   
                   // Check if it's a short line that looks like a heading
                   // Must be between 35-80 chars, single line, no punctuation at end
-                  // This excludes short list items like "edición profesional"
                   const isTitleLike = !trimmed.includes('\n') && 
                                       trimmed.length < 80 && 
                                       trimmed.length > 35 &&
@@ -161,11 +225,10 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                   } else {
                     elements.push(
                       <p key={i} className="whitespace-pre-line">
-                        {paragraphs[i]}
+                        {processInlineMarkdown(paragraphs[i])}
                       </p>
                     );
                   }
-                  i++;
                 }
                 return elements;
               })()
