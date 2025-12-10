@@ -2762,7 +2762,7 @@ Es soltar la actuación que aprendimos para sobrevivir.
 Es elegir un tipo de relación donde lo verdadero es más importante que lo perfecto.
 
 Y cuando dos personas se miran sin máscaras, el amor florece de una manera que ninguna puesta en escena puede igualar.`,
-    coverImage: "/images/gallery/KandE-217.webp",
+    coverImage: "/images/gallery/KandE-151.webp",
     category: "Inspiración",
     date: "Diciembre 10, 2025",
   },
