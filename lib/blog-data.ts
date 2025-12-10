@@ -2905,7 +2905,7 @@ Es la magia más simple y más poderosa que aparece cuando dos personas se miran
 En cada boda, en cada abrazo, en cada mirada que capturamos, buscamos eso:
 el instante donde el mundo se detiene un poco
 y dos almas se reconocen.`,
-    coverImage: "/images/gallery/RandK-177.webp",
+    coverImage: "/images/gallery/RandK-102.webp",
     category: "Inspiración",
     date: "Diciembre 10, 2025",
   },
@@ -3041,7 +3041,7 @@ Es decir:
 "Te dejo verme, incluso en aquello que yo mismo estoy aprendiendo a abrazar."
 
 Y cuando dos personas se permiten eso, la relación se vuelve un hogar emocional donde lo verdadero puede florecer sin miedo.`,
-    coverImage: "/images/gallery/TandM-224.webp",
+    coverImage: "/images/gallery/TandM-188.webp",
     category: "Inspiración",
     date: "Diciembre 10, 2025",
   },
@@ -3181,7 +3181,7 @@ El amor deja de ser un refugio inseguro
 y se convierte en un espacio donde ambos pueden crecer,
 expandirse
 y encontrarse una y otra vez.`,
-    coverImage: "/images/gallery/PyC-186.webp",
+    coverImage: "/images/gallery/PyC-174.webp",
     category: "Inspiración",
     date: "Diciembre 10, 2025",
   },
@@ -3315,7 +3315,7 @@ Es un proceso en movimiento constante.
 Y cuando dos personas entienden esto,
 el amor deja de ser un lugar al que se llega
 para convertirse en un viaje que se camina juntos.`,
-    coverImage: "/images/gallery/Sofía-y-Pablo-198.webp",
+    coverImage: "/images/gallery/Sofía-y-Pablo-118.webp",
     category: "Inspiración",
     date: "Diciembre 10, 2025",
   },
@@ -3455,7 +3455,7 @@ Porque amar es, en gran parte,
 permitir que el otro sea escuchado
 en lo que siente, lo que piensa
 y lo que todavía no sabe cómo decir.`,
-    coverImage: "/images/gallery/KyB-163.webp",
+    coverImage: "/images/gallery/KyB-235.webp",
     category: "Inspiración",
     date: "Diciembre 10, 2025",
   },
@@ -3588,7 +3588,7 @@ y realza lo que es hermoso.
 
 Por eso, cuando la vemos a través del lente,
 sabemos que estamos ante algo extraordinario.`,
-    coverImage: "/images/gallery/KandE-285.webp",
+    coverImage: "/images/gallery/KandE-337.webp",
     category: "Inspiración",
     date: "Diciembre 10, 2025",
   },
@@ -3739,7 +3739,7 @@ de sostener y dejarse sostener.
 El matrimonio no pide que todo salga sin errores.
 Pide que dos personas se encuentren una y otra vez
 con honestidad, cariño y presencia.`,
-    coverImage: "/images/gallery/RandK-256.webp",
+    coverImage: "/images/gallery/RandK-112.webp",
     category: "Inspiración",
     date: "Diciembre 10, 2025",
   },
@@ -3891,7 +3891,7 @@ Lo demás son adornos hermosos, pero secundarios.
 
 El amor real ocurre en el corazón mismo de lo humano.
 Y por eso nos sigue conmoviendo cada vez que lo vemos.`,
-    coverImage: "/images/gallery/Sofía-y-Pablo-108.webp",
+    coverImage: "/images/gallery/Sofía-y-Pablo-286.webp",
     category: "Inspiración",
     date: "Diciembre 10, 2025",
   },
