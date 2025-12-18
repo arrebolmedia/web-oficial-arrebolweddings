@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { getBlogPosts } from "@/lib/blog-data";
 import BlogHero from "@/components/BlogHero";
 import BlogCard from "@/components/BlogCard";
@@ -23,6 +23,11 @@ export default function BlogPageContent({ currentPage }: BlogPageContentProps) {
   const CATEGORIES = language === "es" ? CATEGORIES_ES : CATEGORIES_EN;
   type Category = typeof CATEGORIES[number];
   const [activeCategory, setActiveCategory] = useState<Category>(CATEGORIES[0]);
+
+  // Reset category to ALL when language changes
+  useEffect(() => {
+    setActiveCategory(CATEGORIES[0]);
+  }, [language]);
 
   // Get blog posts in the correct language
   const blogPosts = getBlogPosts(language);
@@ -88,7 +93,7 @@ export default function BlogPageContent({ currentPage }: BlogPageContentProps) {
         </div>
 
         {/* Featured Post - Only show on first page and if there are posts */}
-        {validCurrentPage === 1 && featuredPost && <BlogHero post={featuredPost} />}
+        {validCurrentPage === 1 && featuredPost && <BlogHero post={featuredPost} language={language} />}
 
         {/* Blog Grid */}
         <div className="mt-20 md:mt-32">
@@ -109,7 +114,11 @@ export default function BlogPageContent({ currentPage }: BlogPageContentProps) {
             </div>
           ) : (
             <div className="text-center py-16 text-[var(--foreground)]/50">
-              <p className="text-lg">No hay artículos en esta categoría aún.</p>
+              <p className="text-lg">
+                {language === "es" 
+                  ? "No hay artículos en esta categoría aún." 
+                  : "No articles in this category yet."}
+              </p>
             </div>
           )}
 

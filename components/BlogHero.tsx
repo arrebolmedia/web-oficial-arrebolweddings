@@ -4,9 +4,10 @@ import { BlogPost } from "@/lib/blog-data";
 
 interface BlogHeroProps {
   post: BlogPost;
+  language: "es" | "en";
 }
 
-const BlogHero = ({ post }: BlogHeroProps) => {
+const BlogHero = ({ post, language }: BlogHeroProps) => {
   return (
     <section className="relative w-full py-12 md:py-20 border-b border-[var(--foreground)]/10">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -40,7 +41,7 @@ const BlogHero = ({ post }: BlogHeroProps) => {
               href={`/blog/${post.slug}`}
               className="inline-block text-sm tracking-widest uppercase border border-[var(--foreground)] px-8 py-4 hover:bg-[var(--foreground)] hover:text-[var(--background)] transition-all duration-300"
             >
-              Leer Artículo
+              {language === "es" ? "Leer Artículo" : "Read Article"}
             </Link>
           </div>
         </div>
