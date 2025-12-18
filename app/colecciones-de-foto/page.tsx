@@ -7,7 +7,7 @@ import { useLanguage } from "../context/LanguageContext";
 
 export default function ColeccionesDeFoto() {
   const { content } = useLanguage();
-  const { colecciones } = content;
+  const { colecciones, coleccionesFoto } = content;
 
   // Colecciones solo de fotografía con precios a la mitad
   const photoCollections = colecciones.collections.map(col => {
@@ -18,8 +18,10 @@ export default function ColeccionesDeFoto() {
       name: col.name,
       features: col.features.filter(f => 
         !f.toLowerCase().includes('videógrafo') && 
+        !f.toLowerCase().includes('videographer') &&
         !f.toLowerCase().includes('video') &&
-        !f.toLowerCase().includes('dron')
+        !f.toLowerCase().includes('dron') &&
+        !f.toLowerCase().includes('drone')
       ),
       price: `$${halfPrice.toLocaleString('es-MX')} MXN`,
       description: col.description
@@ -32,8 +34,8 @@ export default function ColeccionesDeFoto() {
       {/* Header con imagen de fondo */}
       <FadeIn>
         <SectionHeader
-          title="Colecciones de Fotografía"
-          subtitle="Capturamos cada momento de su boda con una mirada artística"
+          title={coleccionesFoto.title}
+          subtitle={coleccionesFoto.subtitle}
           backgroundImage="/images/gallery/TOP-PyP-505.webp"
         />
       </FadeIn>
@@ -43,7 +45,7 @@ export default function ColeccionesDeFoto() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <FadeIn delay={200}>
             <p className="mb-12 text-lg text-[var(--foreground)]/80 leading-relaxed text-center max-w-3xl mx-auto">
-              Nuestras colecciones de fotografía están diseñadas para capturar la esencia de su boda. Desde celebraciones íntimas hasta grandes eventos, documentamos cada detalle con una perspectiva artística y cuidadosa.
+              {coleccionesFoto.intro}
             </p>
           </FadeIn>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -86,13 +88,13 @@ export default function ColeccionesDeFoto() {
           <div className="mt-16 overflow-x-auto hidden lg:block">
             <FadeIn delay={500}>
               <h3 className="font-[var(--font-heading)] text-3xl text-[var(--foreground)] text-center mb-8 uppercase">
-                Comparación de colecciones
+                {coleccionesFoto.comparisonTitle}
               </h3>
               <table className="w-full bg-white border border-[var(--border-subtle)]">
                 <thead>
                   <tr className="border-b border-[var(--border-subtle)]">
                     <th className="p-4 text-left font-[var(--font-heading)] text-lg text-[var(--foreground)] bg-[var(--background)]">
-                      Características
+                      {coleccionesFoto.tableLabels.features}
                     </th>
                     {photoCollections.map((collection, index) => (
                       <th key={index} className="p-4 text-center font-[var(--font-heading)] text-lg text-[var(--foreground)] bg-[var(--background)] min-w-[180px]">
@@ -103,63 +105,63 @@ export default function ColeccionesDeFoto() {
                 </thead>
                 <tbody>
                   <tr className="border-b border-[var(--border-subtle)]">
-                    <td className="p-4 text-[var(--foreground)]/70">Horas de cobertura</td>
+                    <td className="p-4 text-[var(--foreground)]/70">{coleccionesFoto.tableLabels.coverage}</td>
                     <td className="p-4 text-center text-[var(--foreground)]">8</td>
                     <td className="p-4 text-center text-[var(--foreground)]">10</td>
                     <td className="p-4 text-center text-[var(--foreground)]">12</td>
                     <td className="p-4 text-center text-[var(--foreground)]">12</td>
                   </tr>
                   <tr className="border-b border-[var(--border-subtle)]">
-                    <td className="p-4 text-[var(--foreground)]/70">Fotógrafos</td>
+                    <td className="p-4 text-[var(--foreground)]/70">{coleccionesFoto.tableLabels.photographers}</td>
                     <td className="p-4 text-center text-[var(--foreground)]">1</td>
                     <td className="p-4 text-center text-[var(--foreground)]">1</td>
                     <td className="p-4 text-center text-[var(--foreground)]">1</td>
                     <td className="p-4 text-center text-[var(--foreground)]">2</td>
                   </tr>
                   <tr className="border-b border-[var(--border-subtle)]">
-                    <td className="p-4 text-[var(--foreground)]/70">Fotografías</td>
+                    <td className="p-4 text-[var(--foreground)]/70">{coleccionesFoto.tableLabels.photos}</td>
                     <td className="p-4 text-center text-[var(--foreground)]">400–500</td>
                     <td className="p-4 text-center text-[var(--foreground)]">600–700</td>
                     <td className="p-4 text-center text-[var(--foreground)]">800–900</td>
                     <td className="p-4 text-center text-[var(--foreground)]">1000+</td>
                   </tr>
                   <tr className="border-b border-[var(--border-subtle)]">
-                    <td className="p-4 text-[var(--foreground)]/70">Photobook</td>
+                    <td className="p-4 text-[var(--foreground)]/70">{coleccionesFoto.tableLabels.photobook}</td>
                     <td className="p-4 text-center text-[var(--foreground)] text-sm">8.5x11" (50 pág)</td>
                     <td className="p-4 text-center text-[var(--foreground)] text-sm">8.5x11" (50 pág)</td>
                     <td className="p-4 text-center text-[var(--foreground)] text-sm">11x11" (50 pág)</td>
                     <td className="p-4 text-center text-[var(--foreground)] text-sm">12x12" (75 pág)</td>
                   </tr>
                   <tr className="border-b border-[var(--border-subtle)]">
-                    <td className="p-4 text-[var(--foreground)]/70">Sesión pre boda</td>
+                    <td className="p-4 text-[var(--foreground)]/70">{coleccionesFoto.tableLabels.preWedding}</td>
                     <td className="p-4 text-center text-[var(--foreground)]">—</td>
                     <td className="p-4 text-center text-[var(--foreground)]">✓</td>
                     <td className="p-4 text-center text-[var(--foreground)]">✓</td>
                     <td className="p-4 text-center text-[var(--foreground)]">✓</td>
                   </tr>
                   <tr className="border-b border-[var(--border-subtle)]">
-                    <td className="p-4 text-[var(--foreground)]/70">Sesión post boda</td>
+                    <td className="p-4 text-[var(--foreground)]/70">{coleccionesFoto.tableLabels.postWedding}</td>
                     <td className="p-4 text-center text-[var(--foreground)]">—</td>
                     <td className="p-4 text-center text-[var(--foreground)]">—</td>
                     <td className="p-4 text-center text-[var(--foreground)]">✓</td>
                     <td className="p-4 text-center text-[var(--foreground)]">✓</td>
                   </tr>
                   <tr className="border-b border-[var(--border-subtle)]">
-                    <td className="p-4 text-[var(--foreground)]/70">Creador de contenido</td>
+                    <td className="p-4 text-[var(--foreground)]/70">{coleccionesFoto.tableLabels.contentCreator}</td>
                     <td className="p-4 text-center text-[var(--foreground)]">—</td>
                     <td className="p-4 text-center text-[var(--foreground)]">—</td>
                     <td className="p-4 text-center text-[var(--foreground)]">—</td>
                     <td className="p-4 text-center text-[var(--foreground)]">✓</td>
                   </tr>
                   <tr className="border-b border-[var(--border-subtle)]">
-                    <td className="p-4 text-[var(--foreground)]/70">Invitación digital</td>
+                    <td className="p-4 text-[var(--foreground)]/70">{coleccionesFoto.tableLabels.digitalInvitation}</td>
                     <td className="p-4 text-center text-[var(--foreground)]">—</td>
                     <td className="p-4 text-center text-[var(--foreground)]">—</td>
                     <td className="p-4 text-center text-[var(--foreground)]">—</td>
                     <td className="p-4 text-center text-[var(--foreground)]">✓</td>
                   </tr>
                   <tr className="bg-[var(--background)]">
-                    <td className="p-4 font-[var(--font-heading)] text-lg text-[var(--foreground)]">Precio</td>
+                    <td className="p-4 font-[var(--font-heading)] text-lg text-[var(--foreground)]">{coleccionesFoto.tableLabels.price}</td>
                     {photoCollections.map((collection, index) => (
                       <td key={index} className="p-4 text-center">
                         <div className="text-2xl font-light text-[var(--foreground)]">{collection.price.split(' ')[0]}</div>
@@ -185,7 +187,7 @@ export default function ColeccionesDeFoto() {
               {colecciones.whatsappText}
             </p>
             <a
-              href={`https://wa.me/5217775001071?text=${encodeURIComponent("¡Hola! Deseo más información sobre sus colecciones de fotografía")}`}
+              href={`https://wa.me/5217775001071?text=${encodeURIComponent(coleccionesFoto.whatsappMessage)}`}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block px-8 py-3 border border-[var(--foreground)] text-[var(--foreground)] text-sm tracking-widest uppercase hover:bg-[var(--foreground)] hover:text-white transition-all duration-300"
