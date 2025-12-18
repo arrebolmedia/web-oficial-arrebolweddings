@@ -119,10 +119,10 @@ export default function ColeccionesDeVideo() {
                   </tr>
                   <tr className="border-b border-[var(--border-subtle)]">
                     <td className="p-4 text-[var(--foreground)]/70">Video (duración)</td>
-                    <td className="p-4 text-center text-[var(--foreground)]">20–30 min</td>
-                    <td className="p-4 text-center text-[var(--foreground)]">30–40 min</td>
+                    <td className="p-4 text-center text-[var(--foreground)]">15–20 min</td>
+                    <td className="p-4 text-center text-[var(--foreground)]">25–30 min</td>
+                    <td className="p-4 text-center text-[var(--foreground)]">35–45 min</td>
                     <td className="p-4 text-center text-[var(--foreground)]">50–60 min</td>
-                    <td className="p-4 text-center text-[var(--foreground)]">45–60 min</td>
                   </tr>
                   <tr className="border-b border-[var(--border-subtle)]">
                     <td className="p-4 text-[var(--foreground)]/70">Video corto (3–5 min)</td>
@@ -156,7 +156,7 @@ export default function ColeccionesDeVideo() {
                     <td className="p-4 text-[var(--foreground)]/70">Dron para tomas aéreas</td>
                     <td className="p-4 text-center text-[var(--foreground)]">—</td>
                     <td className="p-4 text-center text-[var(--foreground)]">—</td>
-                    <td className="p-4 text-center text-[var(--foreground)]">—</td>
+                    <td className="p-4 text-center text-[var(--foreground)]">✓</td>
                     <td className="p-4 text-center text-[var(--foreground)]">✓</td>
                   </tr>
                   <tr className="border-b border-[var(--border-subtle)]">

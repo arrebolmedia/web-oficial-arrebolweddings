@@ -3895,6 +3895,139 @@ Y por eso nos sigue conmoviendo cada vez que lo vemos.`,
     category: "Inspiración",
     date: "Diciembre 10, 2025",
   },
+  {
+    id: "33",
+    slug: "por-que-seleccionamos-cuidadosamente-imagenes",
+    title: "Por qué seleccionamos cuidadosamente las imágenes que entregamos",
+    excerpt: "Cuando una pareja recibe su galería final, no está recibiendo solo 'muchas fotos'. Está recibiendo la memoria visual de uno de los días más importantes de su vida. Por eso, en Arrebol creemos profundamente que la curaduría es tan importante como la fotografía misma.",
+    content: `Cuando una pareja recibe su galería final, no está recibiendo solo "muchas fotos".
+Está recibiendo la memoria visual de uno de los días más importantes de su vida.
+
+Por eso, en Arrebol creemos profundamente que la curaduría es tan importante como la fotografía misma.
+
+Seleccionar bien no es quitar recuerdos.
+Es darles forma, sentido y fluidez.
+
+## 1. Más fotos no siempre significan mejor experiencia
+
+En una boda se toman miles de imágenes.
+Es normal: cada gesto, cada emoción, cada transición merece atención.
+
+Pero entregar todas las fotos —incluyendo cinco imágenes casi idénticas del mismo momento, con variaciones mínimas de ángulo o expresión— no mejora el recuerdo.
+Lo diluye.
+
+Nosotros creemos en esto:
+
+**Si hay cinco fotos muy parecidas, no necesitas ver las cinco.
+Necesitas ver la mejor.**
+
+La que tiene la emoción más clara.
+La que respira mejor.
+La que cuenta la historia con más fuerza.
+
+## 2. La galería debe sentirse como una historia, no como un archivo
+
+Una boda no se vive como una lista desordenada de momentos.
+Se vive como una narrativa emocional: empieza, avanza, se transforma y culmina.
+
+Por eso cuidamos que la galería:
+
+• tenga ritmo
+• tenga transiciones naturales
+• fluya de preparativos a ceremonia
+• de ceremonia a celebración
+• de lo íntimo a lo colectivo
+
+Queremos que puedan recorrerla como si revivieran el día, no como si estuvieran navegando un mar infinito de imágenes sin dirección.
+
+## 3. Menos ruido visual, más emoción
+
+Cuando hay demasiadas fotos similares:
+
+• la emoción se diluye
+• el ojo se cansa
+• los momentos importantes pierden peso
+• lo extraordinario se vuelve ordinario
+
+La selección cuidadosa permite que cada imagen tenga espacio para respirar.
+
+Que una mirada importe.
+Que un abrazo se sienta.
+Que un silencio tenga fuerza.
+
+## 4. Pensamos también en su futuro álbum
+
+Algo que muchas parejas agradecen después es esto:
+**una galería bien curada hace muchísimo más fácil elegir fotos para el álbum.**
+
+Si la galería está llena de repeticiones, la selección se vuelve pesada y confusa.
+Si la galería ya está editada con intención, el proceso se vuelve natural.
+
+Ustedes pueden concentrarse en lo importante:
+
+• qué momentos quieren conservar en físico
+• qué imágenes los representan más
+• qué historia quieren contar en su álbum
+
+Nuestro trabajo previo les ahorra tiempo, energía y decisiones innecesarias.
+
+## 5. Seleccionar es un acto de respeto
+
+Seleccionar bien es decirles:
+
+"Cuidamos tu memoria."
+
+"Pensamos en cómo vivirás estas fotos, no solo en entregarlas."
+
+"Preferimos calidad emocional sobre cantidad numérica."
+
+No creemos en abrumar.
+Creemos en acompañar.
+
+## 6. Cada imagen que entregamos tiene una razón para estar ahí
+
+Si una foto está en su galería es porque:
+
+• aporta algo a la historia
+• tiene una emoción clara
+• suma al ritmo del día
+• representa un momento relevante
+• o tiene un valor estético o humano real
+
+No están viendo "lo que sobró".
+Están viendo lo que importa.
+
+## 7. La curaduría también es parte de nuestro estilo
+
+Así como cuidamos la luz, el encuadre y el color, cuidamos la selección.
+
+Nuestro estilo no solo se ve en cómo fotografiamos,
+sino en cómo editamos la experiencia completa de principio a fin.
+
+La galería no es un contenedor.
+Es un relato.
+
+## En resumen
+
+Seleccionamos cuidadosamente sus imágenes porque:
+
+• queremos que vean la mejor versión de cada momento
+• queremos que la galería fluya como una historia
+• queremos evitar repeticiones innecesarias
+• queremos que revivan su boda sin cansancio visual
+• queremos facilitar la selección de su álbum
+• y, sobre todo, queremos honrar su memoria
+
+**Menos imágenes puede significar mucho más significado.**
+
+Y cuando vuelvan a estas fotos dentro de 10, 20 o 30 años,
+queremos que no se pierdan en un mar de archivos,
+sino que se encuentren, una vez más,
+con la historia de su amor tal como fue vivida.`,
+    coverImage: "/images/gallery/PyC-275.webp",
+    category: "Tips",
+    date: "Diciembre 18, 2025",
+  },
 ];
 
 export const blogPosts: BlogPost[] = rawPosts.map((post) => ({
