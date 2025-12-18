@@ -4028,6 +4028,154 @@ con la historia de su amor tal como fue vivida.`,
     category: "Tips",
     date: "Diciembre 18, 2025",
   },
+  {
+    id: "34",
+    slug: "foto-y-video-dos-formas-vivir-mismo-recuerdo",
+    title: "Foto y video: dos formas de vivir el mismo recuerdo",
+    excerpt: "Cuando una pareja empieza a elegir proveedores, una de las decisiones más comunes es esta: ¿Foto o video? La realidad es que fotografía y video no compiten entre sí: se complementan. Elegir ambos no es un lujo. Es una forma distinta —y más completa— de conservar la memoria del día.",
+    content: `Cuando una pareja empieza a elegir proveedores, una de las decisiones más comunes es esta:
+¿Foto o video?
+
+A veces el presupuesto obliga a elegir.
+Otras veces se piensa que uno "cubre" al otro.
+Pero la realidad es que fotografía y video no compiten entre sí: se complementan.
+
+Elegir ambos no es un lujo.
+Es una forma distinta —y más completa— de conservar la memoria del día.
+
+## 1. La fotografía congela el instante; el video conserva el movimiento
+
+La fotografía tiene una fuerza única:
+detiene el tiempo y permite observar un momento con calma.
+
+El video, en cambio:
+
+• conserva la voz
+• guarda el movimiento
+• captura la respiración
+• registra la música
+• devuelve el ritmo del día
+
+Una imagen te permite mirar.
+Un video te permite volver a estar ahí.
+
+## 2. Hay emociones que solo existen en movimiento
+
+Hay momentos que una foto no puede contener del todo:
+
+• la voz quebrada en los votos
+• la risa que aparece antes de llorar
+• la manera en que se miran al verse por primera vez
+• el tono exacto de una promesa
+• el sonido del aplauso al final de la ceremonia
+
+El video no reemplaza la foto.
+La expande.
+
+## 3. Foto y video cuentan la misma historia desde lenguajes distintos
+
+Es la misma boda.
+La misma emoción.
+El mismo día.
+
+Pero cada medio la narra de forma diferente:
+
+• la foto es contemplativa
+• el video es sensorial
+• la foto invita a detenerse
+• el video invita a revivir
+
+Juntos construyen una memoria más rica, más profunda y más completa.
+
+## 4. Cuando foto y video trabajan juntos, todo fluye mejor
+
+Cuando ambos servicios vienen del mismo equipo:
+
+• hay comunicación constante
+• se comparte el mismo estilo narrativo
+• se respetan tiempos y espacios
+• se evita estorbarse
+• se cuida la experiencia de la pareja
+
+No se trata solo de resultados,
+sino de cómo se vive el día.
+
+Un equipo integrado reduce estrés y mejora el ritmo del evento.
+
+## 5. La narrativa se vuelve más coherente
+
+Cuando foto y video están alineados:
+
+• la estética dialoga
+• la historia tiene continuidad
+• los momentos clave se capturan desde ambos lenguajes
+• la edición final se siente unificada
+
+No son dos visiones distintas del día.
+Es una sola historia contada con dos voces.
+
+## 6. El video se vuelve invaluable con el paso del tiempo
+
+Algo que vemos constantemente es esto:
+
+Las parejas aman sus fotos desde el primer día.
+Pero con los años, el video se vuelve emocionalmente invaluable.
+
+Escuchar la voz de un familiar.
+Ver a alguien que ya no está.
+Reviviendo gestos, risas, miradas.
+
+El video gana peso con el tiempo.
+
+## 7. Elegir solo uno suele dejar una sensación de "faltó algo"
+
+Muchas parejas que eligen solo foto dicen después:
+"Nos hubiera encantado tener el video."
+
+Y quienes eligen solo video dicen:
+"Extrañamos no tener tantas fotos para imprimir, enmarcar o regalar."
+
+Foto y video no se sustituyen.
+Se completan.
+
+## 8. No se trata de cantidad, sino de experiencia
+
+Elegir ambos servicios no significa "tener más cosas".
+Significa vivir el recuerdo de formas distintas:
+
+• ver una foto enmarcada
+• hojear un álbum
+• volver a escuchar los votos
+• revivir el día en movimiento
+• compartir el video con familia
+• regresar a esos momentos en aniversarios
+
+Cada medio cumple una función emocional distinta.
+
+## 9. Pensar a largo plazo cambia la decisión
+
+El día de la boda dura unas horas.
+Los recuerdos duran toda la vida.
+
+Pensar en cómo querrán recordar ese día dentro de 10, 20 o 30 años suele cambiar la perspectiva.
+
+No es una decisión para hoy.
+Es una decisión para el futuro.
+
+## En resumen
+
+Elegir foto y video juntos no es duplicar un servicio.
+Es completar la memoria.
+
+La fotografía guarda instantes.
+El video guarda la vida que ocurrió entre ellos.
+
+Y cuando ambos se trabajan con la misma sensibilidad, el resultado no es solo un registro:
+es una experiencia que se puede volver a sentir una y otra vez.`,
+    coverImage: "/images/gallery/TOP-PyP-505.webp",
+    category: "Tips",
+    date: "Diciembre 18, 2025",
+  },
 ];
 
 export const blogPosts: BlogPost[] = rawPosts.map((post) => ({
