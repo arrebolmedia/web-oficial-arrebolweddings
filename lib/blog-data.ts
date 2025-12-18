@@ -1,3 +1,5 @@
+import { blogTranslationsEn } from "./blog-translations-en";
+
 export interface BlogPost {
   id: string;
   slug: string;
@@ -5,16 +7,16 @@ export interface BlogPost {
   excerpt: string;
   content?: string;
   coverImage: string;
-  category: "Real Weddings" | "Tips" | "Inspiración";
+  category: "Real Weddings" | "Tips" | "Inspiración" | "Inspiration";
   date: string;
   readTime: string;
 }
 
-function calculateReadTime(text: string): string {
+function calculateReadTime(text: string, language: "es" | "en" = "es"): string {
   const wordsPerMinute = 200;
   const words = text.trim().split(/\s+/).length;
   const minutes = Math.ceil(words / wordsPerMinute);
-  return `${minutes} min lectura`;
+  return language === "es" ? `${minutes} min lectura` : `${minutes} min read`;
 }
 
 const rawPosts = [
@@ -4178,7 +4180,39 @@ es una experiencia que se puede volver a sentir una y otra vez.`,
   },
 ];
 
-export const blogPosts: BlogPost[] = rawPosts.map((post) => ({
+// Spanish blog posts
+export const blogPostsEs: BlogPost[] = rawPosts.map((post) => ({
   ...post,
-  readTime: calculateReadTime(post.content || post.excerpt),
+  readTime: calculateReadTime(post.content || post.excerpt, "es"),
 })) as BlogPost[];
+
+// English blog posts
+export const blogPostsEn: BlogPost[] = rawPosts.map((post) => {
+  const translation = blogTranslationsEn[post.id];
+  if (!translation) {
+    // Fallback to Spanish if translation not available
+    return {
+      ...post,
+      readTime: calculateReadTime(post.content || post.excerpt, "en"),
+    };
+  }
+  return {
+    id: post.id,
+    slug: post.slug,
+    title: translation.title,
+    excerpt: translation.excerpt,
+    content: translation.content,
+    coverImage: post.coverImage,
+    category: translation.category,
+    date: translation.date,
+    readTime: calculateReadTime(translation.content || translation.excerpt, "en"),
+  };
+}) as BlogPost[];
+
+// Helper function to get posts by language
+export function getBlogPosts(language: "es" | "en" = "es"): BlogPost[] {
+  return language === "es" ? blogPostsEs : blogPostsEn;
+}
+
+// Default export (Spanish for backward compatibility)
+export const blogPosts = blogPostsEs;

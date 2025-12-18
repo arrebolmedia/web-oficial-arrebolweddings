@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { blogPosts } from "@/lib/blog-data";
+import { getBlogPosts } from "@/lib/blog-data";
 import BlogHero from "@/components/BlogHero";
 import BlogCard from "@/components/BlogCard";
 import Link from "next/link";
@@ -9,17 +9,23 @@ import { useLanguage } from "@/app/context/LanguageContext";
 
 const POSTS_PER_PAGE = 9;
 
-const CATEGORIES = ["Todos", "Real Weddings", "Tips", "Inspiración"] as const;
-type Category = typeof CATEGORIES[number];
+const CATEGORIES_ES = ["Todos", "Real Weddings", "Tips", "Inspiración"] as const;
+const CATEGORIES_EN = ["All", "Real Weddings", "Tips", "Inspiration"] as const;
 
 interface BlogPageContentProps {
   currentPage: number;
 }
 
 export default function BlogPageContent({ currentPage }: BlogPageContentProps) {
-  const { content } = useLanguage();
+  const { content, language } = useLanguage();
   const { blog } = content;
-  const [activeCategory, setActiveCategory] = useState<Category>("Todos");
+  
+  const CATEGORIES = language === "es" ? CATEGORIES_ES : CATEGORIES_EN;
+  type Category = typeof CATEGORIES[number];
+  const [activeCategory, setActiveCategory] = useState<Category>(CATEGORIES[0]);
+
+  // Get blog posts in the correct language
+  const blogPosts = getBlogPosts(language);
 
   // Always use "Las dudas que todos los novios tienen" as featured post
   const featuredPost = blogPosts.find(post => post.slug === "dudas-que-todos-los-novios-tienen");
@@ -30,7 +36,8 @@ export default function BlogPageContent({ currentPage }: BlogPageContentProps) {
     .reverse();
   
   // Filter by category
-  const filteredPosts = activeCategory === "Todos" 
+  const allCategory = language === "es" ? "Todos" : "All";
+  const filteredPosts = activeCategory === allCategory 
     ? sortedPosts 
     : sortedPosts.filter(post => post.category === activeCategory);
 

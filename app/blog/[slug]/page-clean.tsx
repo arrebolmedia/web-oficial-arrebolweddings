@@ -9,6 +9,7 @@ interface BlogPostPageProps {
 }
 
 export function generateStaticParams() {
+  // Generate static params from Spanish posts (slugs are language-independent)
   return blogPostsEs.map((post) => ({
     slug: post.slug,
   }));
@@ -16,6 +17,7 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: BlogPostPageProps): Promise<Metadata> {
   const { slug } = await params;
+  // Use Spanish posts for metadata (default)
   const post = blogPostsEs.find((p) => p.slug === slug);
 
   if (!post) {
