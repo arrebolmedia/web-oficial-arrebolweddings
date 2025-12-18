@@ -21,16 +21,21 @@ export default function BlogPageContent({ currentPage }: BlogPageContentProps) {
   const { blog } = content;
   const [activeCategory, setActiveCategory] = useState<Category>("Todos");
 
-  // Sort posts by newest first, then filter by category
-  const sortedPosts = [...blogPosts].reverse();
+  // Always use "Las dudas que todos los novios tienen" as featured post
+  const featuredPost = blogPosts.find(post => post.slug === "dudas-que-todos-los-novios-tienen");
+  
+  // Sort posts by newest first (reversed order), excluding the featured post
+  const sortedPosts = [...blogPosts]
+    .filter(post => post.slug !== "dudas-que-todos-los-novios-tienen")
+    .reverse();
+  
+  // Filter by category
   const filteredPosts = activeCategory === "Todos" 
     ? sortedPosts 
     : sortedPosts.filter(post => post.category === activeCategory);
 
-  // Use the first filtered post as the featured hero post (only on page 1)
-  const featuredPost = filteredPosts[0];
-  // Get all posts except the featured one for pagination
-  const allGridPosts = filteredPosts.slice(1);
+  // Get all posts for pagination
+  const allGridPosts = filteredPosts;
   
   // Calculate pagination
   const totalPosts = allGridPosts.length;
