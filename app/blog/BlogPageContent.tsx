@@ -21,10 +21,11 @@ export default function BlogPageContent({ currentPage }: BlogPageContentProps) {
   const { blog } = content;
   const [activeCategory, setActiveCategory] = useState<Category>("Todos");
 
-  // Filter posts by category
+  // Sort posts by newest first, then filter by category
+  const sortedPosts = [...blogPosts].reverse();
   const filteredPosts = activeCategory === "Todos" 
-    ? blogPosts 
-    : blogPosts.filter(post => post.category === activeCategory);
+    ? sortedPosts 
+    : sortedPosts.filter(post => post.category === activeCategory);
 
   // Use the first filtered post as the featured hero post (only on page 1)
   const featuredPost = filteredPosts[0];
