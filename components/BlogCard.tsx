@@ -4,9 +4,10 @@ import { BlogPost } from "@/lib/blog-data";
 
 interface BlogCardProps {
   post: BlogPost;
+  language: "es" | "en";
 }
 
-const BlogCard = ({ post }: BlogCardProps) => {
+const BlogCard = ({ post, language }: BlogCardProps) => {
   return (
     <Link href={`/blog/${post.slug}`} className="group block">
       <div className="relative aspect-[3/4] overflow-hidden bg-gray-100 mb-6">
@@ -30,7 +31,7 @@ const BlogCard = ({ post }: BlogCardProps) => {
         </p>
         <div className="pt-2">
           <span className="text-xs tracking-widest uppercase border-b border-[var(--foreground)]/30 pb-1 group-hover:border-[var(--accent-wine)] group-hover:text-[var(--accent-wine)] transition-all duration-300">
-            Leer historia
+            {language === "es" ? "Leer historia" : "Read story"}
           </span>
         </div>
       </div>
