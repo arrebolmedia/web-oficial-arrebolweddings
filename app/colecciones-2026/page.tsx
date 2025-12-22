@@ -94,7 +94,7 @@ export default function Colecciones() {
                     <td className="p-4 text-[var(--foreground)]/70">{colecciones.comparisonLabels.coverage}</td>
                     <td className="p-4 text-center text-[var(--foreground)]">8</td>
                     <td className="p-4 text-center text-[var(--foreground)]">10</td>
-                    <td className="p-4 text-center text-[var(--foreground)]">12</td>
+                    <td className="p-4 text-center text-[var(--foreground)]">10</td>
                     <td className="p-4 text-center text-[var(--foreground)]">12</td>
                   </tr>
                   <tr className="border-b border-[var(--border-subtle)]">

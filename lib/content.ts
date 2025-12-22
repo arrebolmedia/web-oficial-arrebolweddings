@@ -345,7 +345,7 @@ export const contentEs = {
       {
         name: "Colección Tres",
         features: [
-          "12 horas de cobertura",
+          "10 horas de cobertura",
           "2 fotógrafos",
           "800–900 fotografías",
           "Galería digital",
@@ -796,7 +796,7 @@ export const contentEn = {
       {
         name: "Collection Three",
         features: [
-          "12 hours of coverage",
+          "10 hours of coverage",
           "2 photographers",
           "800–900 photographs",
           "Digital gallery",
