@@ -52,15 +52,30 @@
 
 ---
 
-## Archivos modificados
+## ✅ DEPLOY COMPLETADO
+
+### Archivos modificados
 - `lib/content.ts` - Precios y features actualizados
-- `app/colecciones/page.tsx` - Tabla de comparación actualizada
-- `app/colecciones-2026/page.tsx` - Tabla de comparación actualizada
+- `app/colecciones-2026/page.tsx` - Nueva página creada (ES LA PRINCIPAL AHORA)
+- `app/colecciones/page.tsx` - Tabla de comparación actualizada (página antigua)
+- `components/Navigation.tsx` - Link actualizado a /colecciones-2026 ✅
+- `components/Footer.tsx` - Link actualizado a /colecciones-2026 ✅
 
----
+### URLs Activas en Producción
+- **https://arrebolweddings.com/colecciones-2026** ← **PÁGINA PRINCIPAL** (desde menú y footer)
+- https://arrebolweddings.com/colecciones (antigua, aún accesible directamente)
+- https://arrebolweddings.com/colecciones-paulina (landing específico)
 
-## Precios 2026 (sin descuento - automático +$20k)
+### Precios Mostrados
+**Página Principal (/colecciones-2026):**
 - Colección Uno: **$79,000 MXN**
 - Colección Dos: **$92,000 MXN**
 - Colección Tres: **$105,000 MXN**
 - Colección Diamante: **$139,000 MXN**
+
+**Nota:** La página /colecciones-2026 NO muestra precios tachados, solo los precios finales. Los precios se calculan automáticamente (+$20k sobre los precios base en lib/content.ts).
+
+---
+
+## Sistema de Traducción
+✅ La página `/colecciones-2026` tiene soporte completo de traducción ES/EN usando el LanguageContext.
