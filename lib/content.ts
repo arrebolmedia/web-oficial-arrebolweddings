@@ -519,7 +519,33 @@ export const contentEs = {
       digitalInvitation: "Invitación digital",
       price: "Precio",
     },
+    customNote: "Si deseas armar tu paquete a la medida con elementos de diferentes colecciones o agregar servicios adicionales, contáctanos para crear algo perfecto para ti.",
+    whatsappText: "¿Listo para reservar tu fecha? Escríbenos por WhatsApp y conversemos sobre tu boda.",
+    whatsappButton: "Contactar por WhatsApp",
     whatsappMessage: "¡Hola! Deseo más información sobre sus colecciones de fotografía",
+    addonsTitle: "Complementos",
+    addons: [
+      {
+        name: "Hora extra de fotografía",
+        price: "$4,500",
+      },
+      {
+        name: 'Photobook 50 páginas (11x11")',
+        price: "$5,500",
+      },
+      {
+        name: "Caja para Photobook",
+        price: "$1,500",
+      },
+      {
+        name: "Fotógrafo adicional",
+        price: "$4,000",
+      },
+      {
+        name: "Sesión adicional (engagement/trash the dress)",
+        price: "$4,500",
+      },
+    ],
   },
   coleccionesVideo: {
     title: "Colecciones de Video",
@@ -534,13 +560,40 @@ export const contentEs = {
       shortVideo: "Video corto",
       oneMinuteVideo: "Video 1 minuto",
       drone: "Dron para tomas aéreas",
+      videoDuration: "Duración del video",
       preWedding: "Sesión pre boda",
       postWedding: "Sesión post boda",
       contentCreator: "Creador de contenido",
       digitalInvitation: "Invitación digital",
       price: "Precio",
     },
+    customNote: "Si deseas armar tu paquete a la medida con elementos de diferentes colecciones o agregar servicios adicionales, contáctanos para crear algo perfecto para ti.",
+    whatsappText: "¿Listo para reservar tu fecha? Escríbenos por WhatsApp y conversemos sobre tu boda.",
+    whatsappButton: "Contactar por WhatsApp",
     whatsappMessage: "¡Hola! Deseo más información sobre sus colecciones de video",
+    addonsTitle: "Complementos",
+    addons: [
+      {
+        name: "Hora extra de video",
+        price: "$4,000",
+      },
+      {
+        name: "Dron para tomas aéreas",
+        price: "$6,500",
+      },
+      {
+        name: "Camarógrafo adicional",
+        price: "$7,000",
+      },
+      {
+        name: "Creador de contenido",
+        price: "$7,000",
+      },
+      {
+        name: "Video adicional de 1 minuto",
+        price: "$3,500",
+      },
+    ],
   },
 };
 
@@ -970,7 +1023,33 @@ export const contentEn = {
       digitalInvitation: "Digital invitation",
       price: "Price",
     },
+    customNote: "If you want to create a custom package with elements from different collections or add additional services, contact us to create something perfect for you.",
+    whatsappText: "Ready to book your date? Write to us on WhatsApp and let's talk about your wedding.",
+    whatsappButton: "Contact via WhatsApp",
     whatsappMessage: "Hello! I would like more information about your photography collections",
+    addonsTitle: "Add-ons",
+    addons: [
+      {
+        name: "Extra hour of photography",
+        price: "$4,500",
+      },
+      {
+        name: 'Photobook 50 pages (11x11")',
+        price: "$5,500",
+      },
+      {
+        name: "Photobook box",
+        price: "$1,500",
+      },
+      {
+        name: "Additional photographer",
+        price: "$4,000",
+      },
+      {
+        name: "Additional session (engagement/trash the dress)",
+        price: "$4,500",
+      },
+    ],
   },
   coleccionesVideo: {
     title: "Video Collections",
@@ -985,13 +1064,40 @@ export const contentEn = {
       shortVideo: "Short video",
       oneMinuteVideo: "1 minute video",
       drone: "Drone for aerial shots",
+      videoDuration: "Video duration",
       preWedding: "Pre-wedding session",
       postWedding: "Post-wedding session",
       contentCreator: "Content creator",
       digitalInvitation: "Digital invitation",
       price: "Price",
     },
+    customNote: "If you want to create a custom package with elements from different collections or add additional services, contact us to create something perfect for you.",
+    whatsappText: "Ready to book your date? Write to us on WhatsApp and let's talk about your wedding.",
+    whatsappButton: "Contact via WhatsApp",
     whatsappMessage: "Hello! I would like more information about your video collections",
+    addonsTitle: "Add-ons",
+    addons: [
+      {
+        name: "Extra hour of video",
+        price: "$4,000",
+      },
+      {
+        name: "Drone for aerial shots",
+        price: "$6,500",
+      },
+      {
+        name: "Additional videographer",
+        price: "$7,000",
+      },
+      {
+        name: "Content creator",
+        price: "$7,000",
+      },
+      {
+        name: "Additional 1 minute video",
+        price: "$3,500",
+      },
+    ],
   },
 };
 
