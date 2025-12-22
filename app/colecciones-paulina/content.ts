@@ -47,7 +47,7 @@ export const pauliaContent = {
       },
       {
         name: "Colección Foto",
-        description: "Fotografía premium con dos fotógrafos que capturarán tu boda desde diferentes ángulos. Incluye tomas aéreas con dron para esas fotografías épicas de tu celebración.",
+        description: "Fotografía con dos fotógrafos que capturarán tu boda desde diferentes ángulos. Incluye tomas aéreas con dron para esas fotografías épicas de tu celebración.",
         features: [
           "10 horas de cobertura",
           "2 fotógrafos",
@@ -74,7 +74,7 @@ export const pauliaContent = {
         description: "El dron incluido nos permite capturar la belleza de tu venue en Mérida y crear imágenes épicas de tu celebración.",
       },
       {
-        title: "Entrega premium",
+        title: "Entrega completa",
         description: "Photobook 12x12 de 75 páginas y print box con 50 fotografías seleccionadas para que tengas tus recuerdos físicos.",
       },
       {
@@ -101,7 +101,7 @@ export const pauliaContent = {
       "Más de 1000 fotografías editadas",
       "Galería digital completa en alta resolución",
       "Tomas aéreas con dron",
-      'Photobook premium 12x12" con 75 páginas',
+      'Photobook 12x12" con 75 páginas',
       "Print box con 50 fotografías seleccionadas",
       "Edición profesional con estilo atemporal",
       "Entrega en 8-10 semanas",
