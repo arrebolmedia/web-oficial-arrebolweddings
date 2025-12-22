@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
 import PauliaHero from "./components/PauliaHero";
 import PauliaPackagesSection from "./components/PauliaPackagesSection";
 import ContactSection from "./components/ContactSection";
@@ -23,10 +25,14 @@ export const metadata: Metadata = {
 
 export default function LandingPauliaPage() {
   return (
-    <main className="min-h-screen bg-[var(--background)]">
-      <PauliaHero />
-      <PauliaPackagesSection />
-      <ContactSection />
-    </main>
+    <>
+      <Navigation />
+      <main className="min-h-screen bg-[var(--background)]">
+        <PauliaHero />
+        <PauliaPackagesSection />
+        <ContactSection />
+      </main>
+      <Footer />
+    </>
   );
 }
