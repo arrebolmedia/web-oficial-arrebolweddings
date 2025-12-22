@@ -345,7 +345,7 @@ export const contentEs = {
       {
         name: "Colección Tres",
         features: [
-          "10 horas de cobertura",
+          "12 horas de cobertura",
           "2 fotógrafos",
           "800–900 fotografías",
           "Galería digital",
@@ -356,7 +356,6 @@ export const contentEs = {
           "Dron para tomas aéreas",
           'Photobook 11x11" (50 páginas)',
           "Sesión pre boda",
-          "Sesión post boda",
         ],
         price: "$85,000 MXN",
         description: "Ideal para bodas que se celebran en múltiples locaciones o durante varios días. Particularmente adecuada para una cobertura extendida de la fiesta. Incluye una sesión previa y otra posterior, que pueden utilizarse con el propósito que ustedes deseen. Cada momento se captura para tener un recuerdo extendido de todos los aspectos de su celebración.",
@@ -797,7 +796,7 @@ export const contentEn = {
       {
         name: "Collection Three",
         features: [
-          "10 hours of coverage",
+          "12 hours of coverage",
           "2 photographers",
           "800–900 photographs",
           "Digital gallery",
@@ -808,7 +807,6 @@ export const contentEn = {
           "Drone for aerial shots",
           '11x11" Photobook (50 pages)',
           "Pre-wedding session",
-          "Post-wedding session",
         ],
         price: "$85,000 MXN",
         description: "Ideal for weddings held in multiple locations or over several days. Particularly suitable for extended party coverage. Includes a previous and a subsequent session, which can be used for whatever purpose you wish. Every moment is captured to have an extended memory of all aspects of your celebration.",
