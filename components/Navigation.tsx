@@ -21,7 +21,7 @@ const Navigation = () => {
     { href: "/", label: navigation.home },
     { href: "/galeria", label: navigation.gallery },
     { href: "/el-proceso", label: navigation.process },
-    { href: "/colecciones", label: navigation.collections },
+    { href: "/colecciones-2026", label: navigation.collections },
     { href: "/blog", label: navigation.blog },
     { href: "/contacto", label: navigation.contact },
   ];
