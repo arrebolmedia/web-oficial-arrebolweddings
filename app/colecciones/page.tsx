@@ -147,7 +147,7 @@ export default function Colecciones() {
                     <td className="p-4 text-center text-[var(--foreground)] text-sm">—</td>
                     <td className="p-4 text-center text-[var(--foreground)] text-sm">8.5x11" (50 pág)</td>
                     <td className="p-4 text-center text-[var(--foreground)] text-sm">11x11" (50 pág)</td>
-                    <td className="p-4 text-center text-[var(--foreground)] text-sm">12x12" (75 pág)</td>
+                    <td className="p-4 text-center text-[var(--foreground)] text-sm">12x12" (50 pág)</td>
                   </tr>
                   <tr className="border-b border-[var(--border-subtle)]">
                     <td className="p-4 text-[var(--foreground)]/70">{colecciones.comparisonLabels.preWedding}</td>
