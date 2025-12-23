@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   arrebol-weddings:
     build:
@@ -15,7 +13,7 @@ services:
       
       # Configuración HTTP
       - "traefik.http.routers.arrebol.rule=Host(`arrebolweddings.com`) || Host(`www.arrebolweddings.com`)"
-      - "traefik.http.routers.arrebol.entrypoints=web"
+      - "traefik.http.routers.arrebol.entrypoints=http"
       
       # Redirigir HTTP a HTTPS
       - "traefik.http.routers.arrebol.middlewares=redirect-to-https"
@@ -24,9 +22,9 @@ services:
       
       # Configuración HTTPS
       - "traefik.http.routers.arrebol-secure.rule=Host(`arrebolweddings.com`) || Host(`www.arrebolweddings.com`)"
-      - "traefik.http.routers.arrebol-secure.entrypoints=websecure"
+      - "traefik.http.routers.arrebol-secure.entrypoints=https"
       - "traefik.http.routers.arrebol-secure.tls=true"
-      - "traefik.http.routers.arrebol-secure.tls.certresolver=letsencrypt"
+      - "traefik.http.routers.arrebol-secure.tls.certresolver=le"
       
       # Puerto del servicio
       - "traefik.http.services.arrebol.loadbalancer.server.port=3000"
