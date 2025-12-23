@@ -1,0 +1,45 @@
+version: '3.8'
+
+services:
+  arrebol-weddings:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: arrebol-weddings
+    restart: unless-stopped
+    networks:
+      - traefik-public
+    labels:
+      # Habilitar Traefik
+      - "traefik.enable=true"
+      
+      # Configuración HTTP
+      - "traefik.http.routers.arrebol.rule=Host(`arrebolweddings.com`) || Host(`www.arrebolweddings.com`)"
+      - "traefik.http.routers.arrebol.entrypoints=web"
+      
+      # Redirigir HTTP a HTTPS
+      - "traefik.http.routers.arrebol.middlewares=redirect-to-https"
+      - "traefik.http.middlewares.redirect-to-https.redirectscheme.scheme=https"
+      - "traefik.http.middlewares.redirect-to-https.redirectscheme.permanent=true"
+      
+      # Configuración HTTPS
+      - "traefik.http.routers.arrebol-secure.rule=Host(`arrebolweddings.com`) || Host(`www.arrebolweddings.com`)"
+      - "traefik.http.routers.arrebol-secure.entrypoints=websecure"
+      - "traefik.http.routers.arrebol-secure.tls=true"
+      - "traefik.http.routers.arrebol-secure.tls.certresolver=letsencrypt"
+      
+      # Puerto del servicio
+      - "traefik.http.services.arrebol.loadbalancer.server.port=3000"
+      
+      # Middleware para www redirect (opcional)
+      - "traefik.http.middlewares.www-redirect.redirectregex.regex=^https://www.arrebolweddings.com/(.*)"
+      - "traefik.http.middlewares.www-redirect.redirectregex.replacement=https://arrebolweddings.com/$${1}"
+      - "traefik.http.middlewares.www-redirect.redirectregex.permanent=true"
+      - "traefik.http.routers.arrebol-secure.middlewares=www-redirect"
+    environment:
+      - NODE_ENV=production
+      - NEXT_TELEMETRY_DISABLED=1
+
+networks:
+  traefik-public:
+    external: true
