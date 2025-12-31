@@ -10,7 +10,12 @@ export default function ColeccionUno2Videografos() {
   const { colecciones } = content;
 
   // Obtener la Colección Uno
-  const collectionOne = colecciones.collections[0]; // Colección Uno es la primera
+  const collectionOne = colecciones?.collections?.[0]; // Colección Uno es la primera
+  
+  // Si no hay datos, mostrar loading
+  if (!collectionOne) {
+    return <div className="min-h-screen flex items-center justify-center">Cargando...</div>;
+  }
 
   // Calcular el precio con 2 videógrafos
   const basePrice = 59000; // Precio base de Colección Uno
