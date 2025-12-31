@@ -33,17 +33,20 @@ export default function ColeccionUno2Videografos() {
       discount: "🎉 Descuento 15%",
       total: "Total",
       totalPrice: "Precio total",
-      checkAvailab{translations.title}
-            subtitle={translations.subtitle}
-            backgroundImage="/images/gallery/TOP-PyP-505.webp"
-          />
-        </FadeIn>
-
-        {/* Collection Card */}
-        <section className="py-16 bg-[var(--background)]">
-          <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
-            <FadeIn delay={200}>
-              <p className="mb-12 text-lg text-[var(--foreground)]/80 leading-relaxed text-center" dangerouslySetInnerHTML={{ __html: translations.intro }} /🎉 15% Discount",
+      checkAvailability: "Consultar disponibilidad",
+      whatsappMessage: "¡Hola! Soy Julia/Héctor. Nos interesa la Colección Uno con 2 videógrafos ($56,100 MXN) para nuestra boda el 27 de febrero de 2027. ¿Está disponible esta fecha?",
+      backToCollections: "← Ver todas las colecciones"
+    },
+    en: {
+      title: "Julia & Héctor",
+      subtitle: "February 27, 2027 • Collection One with 2 Videographers",
+      intro: "Special proposal for <strong>Julia & Héctor</strong>: Our Collection One with <strong>2 videographers</strong> to capture your wedding from multiple angles, with a special <strong>15% discount</strong>.",
+      with2Videographers: "With 2 Videographers • Feb 27, 2027",
+      priceBreakdown: "Price breakdown:",
+      baseCollection: "Collection One (base)",
+      additionalVideographer: "+ Additional videographer",
+      subtotal: "Subtotal",
+      discount: "🎉 15% Discount",
       total: "Total",
       totalPrice: "Total price",
       checkAvailability: "Check availability",
@@ -68,8 +71,8 @@ export default function ColeccionUno2Videografos() {
         {/* Header con imagen de fondo */}
         <FadeIn>
           <SectionHeader
-            title="Julia & Héctor"
-            subtitle="27 de febrero, 2027 • Colección Uno con 2 Videógrafos"
+            title={translations.title}
+            subtitle={translations.subtitle}
             backgroundImage="/images/gallery/TOP-PyP-505.webp"
           />
         </FadeIn>
@@ -78,10 +81,7 @@ export default function ColeccionUno2Videografos() {
         <section className="py-16 bg-[var(--background)]">
           <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
             <FadeIn delay={200}>
-              <p className="mb-12 text-lg text-[var(--foreground)]/80 leading-relaxed text-center">
-                Propuesta especial para <strong>Julia & Héctor</strong>: Nuestra Colección Uno con <strong>2 videógrafos</strong> para capturar su boda desde múltiples ángulos, 
-                con un <strong>15% de descuento</strong> especial.
-              </p>
+              <p className="mb-12 text-lg text-[var(--foreground)]/80 leading-relaxed text-center" dangerouslySetInnerHTML={{ __html: translations.intro }} />
             </FadeIn>
 
             <FadeIn delay={300}>
@@ -92,16 +92,16 @@ export default function ColeccionUno2Videografos() {
                     {collectionOne.name}
                   </h3>
                   <p className="text-center text-[var(--accent)] font-semibold text-lg">
-                    Con 2 Videógrafos • 27 Feb 2027
+                    {translations.with2Videographers}
                   </p>
                 </div>
-{translations.with2Videographers}
+
                 {/* Features */}
                 <div className="space-y-3 mb-8 text-base text-[var(--foreground)]/80">
                   {modifiedFeatures.map((feature, fIndex) => (
                     <div key={fIndex} className="flex items-start">
                       <span className="mr-3 text-[var(--accent)] text-xl">✓</span>
-                      <p className={feature === "2 videógrafos" ? "font-semibold text-[var(--accent)]" : ""}>
+                      <p className={feature === "2 videógrafos" || feature === "2 videographers" ? "font-semibold text-[var(--accent)]" : ""}>
                         {feature}
                       </p>
                     </div>
@@ -111,9 +111,6 @@ export default function ColeccionUno2Videografos() {
                 {/* Price Breakdown */}
                 <div className="mb-6 p-4 bg-[var(--background)] rounded">
                   <h4 className="font-semibold text-[var(--foreground)] mb-3 text-center">
-                    Desglose de precio:
-                  </h4>
-                  <div className="space-y-2 text-sm text-[var(--foreground)]/70">
                     {translations.priceBreakdown}
                   </h4>
                   <div className="space-y-2 text-sm text-[var(--foreground)]/70">
@@ -143,10 +140,13 @@ export default function ColeccionUno2Videografos() {
                 {/* Price at bottom */}
                 <div className="pt-6 border-t-2 border-[var(--accent)] text-center">
                   <p className="text-sm text-[var(--foreground)]/60 mb-2 uppercase tracking-wider">
-                    {translations.totalPrice}.toLocaleString('es-MX')}
+                    {translations.totalPrice}
+                  </p>
+                  <p className="text-4xl font-bold text-[var(--accent)] mb-2">
+                    ${totalPrice.toLocaleString('es-MX')}
                   </p>
                   <p className="text-sm text-[var(--foreground)]/60 uppercase tracking-wider">
-                    MXN56,100 MXN - con 15% descuento
+                    MXN
                   </p>
                 </div>
 
@@ -170,9 +170,9 @@ export default function ColeccionUno2Videografos() {
                 href="/colecciones-2026"
                 className="text-[var(--foreground)]/60 hover:text-[var(--accent)] transition-colors text-sm uppercase tracking-wider"
               >
-                ← Ver todas las colecciones
+                {translations.backToCollections}
               </Link>
-            </di{translations.backToCollections}
+            </div>
           </div>
         </section>
       </div>
