@@ -172,7 +172,7 @@ export default function ColeccionUno2Videografos() {
             {/* Back to collections */}
             <div className="mt-12 text-center">
               <Link
-                href="/colecciones-2026"
+                href="/colecciones"
                 className="text-[var(--foreground)]/60 hover:text-[var(--accent)] transition-colors text-sm uppercase tracking-wider"
               >
                 {translations.backToCollections}
