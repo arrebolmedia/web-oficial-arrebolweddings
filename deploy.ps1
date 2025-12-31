@@ -39,8 +39,7 @@ npm run build && \
 echo '� Copying static files for standalone...' && \
 cp -r .next/static .next/standalone/.next/ && \
 cp -r public .next/standalone/ && \
-echo '�🔄 Restarting server...' && \
-pm2 restart arrebol-weddings
+echo '�🔄 Restarting server...' && \cd .next/standalone && \pm2 restart arrebol-weddings
 "@
 
 Write-Host "`n✅ ¡Despliegue completado exitosamente!" -ForegroundColor Green
