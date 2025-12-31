@@ -36,7 +36,10 @@ echo '📥 Pulling latest changes...' && \
 git pull origin master && \
 echo '🔨 Building project...' && \
 npm run build && \
-echo '🔄 Restarting server...' && \
+echo '� Copying static files for standalone...' && \
+cp -r .next/static .next/standalone/.next/ && \
+cp -r public .next/standalone/ && \
+echo '�🔄 Restarting server...' && \
 pm2 restart arrebol-weddings
 "@
 
