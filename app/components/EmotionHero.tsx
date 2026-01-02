@@ -74,13 +74,14 @@ export default function EmotionHero() {
   const video2Ref = useRef<HTMLVideoElement>(null);
   const [activeVideo, setActiveVideo] = useState<1 | 2>(1);
 
-  // Barajar videos solo en el cliente al montar
+  // Activar loading al montar y barajar videos solo en el cliente
   useEffect(() => {
+    setIsLoading(true);
     const shuffled = shuffleArray(allVideos);
     console.log("Videos shuffled:", shuffled.map(v => v.split('/').pop()));
     setVideos(shuffled);
     setIsClient(true);
-  }, []);
+  }, [setIsLoading]);
 
   // Inicializar primer video
   useEffect(() => {
