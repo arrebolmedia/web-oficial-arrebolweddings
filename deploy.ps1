@@ -56,10 +56,10 @@ if ($useDocker) {
     ssh root@data.arrebolweddings.com "pm2 stop arrebol-weddings 2>/dev/null || true && pm2 delete arrebol-weddings 2>/dev/null || true"
     
     Write-Host "  🐳 Build Docker (esto toma 2-3 min)..." -ForegroundColor Gray
-    ssh root@data.arrebolweddings.com "cd /var/www/arrebolweddings.com && docker compose build --no-cache"
+    ssh root@data.arrebolweddings.com "cd /var/www/arrebolweddings.com && docker-compose build --no-cache"
     
     Write-Host "  🔄 Desplegando con Traefik..." -ForegroundColor Gray
-    ssh root@data.arrebolweddings.com "cd /var/www/arrebolweddings.com && docker compose down && docker compose up -d"
+    ssh root@data.arrebolweddings.com "cd /var/www/arrebolweddings.com && docker-compose down && docker-compose up -d"
     
     Write-Host "  ⏳ Esperando inicio..." -ForegroundColor Gray
     Start-Sleep -Seconds 5
