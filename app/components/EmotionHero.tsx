@@ -61,6 +61,7 @@ export default function EmotionHero() {
   const [videos, setVideos] = useState<string[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isClient, setIsClient] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
   const video1Ref = useRef<HTMLVideoElement>(null);
   const video2Ref = useRef<HTMLVideoElement>(null);
   const [activeVideo, setActiveVideo] = useState<1 | 2>(1);
@@ -84,11 +85,22 @@ export default function EmotionHero() {
       // Cargar primer video
       video1.src = videos[0];
       video1.load();
-      video1.play().catch(e => console.log("Play error:", e));
+      
+      // Cuando el primer video esté listo para reproducir
+      const handleCanPlay = () => {
+        video1.play().catch(e => console.log("Play error:", e));
+        setIsLoading(false);
+      };
+      
+      video1.addEventListener('canplay', handleCanPlay);
 
       // Precargar segundo video
       video2.src = videos[1 % videos.length];
       video2.load();
+      
+      return () => {
+        video1.removeEventListener('canplay', handleCanPlay);
+      };
     }
   }, [isClient, videos]);
 
@@ -132,6 +144,18 @@ export default function EmotionHero() {
 
   return (
     <section className="relative h-screen w-full overflow-hidden">
+      {/* Loader */}
+      {isLoading && (
+        <div className="absolute inset-0 bg-[#0a0a0a] z-50 flex items-center justify-center">
+          <h1 
+            className="text-xl md:text-2xl text-white"
+            style={{ fontFamily: 'benton-modern-display-conden, serif', fontWeight: 300 }}
+          >
+            ARREBOL WEDDINGS
+          </h1>
+        </div>
+      )}
+      
       {isClient && videos.length > 0 && (
         <>
           {/* Video 1 */}
