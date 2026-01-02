@@ -48,8 +48,27 @@ if ($LASTEXITCODE -ne 0) {
 Write-Host "`n🌐 Desplegando en servidor..." -ForegroundColor Yellow
 
 if ($useDocker) {
-    # Despliegue con Docker + Traefik usando script bash en el servidor
-    Get-Content deploy-server.sh | ssh root@data.arrebolweddings.com "bash -s"
+    # Despliegue con Docker + Traefik - Comandos individuales
+    Write-Host "  📥 Pulling latest changes..." -ForegroundColor Gray
+    ssh root@data.arrebolweddings.com "cd /var/www/arrebolweddings.com && git pull origin master"
+    
+    Write-Host "  🛑 Deteniendo PM2..." -ForegroundColor Gray
+    ssh root@data.arrebolweddings.com "pm2 stop arrebol-weddings 2>/dev/null || true && pm2 delete arrebol-weddings 2>/dev/null || true"
+    
+    Write-Host "  🐳 Build Docker (esto toma 2-3 min)..." -ForegroundColor Gray
+    ssh root@data.arrebolweddings.com "cd /var/www/arrebolweddings.com && docker compose build --no-cache"
+    
+    Write-Host "  🔄 Desplegando con Traefik..." -ForegroundColor Gray
+    ssh root@data.arrebolweddings.com "cd /var/www/arrebolweddings.com && docker compose down && docker compose up -d"
+    
+    Write-Host "  ⏳ Esperando inicio..." -ForegroundColor Gray
+    Start-Sleep -Seconds 5
+    
+    Write-Host "  🔍 Verificando estado..." -ForegroundColor Gray
+    ssh root@data.arrebolweddings.com "docker ps --filter name=arrebol"
+    
+    Write-Host "  🧹 Limpiando..." -ForegroundColor Gray
+    ssh root@data.arrebolweddings.com "docker image prune -f"
 } else {
     # Despliegue con PM2 - Ejecutar comandos uno por uno
     Write-Host "  → Navegando al directorio..." -ForegroundColor Gray
