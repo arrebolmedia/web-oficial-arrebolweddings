@@ -49,8 +49,7 @@ Write-Host "`n🌐 Desplegando en servidor..." -ForegroundColor Yellow
 
 if ($useDocker) {
     # Despliegue con Docker + Traefik
-    ssh root@data.arrebolweddings.com @"
-set -e
+    $deployScript = @'
 cd /var/www/arrebolweddings.com
 echo '📥 Pulling latest changes...'
 git pull origin master
@@ -58,19 +57,19 @@ echo '🛑 Deteniendo PM2 si existe...'
 pm2 stop arrebol-weddings 2>/dev/null || true
 pm2 delete arrebol-weddings 2>/dev/null || true
 echo '🐳 Construyendo nueva imagen Docker...'
-docker-compose build --no-cache
+docker compose build --no-cache
 echo '🔄 Desplegando con Traefik...'
-docker-compose down
-docker-compose up -d
+docker compose down
+docker compose up -d
 echo '🧹 Limpiando imágenes antiguas...'
 docker image prune -f
 echo '✅ Deploy completado!'
 docker ps | grep arrebol
-"@
+'@
+    ssh root@data.arrebolweddings.com $deployScript
 } else {
     # Despliegue con PM2
-    ssh root@data.arrebolweddings.com @"
-set -e
+    $deployScript = @'
 cd /var/www/arrebolweddings.com
 echo '📥 Pulling latest changes...'
 git pull origin master
@@ -86,7 +85,8 @@ cd .next/standalone
 pm2 restart arrebol-weddings || pm2 start server.js --name arrebol-weddings
 echo '✅ Deploy completado!'
 pm2 status
-"@
+'@
+    ssh root@data.arrebolweddings.com $deployScript
 }
 
 if ($LASTEXITCODE -ne 0) {

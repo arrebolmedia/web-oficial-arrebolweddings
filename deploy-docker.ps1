@@ -50,38 +50,31 @@ Write-Host "`n🐳 Desplegando con Docker en servidor..." -ForegroundColor Yello
 
 $buildFlag = if ($SkipCache) { "--no-cache" } else { "" }
 
-ssh root@data.arrebolweddings.com @"
-set -e
+$deployScript = @"
 cd /var/www/arrebolweddings.com
-
 echo '📥 Pulling latest changes from GitHub...'
 git pull origin master
-
 echo '🛑 Deteniendo PM2 si existe (migración Docker)...'
 pm2 stop arrebol-weddings 2>/dev/null || true
 pm2 delete arrebol-weddings 2>/dev/null || true
-
 echo '🐳 Construyendo imagen Docker...'
-docker-compose build $buildFlag
-
+docker compose build $buildFlag
 echo '🔄 Desplegando con Traefik...'
-docker-compose down
-docker-compose up -d
-
+docker compose down
+docker compose up -d
 echo '⏳ Esperando que el contenedor inicie...'
 sleep 5
-
 echo '🔍 Verificando estado del contenedor...'
-docker ps --filter name=arrebol-weddings --format 'table {{.Names}}\t{{.Status}}\t{{.Ports}}'
-
+docker ps --filter name=arrebol-weddings
 echo '🧹 Limpiando imágenes antiguas...'
 docker image prune -f
-
 echo ''
 echo '✅ Deploy completado exitosamente!'
 echo '🌐 Sitio disponible en: https://arrebolweddings.com'
 echo ''
 "@
+
+ssh root@data.arrebolweddings.com $deployScript
 
 if ($LASTEXITCODE -ne 0) {
     Write-Host "`n❌ Error durante el despliegue" -ForegroundColor Red
