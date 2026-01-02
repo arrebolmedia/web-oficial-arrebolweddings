@@ -51,7 +51,7 @@ const Philosophy = () => {
     <section className="relative bg-[var(--background)]">
       <div className="w-full">
         {/* Image and text container */}
-        <div className="relative aspect-[16/5] w-full">
+        <div className="relative h-screen md:aspect-[16/5] w-full">
           {/* Background Image Slider */}
           <div className="absolute inset-0">
             {sliderImages.map((image, index) => (
