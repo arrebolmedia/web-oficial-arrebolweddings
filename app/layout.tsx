@@ -6,6 +6,7 @@ import HeroHeader from "@/components/HeroHeader";
 import Footer from "@/components/Footer";
 import SmoothScroll from "@/app/components/SmoothScroll";
 import { LanguageProvider } from "@/app/context/LanguageContext";
+import { LoadingProvider } from "@/app/context/LoadingContext";
 
 const playfair = Playfair_Display({
   variable: "--font-playfair",
@@ -116,11 +117,13 @@ fbq('track', 'PageView');`,
           />
         </noscript>
         <LanguageProvider>
-          <SmoothScroll />
-          <EmotionHero />
-          <HeroHeader />
-          <main>{children}</main>
-          <Footer />
+          <LoadingProvider>
+            <SmoothScroll />
+            <EmotionHero />
+            <HeroHeader />
+            <main>{children}</main>
+            <Footer />
+          </LoadingProvider>
         </LanguageProvider>
       </body>
     </html>

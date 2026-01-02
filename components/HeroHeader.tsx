@@ -5,9 +5,11 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useLanguage } from "@/app/context/LanguageContext";
+import { useLoading } from "@/app/context/LoadingContext";
 
 const HeroHeader = () => {
   const { content, language, toggleLanguage } = useLanguage();
+  const { isLoading } = useLoading();
   const [isOpen, setIsOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
   const lastScrollY = useRef(0);
@@ -113,7 +115,7 @@ const HeroHeader = () => {
     <>
       {/* Logo centrado arriba - Solo en páginas que NO son home */}
       {!isHomePage && (
-        <div className={`fixed top-0 left-0 right-0 z-40 flex justify-center items-center py-6 transition-opacity duration-500 ${isVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
+        <div className={`fixed top-0 left-0 right-0 z-40 flex justify-center items-center py-6 transition-opacity duration-500 ${isVisible && !isLoading ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
           <Link 
             href="/" 
             className={`text-xl md:text-2xl transition-all duration-300 hover:opacity-70 ${shouldUseDarkNav || hasScrolled ? 'text-[var(--foreground)]' : 'text-white'}`}
@@ -125,7 +127,7 @@ const HeroHeader = () => {
       )}
 
       {/* Language Switcher - Fixed Top Left */}
-      <div className={`fixed top-8 left-8 z-50 text-sm tracking-widest uppercase transition-all duration-500 ${isVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'} ${shouldUseDarkNav || hasScrolled ? 'text-[var(--foreground)]' : 'text-white'}`}>
+      <div className={`fixed top-8 left-8 z-50 text-sm tracking-widest uppercase transition-all duration-500 ${isVisible && !isLoading ? 'opacity-100' : 'opacity-0 pointer-events-none'} ${shouldUseDarkNav || hasScrolled ? 'text-[var(--foreground)]' : 'text-white'}`}>
         <button 
           onClick={() => setLanguage("es")}
           className={language === "es" ? "font-bold" : "font-light hover:opacity-70"}
@@ -144,7 +146,7 @@ const HeroHeader = () => {
       {/* Hamburger Menu Button - Fixed */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className={`fixed top-8 right-8 z-50 text-sm tracking-widest uppercase hover:opacity-70 transition-all duration-500 ${isVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'} ${shouldUseDarkNav || hasScrolled ? 'text-[var(--foreground)]' : 'text-white'}`}
+        className={`fixed top-8 right-8 z-50 text-sm tracking-widest uppercase hover:opacity-70 transition-all duration-500 ${isVisible && !isLoading ? 'opacity-100' : 'opacity-0 pointer-events-none'} ${shouldUseDarkNav || hasScrolled ? 'text-[var(--foreground)]' : 'text-white'}`}
         aria-label="Toggle menu"
       >
         {isOpen ? content.common.close : content.common.menu}

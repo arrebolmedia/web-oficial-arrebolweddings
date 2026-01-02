@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState, useRef } from "react";
+import { useLoading } from "@/app/context/LoadingContext";
 
 const allVideos = [
   "/videos/clip00086729.mp4",
@@ -13,6 +14,13 @@ const allVideos = [
   "/videos/clip2_00087810.mp4",
   "/videos/clip3_00086765.mp4",
   "/videos/clip3_00088702.mp4",
+  "/videos/clip3_00092678.mp4",
+  "/videos/clip4_00086769.mp4",
+  "/videos/clip4_00087082.mp4",
+  "/videos/clip4_00087271.mp4",
+  "/videos/clip5_00086622.mp4",
+  "/videos/clip5_00088046.mp4",
+  "/videos/clip5_00090626.mp4",
 ];
 
 // Función para obtener la serie del video
@@ -61,7 +69,7 @@ export default function EmotionHero() {
   const [videos, setVideos] = useState<string[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isClient, setIsClient] = useState(false);
-  const [isLoading, setIsLoading] = useState(true);
+  const { isLoading, setIsLoading } = useLoading();
   const video1Ref = useRef<HTMLVideoElement>(null);
   const video2Ref = useRef<HTMLVideoElement>(null);
   const [activeVideo, setActiveVideo] = useState<1 | 2>(1);
@@ -80,6 +88,7 @@ export default function EmotionHero() {
 
     const video1 = video1Ref.current;
     const video2 = video2Ref.current;
+    const startTime = Date.now();
 
     if (video1 && video2) {
       // Cargar primer video
@@ -88,8 +97,14 @@ export default function EmotionHero() {
       
       // Cuando el primer video esté listo para reproducir
       const handleCanPlay = () => {
-        video1.play().catch(e => console.log("Play error:", e));
-        setIsLoading(false);
+        const elapsedTime = Date.now() - startTime;
+        const remainingTime = Math.max(0, 1000 - elapsedTime);
+        
+        // Esperar al menos 1 segundo desde que empezó la carga
+        setTimeout(() => {
+          video1.play().catch(e => console.log("Play error:", e));
+          setIsLoading(false);
+        }, remainingTime);
       };
       
       video1.addEventListener('canplay', handleCanPlay);
@@ -102,7 +117,7 @@ export default function EmotionHero() {
         video1.removeEventListener('canplay', handleCanPlay);
       };
     }
-  }, [isClient, videos]);
+  }, [isClient, videos, setIsLoading]);
 
   // Manejar cambios de video
   useEffect(() => {
@@ -150,49 +165,49 @@ export default function EmotionHero() {
           isLoading ? 'opacity-100' : 'opacity-0 pointer-events-none'
         }`}
       >
-        <h1 
-          className="text-xl md:text-2xl text-[#2B2B2B]"
-          style={{ fontFamily: 'benton-modern-display-conden, serif', fontWeight: 300 }}
-        >
-          ARREBOL WEDDINGS
-        </h1>
-      </div>
-      
-      {isClient && videos.length > 0 && (
-        <>
-          {/* Video 1 */}
-          <video
-            ref={video1Ref}
-            muted
-            playsInline
-            className={`absolute inset-0 h-full w-full object-cover grayscale ${
-              activeVideo === 1 ? 'z-0' : '-z-10 opacity-0'
-            }`}
-          />
-          
-          {/* Video 2 */}
-          <video
-            ref={video2Ref}
-            muted
-            playsInline
-            className={`absolute inset-0 h-full w-full object-cover grayscale ${
-              activeVideo === 2 ? 'z-0' : '-z-10 opacity-0'
-            }`}
-          />
-        </>
-      )}
-
-      {/* Overlay oscuro para mejorar legibilidad */}
-      <div className="absolute inset-0 bg-black/30 z-10" />
-
-      {/* Contenido centrado */}
-      <div className="relative z-20 flex h-full items-center justify-center px-6">
-        <div className="text-center">
-          <h1 className="text-2xl font-bold tracking-wide text-white md:text-4xl lg:text-4xl">
-            La emoción es primero
+          <h1 
+            className="text-xl md:text-2xl text-[#2B2B2B]"
+            style={{ fontFamily: 'benton-modern-display-conden, serif', fontWeight: 300 }}
+          >
+            ARREBOL WEDDINGS
           </h1>
         </div>
-      </div>
-    </section>
+        
+        {isClient && videos.length > 0 && (
+          <>
+            {/* Video 1 */}
+            <video
+              ref={video1Ref}
+              muted
+              playsInline
+              className={`absolute inset-0 h-full w-full object-cover grayscale ${
+                activeVideo === 1 ? 'z-0' : '-z-10 opacity-0'
+              }`}
+            />
+            
+            {/* Video 2 */}
+            <video
+              ref={video2Ref}
+              muted
+              playsInline
+              className={`absolute inset-0 h-full w-full object-cover grayscale ${
+                activeVideo === 2 ? 'z-0' : '-z-10 opacity-0'
+              }`}
+            />
+          </>
+        )}
+
+        {/* Overlay oscuro para mejorar legibilidad */}
+        <div className="absolute inset-0 bg-black/30 z-10" />
+
+        {/* Contenido centrado */}
+        <div className="relative z-20 flex h-full items-center justify-center px-6">
+          <div className="text-center">
+            <h1 className="text-2xl font-bold tracking-wide text-white md:text-4xl lg:text-3xl">
+              La emoción es primero.
+            </h1>
+          </div>
+        </div>
+      </section>
   );
 }
