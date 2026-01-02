@@ -61,7 +61,6 @@ export default function EmotionHero() {
   const [videos, setVideos] = useState<string[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isClient, setIsClient] = useState(false);
-  const [isTransitioning, setIsTransitioning] = useState(false);
   const video1Ref = useRef<HTMLVideoElement>(null);
   const video2Ref = useRef<HTMLVideoElement>(null);
   const [activeVideo, setActiveVideo] = useState<1 | 2>(1);
@@ -93,7 +92,7 @@ export default function EmotionHero() {
     }
   }, [isClient, videos]);
 
-  // Manejar transiciones
+  // Manejar cambios de video
   useEffect(() => {
     if (!isClient || videos.length === 0) return;
 
@@ -102,45 +101,31 @@ export default function EmotionHero() {
 
     if (!currentVideo) return;
 
-    const handleTimeUpdate = () => {
-      const timeLeft = currentVideo.duration - currentVideo.currentTime;
+    const handleEnded = () => {
+      const nextVideoRef = activeVideo === 1 ? video2Ref : video1Ref;
+      const nextVideo = nextVideoRef.current;
+      const nextIndex = (currentIndex + 1) % videos.length;
       
-      // Comenzar transición 1 segundo antes del final
-      if (timeLeft <= 1 && timeLeft > 0 && !isTransitioning) {
-        setIsTransitioning(true);
+      if (nextVideo) {
+        // Cambiar al siguiente video instantáneamente
+        setActiveVideo(activeVideo === 1 ? 2 : 1);
+        setCurrentIndex(nextIndex);
         
-        const nextVideoRef = activeVideo === 1 ? video2Ref : video1Ref;
-        const nextVideo = nextVideoRef.current;
-        const nextIndex = (currentIndex + 1) % videos.length;
-        
-        if (nextVideo) {
-          // Iniciar siguiente video
-          nextVideo.currentTime = 0;
-          nextVideo.play().catch(e => console.log("Play error:", e));
-          
-          // Hacer fade después de iniciar el video
-          setTimeout(() => {
-            setActiveVideo(activeVideo === 1 ? 2 : 1);
-            setIsTransitioning(false);
-            
-            // Precargar el siguiente después de la transición
-            setTimeout(() => {
-              const preloadIndex = (nextIndex + 1) % videos.length;
-              currentVideo.src = videos[preloadIndex];
-              currentVideo.load();
-              setCurrentIndex(nextIndex);
-            }, 600);
-          }, 100);
-        }
+        // Precargar el siguiente video en el que acaba de terminar
+        setTimeout(() => {
+          const preloadIndex = (nextIndex + 1) % videos.length;
+          currentVideo.src = videos[preloadIndex];
+          currentVideo.load();
+        }, 100);
       }
     };
 
-    currentVideo.addEventListener("timeupdate", handleTimeUpdate);
+    currentVideo.addEventListener("ended", handleEnded);
 
     return () => {
-      currentVideo.removeEventListener("timeupdate", handleTimeUpdate);
+      currentVideo.removeEventListener("ended", handleEnded);
     };
-  }, [isClient, videos, currentIndex, activeVideo, isTransitioning]);
+  }, [isClient, videos, currentIndex, activeVideo]);
 
   return (
     <section className="relative h-screen w-full overflow-hidden">
@@ -151,8 +136,8 @@ export default function EmotionHero() {
             ref={video1Ref}
             muted
             playsInline
-            className={`absolute inset-0 h-full w-full object-cover grayscale transition-opacity duration-700 ${
-              activeVideo === 1 ? 'opacity-100 z-0' : 'opacity-0 -z-10'
+            className={`absolute inset-0 h-full w-full object-cover grayscale ${
+              activeVideo === 1 ? 'z-0' : '-z-10 opacity-0'
             }`}
           />
           
@@ -161,8 +146,8 @@ export default function EmotionHero() {
             ref={video2Ref}
             muted
             playsInline
-            className={`absolute inset-0 h-full w-full object-cover grayscale transition-opacity duration-700 ${
-              activeVideo === 2 ? 'opacity-100 z-0' : 'opacity-0 -z-10'
+            className={`absolute inset-0 h-full w-full object-cover grayscale ${
+              activeVideo === 2 ? 'z-0' : '-z-10 opacity-0'
             }`}
           />
         </>
