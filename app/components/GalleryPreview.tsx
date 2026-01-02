@@ -206,7 +206,24 @@ const GalleryPreview = () => {
                           loop
                           muted
                           playsInline
+                          preload="metadata"
                           className="absolute inset-0 w-full h-full object-cover"
+                          onLoadedData={(e) => {
+                            const video = e.currentTarget;
+                            video.play().catch(() => {
+                              // Si autoplay falla, intentar reproducir cuando esté visible
+                              const observer = new IntersectionObserver((entries) => {
+                                entries.forEach(entry => {
+                                  if (entry.isIntersecting) {
+                                    video.play().catch(() => {});
+                                  } else {
+                                    video.pause();
+                                  }
+                                });
+                              }, { threshold: 0.1 });
+                              observer.observe(video);
+                            });
+                          }}
                         />
                       )}
                     </div>
