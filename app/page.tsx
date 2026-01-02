@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import EmotionHero from "@/app/components/EmotionHero";
 import GalleryPreview from "@/app/components/GalleryPreview";
 import About from "@/app/components/About";
 import Philosophy from "@/app/components/Philosophy";
@@ -16,6 +17,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
+      <EmotionHero />
       <GalleryPreview />
       <About />
       <Philosophy />

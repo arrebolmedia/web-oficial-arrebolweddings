@@ -178,7 +178,7 @@ export default function Galeria() {
 
             {/* Filter Menu */}
             <FadeIn delay={300}>
-              <div className="flex justify-center gap-8 mb-12">
+              <div className="flex justify-center gap-8 mb-8">
                 <button
                   onClick={() => setActiveFilter('all')}
                   className={`text-sm tracking-widest uppercase transition-all duration-300 pb-2 border-b-2 ${
@@ -211,6 +211,73 @@ export default function Galeria() {
                 </button>
               </div>
             </FadeIn>
+
+            {/* CTA para TODO - Ambos botones */}
+            {activeFilter === 'all' && (
+              <FadeIn delay={350}>
+                <div className="mb-12 text-center">
+                  <p className="text-lg text-[var(--foreground)]/80 leading-relaxed mb-6 max-w-2xl mx-auto">
+                    {galeria.combined.text}
+                  </p>
+                  <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a
+                      href="https://arrebol.pic-time.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block px-8 py-3 border border-[var(--foreground)] text-[var(--foreground)] text-sm tracking-widest uppercase hover:bg-[var(--foreground)] hover:text-white transition-all duration-300"
+                    >
+                      {galeria.combined.picTimeButton}
+                    </a>
+                    <a
+                      href="https://galleries.vidflow.co/karymeybrian"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block px-8 py-3 border border-[var(--foreground)] text-[var(--foreground)] text-sm tracking-widest uppercase hover:bg-[var(--foreground)] hover:text-white transition-all duration-300"
+                    >
+                      {galeria.combined.vidflowButton}
+                    </a>
+                  </div>
+                </div>
+              </FadeIn>
+            )}
+
+            {/* CTA para Fotografías - Pic-Time */}
+            {activeFilter === 'photos' && (
+              <FadeIn delay={350}>
+                <div className="mb-12 text-center">
+                  <p className="text-lg text-[var(--foreground)]/80 leading-relaxed mb-6 max-w-2xl mx-auto">
+                    {galeria.picTime.text}
+                  </p>
+                  <a
+                    href="https://arrebol.pic-time.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block px-8 py-3 border border-[var(--foreground)] text-[var(--foreground)] text-sm tracking-widest uppercase hover:bg-[var(--foreground)] hover:text-white transition-all duration-300"
+                  >
+                    {galeria.picTime.button}
+                  </a>
+                </div>
+              </FadeIn>
+            )}
+
+            {/* CTA para Clips - Vidflow */}
+            {activeFilter === 'clips' && (
+              <FadeIn delay={350}>
+                <div className="mb-12 text-center">
+                  <p className="text-lg text-[var(--foreground)]/80 leading-relaxed mb-6 max-w-2xl mx-auto">
+                    {galeria.vidflow.text}
+                  </p>
+                  <a
+                    href="https://galleries.vidflow.co/karymeybrian"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block px-8 py-3 border border-[var(--foreground)] text-[var(--foreground)] text-sm tracking-widest uppercase hover:bg-[var(--foreground)] hover:text-white transition-all duration-300"
+                  >
+                    {galeria.vidflow.button}
+                  </a>
+                </div>
+              </FadeIn>
+            )}
 
             {mediaWithDimensions.length === 0 ? (
               <div className="flex justify-center items-center min-h-[400px]">
@@ -265,8 +332,8 @@ export default function Galeria() {
 
             {/* CTA para TODO - Ambos botones */}
             {activeFilter === 'all' && (
-              <FadeIn delay={400}>
-                <div className="mt-16 text-center">
+              <FadeIn delay={350}>
+                <div className="mb-12 text-center">
                   <p className="text-lg text-[var(--foreground)]/80 leading-relaxed mb-6 max-w-2xl mx-auto">
                     {galeria.combined.text}
                   </p>
@@ -294,8 +361,8 @@ export default function Galeria() {
 
             {/* CTA para Fotografías - Pic-Time */}
             {activeFilter === 'photos' && (
-              <FadeIn delay={400}>
-                <div className="mt-16 text-center">
+              <FadeIn delay={350}>
+                <div className="mb-12 text-center">
                   <p className="text-lg text-[var(--foreground)]/80 leading-relaxed mb-6 max-w-2xl mx-auto">
                     {galeria.picTime.text}
                   </p>
@@ -313,8 +380,8 @@ export default function Galeria() {
 
             {/* CTA para Clips - Vidflow */}
             {activeFilter === 'clips' && (
-              <FadeIn delay={400}>
-                <div className="mt-16 text-center">
+              <FadeIn delay={350}>
+                <div className="mb-12 text-center">
                   <p className="text-lg text-[var(--foreground)]/80 leading-relaxed mb-6 max-w-2xl mx-auto">
                     {galeria.vidflow.text}
                   </p>
