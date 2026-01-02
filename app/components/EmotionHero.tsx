@@ -60,78 +60,111 @@ const shuffleArray = (array: string[]) => {
 export default function EmotionHero() {
   const [videos, setVideos] = useState<string[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [nextIndex, setNextIndex] = useState(1);
   const [isClient, setIsClient] = useState(false);
-  const [showCurrent, setShowCurrent] = useState(true);
-  const currentVideoRef = useRef<HTMLVideoElement>(null);
-  const nextVideoRef = useRef<HTMLVideoElement>(null);
+  const [isTransitioning, setIsTransitioning] = useState(false);
+  const video1Ref = useRef<HTMLVideoElement>(null);
+  const video2Ref = useRef<HTMLVideoElement>(null);
+  const [activeVideo, setActiveVideo] = useState<1 | 2>(1);
 
   // Barajar videos solo en el cliente al montar
   useEffect(() => {
     const shuffled = shuffleArray(allVideos);
-    console.log("Videos shuffled:", shuffled.map(v => v.split('/').pop())); // Para debug
+    console.log("Videos shuffled:", shuffled.map(v => v.split('/').pop()));
     setVideos(shuffled);
     setIsClient(true);
   }, []);
 
+  // Inicializar primer video
   useEffect(() => {
     if (!isClient || videos.length === 0) return;
 
-    const handleVideoEnd = () => {
-      // Hacer crossfade al siguiente video
-      setShowCurrent(!showCurrent);
+    const video1 = video1Ref.current;
+    const video2 = video2Ref.current;
+
+    if (video1 && video2) {
+      // Cargar primer video
+      video1.src = videos[0];
+      video1.load();
+      video1.play().catch(e => console.log("Play error:", e));
+
+      // Precargar segundo video
+      video2.src = videos[1 % videos.length];
+      video2.load();
+    }
+  }, [isClient, videos]);
+
+  // Manejar transiciones
+  useEffect(() => {
+    if (!isClient || videos.length === 0) return;
+
+    const currentVideoRef = activeVideo === 1 ? video1Ref : video2Ref;
+    const currentVideo = currentVideoRef.current;
+
+    if (!currentVideo) return;
+
+    const handleTimeUpdate = () => {
+      const timeLeft = currentVideo.duration - currentVideo.currentTime;
       
-      // Actualizar índices después del fade
-      setTimeout(() => {
-        const newCurrent = (currentIndex + 1) % videos.length;
-        const newNext = (currentIndex + 2) % videos.length;
-        setCurrentIndex(newCurrent);
-        setNextIndex(newNext);
-      }, 500); // Esperar a que termine la transición
+      // Comenzar transición 1 segundo antes del final
+      if (timeLeft <= 1 && timeLeft > 0 && !isTransitioning) {
+        setIsTransitioning(true);
+        
+        const nextVideoRef = activeVideo === 1 ? video2Ref : video1Ref;
+        const nextVideo = nextVideoRef.current;
+        const nextIndex = (currentIndex + 1) % videos.length;
+        
+        if (nextVideo) {
+          // Iniciar siguiente video
+          nextVideo.currentTime = 0;
+          nextVideo.play().catch(e => console.log("Play error:", e));
+          
+          // Hacer fade después de iniciar el video
+          setTimeout(() => {
+            setActiveVideo(activeVideo === 1 ? 2 : 1);
+            setIsTransitioning(false);
+            
+            // Precargar el siguiente después de la transición
+            setTimeout(() => {
+              const preloadIndex = (nextIndex + 1) % videos.length;
+              currentVideo.src = videos[preloadIndex];
+              currentVideo.load();
+              setCurrentIndex(nextIndex);
+            }, 600);
+          }, 100);
+        }
+      }
     };
 
-    const videoElement = showCurrent ? currentVideoRef.current : nextVideoRef.current;
-    if (videoElement) {
-      videoElement.addEventListener("ended", handleVideoEnd);
-      
-      return () => {
-        videoElement.removeEventListener("ended", handleVideoEnd);
-      };
-    }
-  }, [currentIndex, nextIndex, isClient, videos, showCurrent]);
+    currentVideo.addEventListener("timeupdate", handleTimeUpdate);
+
+    return () => {
+      currentVideo.removeEventListener("timeupdate", handleTimeUpdate);
+    };
+  }, [isClient, videos, currentIndex, activeVideo, isTransitioning]);
 
   return (
     <section className="relative h-screen w-full overflow-hidden">
-      {/* Videos con crossfade */}
-      {videos.length > 0 && (
+      {isClient && videos.length > 0 && (
         <>
-          {/* Video actual */}
+          {/* Video 1 */}
           <video
-            ref={currentVideoRef}
-            autoPlay
+            ref={video1Ref}
             muted
             playsInline
-            preload="auto"
-            className={`absolute inset-0 h-full w-full object-cover grayscale transition-opacity duration-500 ${
-              showCurrent ? 'opacity-100 z-0' : 'opacity-0 -z-10'
+            className={`absolute inset-0 h-full w-full object-cover grayscale transition-opacity duration-700 ${
+              activeVideo === 1 ? 'opacity-100 z-0' : 'opacity-0 -z-10'
             }`}
-          >
-            <source src={videos[currentIndex]} type="video/mp4" />
-          </video>
+          />
           
-          {/* Video siguiente (preload) */}
+          {/* Video 2 */}
           <video
-            ref={nextVideoRef}
-            autoPlay
+            ref={video2Ref}
             muted
             playsInline
-            preload="auto"
-            className={`absolute inset-0 h-full w-full object-cover grayscale transition-opacity duration-500 ${
-              !showCurrent ? 'opacity-100 z-0' : 'opacity-0 -z-10'
+            className={`absolute inset-0 h-full w-full object-cover grayscale transition-opacity duration-700 ${
+              activeVideo === 2 ? 'opacity-100 z-0' : 'opacity-0 -z-10'
             }`}
-          >
-            <source src={videos[nextIndex]} type="video/mp4" />
-          </video>
+          />
         </>
       )}
 
