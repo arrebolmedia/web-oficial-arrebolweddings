@@ -48,45 +48,24 @@ if ($LASTEXITCODE -ne 0) {
 Write-Host "`n🌐 Desplegando en servidor..." -ForegroundColor Yellow
 
 if ($useDocker) {
-    # Despliegue con Docker + Traefik
-    $deployScript = @'
-cd /var/www/arrebolweddings.com
-echo '📥 Pulling latest changes...'
-git pull origin master
-echo '🛑 Deteniendo PM2 si existe...'
-pm2 stop arrebol-weddings 2>/dev/null || true
-pm2 delete arrebol-weddings 2>/dev/null || true
-echo '🐳 Construyendo nueva imagen Docker...'
-docker compose build --no-cache
-echo '🔄 Desplegando con Traefik...'
-docker compose down
-docker compose up -d
-echo '🧹 Limpiando imágenes antiguas...'
-docker image prune -f
-echo '✅ Deploy completado!'
-docker ps | grep arrebol
-'@
-    ssh root@data.arrebolweddings.com $deployScript
+    # Despliegue con Docker + Traefik usando script bash en el servidor
+    Get-Content deploy-server.sh | ssh root@data.arrebolweddings.com "bash -s"
 } else {
-    # Despliegue con PM2
-    $deployScript = @'
-cd /var/www/arrebolweddings.com
-echo '📥 Pulling latest changes...'
-git pull origin master
-echo '📦 Instalando dependencias...'
-npm install --production
-echo '🔨 Building project...'
-npm run build
-echo '📋 Copiando archivos para standalone...'
-cp -r .next/static .next/standalone/.next/
-cp -r public .next/standalone/
-echo '🔄 Restarting PM2...'
-cd .next/standalone
-pm2 restart arrebol-weddings || pm2 start server.js --name arrebol-weddings
-echo '✅ Deploy completado!'
-pm2 status
-'@
-    ssh root@data.arrebolweddings.com $deployScript
+    # Despliegue con PM2 - Ejecutar comandos uno por uno
+    Write-Host "  → Navegando al directorio..." -ForegroundColor Gray
+    ssh root@data.arrebolweddings.com "cd /var/www/arrebolweddings.com && git pull origin master"
+    
+    Write-Host "  → Instalando dependencias..." -ForegroundColor Gray
+    ssh root@data.arrebolweddings.com "cd /var/www/arrebolweddings.com && npm install --production"
+    
+    Write-Host "  → Building project..." -ForegroundColor Gray
+    ssh root@data.arrebolweddings.com "cd /var/www/arrebolweddings.com && npm run build"
+    
+    Write-Host "  → Copiando archivos standalone..." -ForegroundColor Gray
+    ssh root@data.arrebolweddings.com "cd /var/www/arrebolweddings.com && cp -r .next/static .next/standalone/.next/ && cp -r public .next/standalone/"
+    
+    Write-Host "  → Reiniciando PM2..." -ForegroundColor Gray
+    ssh root@data.arrebolweddings.com "cd /var/www/arrebolweddings.com/.next/standalone && pm2 restart arrebol-weddings || pm2 start server.js --name arrebol-weddings"
 }
 
 if ($LASTEXITCODE -ne 0) {
