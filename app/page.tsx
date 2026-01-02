@@ -17,7 +17,9 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      <EmotionHero />
+      <div className="relative">
+        <EmotionHero />
+      </div>
       <GalleryPreview />
       <About />
       <Philosophy />

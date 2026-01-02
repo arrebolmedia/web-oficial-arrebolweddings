@@ -159,7 +159,7 @@ export default function EmotionHero() {
   }, [isClient, videos, currentIndex, activeVideo]);
 
   return (
-    <section className="relative h-screen w-full overflow-hidden">
+    <section className="relative h-screen w-full overflow-hidden -mt-0">
       {/* Loader con fadeout */}
       <div 
         className={`absolute inset-0 bg-[#FAF8F5] z-50 flex items-center justify-center transition-opacity duration-700 ${
