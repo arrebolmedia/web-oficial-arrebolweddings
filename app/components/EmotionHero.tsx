@@ -144,17 +144,19 @@ export default function EmotionHero() {
 
   return (
     <section className="relative h-screen w-full overflow-hidden">
-      {/* Loader */}
-      {isLoading && (
-        <div className="absolute inset-0 bg-[#0a0a0a] z-50 flex items-center justify-center">
-          <h1 
-            className="text-xl md:text-2xl text-white"
-            style={{ fontFamily: 'benton-modern-display-conden, serif', fontWeight: 300 }}
-          >
-            ARREBOL WEDDINGS
-          </h1>
-        </div>
-      )}
+      {/* Loader con fadeout */}
+      <div 
+        className={`absolute inset-0 bg-[#FAF8F5] z-50 flex items-center justify-center transition-opacity duration-700 ${
+          isLoading ? 'opacity-100' : 'opacity-0 pointer-events-none'
+        }`}
+      >
+        <h1 
+          className="text-xl md:text-2xl text-white"
+          style={{ fontFamily: 'benton-modern-display-conden, serif', fontWeight: 300 }}
+        >
+          ARREBOL WEDDINGS
+        </h1>
+      </div>
       
       {isClient && videos.length > 0 && (
         <>
