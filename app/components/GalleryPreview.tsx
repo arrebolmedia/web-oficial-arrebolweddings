@@ -45,11 +45,12 @@ const GalleryPreview = () => {
     // Shuffle images and pick some
     const shuffledImages = [...galeria.images]
       .sort(() => Math.random() - 0.5)
-      .slice(0, 42); // Need enough images for 3 between each video
+      .slice(0, 21); // 21 images for gallery
 
-    // Use all 14 videos
+    // Use 9 videos
     const shuffledVideos = [...videoFiles]
-      .sort(() => Math.random() - 0.5);
+      .sort(() => Math.random() - 0.5)
+      .slice(0, 9);
 
     const loadMediaDimensions = async () => {
       // Load image dimensions

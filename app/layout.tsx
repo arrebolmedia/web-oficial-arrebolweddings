@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Playfair_Display, Poppins } from "next/font/google";
 import "./globals.css";
+import EmotionHero from "@/app/components/EmotionHero";
 import HeroHeader from "@/components/HeroHeader";
 import Footer from "@/components/Footer";
 import SmoothScroll from "@/app/components/SmoothScroll";
@@ -116,6 +117,7 @@ fbq('track', 'PageView');`,
         </noscript>
         <LanguageProvider>
           <SmoothScroll />
+          <EmotionHero />
           <HeroHeader />
           <main>{children}</main>
           <Footer />
