@@ -2,6 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   output: 'standalone',
+  trailingSlash: true,
   images: {
     unoptimized: true,
     formats: ['image/webp'],
@@ -11,6 +12,14 @@ const nextConfig: NextConfig = {
   },
   experimental: {
     optimizePackageImports: ['react-intersection-observer'],
+  },
+  async rewrites() {
+    return [
+      {
+        source: '/:path*',
+        destination: '/:path*',
+      },
+    ];
   },
 };
 
