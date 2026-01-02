@@ -60,8 +60,11 @@ const shuffleArray = (array: string[]) => {
 export default function EmotionHero() {
   const [videos, setVideos] = useState<string[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [nextIndex, setNextIndex] = useState(1);
   const [isClient, setIsClient] = useState(false);
-  const videoRef = useRef<HTMLVideoElement>(null);
+  const [showCurrent, setShowCurrent] = useState(true);
+  const currentVideoRef = useRef<HTMLVideoElement>(null);
+  const nextVideoRef = useRef<HTMLVideoElement>(null);
 
   // Barajar videos solo en el cliente al montar
   useEffect(() => {
@@ -72,51 +75,71 @@ export default function EmotionHero() {
   }, []);
 
   useEffect(() => {
-    if (!isClient) return;
+    if (!isClient || videos.length === 0) return;
 
     const handleVideoEnd = () => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % videos.length);
+      // Hacer crossfade al siguiente video
+      setShowCurrent(!showCurrent);
+      
+      // Actualizar índices después del fade
+      setTimeout(() => {
+        const newCurrent = (currentIndex + 1) % videos.length;
+        const newNext = (currentIndex + 2) % videos.length;
+        setCurrentIndex(newCurrent);
+        setNextIndex(newNext);
+      }, 500); // Esperar a que termine la transición
     };
 
-    const videoElement = videoRef.current;
+    const videoElement = showCurrent ? currentVideoRef.current : nextVideoRef.current;
     if (videoElement) {
       videoElement.addEventListener("ended", handleVideoEnd);
-      // Precargar el siguiente video
-      const nextIndex = (currentIndex + 1) % videos.length;
-      const preload = document.createElement("link");
-      preload.rel = "preload";
-      preload.as = "video";
-      preload.href = videos[nextIndex];
-      document.head.appendChild(preload);
       
       return () => {
         videoElement.removeEventListener("ended", handleVideoEnd);
       };
     }
-  }, [currentIndex, isClient, videos]);
+  }, [currentIndex, nextIndex, isClient, videos, showCurrent]);
 
   return (
     <section className="relative h-screen w-full overflow-hidden">
-      {/* Video de fondo */}
+      {/* Videos con crossfade */}
       {videos.length > 0 && (
-        <video
-          ref={videoRef}
-          key={currentIndex}
-          autoPlay
-          muted
-          playsInline
-          preload="auto"
-          className="absolute inset-0 h-full w-full object-cover grayscale"
-        >
-          <source src={videos[currentIndex]} type="video/mp4" />
-        </video>
+        <>
+          {/* Video actual */}
+          <video
+            ref={currentVideoRef}
+            autoPlay
+            muted
+            playsInline
+            preload="auto"
+            className={`absolute inset-0 h-full w-full object-cover grayscale transition-opacity duration-500 ${
+              showCurrent ? 'opacity-100 z-0' : 'opacity-0 -z-10'
+            }`}
+          >
+            <source src={videos[currentIndex]} type="video/mp4" />
+          </video>
+          
+          {/* Video siguiente (preload) */}
+          <video
+            ref={nextVideoRef}
+            autoPlay
+            muted
+            playsInline
+            preload="auto"
+            className={`absolute inset-0 h-full w-full object-cover grayscale transition-opacity duration-500 ${
+              !showCurrent ? 'opacity-100 z-0' : 'opacity-0 -z-10'
+            }`}
+          >
+            <source src={videos[nextIndex]} type="video/mp4" />
+          </video>
+        </>
       )}
 
       {/* Overlay oscuro para mejorar legibilidad */}
-      <div className="absolute inset-0 bg-black/30" />
+      <div className="absolute inset-0 bg-black/30 z-10" />
 
       {/* Contenido centrado */}
-      <div className="relative z-10 flex h-full items-center justify-center px-6">
+      <div className="relative z-20 flex h-full items-center justify-center px-6">
         <div className="text-center">
           <h1 className="text-2xl font-bold tracking-wide text-white md:text-4xl lg:text-4xl">
             La emoción es primero
