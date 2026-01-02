@@ -151,7 +151,7 @@ export default function EmotionHero() {
         }`}
       >
         <h1 
-          className="text-xl md:text-2xl text-white"
+          className="text-xl md:text-2xl text-[#2B2B2B]"
           style={{ fontFamily: 'benton-modern-display-conden, serif', fontWeight: 300 }}
         >
           ARREBOL WEDDINGS
