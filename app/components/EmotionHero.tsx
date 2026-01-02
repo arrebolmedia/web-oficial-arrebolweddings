@@ -107,6 +107,9 @@ export default function EmotionHero() {
       const nextIndex = (currentIndex + 1) % videos.length;
       
       if (nextVideo) {
+        // Reproducir el siguiente video
+        nextVideo.play().catch(e => console.log("Play error:", e));
+        
         // Cambiar al siguiente video instantáneamente
         setActiveVideo(activeVideo === 1 ? 2 : 1);
         setCurrentIndex(nextIndex);
