@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import EmotionHero from "@/app/components/EmotionHero";
+import ImageHero from "@/app/components/ImageHero";
 import GalleryPreview from "@/app/components/GalleryPreview";
 import About from "@/app/components/About";
 import Philosophy from "@/app/components/Philosophy";
@@ -20,6 +21,7 @@ export default function Home() {
       <div className="relative">
         <EmotionHero />
       </div>
+      <ImageHero />
       <GalleryPreview />
       <About />
       <Philosophy />

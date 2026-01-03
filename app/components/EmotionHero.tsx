@@ -69,7 +69,8 @@ export default function EmotionHero() {
   const [videos, setVideos] = useState<string[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isClient, setIsClient] = useState(false);
-  const { isLoading, setIsLoading } = useLoading();
+  const { setIsLoading } = useLoading();
+  const [localLoading, setLocalLoading] = useState(true);
   const video1Ref = useRef<HTMLVideoElement>(null);
   const video2Ref = useRef<HTMLVideoElement>(null);
   const [activeVideo, setActiveVideo] = useState<1 | 2>(1);
@@ -77,6 +78,7 @@ export default function EmotionHero() {
   // Activar loading al montar y barajar videos solo en el cliente
   useEffect(() => {
     setIsLoading(true);
+    setLocalLoading(true);
     const shuffled = shuffleArray(allVideos);
     console.log("Videos shuffled:", shuffled.map(v => v.split('/').pop()));
     setVideos(shuffled);
@@ -105,6 +107,7 @@ export default function EmotionHero() {
         setTimeout(() => {
           video1.play().catch(e => console.log("Play error:", e));
           setIsLoading(false);
+          setLocalLoading(false);
         }, remainingTime);
       };
       
@@ -135,19 +138,46 @@ export default function EmotionHero() {
       const nextIndex = (currentIndex + 1) % videos.length;
       
       if (nextVideo) {
-        // Reproducir el siguiente video
-        nextVideo.play().catch(e => console.log("Play error:", e));
+        // Verificar si el siguiente video está listo
+        const canPlay = nextVideo.readyState >= 3; // HAVE_FUTURE_DATA o más
         
-        // Cambiar al siguiente video instantáneamente
-        setActiveVideo(activeVideo === 1 ? 2 : 1);
-        setCurrentIndex(nextIndex);
-        
-        // Precargar el siguiente video en el que acaba de terminar
-        setTimeout(() => {
-          const preloadIndex = (nextIndex + 1) % videos.length;
-          currentVideo.src = videos[preloadIndex];
-          currentVideo.load();
-        }, 100);
+        if (canPlay) {
+          // Reproducir el siguiente video
+          nextVideo.play().catch(e => console.log("Play error:", e));
+          
+          // Cambiar al siguiente video instantáneamente
+          setActiveVideo(activeVideo === 1 ? 2 : 1);
+          setCurrentIndex(nextIndex);
+          
+          // Precargar el siguiente video en el que acaba de terminar
+          setTimeout(() => {
+            const preloadIndex = (nextIndex + 1) % videos.length;
+            currentVideo.src = videos[preloadIndex];
+            currentVideo.load();
+          }, 100);
+        } else {
+          // Si el siguiente video no está listo, esperar a que se cargue
+          const handleCanPlay = () => {
+            nextVideo.play().catch(e => console.log("Play error:", e));
+            setActiveVideo(activeVideo === 1 ? 2 : 1);
+            setCurrentIndex(nextIndex);
+            
+            setTimeout(() => {
+              const preloadIndex = (nextIndex + 1) % videos.length;
+              currentVideo.src = videos[preloadIndex];
+              currentVideo.load();
+            }, 100);
+            
+            nextVideo.removeEventListener('canplay', handleCanPlay);
+          };
+          
+          nextVideo.addEventListener('canplay', handleCanPlay);
+          
+          // Forzar carga si no está cargando
+          if (nextVideo.readyState === 0) {
+            nextVideo.load();
+          }
+        }
       }
     };
 
@@ -159,11 +189,11 @@ export default function EmotionHero() {
   }, [isClient, videos, currentIndex, activeVideo]);
 
   return (
-    <section className="relative h-screen w-full overflow-hidden -mt-[100vh]">
+    <section className="relative h-screen w-full overflow-hidden">
       {/* Loader con fadeout */}
       <div 
         className={`absolute inset-0 bg-[#FAF8F5] z-50 flex items-center justify-center transition-opacity duration-700 ${
-          isLoading ? 'opacity-100' : 'opacity-0 pointer-events-none'
+          localLoading ? 'opacity-100' : 'opacity-0 pointer-events-none'
         }`}
       >
           <h1 
