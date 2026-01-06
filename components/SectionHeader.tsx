@@ -26,6 +26,7 @@ const SectionHeader = ({
           fill
           className="object-cover"
           priority
+          style={{ objectPosition: '43% center' }}
         />
         {/* Overlay oscuro para mejorar legibilidad */}
         <div className="absolute inset-0 bg-black/30" />

@@ -121,7 +121,7 @@ export default function EmotionHero() {
         video1.removeEventListener('canplay', handleCanPlay);
       };
     }
-  }, [isClient, videos, setIsLoading]);
+  }, [isClient, videos, setIsLoading, setLocalLoading]);
 
   // Manejar cambios de video
   useEffect(() => {
