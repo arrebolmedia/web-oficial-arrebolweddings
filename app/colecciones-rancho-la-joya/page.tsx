@@ -6,8 +6,11 @@ import SectionHeader from "@/components/SectionHeader";
 import { useLanguage } from "../context/LanguageContext";
 
 export default function ColeccionesRanchoLaJoya() {
-  const { content } = useLanguage();
+  const { content, language } = useLanguage();
   const { colecciones } = content;
+  
+  const discountText = language === 'es' ? '50% DE DESCUENTO' : '50% OFF';
+  const discountBadge = '50% OFF';
 
   return (
     <>
@@ -15,7 +18,7 @@ export default function ColeccionesRanchoLaJoya() {
       {/* Header con imagen de fondo */}
       <FadeIn>
         <SectionHeader
-          title="Arrebol Weddings x Rancho La Joya"
+          title="Arrebol Weddings & Rancho La Joya"
           subtitle={colecciones.subtitle}
           backgroundImage="/images/RLJ/L&A-363_websize.jpg"
         />
@@ -60,7 +63,7 @@ export default function ColeccionesRanchoLaJoya() {
                       const priceStr = collection.price.split(' ')[0].replace(/[^0-9]/g, '');
                       const priceNum = parseInt(priceStr);
                       const originalPrice = priceNum + 20000;
-                      const discountedPrice = Math.round(originalPrice * 0.4);
+                      const discountedPrice = Math.round(originalPrice * 0.5);
                       return (
                         <div>
                           <p className="text-lg text-[var(--foreground)]/50 line-through mb-1">
@@ -69,7 +72,7 @@ export default function ColeccionesRanchoLaJoya() {
                           <p className="text-3xl font-bold text-[var(--foreground)]">
                             ${discountedPrice.toLocaleString('es-MX')} <span className="text-sm text-[var(--foreground)]/50 uppercase tracking-wider">{collection.price.split(' ')[1]}</span>
                           </p>
-                          <p className="text-sm text-[var(--foreground)]/70 font-semibold mt-2">60% DE DESCUENTO</p>
+                          <p className="text-sm text-[var(--foreground)]/70 font-semibold mt-2">{discountText}</p>
                         </div>
                       );
                     })()}
@@ -207,12 +210,12 @@ export default function ColeccionesRanchoLaJoya() {
                             const priceStr = collection.price.split(' ')[0].replace(/[^0-9]/g, '');
                             const priceNum = parseInt(priceStr);
                             const originalPrice = priceNum + 20000;
-                            const discountedPrice = Math.round(originalPrice * 0.4);
+                            const discountedPrice = Math.round(originalPrice * 0.5);
                             return `$${discountedPrice.toLocaleString('es-MX')}`;
                           })()}
                         </div>
                         <div className="text-xs text-[var(--foreground)]/60 uppercase">{collection.price.split(' ')[1]}</div>
-                        <div className="text-xs text-[var(--foreground)]/70 mt-1">60% OFF</div>
+                        <div className="text-xs text-[var(--foreground)]/70 mt-1">{discountBadge}</div>
                       </td>
                     ))}
                   </tr>

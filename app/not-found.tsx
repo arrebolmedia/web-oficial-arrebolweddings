@@ -51,13 +51,13 @@ export default function NotFound() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link
               href="/"
-              className="inline-block bg-[var(--accent)] text-white px-8 py-3 hover:bg-[var(--accent-dark)] transition-colors uppercase tracking-wider text-sm font-semibold"
+              className="inline-block bg-[var(--foreground)] text-white px-8 py-3 hover:bg-[var(--foreground)]/80 transition-colors uppercase tracking-wider text-sm font-semibold"
             >
               {translations.backHome}
             </Link>
             <Link
               href="/colecciones-2026"
-              className="inline-block border border-[var(--accent)] text-[var(--accent)] px-8 py-3 hover:bg-[var(--accent)] hover:text-white transition-colors uppercase tracking-wider text-sm font-semibold"
+              className="inline-block border border-[var(--foreground)] text-[var(--foreground)] px-8 py-3 hover:bg-[var(--foreground)] hover:text-white transition-colors uppercase tracking-wider text-sm font-semibold"
             >
               {translations.viewCollections}
             </Link>
