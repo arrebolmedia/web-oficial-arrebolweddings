@@ -8,7 +8,7 @@ import { useLanguage } from "@/app/context/LanguageContext";
 import { useLoading } from "@/app/context/LoadingContext";
 
 const HeroHeader = () => {
-  const { content, language, toggleLanguage } = useLanguage();
+  const { content, language, toggleLanguage, setLanguage } = useLanguage();
   const { isLoading } = useLoading();
   const [isOpen, setIsOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
@@ -78,8 +78,6 @@ const HeroHeader = () => {
 
     return () => clearInterval(interval);
   }, [imagesLoaded, sliderImages.length]);
-
-  const { setLanguage } = useLanguage();
   
   const links = [
     { href: `/`, label: content.common.navigation.home },

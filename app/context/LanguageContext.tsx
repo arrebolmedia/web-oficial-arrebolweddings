@@ -16,17 +16,23 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 
 export const LanguageProvider = ({ children }: { children: ReactNode }) => {
   const [language, setLanguageState] = useState<"es" | "en">("es");
+  const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
-    const savedLanguage = localStorage.getItem("language") as "es" | "en";
-    if (savedLanguage && (savedLanguage === "es" || savedLanguage === "en")) {
-      setLanguageState(savedLanguage);
+    setIsClient(true);
+    if (typeof window !== "undefined") {
+      const savedLanguage = localStorage.getItem("language") as "es" | "en";
+      if (savedLanguage && (savedLanguage === "es" || savedLanguage === "en")) {
+        setLanguageState(savedLanguage);
+      }
     }
   }, []);
 
   const setLanguage = (lang: "es" | "en") => {
     setLanguageState(lang);
-    localStorage.setItem("language", lang);
+    if (typeof window !== "undefined") {
+      localStorage.setItem("language", lang);
+    }
   };
 
   const toggleLanguage = () => {
