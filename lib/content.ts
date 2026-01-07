@@ -24,6 +24,7 @@ export const contentEs = {
   },
   home: {
     hero: {
+      emotion: "La emoción es primero.",
       taglinePart1: "RECUERDOS",
       taglinePart2: "que duran por",
       taglinePart3: "GENERACIONES",
@@ -623,6 +624,7 @@ export const contentEn = {
   },
   home: {
     hero: {
+      emotion: "Emotion comes first.",
       taglinePart1: "MEMORIES",
       taglinePart2: "that last for",
       taglinePart3: "GENERATIONS",

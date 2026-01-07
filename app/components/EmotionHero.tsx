@@ -2,6 +2,7 @@
 
 import { useEffect, useState, useRef } from "react";
 import { useLoading } from "@/app/context/LoadingContext";
+import { useLanguage } from "@/app/context/LanguageContext";
 
 const allVideos = [
   "/videos/clip00086729.mp4",
@@ -70,6 +71,7 @@ export default function EmotionHero() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isClient, setIsClient] = useState(false);
   const { setIsLoading } = useLoading();
+  const { content } = useLanguage();
   const [localLoading, setLocalLoading] = useState(true);
   const video1Ref = useRef<HTMLVideoElement>(null);
   const video2Ref = useRef<HTMLVideoElement>(null);
@@ -235,7 +237,7 @@ export default function EmotionHero() {
         <div className="relative z-20 flex h-full items-center justify-center px-6">
           <div className="text-center">
             <h1 className="text-2xl font-bold tracking-wide text-white md:text-4xl lg:text-3xl">
-              La emoción es primero.
+              {content.home.hero.emotion}
             </h1>
           </div>
         </div>
