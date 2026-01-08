@@ -507,13 +507,13 @@ Cuando uno espera hasta la ceremonia, todo se acumula: los nervios, la anticipac
 
 A veces veo cómo a uno de los dos se le llenan los ojos de lágrimas de alegría antes de caminar. O cómo respiran profundo cuando escuchan los primeros acordes. Ese instante tiene algo ritual, algo que no se puede recrear en ningún otro punto del día. Para algunas parejas, ese es el momento. El que han imaginado desde siempre. El que no quieren adelantar por nada del mundo.
 
-Lo hermoso de este tipo de encuentro
+## Lo hermoso de este tipo de encuentro
 
 Esperarse hasta el altar permite que la emoción llegue sin filtros. No hay preparación previa, no hay silencio íntimo ni espacio privado: es la fuerza del instante tal cual es. Esa sorpresa total puede resultar abrumadora… pero en el mejor sentido. Es como dejar que el corazón dé un salto sin previo aviso.
 
 He visto lágrimas honestas, risas nerviosas, sonrisas que iluminan toda la ceremonia. He visto cómo el ambiente entero se transforma cuando sucede ese primer encuentro. No solo la pareja lo siente: la energía en el espacio cambia. Los invitados lo perciben, la música se siente distinta, incluso la luz parece acomodarse.
 
-Las ventajas prácticas (que también existen)
+## Las ventajas prácticas (que también existen)
 
 Aunque el encuentro sea más emocional que práctico, tiene sus beneficios:
 
@@ -521,7 +521,7 @@ No tienes que apartar tiempo antes de la ceremonia. El getting ready fluye más 
 
 Todo se siente más lineal y tradicional. Es ideal para quienes valoran la estructura clásica.
 
-Y las desventajas (porque también es justo mencionarlas)
+## Y las desventajas (porque también es justo mencionarlas)
 
 Después de la ceremonia, normalmente hacemos las fotos de pareja. Eso significa perderse parte o todo el coctel.
 
@@ -529,7 +529,7 @@ Si muchos invitados quieren saludar, la cena puede tornarse más interrumpida, p
 
 Aun así, para muchas parejas vale completamente la pena. La intensidad del momento lo supera todo.
 
-En contraste con el First Look
+## En contraste con el First Look
 
 Mientras el First Look ofrece intimidad, calma y control del tiempo, esperar al altar ofrece puro impacto emocional. Uno no sustituye al otro: simplemente responden a personalidades y sueños distintos.
 
