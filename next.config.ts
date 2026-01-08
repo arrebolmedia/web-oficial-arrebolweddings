@@ -13,14 +13,6 @@ const nextConfig: NextConfig = {
   experimental: {
     optimizePackageImports: ['react-intersection-observer'],
   },
-  async rewrites() {
-    return [
-      {
-        source: '/:path*',
-        destination: '/:path*',
-      },
-    ];
-  },
 };
 
 export default nextConfig;
