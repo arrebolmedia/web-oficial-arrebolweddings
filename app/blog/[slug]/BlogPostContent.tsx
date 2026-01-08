@@ -169,12 +169,6 @@ export default function BlogPostContent({ slug }: BlogPostContentProps) {
             })}
           </div>
         </div>
-
-        {/* Meta Info */}
-        <div className="mt-16 pt-8 border-t border-[var(--border-subtle)] flex items-center justify-between text-sm text-[var(--foreground)]/60">
-          <span>{post.date}</span>
-          <span>{post.readTime}</span>
-        </div>
       </div>
 
       {/* Navigation */}
