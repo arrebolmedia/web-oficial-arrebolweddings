@@ -32,12 +32,6 @@ const Footer = () => {
               {content.common.navigation.process}
             </Link>
             <Link
-              href={`/colecciones-2026`}
-              className="text-sm tracking-widest uppercase text-[var(--foreground)] hover:text-[var(--accent-wine)] transition-colors"
-            >
-              {content.common.navigation.collections}
-            </Link>
-            <Link
               href={`/blog`}
               className="text-sm tracking-widest uppercase text-[var(--foreground)] hover:text-[var(--accent-wine)] transition-colors"
             >
