@@ -135,7 +135,17 @@ export default function BlogPostContent({ slug }: BlogPostContentProps) {
           
           <div className="space-y-6 text-[var(--foreground)]/70 font-light">
             {post.content && post.content.split('\n\n').map((paragraph, index) => {
-              // Check if this is a heading (starts with "# ")
+              // Check if this is a h2 heading (starts with "## ")
+              if (paragraph.startsWith('## ')) {
+                const headingText = paragraph.slice(3);
+                return (
+                  <h2 key={index} className="font-[var(--font-heading)] text-2xl text-[var(--foreground)] mt-10 mb-5">
+                    {processInlineMarkdown(headingText)}
+                  </h2>
+                );
+              }
+              
+              // Check if this is a h1 heading (starts with "# ")
               if (paragraph.startsWith('# ')) {
                 const headingText = paragraph.slice(2);
                 return (
