@@ -344,7 +344,7 @@ Ustedes aportan la conexión y la energía. Nosotros ponemos la luz, los encuadr
 
 El resultado aparece cuando ambas partes fluyen.
 
-En resumen
+## En resumen
 
 • Elijan un lugar que resuene con ustedes.
 
