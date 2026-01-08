@@ -272,8 +272,6 @@ No es una sesión editorial, pero tampoco el domingo casual. Recomendamos:
 
 • Outfits cómodos para moverse
 
-• Una segunda muda para variedad
-
 La clave es verse auténticos, no disfrazados.
 
 3. Vengan relajados: esto no es un examen de poses
