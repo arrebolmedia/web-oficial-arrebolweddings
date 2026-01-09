@@ -4187,7 +4187,7 @@ Por eso hemos reunido las 8 entradas de blog más valiosas que todo novio deber�
 
 ## 1. Las dudas que todos los novios tienen (aunque no siempre las digan)
 
-[👉 Leer artículo completo](/blog/dudas-que-todos-los-novios-tienen)
+[Leer artículo completo](/blog/dudas-que-todos-los-novios-tienen)
 
 **Por qué es imprescindible:**
 Este artículo responde a las objeciones más comunes al contratar foto y video profesional. Si alguna vez te preguntaste "¿realmente vale la pena?", aquí encontrarás respuestas honestas basadas en la experiencia de decenas de parejas.
@@ -4200,7 +4200,7 @@ Este artículo responde a las objeciones más comunes al contratar foto y video 
 
 ## 2. Recomendaciones para fotos de save the date perfectas
 
-[👉 Leer artículo completo](/blog/recomendaciones-fotos-save-the-date)
+[Leer artículo completo](/blog/recomendaciones-fotos-save-the-date)
 
 **Por qué es imprescindible:**
 Tu save the date es la primera impresión visual de tu boda. Esta guía te ayuda a planear una sesión que realmente los represente, sin poses forzadas ni incomodidad.
@@ -4213,7 +4213,7 @@ Tu save the date es la primera impresión visual de tu boda. Esta guía te ayuda
 
 ## 3. El first look: por qué realmente ayuda
 
-[👉 Leer artículo completo](/blog/el-first-look-por-que-ayuda)
+[Leer artículo completo](/blog/el-first-look-por-que-ayuda)
 
 **Por qué es imprescindible:**
 Una de las decisiones más emocionales y prácticas que tomarán. Este artículo explora los pros y contras con honestidad, para que decidan desde la claridad, no desde la presión social.
@@ -4226,7 +4226,7 @@ Una de las decisiones más emocionales y prácticas que tomarán. Este artículo
 
 ## 4. Consejos para disfrutar tu boda (y las fotos al mismo tiempo)
 
-[👉 Leer artículo completo](/blog/consejos-disfrutar-boda-fotos)
+[Leer artículo completo](/blog/consejos-disfrutar-boda-fotos)
 
 **Por qué es imprescindible:**
 El día pasa volando. Esta guía te da estrategias concretas para estar presente, disfrutar cada momento y aun así tener fotos increíbles sin que la cámara te quite protagonismo.
@@ -4239,7 +4239,7 @@ El día pasa volando. Esta guía te da estrategias concretas para estar presente
 
 ## 5. Damas de honor: su verdadero papel en tu boda
 
-[👉 Leer artículo completo](/blog/damas-de-honor-verdadero-papel)
+[Leer artículo completo](/blog/damas-de-honor-verdadero-papel)
 
 **Por qué es imprescindible:**
 Elegir damas de honor puede generar conflictos si no hay claridad. Este artículo te ayuda a definir expectativas, roles y límites con amor y honestidad.
@@ -4252,7 +4252,7 @@ Elegir damas de honor puede generar conflictos si no hay claridad. Este artícul
 
 ## 6. La importancia de tomar decisiones a tiempo
 
-[👉 Leer artículo completo](/blog/importancia-tomar-decisiones-a-tiempo)
+[Leer artículo completo](/blog/importancia-tomar-decisiones-a-tiempo)
 
 **Por qué es imprescindible:**
 Postergar decisiones no las hace más fáciles: las hace más caras y estresantes. Esta guía te muestra por qué decidir con anticipación te da poder, opciones y paz mental.
@@ -4265,7 +4265,7 @@ Postergar decisiones no las hace más fáciles: las hace más caras y estresante
 
 ## 7. Timeline: el secreto de una boda fluida
 
-[👉 Leer artículo completo](/blog/timeline-secreto-boda-fluida)
+[Leer artículo completo](/blog/timeline-secreto-boda-fluida)
 
 **Por qué es imprescindible:**
 Un timeline bien pensado es la diferencia entre una boda que fluye y una que se siente caótica. Esta guía práctica te da las herramientas para crear un cronograma realista y funcional.
@@ -4278,7 +4278,7 @@ Un timeline bien pensado es la diferencia entre una boda que fluye y una que se 
 
 ## 8. Guía definitiva del getting ready
 
-[👉 Leer artículo completo](/blog/guia-definitiva-getting-ready)
+[Leer artículo completo](/blog/guia-definitiva-getting-ready)
 
 **Por qué es imprescindible:**
 El getting ready es el momento más íntimo y emotivo antes de la ceremonia. Esta guía te ayuda a planearlo para que sea memorable, fotografiable y sobre todo: disfrutable.
