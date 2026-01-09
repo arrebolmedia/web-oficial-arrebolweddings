@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     locale: "es_MX",
     images: [
       {
-        url: "https://arrebolweddings.com/images/RLJ/L&A-363_websize.jpg",
+        url: "https://arrebolweddings.com/images/RLJ/L%26A-363_websize.jpg",
         width: 1200,
         height: 630,
         alt: "Arrebol Weddings & Rancho La Joya - Bodas en Cuernavaca",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     site: "@arrebolweddings",
     title: "Arrebol Weddings & Rancho La Joya - ¡50% OFF!",
     description: "Colecciones exclusivas para bodas en Rancho La Joya. Ahora desde $49,500 MXN. Fotografía y video profesional.",
-    images: ["https://arrebolweddings.com/images/RLJ/L&A-363_websize.jpg"],
+    images: ["https://arrebolweddings.com/images/RLJ/L%26A-363_websize.jpg"],
   },
 };
 
