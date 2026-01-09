@@ -62,12 +62,11 @@ export default function ColeccionesRanchoLaJoya() {
                     {(() => {
                       const priceStr = collection.price.split(' ')[0].replace(/[^0-9]/g, '');
                       const priceNum = parseInt(priceStr);
-                      const originalPrice = priceNum + 20000;
-                      const discountedPrice = Math.round(originalPrice * 0.5);
+                      const discountedPrice = Math.round(priceNum * 0.5);
                       return (
                         <div>
                           <p className="text-lg text-[var(--foreground)]/50 line-through mb-1">
-                            ${originalPrice.toLocaleString('es-MX')} <span className="text-xs uppercase tracking-wider">{collection.price.split(' ')[1]}</span>
+                            ${priceNum.toLocaleString('es-MX')} <span className="text-xs uppercase tracking-wider">{collection.price.split(' ')[1]}</span>
                           </p>
                           <p className="text-3xl font-bold text-[var(--foreground)]">
                             ${discountedPrice.toLocaleString('es-MX')} <span className="text-sm text-[var(--foreground)]/50 uppercase tracking-wider">{collection.price.split(' ')[1]}</span>
@@ -201,16 +200,14 @@ export default function ColeccionesRanchoLaJoya() {
                           {(() => {
                             const priceStr = collection.price.split(' ')[0].replace(/[^0-9]/g, '');
                             const priceNum = parseInt(priceStr);
-                            const originalPrice = priceNum + 20000;
-                            return `$${originalPrice.toLocaleString('es-MX')}`;
+                            return `$${priceNum.toLocaleString('es-MX')}`;
                           })()}
                         </div>
                         <div className="text-2xl font-light text-[var(--foreground)] mt-1">
                           {(() => {
                             const priceStr = collection.price.split(' ')[0].replace(/[^0-9]/g, '');
                             const priceNum = parseInt(priceStr);
-                            const originalPrice = priceNum + 20000;
-                            const discountedPrice = Math.round(originalPrice * 0.5);
+                            const discountedPrice = Math.round(priceNum * 0.5);
                             return `$${discountedPrice.toLocaleString('es-MX')}`;
                           })()}
                         </div>
