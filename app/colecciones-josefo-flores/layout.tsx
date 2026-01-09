@@ -7,9 +7,10 @@ export const metadata: Metadata = {
     title: "Colecciones Josefo Flores & Arrebol Weddings",
     description: "Colecciones exclusivas de fotografía y video para bodas. Colaboración especial Josefo Flores & Arrebol Weddings.",
     type: "website",
+    url: "https://arrebolweddings.com/colecciones-josefo-flores",
     images: [
       {
-        url: "/images/gallery/SandJ-404.webp",
+        url: "https://arrebolweddings.com/images/gallery/SandJ-404.webp",
         width: 1200,
         height: 630,
         alt: "Colecciones Josefo Flores & Arrebol Weddings",
@@ -20,7 +21,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Colecciones Josefo Flores & Arrebol Weddings",
     description: "Colecciones exclusivas de fotografía y video para bodas. Paquetes desde $59,000 MXN.",
-    images: ["/images/gallery/SandJ-404.webp"],
+    images: ["https://arrebolweddings.com/images/gallery/SandJ-404.webp"],
   },
 };
 
