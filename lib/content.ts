@@ -930,7 +930,7 @@ export const contentEn = {
         price: "$1,500",
       },
       {
-        name: "Additional videographer",
+        name: "Additional photographer/videographer",
         price: "$7,000",
       },
       {
@@ -1088,7 +1088,7 @@ export const contentEn = {
         price: "$6,500",
       },
       {
-        name: "Additional videographer",
+        name: "Additional photographer/videographer",
         price: "$7,000",
       },
       {

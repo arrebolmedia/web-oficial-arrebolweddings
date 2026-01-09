@@ -1,10 +1,10 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Colecciones Josefo Flores & Arrebol Weddings",
+  title: "Colecciones: Josefo Flores & Arrebol Weddings",
   description: "Colecciones exclusivas de fotografía y video para bodas. Paquetes completos desde $59,000 MXN. Colaboración especial Josefo Flores & Arrebol Weddings.",
   openGraph: {
-    title: "Colecciones Josefo Flores & Arrebol Weddings",
+    title: "Colecciones: Josefo Flores & Arrebol Weddings",
     description: "Colecciones exclusivas de fotografía y video para bodas. Colaboración especial Josefo Flores & Arrebol Weddings.",
     type: "website",
     url: "https://arrebolweddings.com/colecciones-josefo-flores",
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Colecciones Josefo Flores & Arrebol Weddings",
+    title: "Colecciones: Josefo Flores & Arrebol Weddings",
     description: "Colecciones exclusivas de fotografía y video para bodas. Paquetes desde $59,000 MXN.",
     images: ["https://arrebolweddings.com/images/gallery/SandJ-404.webp"],
   },
