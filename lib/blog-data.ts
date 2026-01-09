@@ -4176,6 +4176,159 @@ es una experiencia que se puede volver a sentir una y otra vez.`,
     category: "Tips",
     date: "Diciembre 18, 2025",
   },
+  {
+    id: "35",
+    slug: "guia-completa-articulos-imprescindibles-boda",
+    title: "Guía completa: Los 8 artículos imprescindibles antes de tu boda",
+    excerpt: "Hemos reunido las entradas más valiosas de nuestro blog para ayudarte a planear tu boda con claridad y confianza. Desde decisiones importantes hasta consejos prácticos que harán la diferencia en tu día especial.",
+    content: `Planear una boda puede sentirse abrumador. Entre tantas decisiones, proveedores y detalles, es fácil perderse o postergar lo importante.
+
+Por eso hemos reunido las 8 entradas de blog más valiosas que todo novio debería leer antes del gran día. No importa en qué etapa de la planeación estés: estos artículos te darán claridad, tranquilidad y perspectiva.
+
+## 1. Las dudas que todos los novios tienen (aunque no siempre las digan)
+
+[👉 Leer artículo completo](/blog/dudas-que-todos-los-novios-tienen)
+
+**Por qué es imprescindible:**
+Este artículo responde a las objeciones más comunes al contratar foto y video profesional. Si alguna vez te preguntaste "¿realmente vale la pena?", aquí encontrarás respuestas honestas basadas en la experiencia de decenas de parejas.
+
+**Lo que aprenderás:**
+• Por qué la inversión en foto y video es diferente a otros gastos
+• Cómo distinguir entre un hobby y experiencia profesional
+• Qué esperar realmente del servicio
+• Por qué tomar la decisión a tiempo marca la diferencia
+
+## 2. Recomendaciones para fotos de save the date perfectas
+
+[👉 Leer artículo completo](/blog/recomendaciones-fotos-save-the-date)
+
+**Por qué es imprescindible:**
+Tu save the date es la primera impresión visual de tu boda. Esta guía te ayuda a planear una sesión que realmente los represente, sin poses forzadas ni incomodidad.
+
+**Lo que aprenderás:**
+• Cómo elegir locación y vestuario
+• Tips para sentirte cómodo frente a la cámara
+• Qué hacer (y qué evitar) el día de la sesión
+• Ideas creativas para un resultado único
+
+## 3. El first look: por qué realmente ayuda
+
+[👉 Leer artículo completo](/blog/el-first-look-por-que-ayuda)
+
+**Por qué es imprescindible:**
+Una de las decisiones más emocionales y prácticas que tomarán. Este artículo explora los pros y contras con honestidad, para que decidan desde la claridad, no desde la presión social.
+
+**Lo que aprenderás:**
+• Ventajas emocionales y logísticas del first look
+• Cómo mantener la espontaneidad del momento
+• Alternativas si no quieren hacerlo
+• Testimonios reales de parejas que lo vivieron
+
+## 4. Consejos para disfrutar tu boda (y las fotos al mismo tiempo)
+
+[👉 Leer artículo completo](/blog/consejos-disfrutar-boda-fotos)
+
+**Por qué es imprescindible:**
+El día pasa volando. Esta guía te da estrategias concretas para estar presente, disfrutar cada momento y aun así tener fotos increíbles sin que la cámara te quite protagonismo.
+
+**Lo que aprenderás:**
+• Cómo relajarte frente a la cámara
+• El balance perfecto entre espontaneidad y dirección
+• Momentos clave que no debes perderte
+• Cómo confiar en tu equipo de foto y video
+
+## 5. Damas de honor: su verdadero papel en tu boda
+
+[👉 Leer artículo completo](/blog/damas-de-honor-verdadero-papel)
+
+**Por qué es imprescindible:**
+Elegir damas de honor puede generar conflictos si no hay claridad. Este artículo te ayuda a definir expectativas, roles y límites con amor y honestidad.
+
+**Lo que aprenderás:**
+• Qué esperar realmente de tus damas
+• Cómo comunicar responsabilidades sin presionar
+• Alternativas modernas a los roles tradicionales
+• Cómo manejar situaciones delicadas
+
+## 6. La importancia de tomar decisiones a tiempo
+
+[👉 Leer artículo completo](/blog/importancia-tomar-decisiones-a-tiempo)
+
+**Por qué es imprescindible:**
+Postergar decisiones no las hace más fáciles: las hace más caras y estresantes. Esta guía te muestra por qué decidir con anticipación te da poder, opciones y paz mental.
+
+**Lo que aprenderás:**
+• Cuándo contratar cada proveedor clave
+• Consecuencias reales de posponer decisiones
+• Cómo priorizar cuando todo parece urgente
+• Estrategias para decidir sin presión
+
+## 7. Timeline: el secreto de una boda fluida
+
+[👉 Leer artículo completo](/blog/timeline-secreto-boda-fluida)
+
+**Por qué es imprescindible:**
+Un timeline bien pensado es la diferencia entre una boda que fluye y una que se siente caótica. Esta guía práctica te da las herramientas para crear un cronograma realista y funcional.
+
+**Lo que aprenderás:**
+• Cómo calcular tiempos reales (no ideales)
+• Errores comunes en la planeación de horarios
+• Cómo coordinar con proveedores
+• Cuándo ser flexible y cuándo ser firme
+
+## 8. Guía definitiva del getting ready
+
+[👉 Leer artículo completo](/blog/guia-definitiva-getting-ready)
+
+**Por qué es imprescindible:**
+El getting ready es el momento más íntimo y emotivo antes de la ceremonia. Esta guía te ayuda a planearlo para que sea memorable, fotografiable y sobre todo: disfrutable.
+
+**Lo que aprenderás:**
+• Qué incluir en tu getting ready
+• Cómo preparar el espacio para fotos hermosas
+• Tips de logística y timing
+• Cómo manejar nervios y emociones
+• Ideas para momentos especiales con tu familia
+
+## Por qué estos 8 artículos
+
+No los elegimos al azar.
+
+Son los temas que más preguntan las parejas, las dudas más frecuentes, las decisiones que más impactan, y los consejos que realmente hacen la diferencia.
+
+Cada uno aborda un aspecto diferente de tu boda: desde lo emocional hasta lo logístico, desde la planeación hasta el día mismo.
+
+Juntos forman una guía completa que te acompañará en cada etapa.
+
+## Cómo usar esta guía
+
+**Si apenas empiezas a planear:**
+Lee todos en orden. Te darán una visión completa de lo que viene.
+
+**Si ya tienes fecha:**
+Prioriza los artículos sobre decisiones y timeline. El tiempo es tu aliado si lo usas bien.
+
+**Si tu boda está cerca:**
+Enfócate en los consejos del día: getting ready, disfrutar el momento, confiar en tu equipo.
+
+**Si sientes presión o dudas:**
+Empieza con "Las dudas que todos tienen" y "Importancia de tomar decisiones a tiempo". Te darán claridad y tranquilidad.
+
+## Algo más que queremos decirte
+
+Planear una boda no tiene que ser perfecto.
+Tiene que ser tuyo.
+
+Estos artículos no están aquí para decirte qué hacer, sino para darte herramientas, perspectiva y confianza.
+
+Tu boda será única porque es la suya.
+Y estos recursos están aquí para que la vivan con claridad, sin estrés innecesario, y con la certeza de que tomaron las mejores decisiones para ustedes.
+
+¿Tienes otras dudas o temas que te gustaría que abordáramos? Escríbenos. Estamos aquí para acompañarte.`,
+    coverImage: "/images/gallery/SandJ-404.webp",
+    category: "Tips",
+    date: "Enero 9, 2026",
+  },
 ];
 
 // Spanish blog posts
