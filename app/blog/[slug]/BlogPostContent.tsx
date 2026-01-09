@@ -44,15 +44,58 @@ export default function BlogPostContent({ slug }: BlogPostContentProps) {
   const shuffled = [...availablePosts].sort(() => Math.random() - 0.5);
   const relatedPosts = shuffled.slice(0, 3);
 
-  // Helper function to process inline markdown (**bold**)
+  // Helper function to process inline markdown (**bold** and [links](url))
   const processInlineMarkdown = (text: string): React.ReactNode => {
-    const parts = text.split(/(\*\*[^*]+\*\*)/g);
-    return parts.map((part, idx) => {
-      if (part.startsWith('**') && part.endsWith('**')) {
-        return <strong key={idx} className="font-medium text-[var(--foreground)]">{part.slice(2, -2)}</strong>;
+    // First split by links to handle them separately
+    const linkRegex = /\[([^\]]+)\]\(([^)]+)\)/g;
+    const parts: React.ReactNode[] = [];
+    let lastIndex = 0;
+    let match;
+
+    while ((match = linkRegex.exec(text)) !== null) {
+      // Process text before the link
+      if (match.index > lastIndex) {
+        const beforeText = text.substring(lastIndex, match.index);
+        const boldParts = beforeText.split(/(\*\*[^*]+\*\*)/g);
+        boldParts.forEach((part, idx) => {
+          if (part.startsWith('**') && part.endsWith('**')) {
+            parts.push(<strong key={`${lastIndex}-${idx}`} className="font-medium text-[var(--foreground)]">{part.slice(2, -2)}</strong>);
+          } else if (part) {
+            parts.push(part);
+          }
+        });
       }
-      return part;
-    });
+
+      // Add the link
+      const linkText = match[1];
+      const linkUrl = match[2];
+      parts.push(
+        <Link 
+          key={match.index} 
+          href={linkUrl}
+          className="text-[var(--accent-wine)] hover:underline font-medium"
+        >
+          {linkText}
+        </Link>
+      );
+
+      lastIndex = linkRegex.lastIndex;
+    }
+
+    // Process remaining text after last link
+    if (lastIndex < text.length) {
+      const remainingText = text.substring(lastIndex);
+      const boldParts = remainingText.split(/(\*\*[^*]+\*\*)/g);
+      boldParts.forEach((part, idx) => {
+        if (part.startsWith('**') && part.endsWith('**')) {
+          parts.push(<strong key={`${lastIndex}-${idx}`} className="font-medium text-[var(--foreground)]">{part.slice(2, -2)}</strong>);
+        } else if (part) {
+          parts.push(part);
+        }
+      });
+    }
+
+    return parts.length > 0 ? parts : text;
   };
 
   // Helper function to process a paragraph that may contain bullet lists
