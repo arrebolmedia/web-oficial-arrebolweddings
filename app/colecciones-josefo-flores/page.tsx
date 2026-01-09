@@ -235,7 +235,7 @@ export default function ColeccionesJosefoFlores() {
               {colecciones.whatsappText}
             </p>
             <a
-              href={`https://wa.me/5217775001071?text=${encodeURIComponent(colecciones.whatsappMessage)}`}
+              href={`https://wa.me/5217775001071?text=${encodeURIComponent(language === "es" ? "Hola! Vengo de parte de Josefo Flores y me gustaría conocer más sobre las colecciones de fotografía y video para bodas." : "Hi! I'm coming from Josefo Flores and I would like to know more about the wedding photography and video collections.")}`}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block px-8 py-3 border border-[var(--foreground)] text-[var(--foreground)] text-sm tracking-widest uppercase hover:bg-[var(--foreground)] hover:text-white transition-all duration-300"
