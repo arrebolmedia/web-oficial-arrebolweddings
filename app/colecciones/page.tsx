@@ -56,14 +56,6 @@ export default function Colecciones() {
 
                   {/* Price at bottom */}
                   <div className="pt-6 border-t border-[var(--border-subtle)] text-center">
-                    <p className="text-lg font-light text-[var(--foreground)]/40 line-through mb-1">
-                      {(() => {
-                        const priceStr = collection.price.split(' ')[0].replace(/[^0-9]/g, '');
-                        const priceNum = parseInt(priceStr);
-                        const originalPrice = priceNum + 20000;
-                        return `$${originalPrice.toLocaleString('es-MX')}`;
-                      })()} <span className="text-xs text-[var(--foreground)]/30 uppercase tracking-wider">{collection.price.split(' ')[1]}</span>
-                    </p>
                     <p className="text-2xl font-light text-[var(--foreground)]">
                       {collection.price.split(' ')[0]} <span className="text-sm text-[var(--foreground)]/50 uppercase tracking-wider">{collection.price.split(' ')[1]}</span>
                     </p>
@@ -188,14 +180,6 @@ export default function Colecciones() {
                     <td className="p-4 font-[var(--font-heading)] text-lg text-[var(--foreground)]">{colecciones.priceTitle}</td>
                     {colecciones.collections.map((collection, index) => (
                       <td key={index} className="p-4 text-center">
-                        <div className="text-base font-light text-[var(--foreground)]/40 line-through mb-1">
-                          {(() => {
-                            const priceStr = collection.price.split(' ')[0].replace(/[^0-9]/g, '');
-                            const priceNum = parseInt(priceStr);
-                            const originalPrice = priceNum + 20000;
-                            return `$${originalPrice.toLocaleString('es-MX')}`;
-                          })()}
-                        </div>
                         <div className="text-2xl font-light text-[var(--foreground)]">{collection.price.split(' ')[0]}</div>
                         <div className="text-xs text-[var(--foreground)]/60 uppercase">{collection.price.split(' ')[1]}</div>
                       </td>
