@@ -5,23 +5,17 @@ import { useLoading } from "@/app/context/LoadingContext";
 import { useLanguage } from "@/app/context/LanguageContext";
 
 const allVideos = [
-  "/videos/clip00086729.mp4",
-  "/videos/clip00088550.mp4",
-  "/videos/clip00088938.mp4",
-  "/videos/clip2_00086400.mp4",
-  "/videos/clip2_00086546.mp4",
-  "/videos/clip2_00086810.mp4",
-  "/videos/clip2_00086973.mp4",
-  "/videos/clip2_00087810.mp4",
-  "/videos/clip3_00086765.mp4",
-  "/videos/clip3_00088702.mp4",
-  "/videos/clip3_00092678.mp4",
-  "/videos/clip4_00086769.mp4",
-  "/videos/clip4_00087082.mp4",
-  "/videos/clip4_00087271.mp4",
-  "/videos/clip5_00086622.mp4",
-  "/videos/clip5_00088046.mp4",
-  "/videos/clip5_00090626.mp4",
+  "/videos/emotionhero/clip2_00086400.mp4",
+  "/videos/emotionhero/clip2_00086810.mp4",
+  "/videos/emotionhero/clip2_00087810.mp4",
+  "/videos/emotionhero/clip3_00088702.mp4",
+  "/videos/emotionhero/clip3_00092678.mp4",
+  "/videos/emotionhero/clip4_00086769.mp4",
+  "/videos/emotionhero/clip4_00087082.mp4",
+  "/videos/emotionhero/clip4_00087271.mp4",
+  "/videos/emotionhero/clip5_00086622.mp4",
+  "/videos/emotionhero/clip5_00088046.mp4",
+  "/videos/emotionhero/clip5_00090626.mp4",
 ];
 
 // Función para obtener la serie del video
