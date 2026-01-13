@@ -57,10 +57,13 @@ export default function ColeccionesTheWeddingPartners() {
                     ))}
                   </div>
 
-                  {/* Price at bottom - SIN DESCUENTO */}
+                  {/* Price at bottom - CON DESCUENTO */}
                   <div className="pt-6 border-t border-[var(--border-subtle)] text-center">
+                    <p className="text-lg text-[var(--foreground)]/40 line-through mb-1">
+                      {collection.price.split(' ')[0]}
+                    </p>
                     <p className="text-2xl font-light text-[var(--foreground)]">
-                      {collection.price.split(' ')[0]} <span className="text-sm text-[var(--foreground)]/50 uppercase tracking-wider">{collection.price.split(' ')[1]}</span>
+                      {collection.discountedPrice?.split(' ')[0]} <span className="text-sm text-[var(--foreground)]/50 uppercase tracking-wider">{collection.discountedPrice?.split(' ')[1]}</span>
                     </p>
                   </div>
                 </div>
@@ -183,10 +186,13 @@ export default function ColeccionesTheWeddingPartners() {
                     <td className="p-4 font-[var(--font-heading)] text-lg text-[var(--foreground)]">{colecciones.priceTitle}</td>
                     {colecciones.collections.map((collection, index) => (
                       <td key={index} className="p-4 text-center">
-                        <div className="text-2xl font-light text-[var(--foreground)]">
+                        <div className="text-sm text-[var(--foreground)]/40 line-through mb-1">
                           {collection.price.split(' ')[0]}
                         </div>
-                        <div className="text-xs text-[var(--foreground)]/60 uppercase">{collection.price.split(' ')[1]}</div>
+                        <div className="text-2xl font-light text-[var(--foreground)]">
+                          {collection.discountedPrice?.split(' ')[0]}
+                        </div>
+                        <div className="text-xs text-[var(--foreground)]/60 uppercase">{collection.discountedPrice?.split(' ')[1]}</div>
                       </td>
                     ))}
                   </tr>

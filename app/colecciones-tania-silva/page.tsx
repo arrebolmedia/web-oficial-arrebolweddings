@@ -57,22 +57,16 @@ export default function ColeccionesTaniaSilva() {
                     ))}
                   </div>
 
-                  {/* Price at bottom - CON 30% DESCUENTO */}
+                  {/* Price at bottom - CON 40% DESCUENTO */}
                   <div className="pt-6 border-t border-[var(--border-subtle)] text-center">
-                    <div className="mb-1">
-                      <span className="text-lg font-light text-[var(--foreground)]/40 line-through">
-                        {collection.price.split(' ')[0]}
-                      </span>
-                      {' '}
-                      <span className="text-xs text-[var(--foreground)]/30 uppercase tracking-wider">{collection.price.split(' ')[1]}</span>
-                      {' '}
-                      <span className="text-xs text-[var(--foreground)]/60 uppercase tracking-wider" style={{textDecoration: 'none'}}>30% OFF</span>
-                    </div>
+                    <p className="text-lg text-[var(--foreground)]/40 line-through mb-1">
+                      {collection.price.split(' ')[0]}
+                    </p>
                     <p className="text-2xl font-light text-[var(--foreground)]">
                       {(() => {
                         const priceStr = collection.price.split(' ')[0].replace(/[^0-9]/g, '');
                         const priceNum = parseInt(priceStr);
-                        const discountedPrice = Math.round(priceNum * 0.7);
+                        const discountedPrice = Math.round(priceNum * 0.6);
                         return `$${discountedPrice.toLocaleString('es-MX')}`;
                       })()} <span className="text-sm text-[var(--foreground)]/50 uppercase tracking-wider">{collection.price.split(' ')[1]}</span>
                     </p>
@@ -197,18 +191,14 @@ export default function ColeccionesTaniaSilva() {
                     <td className="p-4 font-[var(--font-heading)] text-lg text-[var(--foreground)]">{colecciones.priceTitle}</td>
                     {colecciones.collections.map((collection, index) => (
                       <td key={index} className="p-4 text-center">
-                        <div className="mb-1">
-                          <span className="text-base font-light text-[var(--foreground)]/40 line-through">
-                            {collection.price.split(' ')[0]}
-                          </span>
-                          {' '}
-                          <span className="text-xs text-[var(--foreground)]/60 uppercase tracking-wider" style={{textDecoration: 'none'}}>30% OFF</span>
+                        <div className="text-sm text-[var(--foreground)]/40 line-through mb-1">
+                          {collection.price.split(' ')[0]}
                         </div>
                         <div className="text-2xl font-light text-[var(--foreground)]">
                           {(() => {
                             const priceStr = collection.price.split(' ')[0].replace(/[^0-9]/g, '');
                             const priceNum = parseInt(priceStr);
-                            const discountedPrice = Math.round(priceNum * 0.7);
+                            const discountedPrice = Math.round(priceNum * 0.6);
                             return `$${discountedPrice.toLocaleString('es-MX')}`;
                           })()}
                         </div>
