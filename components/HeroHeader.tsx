@@ -83,7 +83,7 @@ const HeroHeader = () => {
     { href: `/`, label: content.common.navigation.home },
     { href: `/galeria`, label: content.common.navigation.gallery },
     { href: `/el-proceso`, label: content.common.navigation.process },
-    { href: `/colecciones-2026`, label: content.common.navigation.collections },
+    { href: `/colecciones`, label: content.common.navigation.collections },
     { href: `/blog`, label: content.common.navigation.blog },
     { href: `/contacto`, label: content.common.navigation.contact },
   ];

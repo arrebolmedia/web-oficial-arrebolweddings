@@ -56,7 +56,7 @@ export default function NotFound() {
               {translations.backHome}
             </Link>
             <Link
-              href="/colecciones-2026"
+              href="/colecciones"
               className="inline-block border border-[var(--foreground)] text-[var(--foreground)] px-8 py-3 hover:bg-[var(--foreground)] hover:text-white transition-colors uppercase tracking-wider text-sm font-semibold"
             >
               {translations.viewCollections}
