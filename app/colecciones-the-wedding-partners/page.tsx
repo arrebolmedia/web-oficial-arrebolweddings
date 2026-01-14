@@ -12,6 +12,8 @@ export default function ColeccionesTheWeddingPartners() {
     ? "COLECCIONES: THE WEDDING PARTNERS & ARREBOL WEDDINGS"
     : "COLLECTIONS: THE WEDDING PARTNERS & ARREBOL WEDDINGS";
 
+  const discountBadge = '20% OFF';
+
   return (
     <>
       <div>
@@ -57,7 +59,7 @@ export default function ColeccionesTheWeddingPartners() {
                     ))}
                   </div>
 
-                  {/* Price at bottom - CON DESCUENTO */}
+                  {/* Price at bottom - CON 20% DESCUENTO */}
                   <div className="pt-6 border-t border-[var(--border-subtle)] text-center">
                     <p className="text-lg text-[var(--foreground)]/40 line-through mb-1">
                       {collection.price.split(' ')[0]}
@@ -65,6 +67,7 @@ export default function ColeccionesTheWeddingPartners() {
                     <p className="text-2xl font-light text-[var(--foreground)]">
                       {collection.discountedPrice?.split(' ')[0]} <span className="text-sm text-[var(--foreground)]/50 uppercase tracking-wider">{collection.discountedPrice?.split(' ')[1]}</span>
                     </p>
+                    <p className="text-sm text-[var(--foreground)]/70 font-semibold mt-2">{discountBadge}</p>
                   </div>
                 </div>
               </FadeIn>
@@ -193,6 +196,7 @@ export default function ColeccionesTheWeddingPartners() {
                           {collection.discountedPrice?.split(' ')[0]}
                         </div>
                         <div className="text-xs text-[var(--foreground)]/60 uppercase">{collection.discountedPrice?.split(' ')[1]}</div>
+                        <div className="text-xs text-[var(--foreground)]/70 mt-1">{discountBadge}</div>
                       </td>
                     ))}
                   </tr>
