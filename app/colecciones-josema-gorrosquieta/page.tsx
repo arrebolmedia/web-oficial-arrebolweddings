@@ -12,8 +12,8 @@ export default function ColeccionesJosemaGorrosquieta() {
     ? "COLECCIONES: JOSEMA GORROSQUIETA & ARREBOL WEDDINGS"
     : "COLLECTIONS: JOSEMA GORROSQUIETA & ARREBOL WEDDINGS";
 
-  const discountText = language === 'es' ? '30% DE DESCUENTO' : '30% OFF';
-  const discountBadge = '30% OFF';
+  const discountText = language === 'es' ? '40% DE DESCUENTO' : '40% OFF';
+  const discountBadge = '40% OFF';
 
   return (
     <>
@@ -60,12 +60,12 @@ export default function ColeccionesJosemaGorrosquieta() {
                     ))}
                   </div>
 
-                  {/* Price at bottom - CON 30% DESCUENTO */}
+                  {/* Price at bottom - CON 40% DESCUENTO */}
                   <div className="pt-6 border-t border-[var(--border-subtle)] text-center">
                     {(() => {
                       const priceStr = collection.price.split(' ')[0].replace(/[^0-9]/g, '');
                       const priceNum = parseInt(priceStr);
-                      const discountedPrice = Math.round(priceNum * 0.7);
+                      const discountedPrice = Math.round(priceNum * 0.6);
                       return (
                         <div>
                           <p className="text-lg text-[var(--foreground)]/50 line-through mb-1">
@@ -200,7 +200,7 @@ export default function ColeccionesJosemaGorrosquieta() {
                     {colecciones.collections.map((collection, index) => {
                       const priceStr = collection.price.split(' ')[0].replace(/[^0-9]/g, '');
                       const priceNum = parseInt(priceStr);
-                      const discountedPrice = Math.round(priceNum * 0.7);
+                      const discountedPrice = Math.round(priceNum * 0.6);
                       return (
                         <td key={index} className="p-4 text-center">
                           <div className="text-sm text-[var(--foreground)]/50 line-through">
