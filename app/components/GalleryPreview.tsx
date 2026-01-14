@@ -178,9 +178,12 @@ const GalleryPreview = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Title */}
         <FadeIn>
-          <h2 className="font-[var(--font-heading)] text-3xl md:text-4xl lg:text-5xl text-center text-[var(--foreground)] mb-12">
+          <h2 className="font-[var(--font-heading)] text-3xl md:text-4xl lg:text-5xl text-center text-[var(--foreground)] mb-4">
             {galeria.homeTitle}
           </h2>
+          <p className="text-center text-[var(--foreground)]/70 text-lg md:text-xl mb-12 max-w-3xl mx-auto">
+            {galeria.homeDescription}
+          </p>
         </FadeIn>
 
         <div className="flex gap-4">

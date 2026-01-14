@@ -152,7 +152,8 @@ export const contentEs = {
   galeria: {
     title: "Galería",
     subtitle: "Una muestra de las historias que hemos contado",
-    homeTitle: "El tiempo detenido en un instante.",
+    homeTitle: "Donde el tiempo se convierte en recuerdo.",
+    homeDescription: "Cada imagen guarda la emoción de un instante irrepetible.",
     intro: "Aquí pueden ver un poco de nuestro trabajo en distintos venues, estilos de boda y horarios. Cada pareja tiene su propio ritmo, su propia luz y su propia forma de amar. Nuestro trabajo es encontrarla.",
     viewFullGallery: "Ver galería completa",
     loading: "Cargando galería...",
@@ -757,7 +758,8 @@ export const contentEn = {
   galeria: {
     title: "Gallery",
     subtitle: "A sample of the stories we have told",
-    homeTitle: "Time held in a single moment.",
+    homeTitle: "Where time becomes memory.",
+    homeDescription: "Each image holds the emotion of an unrepeatable moment.",
     intro: "Here you can see a bit of our work in different venues, wedding styles, and times. Every couple has their own rhythm, their own light, and their own way of loving. Our job is to find it.",
     viewFullGallery: "View full gallery",
     loading: "Loading gallery...",
