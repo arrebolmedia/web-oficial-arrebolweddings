@@ -4329,6 +4329,293 @@ Y estos recursos están aquí para que la vivan con claridad, sin estrés innece
     category: "Tips",
     date: "Enero 9, 2026",
   },
+  {
+    id: "36",
+    slug: "horarios-foto-video-bodas",
+    title: "Timeline de foto y video: adaptándonos a tu historia",
+    excerpt: "Cada boda tiene su propio ritmo. Conoce los tiempos aproximados de foto y video para escenarios con y sin First Look, y cómo nos adaptamos a tu timeline para documentar cada momento sin presiones.",
+    content: `Cada boda es única, y su timeline también lo es.
+
+No hay dos bodas iguales: el lugar, la luz, los momentos especiales, el tamaño de la familia, la energía del día… todo influye en cómo fluye la cobertura de foto y video.
+
+Por eso no trabajamos con horarios rígidos, sino con una estructura flexible que se adapta a ustedes.
+
+A continuación te compartimos dos escenarios típicos con los tiempos aproximados que solemos dedicar a cada momento. Son referencias, no reglas. Lo importante es que el día se sienta fluido, natural, y sin presiones.
+
+## Escenario CON First Look
+
+El First Look es ese momento privado en el que se ven antes de la ceremonia. Es íntimo, emocional, y les permite disfrutar fotos tranquilos antes de que comience la celebración formal.
+
+**Sesión de batitas con damas (cuando aplica)**  
+⏱ Aproximadamente 30 min  
+Un momento relajado, divertido, lleno de complicidad entre amigas.
+
+**Preparativos del novio**  
+⏱ Aproximadamente 30 min (a veces menos)  
+Momentos naturales mientras se arreglan, conversan y se preparan.
+
+**Preparativos de la novia**  
+⏱ Aproximadamente 30 min (a veces un poco más)  
+Los últimos detalles: el vestido, el velo, la emoción antes de salir.
+
+**First Look + sesión de novios + familia + damas y caballeros**  
+⏱ Aproximadamente 1 hora  
+Este bloque incluye ese primer encuentro entre ustedes, fotos como pareja, y luego con familia y amigos. Buscamos terminar al menos 30 minutos antes de la ceremonia para que descansen, se hidraten y respiren.
+
+**Ceremonia**  
+⏱ Aproximadamente 1 hora  
+El corazón del día. Aquí documentamos cada gesto, cada voto, cada lágrima.
+
+**Cóctel**  
+⏱ Aproximadamente 1 hora  
+Un espacio de convivencia mientras ustedes disfrutan y nosotros capturamos la atmósfera.
+
+**Entrada de novios + banquete**  
+⏱ Aproximadamente 1 hora 30 min  
+Desde que entran hasta que concluyen los alimentos y comienzan los momentos más emotivos.
+
+**Bailes**  
+⏱ Aproximadamente 20 min  
+Primer baile, vals con papás, baile sorpresa… esos momentos que todos esperan.
+
+**Fiesta**  
+⏱ Tiempo variable hasta el cierre  
+Aquí ya todo es energía pura. Nos movemos con el ritmo del día.
+
+**Shots + ramo + liga**  
+⏱ Aproximadamente 30 min  
+Los últimos rituales antes de que termine la noche.
+
+## Escenario SIN First Look
+
+Si prefieren verse por primera vez en la ceremonia, el timeline cambia un poco. Las fotos formales se hacen durante el cóctel, mientras sus invitados disfrutan.
+
+**Sesión de batitas con damas (cuando aplica)**  
+⏱ Aproximadamente 30 min
+
+**Preparativos del novio**  
+⏱ Aproximadamente 30 min (a veces menos)
+
+**Preparativos de la novia**  
+⏱ Aproximadamente 30 min (a veces un poco más)
+
+**Ceremonia**  
+⏱ Aproximadamente 1 hora  
+Buscamos estar libres al menos 15 minutos antes para que formen cortejo, se refresquen y se preparen.
+
+**Sesión de pareja + familia + damas y caballeros (durante el cóctel)**  
+⏱ Aproximadamente 1 hora  
+Mientras sus invitados conviven, nosotros hacemos las fotos formales con calma.
+
+**Cóctel (parcial, mientras se realizan fotos)**  
+⏱ Aproximadamente 1 hora  
+Ustedes están en sesión, pero la celebración ya comenzó.
+
+**Entrada de novios + banquete**  
+⏱ Aproximadamente 1 hora 30 min
+
+**Bailes**  
+⏱ Aproximadamente 20 min
+
+**Fiesta**  
+⏱ Tiempo variable hasta el cierre
+
+**Shots + ramo + liga**  
+⏱ Aproximadamente 30 min
+
+## Tablas comparativas de escenarios
+
+A continuación te presentamos una vista rápida de cómo se distribuyen los bloques según diferentes duraciones de cobertura:
+
+### Escenarios de cobertura — CON First Look
+
+<div class="overflow-x-auto my-8 -mx-6 md:-mx-12">
+  <div class="inline-block min-w-full px-6 md:px-12">
+    <table class="w-full bg-white border border-gray-200">
+    <thead>
+      <tr class="border-b border-gray-200">
+        <th class="p-4 text-left font-semibold text-gray-900 bg-gray-50">Bloque</th>
+        <th class="p-4 text-center font-semibold text-gray-900 bg-gray-50 min-w-[140px]">8 horas</th>
+        <th class="p-4 text-center font-semibold text-gray-900 bg-gray-50 min-w-[140px]">10 horas</th>
+        <th class="p-4 text-center font-semibold text-gray-900 bg-gray-50 min-w-[140px]">12 horas</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="border-b border-gray-200">
+        <td class="p-4 text-gray-700">Sesión de batitas (si aplica)</td>
+        <td class="p-4 text-center text-gray-900">Según logística</td>
+        <td class="p-4 text-center text-gray-900">Cómodo</td>
+        <td class="p-4 text-center text-gray-900">Cómodo</td>
+      </tr>
+      <tr class="border-b border-gray-200">
+        <td class="p-4 text-gray-700">Preparativos novio</td>
+        <td class="p-4 text-center text-gray-900">Incluidos</td>
+        <td class="p-4 text-center text-gray-900">Incluidos</td>
+        <td class="p-4 text-center text-gray-900">Incluidos</td>
+      </tr>
+      <tr class="border-b border-gray-200">
+        <td class="p-4 text-gray-700">Preparativos novia</td>
+        <td class="p-4 text-center text-gray-900">Incluidos</td>
+        <td class="p-4 text-center text-gray-900">Incluidos</td>
+        <td class="p-4 text-center text-gray-900">Incluidos</td>
+      </tr>
+      <tr class="border-b border-gray-200">
+        <td class="p-4 text-gray-700">First look + sesión de novios + familia + damas/caballeros</td>
+        <td class="p-4 text-center text-gray-900">Flujo compacto</td>
+        <td class="p-4 text-center text-gray-900">Flujo cómodo</td>
+        <td class="p-4 text-center text-gray-900">Flujo relajado</td>
+      </tr>
+      <tr class="border-b border-gray-200">
+        <td class="p-4 text-gray-700">Margen previo a ceremonia</td>
+        <td class="p-4 text-center text-gray-900">Breve</td>
+        <td class="p-4 text-center text-gray-900">Adecuado</td>
+        <td class="p-4 text-center text-gray-900">Amplio</td>
+      </tr>
+      <tr class="border-b border-gray-200">
+        <td class="p-4 text-gray-700">Ceremonia</td>
+        <td class="p-4 text-center text-gray-900">Completa</td>
+        <td class="p-4 text-center text-gray-900">Completa</td>
+        <td class="p-4 text-center text-gray-900">Completa</td>
+      </tr>
+      <tr class="border-b border-gray-200">
+        <td class="p-4 text-gray-700">Cóctel (actividad de los novios)</td>
+        <td class="p-4 text-center text-gray-900">Novios presentes</td>
+        <td class="p-4 text-center text-gray-900">Novios presentes</td>
+        <td class="p-4 text-center text-gray-900">Novios presentes</td>
+      </tr>
+      <tr class="border-b border-gray-200">
+        <td class="p-4 text-gray-700">Entrada de novios + banquete</td>
+        <td class="p-4 text-center text-gray-900">Incluidos</td>
+        <td class="p-4 text-center text-gray-900">Incluidos</td>
+        <td class="p-4 text-center text-gray-900">Incluidos</td>
+      </tr>
+      <tr class="border-b border-gray-200">
+        <td class="p-4 text-gray-700">Bailes</td>
+        <td class="p-4 text-center text-gray-900">Incluidos</td>
+        <td class="p-4 text-center text-gray-900">Incluidos</td>
+        <td class="p-4 text-center text-gray-900">Incluidos</td>
+      </tr>
+      <tr class="border-b border-gray-200">
+        <td class="p-4 text-gray-700">Fiesta</td>
+        <td class="p-4 text-center text-gray-900">Breve</td>
+        <td class="p-4 text-center text-gray-900">Moderada</td>
+        <td class="p-4 text-center text-gray-900">Amplia</td>
+      </tr>
+      <tr class="border-b border-gray-200">
+        <td class="p-4 text-gray-700">Shots + ramo + liga</td>
+        <td class="p-4 text-center text-gray-900">Cierre de cobertura</td>
+        <td class="p-4 text-center text-gray-900">Cierre de cobertura</td>
+        <td class="p-4 text-center text-gray-900">Puede no ser el cierre</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+</div>
+
+### Escenarios de cobertura — SIN First Look
+
+<div class="overflow-x-auto my-8 -mx-6 md:-mx-12">
+  <div class="inline-block min-w-full px-6 md:px-12">
+    <table class="w-full bg-white border border-gray-200">
+    <thead>
+      <tr class="border-b border-gray-200">
+        <th class="p-4 text-left font-semibold text-gray-900 bg-gray-50">Bloque</th>
+        <th class="p-4 text-center font-semibold text-gray-900 bg-gray-50 min-w-[140px]">8 horas</th>
+        <th class="p-4 text-center font-semibold text-gray-900 bg-gray-50 min-w-[140px]">10 horas</th>
+        <th class="p-4 text-center font-semibold text-gray-900 bg-gray-50 min-w-[140px]">12 horas</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="border-b border-gray-200">
+        <td class="p-4 text-gray-700">Sesión de batitas (si aplica)</td>
+        <td class="p-4 text-center text-gray-900">Según logística</td>
+        <td class="p-4 text-center text-gray-900">Posible</td>
+        <td class="p-4 text-center text-gray-900">Cómodo</td>
+      </tr>
+      <tr class="border-b border-gray-200">
+        <td class="p-4 text-gray-700">Preparativos novio</td>
+        <td class="p-4 text-center text-gray-900">Incluidos</td>
+        <td class="p-4 text-center text-gray-900">Incluidos</td>
+        <td class="p-4 text-center text-gray-900">Incluidos</td>
+      </tr>
+      <tr class="border-b border-gray-200">
+        <td class="p-4 text-gray-700">Preparativos novia</td>
+        <td class="p-4 text-center text-gray-900">Incluidos</td>
+        <td class="p-4 text-center text-gray-900">Incluidos</td>
+        <td class="p-4 text-center text-gray-900">Incluidos</td>
+      </tr>
+      <tr class="border-b border-gray-200">
+        <td class="p-4 text-gray-700">Margen previo a ceremonia (15 min)</td>
+        <td class="p-4 text-center text-gray-900">Breve</td>
+        <td class="p-4 text-center text-gray-900">Adecuado</td>
+        <td class="p-4 text-center text-gray-900">Amplio</td>
+      </tr>
+      <tr class="border-b border-gray-200">
+        <td class="p-4 text-gray-700">Ceremonia</td>
+        <td class="p-4 text-center text-gray-900">Completa</td>
+        <td class="p-4 text-center text-gray-900">Completa</td>
+        <td class="p-4 text-center text-gray-900">Completa</td>
+      </tr>
+      <tr class="border-b border-gray-200">
+        <td class="p-4 text-gray-700">Sesión de pareja + familia + damas/caballeros</td>
+        <td class="p-4 text-center text-gray-900">Durante el cóctel</td>
+        <td class="p-4 text-center text-gray-900">Durante el cóctel</td>
+        <td class="p-4 text-center text-gray-900">Durante el cóctel</td>
+      </tr>
+      <tr class="border-b border-gray-200">
+        <td class="p-4 text-gray-700">Cóctel (actividad de los novios)</td>
+        <td class="p-4 text-center text-gray-900">Novios en sesión</td>
+        <td class="p-4 text-center text-gray-900">Novios en sesión</td>
+        <td class="p-4 text-center text-gray-900">Novios se integran antes</td>
+      </tr>
+      <tr class="border-b border-gray-200">
+        <td class="p-4 text-gray-700">Entrada de novios + banquete</td>
+        <td class="p-4 text-center text-gray-900">Incluidos</td>
+        <td class="p-4 text-center text-gray-900">Incluidos</td>
+        <td class="p-4 text-center text-gray-900">Incluidos</td>
+      </tr>
+      <tr class="border-b border-gray-200">
+        <td class="p-4 text-gray-700">Bailes</td>
+        <td class="p-4 text-center text-gray-900">Incluidos</td>
+        <td class="p-4 text-center text-gray-900">Incluidos</td>
+        <td class="p-4 text-center text-gray-900">Incluidos</td>
+      </tr>
+      <tr class="border-b border-gray-200">
+        <td class="p-4 text-gray-700">Fiesta</td>
+        <td class="p-4 text-center text-gray-900">Breve</td>
+        <td class="p-4 text-center text-gray-900">Moderada</td>
+        <td class="p-4 text-center text-gray-900">Amplia</td>
+      </tr>
+      <tr class="border-b border-gray-200">
+        <td class="p-4 text-gray-700">Shots + ramo + liga</td>
+        <td class="p-4 text-center text-gray-900">Cierre de cobertura</td>
+        <td class="p-4 text-center text-gray-900">Cierre de cobertura</td>
+        <td class="p-4 text-center text-gray-900">Puede no ser el cierre</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+</div>
+
+## Lo más importante: flexibilidad
+
+Estos tiempos son guías, no límites.
+
+Si tu familia es numerosa, ajustamos.  
+Si la luz está perfecta y quieren más fotos de pareja, aprovechamos.  
+Si el banquete se alarga, nos adaptamos.  
+Si necesitan un respiro, lo respetamos.
+
+Nuestro trabajo no es controlar el timeline: es acompañarlo.
+
+Tu boda no debe sentirse como una producción.  
+Debe sentirse como tu día.
+
+¿Tienes dudas sobre cómo organizar tu timeline o qué opción funciona mejor para ti? Escríbenos. Con gusto te acompañamos a planear tu día con claridad y sin presiones.`,
+    coverImage: "/images/gallery/KandE-102.webp",
+    category: "Tips",
+    date: "Enero 14, 2026",
+  },
 ];
 
 // Spanish blog posts

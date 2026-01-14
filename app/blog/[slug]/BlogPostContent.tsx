@@ -40,9 +40,8 @@ export default function BlogPostContent({ slug }: BlogPostContentProps) {
   const excludeIds = [post.id, prevPost?.id, nextPost?.id].filter(Boolean);
   const availablePosts = blogPosts.filter((p) => !excludeIds.includes(p.id));
   
-  // Shuffle and pick 3
-  const shuffled = [...availablePosts].sort(() => Math.random() - 0.5);
-  const relatedPosts = shuffled.slice(0, 3);
+  // Take first 3 posts instead of random to avoid hydration mismatch
+  const relatedPosts = availablePosts.slice(0, 3);
 
   // Helper function to process inline markdown (**bold** and [links](url))
   const processInlineMarkdown = (text: string): React.ReactNode => {
@@ -170,19 +169,41 @@ export default function BlogPostContent({ slug }: BlogPostContentProps) {
       </div>
 
       {/* Content Section */}
-      <div className="max-w-3xl mx-auto px-6 md:px-12 py-16 md:py-24">
-        <div className="prose prose-lg prose-headings:font-[var(--font-heading)] prose-a:text-[var(--accent-wine)] max-w-none">
-          <p className="lead text-xl md:text-2xl font-light text-[var(--foreground)]/80 mb-12 leading-relaxed">
-            {post.excerpt}
-          </p>
-          
-          <div className="space-y-6 text-[var(--foreground)]/70 font-light">
-            {post.content && post.content.split('\n\n').map((paragraph, index) => {
+      <div className="py-16 md:py-24">
+        <div className="max-w-3xl mx-auto px-6 md:px-12">
+          <div className="prose prose-lg prose-headings:font-[var(--font-heading)] prose-a:text-[var(--accent-wine)] max-w-none">
+            <p className="lead text-xl md:text-2xl font-light text-[var(--foreground)]/80 mb-12 leading-relaxed">
+              {post.excerpt}
+            </p>
+            
+            <div className="space-y-6 text-[var(--foreground)]/70 font-light">
+              {post.content && post.content.split('\n\n').map((paragraph, index) => {
+                // Check if this is HTML content (starts with < and contains table or div)
+                if (paragraph.trim().startsWith('<') && (paragraph.includes('<table') || paragraph.includes('<div'))) {
+                  return (
+                    <div key={index} className="-mx-6 md:-mx-12 lg:-mx-32 xl:-mx-48 lg:my-12">
+                      <div 
+                        dangerouslySetInnerHTML={{ __html: paragraph }}
+                      />
+                    </div>
+                  );
+                }
+
+              // Check if this is a h3 heading (starts with "### ")
+              if (paragraph.startsWith('### ')) {
+                const headingText = paragraph.slice(4);
+                return (
+                  <h3 key={index} className="font-[var(--font-heading)] text-2xl md:text-3xl text-[var(--foreground)] text-center mt-12 mb-2 uppercase tracking-wide">
+                    {processInlineMarkdown(headingText)}
+                  </h3>
+                );
+              }
+
               // Check if this is a h2 heading (starts with "## ")
               if (paragraph.startsWith('## ')) {
                 const headingText = paragraph.slice(3);
                 return (
-                  <h2 key={index} className="font-[var(--font-heading)] text-2xl text-[var(--foreground)] mt-10 mb-5">
+                  <h2 key={index} className="font-[var(--font-heading)] text-3xl md:text-4xl text-[var(--foreground)] mt-12 mb-6">
                     {processInlineMarkdown(headingText)}
                   </h2>
                 );
@@ -192,7 +213,7 @@ export default function BlogPostContent({ slug }: BlogPostContentProps) {
               if (paragraph.startsWith('# ')) {
                 const headingText = paragraph.slice(2);
                 return (
-                  <h2 key={index} className="font-[var(--font-heading)] text-3xl text-[var(--foreground)] mt-12 mb-6">
+                  <h2 key={index} className="font-[var(--font-heading)] text-4xl md:text-5xl text-[var(--foreground)] mt-14 mb-8">
                     {headingText}
                   </h2>
                 );
@@ -210,6 +231,7 @@ export default function BlogPostContent({ slug }: BlogPostContentProps) {
               // Process paragraph with potential bullet lists
               return <div key={index}>{processParagraphWithLists(paragraph, index)}</div>;
             })}
+            </div>
           </div>
         </div>
       </div>
@@ -222,7 +244,7 @@ export default function BlogPostContent({ slug }: BlogPostContentProps) {
               href={`/blog/${prevPost.slug}`}
               className="text-left p-6 border border-[var(--border-subtle)] hover:border-[var(--foreground)] transition-colors"
             >
-              <div className="text-xs uppercase tracking-widest text-[var(--foreground)]/60 mb-2">
+              <div className="text-xs uppercase tracking-wider text-[var(--foreground)]/60 mb-2">
                 {blog.navigation.previous}
               </div>
               <div className="font-[var(--font-heading)] text-lg text-[var(--foreground)]">
@@ -237,7 +259,7 @@ export default function BlogPostContent({ slug }: BlogPostContentProps) {
               href={`/blog/${nextPost.slug}`}
               className="text-right p-6 border border-[var(--border-subtle)] hover:border-[var(--foreground)] transition-colors"
             >
-              <div className="text-xs uppercase tracking-widest text-[var(--foreground)]/60 mb-2">
+              <div className="text-xs uppercase tracking-wider text-[var(--foreground)]/60 mb-2">
                 {blog.navigation.next}
               </div>
               <div className="font-[var(--font-heading)] text-lg text-[var(--foreground)]">
@@ -269,7 +291,7 @@ export default function BlogPostContent({ slug }: BlogPostContentProps) {
                     className="object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                 </div>
-                <div className="text-xs uppercase tracking-widest text-[var(--foreground)]/60 mb-2">
+                <div className="text-xs uppercase tracking-wider text-[var(--foreground)]/60 mb-2">
                   {relatedPost.category}
                 </div>
                 <h3 className="font-[var(--font-heading)] text-xl text-[var(--foreground)] mb-2">
