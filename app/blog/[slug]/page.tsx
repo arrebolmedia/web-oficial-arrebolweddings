@@ -33,9 +33,10 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
       type: "article",
       locale: "es_MX",
       siteName: "Arrebol Weddings",
+      url: `https://arrebolweddings.com/blog/${slug}`,
       images: [
         {
-          url: post.coverImage,
+          url: `https://arrebolweddings.com${post.coverImage}`,
           width: 1200,
           height: 630,
           alt: post.title,
@@ -46,7 +47,7 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
       card: "summary_large_image",
       title: post.title,
       description: post.excerpt,
-      images: [post.coverImage],
+      images: [`https://arrebolweddings.com${post.coverImage}`],
     },
   };
 }

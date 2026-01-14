@@ -176,6 +176,13 @@ const GalleryPreview = () => {
   return (
     <section className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Title */}
+        <FadeIn>
+          <h2 className="font-[var(--font-heading)] text-3xl md:text-4xl lg:text-5xl text-center text-[var(--foreground)] mb-12">
+            {galeria.homeTitle}
+          </h2>
+        </FadeIn>
+
         <div className="flex gap-4">
           {mediaColumns.map((column, colIndex) => (
             <div key={colIndex} className="flex-1 flex flex-col gap-4">
