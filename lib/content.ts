@@ -33,6 +33,10 @@ export const contentEs = {
       cta1: "Ver nuestra galería",
       cta2: "Agendar una llamada",
     },
+    whoWeAre: {
+      title: "Somos Brenda y Anthony.",
+      text: "Más que fotógrafos y videógrafos, somos quienes estarán cerca de ustedes en uno de los días más importantes de su vida. Observamos, escuchamos y sentimos lo que ocurre para capturarlo con honestidad y sensibilidad.\n\nCreemos que las imágenes más valiosas no se fuerzan: suceden. Nuestro trabajo es transformar esos instantes reales —miradas, gestos, silencios y risas— en recuerdos que crezcan en valor con el paso del tiempo. No solo documentamos una boda; cuidamos una historia que algún día volverán a mirar para recordar cómo se sentía amar así, en ese momento exacto.",
+    },
     about: {
       title: "Recuerdos para toda la vida",
       text: "Su boda es mucho más que un compromiso; es la celebración de una historia de amor que está a punto de comenzar un nuevo capítulo. En cada mirada, en cada sonrisa y en cada lágrima de felicidad, hay un momento que merece ser guardado para siempre.\n\nNos apasiona contar historias a través de nuestras cámaras y formar parte de uno de los días más importantes de sus vidas. Cada detalle, desde los preparativos hasta la última canción de la noche, refleja la esencia de su amor.\n\nQueremos que cuando miren atrás, cada imagen los transporte a esos momentos mágicos. Para nosotros, capturar su historia es una forma de honrar la belleza de ese día, dejando una huella imborrable que durará toda la vida.",
@@ -638,6 +642,10 @@ export const contentEn = {
       subtitle: "At Arrebol Weddings, we tell love stories that have already traveled a path. We don't see the wedding as a beginning, but as the consolidation of everything you have lived together.",
       cta1: "View our gallery",
       cta2: "Schedule a call",
+    },
+    whoWeAre: {
+      title: "We are Brenda and Anthony.",
+      text: "More than photographers and videographers, we are the ones who will be close to you on one of the most important days of your life. We observe, listen, and feel what happens to capture it with honesty and sensitivity.\n\nWe believe that the most valuable images are not forced: they happen. Our job is to transform those real moments —glances, gestures, silences, and laughter— into memories that grow in value over time. We don't just document a wedding; we care for a story that one day you will look back on to remember what it felt like to love like that, in that exact moment.",
     },
     about: {
       title: "Memories for a lifetime",
