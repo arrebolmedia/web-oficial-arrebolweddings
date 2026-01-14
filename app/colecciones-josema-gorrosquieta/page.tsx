@@ -12,6 +12,9 @@ export default function ColeccionesJosemaGorrosquieta() {
     ? "COLECCIONES: JOSEMA GORROSQUIETA & ARREBOL WEDDINGS"
     : "COLLECTIONS: JOSEMA GORROSQUIETA & ARREBOL WEDDINGS";
 
+  const discountText = language === 'es' ? '30% DE DESCUENTO' : '30% OFF';
+  const discountBadge = '30% OFF';
+
   return (
     <>
       <div>
@@ -57,11 +60,24 @@ export default function ColeccionesJosemaGorrosquieta() {
                     ))}
                   </div>
 
-                  {/* Price at bottom - SIN DESCUENTO */}
+                  {/* Price at bottom - CON 30% DESCUENTO */}
                   <div className="pt-6 border-t border-[var(--border-subtle)] text-center">
-                    <p className="text-2xl font-light text-[var(--foreground)]">
-                      {collection.price.split(' ')[0]} <span className="text-sm text-[var(--foreground)]/50 uppercase tracking-wider">{collection.price.split(' ')[1]}</span>
-                    </p>
+                    {(() => {
+                      const priceStr = collection.price.split(' ')[0].replace(/[^0-9]/g, '');
+                      const priceNum = parseInt(priceStr);
+                      const discountedPrice = Math.round(priceNum * 0.7);
+                      return (
+                        <div>
+                          <p className="text-lg text-[var(--foreground)]/50 line-through mb-1">
+                            ${priceNum.toLocaleString('es-MX')} <span className="text-xs uppercase tracking-wider">{collection.price.split(' ')[1]}</span>
+                          </p>
+                          <p className="text-3xl font-bold text-[var(--foreground)]">
+                            ${discountedPrice.toLocaleString('es-MX')} <span className="text-sm text-[var(--foreground)]/50 uppercase tracking-wider">{collection.price.split(' ')[1]}</span>
+                          </p>
+                          <p className="text-sm text-[var(--foreground)]/70 font-semibold mt-2">{discountText}</p>
+                        </div>
+                      );
+                    })()}
                   </div>
                 </div>
               </FadeIn>
@@ -181,14 +197,22 @@ export default function ColeccionesJosemaGorrosquieta() {
                   </tr>
                   <tr className="bg-[var(--background)]">
                     <td className="p-4 font-[var(--font-heading)] text-lg text-[var(--foreground)]">{colecciones.priceTitle}</td>
-                    {colecciones.collections.map((collection, index) => (
-                      <td key={index} className="p-4 text-center">
-                        <div className="text-2xl font-light text-[var(--foreground)]">
-                          {collection.price.split(' ')[0]}
-                        </div>
-                        <div className="text-xs text-[var(--foreground)]/60 uppercase">{collection.price.split(' ')[1]}</div>
-                      </td>
-                    ))}
+                    {colecciones.collections.map((collection, index) => {
+                      const priceStr = collection.price.split(' ')[0].replace(/[^0-9]/g, '');
+                      const priceNum = parseInt(priceStr);
+                      const discountedPrice = Math.round(priceNum * 0.7);
+                      return (
+                        <td key={index} className="p-4 text-center">
+                          <div className="text-sm text-[var(--foreground)]/50 line-through">
+                            ${priceNum.toLocaleString('es-MX')}
+                          </div>
+                          <div className="text-2xl font-bold text-[var(--foreground)]">
+                            ${discountedPrice.toLocaleString('es-MX')}
+                          </div>
+                          <div className="text-xs text-[var(--foreground)]/70 mt-1">{discountBadge}</div>
+                        </td>
+                      );
+                    })}
                   </tr>
                 </tbody>
               </table>
