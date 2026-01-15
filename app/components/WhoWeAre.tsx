@@ -33,7 +33,7 @@ const WhoWeAre = () => {
           <FadeIn className="lg:order-1">
             <div className="relative aspect-[3/4] max-w-md mx-auto lg:mx-0">
               <Image
-                src="/images/us/us.webp"
+                src="/images/us/us2.webp"
                 alt="Brenda and Anthony - Arrebol Weddings"
                 fill
                 className="object-cover"
