@@ -2,10 +2,10 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Colecciones para Karen & Roberto | Las Mañanitas",
-  description: "Colecciones exclusivas de fotografía y video para tu boda en Las Mañanitas, Cuernavaca. Paquetes completos desde $59,000 MXN.",
+  description: "Colecciones de fotografía y video para su boda en Las Mañanitas, Cuernavaca. Paquetes completos desde $59,000 MXN.",
   openGraph: {
     title: "Colecciones para Karen & Roberto | Las Mañanitas",
-    description: "Colecciones exclusivas de fotografía y video para tu boda en Las Mañanitas, Cuernavaca.",
+    description: "Colecciones de fotografía y video para su boda en Las Mañanitas, Cuernavaca.",
     type: "website",
     url: "https://arrebolweddings.com/colecciones-karen-roberto",
     images: [
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Colecciones para Karen & Roberto | Las Mañanitas",
-    description: "Colecciones exclusivas de fotografía y video para tu boda en Las Mañanitas, Cuernavaca.",
+    description: "Colecciones de fotografía y video para su boda en Las Mañanitas, Cuernavaca.",
     images: ["https://arrebolweddings.com/images/gallery/TOP-PyP-505.webp"],
   },
 };
