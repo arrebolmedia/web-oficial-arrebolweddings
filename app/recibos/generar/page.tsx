@@ -55,10 +55,9 @@ export default function GenerarRecibo() {
       const { jsPDF } = await import('jspdf');
 
       const canvas = await html2canvas(reciboRef.current, {
-        scale: 2,
         logging: false,
         useCORS: true,
-      });
+      } as any);
 
       const imgData = canvas.toDataURL('image/png');
       const pdf = new jsPDF({
