@@ -12,6 +12,9 @@ export default function ColeccionesMarcelaMeza() {
     ? "COLECCIONES: MARCELA MEZA & ARREBOL WEDDINGS"
     : "COLLECTIONS: MARCELA MEZA & ARREBOL WEDDINGS";
 
+  const discountText = language === 'es' ? '20% DE DESCUENTO' : '20% OFF';
+  const discountBadge = '20% OFF';
+
   return (
     <>
       <div>
@@ -70,6 +73,7 @@ export default function ColeccionesMarcelaMeza() {
                         return `$${discountedPrice.toLocaleString('es-MX')}`;
                       })()} <span className="text-sm text-[var(--foreground)]/50 uppercase tracking-wider">{collection.price.split(' ')[1]}</span>
                     </p>
+                    <p className="text-sm text-[var(--foreground)]/70 font-semibold mt-2">{discountText}</p>
                   </div>
                 </div>
               </FadeIn>
@@ -203,6 +207,7 @@ export default function ColeccionesMarcelaMeza() {
                           })()}
                         </div>
                         <div className="text-xs text-[var(--foreground)]/60 uppercase">{collection.price.split(' ')[1]}</div>
+                        <div className="text-xs text-[var(--foreground)]/70 mt-1">{discountBadge}</div>
                       </td>
                     ))}
                   </tr>
