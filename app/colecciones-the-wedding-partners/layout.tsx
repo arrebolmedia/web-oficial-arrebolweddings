@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description: "Colecciones exclusivas de fotografía y video para bodas con 20% de descuento. Paquetes completos desde $47,200 MXN. Colaboración especial The Wedding Partners & Arrebol Weddings.",
   openGraph: {
     title: "Colecciones: The Wedding Partners & Arrebol Weddings | 20% OFF",
-    description: "Aprovecha 20% de descuento en nuestras colecciones de fotografía y video para bodas. Colaboración exclusiva The Wedding Partners & Arrebol Weddings.",
+    description: "20% de descuento en nuestras colecciones de fotografía y video para bodas. Colaboración exclusiva The Wedding Partners & Arrebol Weddings.",
     type: "website",
     url: "https://arrebolweddings.com/colecciones-the-wedding-partners",
     images: [

@@ -2,10 +2,10 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Valeria Meza & Arrebol Weddings",
-  description: "Colecciones exclusivas de fotografía y video para bodas con 20% de descuento. Paquetes premium con fotógrafos y videógrafos profesionales.",
+  description: "20% de descuento en colecciones de fotografía y video para bodas. Colaboración exclusiva Valeria Meza & Arrebol Weddings.",
   openGraph: {
     title: "Valeria Meza & Arrebol Weddings - 20% OFF",
-    description: "Colecciones exclusivas para bodas con 20% de descuento. Fotografía y video profesional de alta calidad.",
+    description: "20% de descuento en colecciones de fotografía y video para bodas. Colaboración exclusiva Valeria Meza & Arrebol Weddings.",
     type: "website",
     url: "https://arrebolweddings.com/colecciones-valeria-meza",
     siteName: "Arrebol Weddings",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Valeria Meza & Arrebol Weddings - 20% OFF",
-    description: "Colecciones exclusivas para bodas con 20% de descuento. Fotografía y video profesional.",
+    description: "20% de descuento en colecciones de fotografía y video para bodas.",
     images: ["https://arrebolweddings.com/images/gallery/TOP-KyB-236.webp"],
   },
   keywords: [
