@@ -20,7 +20,7 @@ export default function ColeccionesMarcelaMeza() {
         <SectionHeader
           title={pageTitle}
           subtitle={colecciones.subtitle}
-          backgroundImage="/images/gallery/TOP-PyP-505.webp"
+          backgroundImage="/images/gallery/TOP-KyB-236.webp"
         />
       </FadeIn>
 

@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     locale: "es_MX",
     images: [
       {
-        url: "https://arrebolweddings.com/images/gallery/TOP-PyP-505.webp",
+        url: "https://arrebolweddings.com/images/gallery/TOP-KyB-236.webp",
         width: 1200,
         height: 630,
         alt: "Marcela Meza & Arrebol Weddings - Bodas",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Marcela Meza & Arrebol Weddings",
     description: "Colecciones exclusivas para bodas. Fotografía y video profesional.",
-    images: ["https://arrebolweddings.com/images/gallery/TOP-PyP-505.webp"],
+    images: ["https://arrebolweddings.com/images/gallery/TOP-KyB-236.webp"],
   },
   keywords: [
     "marcela meza",
