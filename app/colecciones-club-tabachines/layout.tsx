@@ -1,11 +1,11 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Valeria Meza & Arrebol Weddings - 50% OFF",
-  description: "Promoción exclusiva 50% DE DESCUENTO para boda del 9 de enero 2027 en Club Tabachines. Paquetes premium de fotografía y video para bodas desde $25,000 MXN.",
+  title: "Valeria Meza & Arrebol Weddings - Club de Golf Tabachines",
+  description: "Paquetes especiales para la boda del 9 de enero 2027 en Club de Golf Tabachines. Fotografía y video profesional desde $25,000 MXN.",
   openGraph: {
-    title: "Valeria Meza & Arrebol Weddings - ¡50% OFF!",
-    description: "Oferta única: 50% de descuento en todos nuestros paquetes para la boda del 9 de enero 2027 en Club Tabachines.",
+    title: "Valeria Meza & Arrebol Weddings",
+    description: "Paquetes especiales: 9 de enero 2027, Club de Golf Tabachines. Fotografía y video profesional para bodas.",
     type: "website",
     url: "https://arrebolweddings.com/colecciones-club-tabachines",
     siteName: "Arrebol Weddings",
@@ -15,24 +15,24 @@ export const metadata: Metadata = {
         url: "https://arrebolweddings.com/images/RLJ/L%26A-363_websize.jpg",
         width: 1200,
         height: 630,
-        alt: "Suite Especial Club Tabachines - Arrebol Weddings",
+        alt: "Valeria Meza & Arrebol Weddings - Club de Golf Tabachines",
         type: "image/jpeg",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Suite Especial Club Tabachines - ¡50% OFF!",
-    description: "Promoción exclusiva: 50% de descuento para boda del 9 de enero 2027.",
+    title: "Valeria Meza & Arrebol Weddings",
+    description: "Paquetes especiales: 9 de enero 2027, Club de Golf Tabachines",
     images: ["https://arrebolweddings.com/images/RLJ/L%26A-363_websize.jpg"],
   },
   keywords: [
     "club tabachines boda",
-    "descuento boda 2027",
+    "valeria meza",
     "fotografía bodas tabachines",
     "video bodas cuernavaca",
-    "promoción bodas",
     "arrebol weddings",
+    "club de golf tabachines",
   ],
 };
 
