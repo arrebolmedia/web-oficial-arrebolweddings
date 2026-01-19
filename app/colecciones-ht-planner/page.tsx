@@ -150,13 +150,6 @@ export default function ColeccionesHTPlanner() {
                     <td className="p-4 text-center text-[var(--foreground)]">✓</td>
                   </tr>
                   <tr className="border-b border-[var(--border-subtle)]">
-                    <td className="p-4 text-[var(--foreground)]/70">{colecciones.comparisonLabels.socialReels}</td>
-                    <td className="p-4 text-center text-[var(--foreground)]">—</td>
-                    <td className="p-4 text-center text-[var(--foreground)]">—</td>
-                    <td className="p-4 text-center text-[var(--foreground)]">✓</td>
-                    <td className="p-4 text-center text-[var(--foreground)]">✓</td>
-                  </tr>
-                  <tr className="border-b border-[var(--border-subtle)]">
                     <td className="p-4 text-[var(--foreground)]/70">{colecciones.comparisonLabels.drone}</td>
                     <td className="p-4 text-center text-[var(--foreground)]">—</td>
                     <td className="p-4 text-center text-[var(--foreground)]">—</td>
