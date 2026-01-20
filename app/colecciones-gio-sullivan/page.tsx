@@ -1,13 +1,16 @@
 "use client";
 
-import Link from "next/link";
 import FadeIn from "@/components/FadeIn";
 import SectionHeader from "@/components/SectionHeader";
 import { useLanguage } from "../context/LanguageContext";
 
 export default function ColeccionesGioSullivan() {
-  const { content } = useLanguage();
+  const { content, language } = useLanguage();
   const { colecciones } = content;
+
+  const pageTitle = language === "es" 
+    ? "COLECCIONES: GIO SULLIVAN & ARREBOL WEDDINGS"
+    : "COLLECTIONS: GIO SULLIVAN & ARREBOL WEDDINGS";
 
   return (
     <>
@@ -15,8 +18,8 @@ export default function ColeccionesGioSullivan() {
       {/* Header con imagen de fondo */}
       <FadeIn>
         <SectionHeader
-          title="PARA GIO SULLIVAN"
-          subtitle="Fotografía y Video de Bodas"
+          title={pageTitle}
+          subtitle={colecciones.subtitle}
           backgroundImage="/images/gallery/TOP-PyP-505.webp"
         />
       </FadeIn>
@@ -54,7 +57,7 @@ export default function ColeccionesGioSullivan() {
                     ))}
                   </div>
 
-                  {/* Price at bottom */}
+                  {/* Price at bottom - SIN DESCUENTO */}
                   <div className="pt-6 border-t border-[var(--border-subtle)] text-center">
                     <p className="text-2xl font-light text-[var(--foreground)]">
                       {collection.price.split(' ')[0]} <span className="text-sm text-[var(--foreground)]/50 uppercase tracking-wider">{collection.price.split(' ')[1]}</span>
@@ -118,15 +121,74 @@ export default function ColeccionesGioSullivan() {
                     <td className="p-4 text-center text-[var(--foreground)]">20–25 min</td>
                     <td className="p-4 text-center text-[var(--foreground)]">30–35 min</td>
                     <td className="p-4 text-center text-[var(--foreground)]">40–45 min</td>
-                    <td className="p-4 text-center text-[var(--foreground)]">50–60 min</td>
+                    <td className="p-4 text-center text-[var(--foreground)]">50–55 min</td>
                   </tr>
                   <tr className="border-b border-[var(--border-subtle)]">
                     <td className="p-4 text-[var(--foreground)]/70">{colecciones.comparisonLabels.shortVideo}</td>
-                    <td className="p-4 text-center text-[var(--foreground)]" colSpan={4}>3–5 min</td>
+                    <td className="p-4 text-center text-[var(--foreground)]">—</td>
+                    <td className="p-4 text-center text-[var(--foreground)]">✓</td>
+                    <td className="p-4 text-center text-[var(--foreground)]">✓</td>
+                    <td className="p-4 text-center text-[var(--foreground)]">✓</td>
                   </tr>
-                  <tr>
+                  <tr className="border-b border-[var(--border-subtle)]">
                     <td className="p-4 text-[var(--foreground)]/70">{colecciones.comparisonLabels.oneMinuteVideo}</td>
-                    <td className="p-4 text-center text-[var(--foreground)]" colSpan={4}>✓</td>
+                    <td className="p-4 text-center text-[var(--foreground)]">✓</td>
+                    <td className="p-4 text-center text-[var(--foreground)]">✓</td>
+                    <td className="p-4 text-center text-[var(--foreground)]">✓</td>
+                    <td className="p-4 text-center text-[var(--foreground)]">✓</td>
+                  </tr>
+                  <tr className="border-b border-[var(--border-subtle)]">
+                    <td className="p-4 text-[var(--foreground)]/70">{colecciones.comparisonLabels.photobook}</td>
+                    <td className="p-4 text-center text-[var(--foreground)] text-sm">—</td>
+                    <td className="p-4 text-center text-[var(--foreground)] text-sm">8.5x11" (50 pág)</td>
+                    <td className="p-4 text-center text-[var(--foreground)] text-sm">11x11" (50 pág)</td>
+                    <td className="p-4 text-center text-[var(--foreground)] text-sm">12x12" (75 pág)</td>
+                  </tr>
+                  <tr className="border-b border-[var(--border-subtle)]">
+                    <td className="p-4 text-[var(--foreground)]/70">{colecciones.comparisonLabels.preWedding}</td>
+                    <td className="p-4 text-center text-[var(--foreground)]">—</td>
+                    <td className="p-4 text-center text-[var(--foreground)]">✓</td>
+                    <td className="p-4 text-center text-[var(--foreground)]">✓</td>
+                    <td className="p-4 text-center text-[var(--foreground)]">✓</td>
+                  </tr>
+                  <tr className="border-b border-[var(--border-subtle)]">
+                    <td className="p-4 text-[var(--foreground)]/70">{colecciones.comparisonLabels.postWedding}</td>
+                    <td className="p-4 text-center text-[var(--foreground)]">—</td>
+                    <td className="p-4 text-center text-[var(--foreground)]">—</td>
+                    <td className="p-4 text-center text-[var(--foreground)]">✓</td>
+                    <td className="p-4 text-center text-[var(--foreground)]">✓</td>
+                  </tr>
+                  <tr className="border-b border-[var(--border-subtle)]">
+                    <td className="p-4 text-[var(--foreground)]/70">{colecciones.comparisonLabels.drone}</td>
+                    <td className="p-4 text-center text-[var(--foreground)]">—</td>
+                    <td className="p-4 text-center text-[var(--foreground)]">—</td>
+                    <td className="p-4 text-center text-[var(--foreground)]">✓</td>
+                    <td className="p-4 text-center text-[var(--foreground)]">✓</td>
+                  </tr>
+                  <tr className="border-b border-[var(--border-subtle)]">
+                    <td className="p-4 text-[var(--foreground)]/70">{colecciones.comparisonLabels.contentCreator}</td>
+                    <td className="p-4 text-center text-[var(--foreground)]">—</td>
+                    <td className="p-4 text-center text-[var(--foreground)]">—</td>
+                    <td className="p-4 text-center text-[var(--foreground)]">—</td>
+                    <td className="p-4 text-center text-[var(--foreground)]">✓</td>
+                  </tr>
+                  <tr className="border-b border-[var(--border-subtle)]">
+                    <td className="p-4 text-[var(--foreground)]/70">{colecciones.comparisonLabels.digitalInvitation}</td>
+                    <td className="p-4 text-center text-[var(--foreground)]">—</td>
+                    <td className="p-4 text-center text-[var(--foreground)]">—</td>
+                    <td className="p-4 text-center text-[var(--foreground)]">—</td>
+                    <td className="p-4 text-center text-[var(--foreground)]">✓</td>
+                  </tr>
+                  <tr className="bg-[var(--background)]">
+                    <td className="p-4 font-[var(--font-heading)] text-lg text-[var(--foreground)]">{colecciones.priceTitle}</td>
+                    {colecciones.collections.map((collection, index) => (
+                      <td key={index} className="p-4 text-center">
+                        <div className="text-2xl font-light text-[var(--foreground)]">
+                          {collection.price.split(' ')[0]}
+                        </div>
+                        <div className="text-xs text-[var(--foreground)]/60 uppercase">{collection.price.split(' ')[1]}</div>
+                      </td>
+                    ))}
                   </tr>
                 </tbody>
               </table>
