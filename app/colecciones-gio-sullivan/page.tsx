@@ -100,53 +100,33 @@ export default function ColeccionesGioSullivan() {
                     <td className="p-4 text-center text-[var(--foreground)]">2</td>
                   </tr>
                   <tr className="border-b border-[var(--border-subtle)]">
-                    <td className="p-4 text-[var(--foreground)]/70">{colecciones.comparisonLabels.videos}</td>
+                    <td className="p-4 text-[var(--foreground)]/70">{colecciones.comparisonLabels.photos}</td>
+                    <td className="p-4 text-center text-[var(--foreground)]">400–500</td>
+                    <td className="p-4 text-center text-[var(--foreground)]">600–700</td>
+                    <td className="p-4 text-center text-[var(--foreground)]">800–900</td>
+                    <td className="p-4 text-center text-[var(--foreground)]">1000+</td>
+                  </tr>
+                  <tr className="border-b border-[var(--border-subtle)]">
+                    <td className="p-4 text-[var(--foreground)]/70">{colecciones.comparisonLabels.videographers}</td>
                     <td className="p-4 text-center text-[var(--foreground)]">1</td>
                     <td className="p-4 text-center text-[var(--foreground)]">1</td>
-                    <td className="p-4 text-center text-[var(--foreground)]">1</td>
-                    <td className="p-4 text-center text-[var(--foreground)]">1</td>
+                    <td className="p-4 text-center text-[var(--foreground)]">2</td>
+                    <td className="p-4 text-center text-[var(--foreground)]">2</td>
                   </tr>
                   <tr className="border-b border-[var(--border-subtle)]">
-                    <td className="p-4 text-[var(--foreground)]/70">{colecciones.comparisonLabels.photosDelivered}</td>
-                    <td className="p-4 text-center text-[var(--foreground)]">300+</td>
-                    <td className="p-4 text-center text-[var(--foreground)]">400+</td>
-                    <td className="p-4 text-center text-[var(--foreground)]">500+</td>
-                    <td className="p-4 text-center text-[var(--foreground)]">600+</td>
+                    <td className="p-4 text-[var(--foreground)]/70">{colecciones.comparisonLabels.videoDuration}</td>
+                    <td className="p-4 text-center text-[var(--foreground)]">20–25 min</td>
+                    <td className="p-4 text-center text-[var(--foreground)]">30–35 min</td>
+                    <td className="p-4 text-center text-[var(--foreground)]">40–45 min</td>
+                    <td className="p-4 text-center text-[var(--foreground)]">50–60 min</td>
                   </tr>
                   <tr className="border-b border-[var(--border-subtle)]">
-                    <td className="p-4 text-[var(--foreground)]/70">{colecciones.comparisonLabels.deliveryTime}</td>
-                    <td className="p-4 text-center text-[var(--foreground)]" colSpan={4}>5 a 7 semanas</td>
-                  </tr>
-                  <tr className="border-b border-[var(--border-subtle)]">
-                    <td className="p-4 text-[var(--foreground)]/70">{colecciones.comparisonLabels.onlineGallery}</td>
-                    <td className="p-4 text-center text-[var(--foreground)]" colSpan={4}>✓</td>
-                  </tr>
-                  <tr className="border-b border-[var(--border-subtle)]">
-                    <td className="p-4 text-[var(--foreground)]/70">{colecciones.comparisonLabels.highRes}</td>
-                    <td className="p-4 text-center text-[var(--foreground)]" colSpan={4}>✓</td>
-                  </tr>
-                  <tr className="border-b border-[var(--border-subtle)]">
-                    <td className="p-4 text-[var(--foreground)]/70">{colecciones.comparisonLabels.printRights}</td>
-                    <td className="p-4 text-center text-[var(--foreground)]" colSpan={4}>✓</td>
-                  </tr>
-                  <tr className="border-b border-[var(--border-subtle)]">
-                    <td className="p-4 text-[var(--foreground)]/70">{colecciones.comparisonLabels.highlights}</td>
-                    <td className="p-4 text-center text-[var(--foreground)]" colSpan={4}>2-3 min</td>
-                  </tr>
-                  <tr className="border-b border-[var(--border-subtle)]">
-                    <td className="p-4 text-[var(--foreground)]/70">{colecciones.comparisonLabels.fullCeremony}</td>
-                    <td className="p-4 text-center text-[var(--foreground)]" colSpan={4}>✓</td>
-                  </tr>
-                  <tr className="border-b border-[var(--border-subtle)]">
-                    <td className="p-4 text-[var(--foreground)]/70">{colecciones.comparisonLabels.toastsSpeeches}</td>
-                    <td className="p-4 text-center text-[var(--foreground)]" colSpan={4}>✓</td>
+                    <td className="p-4 text-[var(--foreground)]/70">{colecciones.comparisonLabels.shortVideo}</td>
+                    <td className="p-4 text-center text-[var(--foreground)]" colSpan={4}>3–5 min</td>
                   </tr>
                   <tr>
-                    <td className="p-4 text-[var(--foreground)]/70">{colecciones.comparisonLabels.fullParty}</td>
-                    <td className="p-4 text-center text-[var(--foreground)]">✗</td>
-                    <td className="p-4 text-center text-[var(--foreground)]">✗</td>
-                    <td className="p-4 text-center text-[var(--foreground)]">✓</td>
-                    <td className="p-4 text-center text-[var(--foreground)]">✓</td>
+                    <td className="p-4 text-[var(--foreground)]/70">{colecciones.comparisonLabels.oneMinuteVideo}</td>
+                    <td className="p-4 text-center text-[var(--foreground)]" colSpan={4}>✓</td>
                   </tr>
                 </tbody>
               </table>
