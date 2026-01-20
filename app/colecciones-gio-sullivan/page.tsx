@@ -132,20 +132,54 @@ export default function ColeccionesGioSullivan() {
               </table>
             </FadeIn>
           </div>
+        </div>
+      </section>
 
-          {/* CTA */}
-          <FadeIn delay={600}>
-            <div className="mt-16 text-center">
-              <p className="text-xl text-[var(--foreground)]/70 mb-8 max-w-2xl mx-auto">
-                {colecciones.ctaText}
-              </p>
-              <Link
-                href="/contacto"
-                className="inline-block bg-[var(--foreground)] text-[var(--background)] px-10 py-4 text-sm tracking-widest uppercase hover:bg-[var(--foreground)]/90 transition-colors"
-              >
-                {colecciones.ctaButton}
-              </Link>
-            </div>
+      {/* Addons Section */}
+      <section className="py-16 bg-[var(--background)]">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <FadeIn>
+            <h2 className="font-[var(--font-heading)] text-3xl md:text-4xl text-[var(--foreground)] text-center mb-12 uppercase">
+              {colecciones.addonsTitle}
+            </h2>
+          </FadeIn>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {colecciones.addons.map((addon, index) => (
+              <FadeIn key={index} delay={index * 50}>
+                <div className="bg-white p-6 border border-[var(--border-subtle)]">
+                  <div className="flex justify-between items-start gap-4">
+                    <p className="text-[var(--foreground)] font-medium">
+                      {addon.name}
+                    </p>
+                    <p className="text-[var(--foreground)] font-bold whitespace-nowrap">
+                      {addon.price}
+                    </p>
+                  </div>
+                </div>
+              </FadeIn>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Custom Note */}
+      <section className="py-16 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <FadeIn>
+            <p className="text-lg text-[var(--foreground)]/80 leading-relaxed mb-8">
+              {colecciones.customNote}
+            </p>
+            <p className="text-lg text-[var(--foreground)]/80 leading-relaxed mb-8">
+              {colecciones.whatsappText}
+            </p>
+            <a
+              href={`https://wa.me/5217775001071?text=${encodeURIComponent(colecciones.whatsappMessage)}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block px-8 py-3 border border-[var(--foreground)] text-[var(--foreground)] text-sm tracking-widest uppercase hover:bg-[var(--foreground)] hover:text-white transition-all duration-300"
+            >
+              {colecciones.whatsappButton}
+            </a>
           </FadeIn>
         </div>
       </section>
