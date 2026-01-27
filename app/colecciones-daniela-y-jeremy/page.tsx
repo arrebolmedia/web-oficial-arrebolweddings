@@ -6,8 +6,27 @@ import SectionHeader from "@/components/SectionHeader";
 import { useLanguage } from "../context/LanguageContext";
 
 export default function ColeccionesDanielaJeremy() {
-  const { content } = useLanguage();
+  const { content, language } = useLanguage();
   const { colecciones } = content;
+
+  const translations = {
+    es: {
+      title: "PARA DANIELA & JEREMY",
+      subtitle: "Colecciones Especiales",
+      ctaTitle: "¿Lista para reservar?",
+      ctaText: "Contáctanos para confirmar tu fecha y asegurar tu colección con descuento especial.",
+      ctaButton: "CONTACTAR"
+    },
+    en: {
+      title: "FOR DANIELA & JEREMY",
+      subtitle: "Special Collections",
+      ctaTitle: "Ready to book?",
+      ctaText: "Contact us to confirm your date and secure your collection with special discount.",
+      ctaButton: "CONTACT"
+    }
+  };
+
+  const t = translations[language as keyof typeof translations];
 
   // Filtrar solo las colecciones 2 y 3 (índices 1 y 2)
   const selectedCollections = colecciones.collections.filter((_, index) => index === 1 || index === 2);
@@ -30,8 +49,8 @@ export default function ColeccionesDanielaJeremy() {
       {/* Header con imagen de fondo */}
       <FadeIn>
         <SectionHeader
-          title="PARA DANIELA & JEREMY"
-          subtitle="Colecciones Especiales"
+          title={t.title}
+          subtitle={t.subtitle}
           backgroundImage="/images/gallery/TOP-PyP-505.webp"
         />
       </FadeIn>
@@ -187,16 +206,16 @@ export default function ColeccionesDanielaJeremy() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <FadeIn delay={600}>
             <h3 className="font-[var(--font-heading)] text-3xl text-[var(--foreground)] mb-6">
-              ¿Lista para reservar?
+              {t.ctaTitle}
             </h3>
             <p className="text-[var(--foreground)]/70 mb-8 leading-relaxed">
-              Contáctanos para confirmar tu fecha y asegurar tu colección con descuento especial.
+              {t.ctaText}
             </p>
             <Link
               href="/contacto"
               className="inline-block bg-[var(--foreground)] text-[var(--background)] px-8 py-3 hover:bg-[var(--accent-terracotta)] transition-colors tracking-wide"
             >
-              CONTACTAR
+              {t.ctaButton}
             </Link>
           </FadeIn>
         </div>
