@@ -13,6 +13,8 @@ export default function ColeccionesDanielaJeremy() {
     es: {
       title: "PARA DANIELA & JEREMY",
       subtitle: "Colecciones Especiales",
+      comparisonTitle: "Comparación de Colecciones",
+      features: "Características",
       ctaTitle: "¿Lista para reservar?",
       ctaText: "Contáctanos para confirmar tu fecha y asegurar tu colección con descuento especial.",
       ctaButton: "CONTACTAR"
@@ -20,6 +22,8 @@ export default function ColeccionesDanielaJeremy() {
     en: {
       title: "FOR DANIELA & JEREMY",
       subtitle: "Special Collections",
+      comparisonTitle: "Collection Comparison",
+      features: "Features",
       ctaTitle: "Ready to book?",
       ctaText: "Contact us to confirm your date and secure your collection with special discount.",
       ctaButton: "CONTACT"
@@ -114,13 +118,13 @@ export default function ColeccionesDanielaJeremy() {
           <div className="mt-16 overflow-x-auto hidden lg:block">
             <FadeIn delay={500}>
               <h3 className="font-[var(--font-heading)] text-3xl text-[var(--foreground)] text-center mb-8 uppercase">
-                Comparación de Colecciones
+                {t.comparisonTitle}
               </h3>
               <table className="w-full bg-white border border-[var(--border-subtle)]">
                 <thead>
                   <tr className="border-b border-[var(--border-subtle)]">
                     <th className="p-4 text-left font-[var(--font-heading)] text-lg text-[var(--foreground)] bg-[var(--background)]">
-                      Características
+                      {t.features}
                     </th>
                     {collectionsWithDiscount.map((collection, index) => (
                       <th key={index} className="p-4 text-center font-[var(--font-heading)] text-lg text-[var(--foreground)] bg-[var(--background)] min-w-[180px]">
