@@ -12,15 +12,15 @@ export default function ColeccionesDanielaJeremy() {
   // Filtrar solo las colecciones 2 y 3 (índices 1 y 2)
   const selectedCollections = colecciones.collections.filter((_, index) => index === 1 || index === 2);
 
-  // Aplicar descuento de $6,000 a cada colección
+  // Aplicar descuento de $8,000 a cada colección
   const collectionsWithDiscount = selectedCollections.map(collection => {
     const priceNumber = parseInt(collection.price.replace(/[^0-9]/g, ''));
-    const discountedPrice = priceNumber - 6000;
+    const discountedPrice = priceNumber - 8000;
     return {
       ...collection,
       originalPrice: collection.price,
       price: `$${discountedPrice.toLocaleString('es-MX')} MXN`,
-      discount: '$6,000 MXN',
+      discount: '$8,000 MXN',
     };
   });
 
