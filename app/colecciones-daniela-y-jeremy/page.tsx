@@ -21,11 +21,15 @@ export default function ColeccionesDanielaJeremy() {
       originalPrice: collection.price,
       price: `$${discountedPrice.toLocaleString('es-MX')} MXN`,
       discount: '$6,000 MXN',
-      // Eliminar "Sesión previa" de las features si existe
-      features: collection.features.filter(feature => 
-        !feature.toLowerCase().includes('sesión previa') && 
-        !feature.toLowerCase().includes('pre-wedding')
-      )
+      // Marcar "Sesión pre boda" como tachada en las features
+      features: collection.features.map(feature => {
+        if (feature.toLowerCase().includes('sesión pre boda') || 
+            feature.toLowerCase().includes('pre-wedding') ||
+            feature.toLowerCase().includes('sesión previa')) {
+          return `~~${feature}~~`;
+        }
+        return feature;
+      })
     };
   });
 
@@ -72,11 +76,15 @@ export default function ColeccionesDanielaJeremy() {
 
                   {/* Features */}
                   <div className="space-y-2 mb-8 flex-grow text-sm text-[var(--foreground)]/70">
-                    {collection.features.map((feature, fIndex) => (
-                      <p key={fIndex}>
-                        {feature}
-                      </p>
-                    ))}
+                    {collection.features.map((feature, fIndex) => {
+                      const isStrikethrough = feature.startsWith('~~') && feature.endsWith('~~');
+                      const displayText = isStrikethrough ? feature.slice(2, -2) : feature;
+                      return (
+                        <p key={fIndex} className={isStrikethrough ? 'line-through' : ''}>
+                          {displayText}
+                        </p>
+                      );
+                    })}
                   </div>
 
                   {/* Price at bottom */}
