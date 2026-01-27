@@ -23,9 +23,7 @@ export default function ColeccionesDanielaJeremy() {
       discount: '$6,000 MXN',
       // Marcar "Sesión pre boda" como tachada en las features
       features: collection.features.map(feature => {
-        if (feature.toLowerCase().includes('sesión pre boda') || 
-            feature.toLowerCase().includes('pre-wedding') ||
-            feature.toLowerCase().includes('sesión previa')) {
+        if (feature === 'Sesión pre boda') {
           return `~~${feature}~~`;
         }
         return feature;
