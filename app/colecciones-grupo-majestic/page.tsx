@@ -4,13 +4,13 @@ import FadeIn from "@/components/FadeIn";
 import SectionHeader from "@/components/SectionHeader";
 import { useLanguage } from "../context/LanguageContext";
 
-export default function ColeccionesFreyaAlmazan() {
+export default function ColeccionesGrupoMajestic() {
   const { content, language } = useLanguage();
   const { colecciones } = content;
 
   const pageTitle = language === "es" 
-    ? "COLECCIONES: FREYA ALMAZAN & ARREBOL WEDDINGS"
-    : "COLLECTIONS: FREYA ALMAZAN & ARREBOL WEDDINGS";
+    ? "COLECCIONES: GRUPO MAJESTIC & ARREBOL WEDDINGS"
+    : "COLLECTIONS: GRUPO MAJESTIC & ARREBOL WEDDINGS";
 
   return (
     <>
