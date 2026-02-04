@@ -37,6 +37,19 @@ services:
     environment:
       - NODE_ENV=production
       - NEXT_TELEMETRY_DISABLED=1
+      # SMTP Configuration
+      - SMTP_HOST=${SMTP_HOST}
+      - SMTP_PORT=${SMTP_PORT}
+      - SMTP_SECURE=${SMTP_SECURE}
+      - SMTP_USER=${SMTP_USER}
+      - SMTP_PASS=${SMTP_PASS}
+      - CONTACT_EMAIL=${CONTACT_EMAIL:-hola@arrebolweddings.com}
+      # Baserow CRM
+      - BASEROW_URL=${BASEROW_URL:-https://data.arrebolweddings.com}
+      - BASEROW_TABLE_ID=${BASEROW_TABLE_ID:-34}
+      - BASEROW_TOKEN=${BASEROW_TOKEN}
+      # Analytics
+      - NEXT_PUBLIC_GA_ID=${NEXT_PUBLIC_GA_ID}
 
 networks:
   traefik-public:
