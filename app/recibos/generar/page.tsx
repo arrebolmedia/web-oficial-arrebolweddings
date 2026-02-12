@@ -91,21 +91,6 @@ export default function GenerarRecibo() {
     }).format(num);
   };
 
-  const formatDateFromString = (dateString: string) => {
-    if (!dateString) return 'Invalid Date';
-    // Parsear la fecha en formato YYYY-MM-DD y crear fecha en hora local
-    const [year, month, day] = dateString.split('-').map(Number);
-    const date = new Date(year, month - 1, day);
-    
-    if (isNaN(date.getTime())) return 'Invalid Date';
-    
-    return date.toLocaleDateString('es-MX', {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric'
-    });
-  };
-
   return (
     <div className="min-h-screen bg-[var(--background)] p-4 md:p-8">
       <div className="max-w-6xl mx-auto">
@@ -261,7 +246,11 @@ export default function GenerarRecibo() {
                   <div className="text-right">
                     <p className="font-[var(--font-heading)] text-2xl text-[var(--foreground)] tracking-wide">RECIBO</p>
                     <p className="text-xs text-[var(--foreground)]/60 mt-1 tracking-wide">
-                      {formatDateFromString(formData.fechaEmision)}
+                      {new Date(formData.fechaEmision).toLocaleDateString('es-MX', {
+                        year: 'numeric',
+                        month: 'long',
+                        day: 'numeric'
+                      })}
                     </p>
                   </div>
                 </div>
@@ -278,7 +267,11 @@ export default function GenerarRecibo() {
                     <div>
                       <p className="text-xs text-[var(--foreground)]/60 mb-1 tracking-wider">Fecha del Evento:</p>
                       <p className="text-sm text-[var(--foreground)] tracking-wide">
-                        {formatDateFromString(formData.fechaEvento)}
+                        {new Date(formData.fechaEvento).toLocaleDateString('es-MX', {
+                          year: 'numeric',
+                          month: 'long',
+                          day: 'numeric'
+                        })}
                       </p>
                     </div>
                     <div className="text-right">
