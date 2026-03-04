@@ -4,6 +4,7 @@ import Image from "next/image";
 import FadeIn from "@/components/FadeIn";
 import SectionHeader from "@/components/SectionHeader";
 import { useLanguage } from "../context/LanguageContext";
+import { WHATSAPP_BASE } from "@/lib/config";
 
 export default function ElProceso() {
   const { content } = useLanguage();
@@ -81,7 +82,7 @@ export default function ElProceso() {
               {proceso.whatsappText}
             </p>
             <a
-              href={`https://wa.me/5217775001071?text=${encodeURIComponent(proceso.whatsappMessage)}`}
+              href={`${WHATSAPP_BASE}${encodeURIComponent(proceso.whatsappMessage)}`}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block px-8 py-3 border border-[var(--foreground)] text-[var(--foreground)] text-sm tracking-widest uppercase hover:bg-[var(--foreground)] hover:text-white transition-all duration-300"

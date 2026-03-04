@@ -2,7 +2,7 @@
 
 import { pauliaContent } from "../content";
 
-const WHATSAPP_BASE = "https://wa.me/5217775001071?text=";
+import { WHATSAPP_BASE } from "@/lib/config";
 
 export default function PauliaPackagesSection() {
   const { packages } = pauliaContent;

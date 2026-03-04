@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useLanguage } from "@/app/context/LanguageContext";
 import { landingContentEs, landingContentEn } from "../content";
+import { WHATSAPP_BASE } from "@/lib/config";
 
 const storyImages = [
   "/images/gallery/KyB-285.webp",
@@ -15,8 +16,6 @@ const galleryUrls = [
   "https://arrebol.pic-time.com/-carlaydiego/gallery",
   "https://arrebol.pic-time.com/-bodasofiayoscar/gallery",
 ];
-
-const WHATSAPP_BASE = "https://wa.me/5217775001071?text=";
 
 export default function RealStoriesSection() {
   const { language } = useLanguage();

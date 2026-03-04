@@ -6,6 +6,7 @@ import BlogHero from "@/components/BlogHero";
 import BlogCard from "@/components/BlogCard";
 import Link from "next/link";
 import { useLanguage } from "@/app/context/LanguageContext";
+import { WHATSAPP_BASE } from "@/lib/config";
 
 const POSTS_PER_PAGE = 9;
 
@@ -171,7 +172,7 @@ export default function BlogPageContent({ currentPage }: BlogPageContentProps) {
             {blog.page.ctaDescription}
           </p>
           <a 
-            href={`https://wa.me/5217775001071?text=${encodeURIComponent(blog.page.ctaMessage)}`}
+            href={`${WHATSAPP_BASE}${encodeURIComponent(blog.page.ctaMessage)}`}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block text-xs tracking-widest uppercase bg-[var(--foreground)] text-[var(--background)] px-8 py-3 border border-[var(--foreground)] hover:bg-[var(--background)] hover:text-[var(--foreground)] transition-colors duration-300"

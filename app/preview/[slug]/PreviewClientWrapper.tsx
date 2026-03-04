@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import PreviewHero from "./components/PreviewHero";
 import PreviewPackagesSection from "./components/PreviewPackagesSection";
+import { WHATSAPP_BASE } from "@/lib/config";
 
 interface LandingData {
   title: string;
@@ -95,7 +96,7 @@ export default function PreviewClientWrapper({ slug }: PreviewClientWrapperProps
             ¿Prefieres contactarnos por WhatsApp?
           </p>
           <a
-            href={`https://wa.me/5217775001071?text=${encodeURIComponent(`Hola! Soy ${landingData.title} y me gustaría conocer más detalles sobre las colecciones para mi boda.`)}`}
+            href={`${WHATSAPP_BASE}${encodeURIComponent(`Hola! Soy ${landingData.title} y me gustaría conocer más detalles sobre las colecciones para mi boda.`)}`}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block px-8 py-3 bg-[#8B5A6F] text-white text-sm tracking-widest uppercase hover:bg-[#8B5A6F]/90 transition-all duration-300"

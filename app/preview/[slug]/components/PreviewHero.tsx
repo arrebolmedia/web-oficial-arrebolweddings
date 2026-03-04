@@ -1,6 +1,6 @@
 "use client";
 
-const WHATSAPP_BASE = "https://wa.me/5217775001071?text=";
+import { WHATSAPP_BASE } from "@/lib/config";
 
 interface LandingData {
   title: string;

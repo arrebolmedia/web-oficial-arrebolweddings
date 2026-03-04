@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { useLanguage } from "@/app/context/LanguageContext";
 import { landingContentEs, landingContentEn } from "../content";
+import { WHATSAPP_BASE } from "@/lib/config";
 
 interface FormData {
   couple: string;
@@ -14,8 +15,6 @@ interface FormData {
   source: string;
   message: string;
 }
-
-const WHATSAPP_BASE = "https://wa.me/5217775001071?text=";
 
 export default function FinalCTASection() {
   const { language } = useLanguage();
