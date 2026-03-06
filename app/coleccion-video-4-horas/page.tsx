@@ -14,6 +14,7 @@ const collection = {
     "1 videógrafo",
     "Video de 15–20 minutos",
     "Versión 1 minuto",
+    "Dron para tomas aéreas",
     "Entrega en galería digital",
   ],
 };
