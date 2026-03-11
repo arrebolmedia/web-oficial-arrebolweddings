@@ -15,7 +15,7 @@ export default function ColeccionesHuayacan() {
   const customFeatures = collection.features
     .filter(f => !f.toLowerCase().includes("creador de contenido"))
     .map(f => f.toLowerCase().includes("sesión pre boda") ? "Save The Date" : f.toLowerCase().includes("sesión post boda") ? "Ice Breaker" : f)
-    .concat(["Invitación digital"]);
+    .concat(["Ice Breaker", "Invitación digital"]);
 
   const originalPrice = "$100,000";
   const customPrice = "$80,000";
