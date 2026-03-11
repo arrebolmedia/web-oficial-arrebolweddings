@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Colección de Video 4 Horas | Arrebol Weddings",
     description:
-      "4 horas de videografía cinematográfica para capturar cada momento de tu celebración. Video de 15–20 minutos + versión 1 minuto.",
+      "4 horas de videografía cinematográfica para capturar cada momento de tu celebración. Video de 10–15 minutos + versión 1 minuto.",
     images: ["/images/gallery/TOP-PyP-505.webp"],
     type: "website",
     locale: "es_MX",
