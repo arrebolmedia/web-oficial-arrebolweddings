@@ -12,9 +12,8 @@ const collection = {
   features: [
     "4 horas de cobertura",
     "1 videógrafo",
-    "Video de 15–20 minutos",
+    "Video de 10–15 minutos",
     "Versión 1 minuto",
-    "Dron para tomas aéreas",
     "Entrega en galería digital",
   ],
 };
@@ -22,7 +21,7 @@ const collection = {
 const whatsappMessage = "¡Hola! Deseo más información sobre la Colección de Video de 4 Horas";
 
 export default function ColeccionVideo4Horas() {
-  const { content } = useLanguage();
+  useLanguage();
 
   return (
     <>
@@ -76,7 +75,7 @@ export default function ColeccionVideo4Horas() {
                 {/* Price */}
                 <div className="pt-6 border-t border-[var(--border-subtle)] text-center">
                   <p className="text-3xl font-light text-[var(--foreground)]">
-                    $15,000{" "}
+                    $10,500{" "}
                     <span className="text-sm text-[var(--foreground)]/50 uppercase tracking-wider">
                       MXN
                     </span>
@@ -106,7 +105,7 @@ export default function ColeccionVideo4Horas() {
               </FadeIn>
               <FadeIn delay={200}>
                 <div className="text-center">
-                  <p className="font-[var(--font-heading)] text-5xl text-[var(--foreground)] mb-3">15–20</p>
+                  <p className="font-[var(--font-heading)] text-5xl text-[var(--foreground)] mb-3">10–15</p>
                   <p className="text-xs tracking-[0.25em] uppercase text-[var(--foreground)]/50">
                     Minutos de video
                   </p>
