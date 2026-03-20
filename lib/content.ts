@@ -558,6 +558,52 @@ export const contentEs = {
       },
     ],
   },
+  coleccionesXV: {
+    title: "Colecciones XV Años",
+    subtitle: "Fotografía y video para el día más especial de su vida",
+    intro: "Nuestra colección de XV años está diseñada para capturar cada momento de esta celebración única. Documentamos la emoción, el glamour y la alegría de este día especial con fotografía y video de la más alta calidad.",
+    collection: {
+      name: "Colección XV",
+      features: [
+        "4 horas de cobertura",
+        "1 fotógrafo",
+        "250–300 fotografías",
+        "Galería digital",
+        "1 videógrafo",
+        "Video de 15–20 minutos",
+        "Versión 1 minuto",
+      ],
+      price: "$29,500 MXN",
+      description: "Cobertura completa de su fiesta de XV años. Fotografía y video desde los preparativos hasta el baile de vals y la fiesta. Cada momento especial quedará inmortalizado con una mirada artística y cuidadosa.",
+    },
+    customNote: "Si su celebración tiene características especiales (múltiples locaciones, eventos de varios días, o necesidades específicas), podemos crear una propuesta a la medida. Escríbannos y lo diseñamos juntos.",
+    addonsTitle: "Adicionales",
+    addons: [
+      {
+        name: "Hora extra (fotografía y video)",
+        price: "$4,250",
+      },
+      {
+        name: "Fotógrafo adicional",
+        price: "$4,000",
+      },
+      {
+        name: "Camarógrafo adicional",
+        price: "$4,000",
+      },
+      {
+        name: "Dron para tomas aéreas",
+        price: "$6,500",
+      },
+      {
+        name: "Video adicional de 1 minuto",
+        price: "$3,500",
+      },
+    ],
+    whatsappText: "¿Lista para reservar tu fecha? Escríbenos por WhatsApp y conversemos sobre su celebración.",
+    whatsappButton: "Contactar por WhatsApp",
+    whatsappMessage: "¡Hola! Deseo más información sobre sus colecciones de XV años",
+  },
   coleccionesVideo: {
     title: "Colecciones de Video",
     subtitle: "Contamos la historia de su boda en movimiento",
@@ -1072,6 +1118,52 @@ export const contentEn = {
         price: "$4,500",
       },
     ],
+  },
+  coleccionesXV: {
+    title: "Quinceañera Collections",
+    subtitle: "Photography and video for the most special day of her life",
+    intro: "Our quinceañera collection is designed to capture every moment of this unique celebration. We document the emotion, glamour, and joy of this special day with the highest quality photography and video.",
+    collection: {
+      name: "XV Collection",
+      features: [
+        "4 hours of coverage",
+        "1 photographer",
+        "250–300 photographs",
+        "Digital gallery",
+        "1 videographer",
+        "15–20 minute video",
+        "1 minute version",
+      ],
+      price: "$29,500 MXN",
+      description: "Complete coverage of your quinceañera. Photography and video from the preparations through the waltz and the party. Every special moment will be immortalized with an artistic and careful eye.",
+    },
+    customNote: "If your celebration has special characteristics (multiple locations, multi-day events, or specific needs), we can create a custom proposal. Write to us and we'll design it together.",
+    addonsTitle: "Add-ons",
+    addons: [
+      {
+        name: "Extra hour (photography and video)",
+        price: "$4,250",
+      },
+      {
+        name: "Additional photographer",
+        price: "$4,000",
+      },
+      {
+        name: "Additional videographer",
+        price: "$4,000",
+      },
+      {
+        name: "Drone for aerial shots",
+        price: "$6,500",
+      },
+      {
+        name: "Additional 1 minute video",
+        price: "$3,500",
+      },
+    ],
+    whatsappText: "Ready to book your date? Write to us on WhatsApp and let's talk about your celebration.",
+    whatsappButton: "Contact via WhatsApp",
+    whatsappMessage: "Hello! I would like more information about your quinceañera collections",
   },
   coleccionesVideo: {
     title: "Video Collections",
