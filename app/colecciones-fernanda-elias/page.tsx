@@ -51,7 +51,7 @@ export default function ColeccionesFernandaElias() {
         {/* Header */}
         <FadeIn>
           <SectionHeader
-            title="Fernanda Elías · Video"
+            title="Fernanda Elías · Colecciones"
             subtitle="12 de diciembre · Piedra Viva"
             backgroundImage="/images/gallery/TOP-PyP-505.webp"
           />
