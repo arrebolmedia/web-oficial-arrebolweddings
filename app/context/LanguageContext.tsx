@@ -3,6 +3,8 @@
 import React, { createContext, useContext, useState, useEffect, ReactNode } from "react";
 import { contentEs, contentEn } from "@/lib/content";
 
+const PACKAGES_API = "https://suite.arrebolweddings.com/api/packages";
+
 type ContentType = typeof contentEs;
 
 interface LanguageContextType {
@@ -14,18 +16,35 @@ interface LanguageContextType {
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
+// Convierte un paquete de la API al formato que espera content.colecciones.collections
+function apiPackageToCollection(pkg: any) {
+  return {
+    name: pkg.name,
+    features: pkg.features,
+    price: `$${pkg.price.toLocaleString("es-MX")} MXN`,
+    discountedPrice: "",
+    description: pkg.description,
+  };
+}
+
 export const LanguageProvider = ({ children }: { children: ReactNode }) => {
   const [language, setLanguageState] = useState<"es" | "en">("es");
-  const [isClient, setIsClient] = useState(false);
+  const [packagesFromApi, setPackagesFromApi] = useState<any[] | null>(null);
 
   useEffect(() => {
-    setIsClient(true);
     if (typeof window !== "undefined") {
       const savedLanguage = localStorage.getItem("language") as "es" | "en";
       if (savedLanguage && (savedLanguage === "es" || savedLanguage === "en")) {
         setLanguageState(savedLanguage);
       }
     }
+
+    fetch(PACKAGES_API)
+      .then((r) => r.json())
+      .then((data) => setPackagesFromApi(data))
+      .catch(() => {
+        // Fallback silencioso — se usan los datos de content.ts
+      });
   }, []);
 
   const setLanguage = (lang: "es" | "en") => {
@@ -39,7 +58,18 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
     setLanguage(language === "es" ? "en" : "es");
   };
 
-  const content = language === "es" ? contentEs : contentEn;
+  const baseContent = language === "es" ? contentEs : contentEn;
+
+  // Si tenemos paquetes de la API, los inyectamos en colecciones.collections
+  const content: ContentType = packagesFromApi
+    ? {
+        ...baseContent,
+        colecciones: {
+          ...baseContent.colecciones,
+          collections: packagesFromApi.map(apiPackageToCollection),
+        },
+      }
+    : baseContent;
 
   return (
     <LanguageContext.Provider value={{ language, content, toggleLanguage, setLanguage }}>
