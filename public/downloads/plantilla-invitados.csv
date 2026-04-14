@@ -1,0 +1,5 @@
+﻿nombre,apellido,email,telefono,invitados_adicionales_permitidos
+Juan,Pérez,juan.perez@ejemplo.com,5551234567,2
+María,García,maria.garcia@ejemplo.com,5559876543,1
+Carlos,López,carlos.lopez@ejemplo.com,5555555555,3
+Ana,Martínez,ana.martinez@ejemplo.com,5552345678,0
