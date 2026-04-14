@@ -444,7 +444,7 @@ export const contentEs = {
       },
       {
         name: "Invitación digital",
-        price: "$5,000",
+        price: "$5,500",
       },
     ],
   },
@@ -1005,7 +1005,7 @@ export const contentEn = {
       },
       {
         name: "Digital invitation",
-        price: "$5,000",
+        price: "$5,500",
       },
     ],
   },
