@@ -60,7 +60,7 @@ const process = [
   {
     step: "04",
     title: "Dos rondas de ajustes",
-    description: "Tienes dos oportunidades para pedirnos cambios: textos, fotos, colores, orden de secciones. Lo ajustamos hasta que quede justo como lo imaginaron.",
+    description: "Incluye dos rondas de ajustes para que quede exactamente como lo imaginaron: textos, fotos, colores, orden de secciones.",
   },
   {
     step: "05",
