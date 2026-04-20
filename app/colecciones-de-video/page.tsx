@@ -122,10 +122,10 @@ export default function ColeccionesDeVideo() {
                   </tr>
                   <tr className="border-b border-[var(--border-subtle)]">
                     <td className="p-4 text-[var(--foreground)]/70">{coleccionesVideo.tableLabels.longVideo}</td>
-                    <td className="p-4 text-center text-[var(--foreground)]">15–20 min</td>
+                    <td className="p-4 text-center text-[var(--foreground)]">20–25 min</td>
                     <td className="p-4 text-center text-[var(--foreground)]">25–30 min</td>
-                    <td className="p-4 text-center text-[var(--foreground)]">35–45 min</td>
-                    <td className="p-4 text-center text-[var(--foreground)]">50–60 min</td>
+                    <td className="p-4 text-center text-[var(--foreground)]">30–35 min</td>
+                    <td className="p-4 text-center text-[var(--foreground)]">35–40 min</td>
                   </tr>
                   <tr className="border-b border-[var(--border-subtle)]">
                     <td className="p-4 text-[var(--foreground)]/70">{coleccionesVideo.tableLabels.shortVideo}</td>
