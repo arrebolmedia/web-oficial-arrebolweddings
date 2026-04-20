@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import FadeIn from "@/components/FadeIn";
 import SectionHeader from "@/components/SectionHeader";
 import { useLanguage } from "../context/LanguageContext";
@@ -165,13 +164,6 @@ export default function ColeccionesDeVideo() {
                   </tr>
                   <tr className="border-b border-[var(--border-subtle)]">
                     <td className="p-4 text-[var(--foreground)]/70">{coleccionesVideo.tableLabels.contentCreator}</td>
-                    <td className="p-4 text-center text-[var(--foreground)]">—</td>
-                    <td className="p-4 text-center text-[var(--foreground)]">—</td>
-                    <td className="p-4 text-center text-[var(--foreground)]">—</td>
-                    <td className="p-4 text-center text-[var(--foreground)]">✓</td>
-                  </tr>
-                  <tr className="border-b border-[var(--border-subtle)]">
-                    <td className="p-4 text-[var(--foreground)]/70">{coleccionesVideo.tableLabels.digitalInvitation}</td>
                     <td className="p-4 text-center text-[var(--foreground)]">—</td>
                     <td className="p-4 text-center text-[var(--foreground)]">—</td>
                     <td className="p-4 text-center text-[var(--foreground)]">—</td>
