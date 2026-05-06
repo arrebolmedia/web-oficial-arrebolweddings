@@ -199,13 +199,6 @@ export default function ColeccionesMayo2026() {
                       <td className="p-4 text-center text-[var(--foreground)]">—</td>
                       <td className="p-4 text-center text-[var(--foreground)]">✓</td>
                     </tr>
-                    <tr className="border-b border-[var(--border-subtle)]">
-                      <td className="p-4 text-[var(--foreground)]/70">{colecciones.comparisonLabels.digitalInvitation}</td>
-                      <td className="p-4 text-center text-[var(--foreground)]">—</td>
-                      <td className="p-4 text-center text-[var(--foreground)]">—</td>
-                      <td className="p-4 text-center text-[var(--foreground)]">—</td>
-                      <td className="p-4 text-center text-[var(--foreground)]">✓</td>
-                    </tr>
                     <tr className="bg-[var(--background)]">
                       <td className="p-4 font-[var(--font-heading)] text-lg text-[var(--foreground)]">{colecciones.priceTitle}</td>
                       {colecciones.collections.map((collection, index) => (
