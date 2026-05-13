@@ -14,7 +14,7 @@ export default function Colecciones() {
           backgroundImage="/images/gallery/TOP-PyP-505.webp"
         />
       </FadeIn>
-      <CollectionsView />
+      <CollectionsView adjustmentType="fixed" adjustmentValue={20000} />
     </div>
   );
 }
