@@ -79,13 +79,19 @@ export default function ColeccionesMayo2026() {
                     {/* Price at bottom - CON 30% DESCUENTO */}
                     <div className="pt-6 border-t border-[var(--border-subtle)] text-center">
                       <p className="text-lg text-[var(--foreground)]/40 line-through mb-1">
-                        {collection.price.split(' ')[0]}
+                        {(() => {
+                          const priceStr = collection.price.split(' ')[0].replace(/[^0-9]/g, '');
+                          const priceNum = parseInt(priceStr);
+                          const originalPrice = priceNum + 20000;
+                          return `$${originalPrice.toLocaleString('es-MX')}`;
+                        })()}
                       </p>
                       <p className="text-2xl font-light text-[var(--foreground)]">
                         {(() => {
                           const priceStr = collection.price.split(' ')[0].replace(/[^0-9]/g, '');
                           const priceNum = parseInt(priceStr);
-                          const discountedPrice = Math.round(priceNum * 0.7);
+                          const originalPrice = priceNum + 20000;
+                          const discountedPrice = Math.round(originalPrice * 0.7);
                           return `$${discountedPrice.toLocaleString('es-MX')}`;
                         })()} <span className="text-sm text-[var(--foreground)]/50 uppercase tracking-wider">{collection.price.split(' ')[1]}</span>
                       </p>
@@ -204,13 +210,19 @@ export default function ColeccionesMayo2026() {
                       {colecciones.collections.map((collection, index) => (
                         <td key={index} className="p-4 text-center">
                           <div className="text-sm text-[var(--foreground)]/40 line-through mb-1">
-                            {collection.price.split(' ')[0]}
+                            {(() => {
+                              const priceStr = collection.price.split(' ')[0].replace(/[^0-9]/g, '');
+                              const priceNum = parseInt(priceStr);
+                              const originalPrice = priceNum + 20000;
+                              return `$${originalPrice.toLocaleString('es-MX')}`;
+                            })()}
                           </div>
                           <div className="text-2xl font-light text-[var(--foreground)]">
                             {(() => {
                               const priceStr = collection.price.split(' ')[0].replace(/[^0-9]/g, '');
                               const priceNum = parseInt(priceStr);
-                              const discountedPrice = Math.round(priceNum * 0.7);
+                              const originalPrice = priceNum + 20000;
+                              const discountedPrice = Math.round(originalPrice * 0.7);
                               return `$${discountedPrice.toLocaleString('es-MX')}`;
                             })()}
                           </div>
