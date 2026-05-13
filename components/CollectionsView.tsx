@@ -143,11 +143,6 @@ export default function CollectionsView({
       label: colecciones.comparisonLabels.contentCreator,
       getValue: (p: Package) => (p.comparison.content_creator ? CHECK : DASH),
     },
-    {
-      label: colecciones.comparisonLabels.digitalInvitation,
-      getValue: (p: Package) =>
-        p.comparison.digital_invitation ? CHECK : DASH,
-    },
   ];
 
   return (
