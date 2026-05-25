@@ -1,16 +1,19 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Lilia & Luigi | Amara Baja · Arrebol Weddings",
-  description: "Propuesta de fotografía y video para la boda de Lilia y Luigi el 27 de febrero de 2027 en Amara Baja.",
+  metadataBase: new URL("https://arrebolweddings.com"),
+  title: "Lilia & Luigi · 27 de febrero de 2027 | Arrebol Weddings",
+  description: "Propuesta personalizada de fotografía y video para la boda de Lilia y Luigi en Amara Baja, 27 de febrero de 2027.",
   robots: { index: false, follow: false },
   openGraph: {
-    title: "Lilia & Luigi | Amara Baja · Arrebol Weddings",
-    description: "Fotografía y video para la boda de Lilia y Luigi en Amara Baja.",
+    title: "Lilia & Luigi · Amara Baja",
+    description: "Propuesta personalizada de fotografía y video · 27 de febrero de 2027",
     type: "website",
+    url: "https://arrebolweddings.com/colecciones-lilia-luigi",
+    siteName: "Arrebol Weddings",
     images: [
       {
-        url: "/images/gallery/TOP-PyP-505.webp",
+        url: "https://arrebolweddings.com/images/gallery/TOP-PyP-505.webp",
         width: 1200,
         height: 630,
         alt: "Lilia & Luigi · Amara Baja · Arrebol Weddings",
@@ -19,9 +22,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Lilia & Luigi | Amara Baja · Arrebol Weddings",
-    description: "Fotografía y video para la boda de Lilia y Luigi en Amara Baja.",
-    images: ["/images/gallery/TOP-PyP-505.webp"],
+    title: "Lilia & Luigi · Amara Baja",
+    description: "Propuesta personalizada de fotografía y video · 27 de febrero de 2027",
+    images: ["https://arrebolweddings.com/images/gallery/TOP-PyP-505.webp"],
   },
 };
 
