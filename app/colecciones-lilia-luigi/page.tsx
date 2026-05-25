@@ -17,6 +17,7 @@ const customFeatures = [
   "Video de 25–30 minutos",
   "Versión 3–5 minutos",
   "Versión 1 minuto",
+  "Dron — cortesía",
 ];
 
 export default function ColeccionesAmaraBaja() {
