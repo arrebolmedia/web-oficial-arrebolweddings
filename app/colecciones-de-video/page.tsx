@@ -16,14 +16,18 @@ export default function ColeccionesDeVideo() {
     
     return {
       name: col.name,
-      features: col.features.filter(f => 
-        !f.toLowerCase().includes('fotógrafo') && 
+      features: col.features.filter(f =>
+        !f.toLowerCase().includes('fotógrafo') &&
         !f.toLowerCase().includes('photographer') &&
         !f.toLowerCase().includes('fotografía') &&
         !f.toLowerCase().includes('photograph') &&
         !f.toLowerCase().includes('photobook') &&
         !f.toLowerCase().includes('galería') &&
-        !f.toLowerCase().includes('gallery')
+        !f.toLowerCase().includes('gallery') &&
+        !f.toLowerCase().includes('pre boda') &&
+        !f.toLowerCase().includes('post boda') &&
+        !f.toLowerCase().includes('pre-wedding') &&
+        !f.toLowerCase().includes('post-wedding')
       ),
       price: `$${halfPrice.toLocaleString('es-MX')} MXN`,
       description: col.description
@@ -138,20 +142,6 @@ export default function ColeccionesDeVideo() {
                     <td className="p-4 text-[var(--foreground)]/70">{coleccionesVideo.tableLabels.oneMinuteVideo}</td>
                     <td className="p-4 text-center text-[var(--foreground)]">✓</td>
                     <td className="p-4 text-center text-[var(--foreground)]">✓</td>
-                    <td className="p-4 text-center text-[var(--foreground)]">✓</td>
-                    <td className="p-4 text-center text-[var(--foreground)]">✓</td>
-                  </tr>
-                  <tr className="border-b border-[var(--border-subtle)]">
-                    <td className="p-4 text-[var(--foreground)]/70">{coleccionesVideo.tableLabels.preWedding}</td>
-                    <td className="p-4 text-center text-[var(--foreground)]">—</td>
-                    <td className="p-4 text-center text-[var(--foreground)]">✓</td>
-                    <td className="p-4 text-center text-[var(--foreground)]">✓</td>
-                    <td className="p-4 text-center text-[var(--foreground)]">✓</td>
-                  </tr>
-                  <tr className="border-b border-[var(--border-subtle)]">
-                    <td className="p-4 text-[var(--foreground)]/70">{coleccionesVideo.tableLabels.postWedding}</td>
-                    <td className="p-4 text-center text-[var(--foreground)]">—</td>
-                    <td className="p-4 text-center text-[var(--foreground)]">—</td>
                     <td className="p-4 text-center text-[var(--foreground)]">✓</td>
                     <td className="p-4 text-center text-[var(--foreground)]">✓</td>
                   </tr>
