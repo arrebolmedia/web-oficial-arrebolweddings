@@ -12,13 +12,13 @@ export default function ColeccionesJunio2026() {
 
   const subtitle =
     language === "es"
-      ? "20% de descuento en fotografía y video — sólo durante junio"
-      : "20% off on photography and video — June only";
+      ? "30% de descuento en fotografía y video — sólo durante junio"
+      : "30% off on photography and video — June only";
 
   const whatsappMessage =
     language === "es"
-      ? "¡Hola! ☀️ Me interesa la promoción de Colecciones Junio 2026 con 20% de descuento en fotografía y video para bodas. Me gustaría recibir más información."
-      : "Hello! ☀️ I'm interested in the June 2026 Collections promotion with 20% off on wedding photography and video. I would like more information.";
+      ? "¡Hola! ☀️ Me interesa la promoción de Colecciones Junio 2026 con 30% de descuento en fotografía y video para bodas. Me gustaría recibir más información."
+      : "Hello! ☀️ I'm interested in the June 2026 Collections promotion with 30% off on wedding photography and video. I would like more information.";
 
   return (
     <div>
@@ -31,7 +31,7 @@ export default function ColeccionesJunio2026() {
       </FadeIn>
       <CollectionsView
         adjustmentType="percentage"
-        adjustmentValue={-20}
+        adjustmentValue={-30}
         showDiscount={true}
         whatsappMessage={whatsappMessage}
       />
