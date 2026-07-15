@@ -11,7 +11,7 @@ async function addToBaserow(data: {
   guests?: string;
   source?: string;
   message: string;
-}) {
+}): Promise<boolean> {
   try {
     const baserowUrl = process.env.BASEROW_URL || "https://data.arrebolweddings.com";
     const tableId = process.env.BASEROW_TABLE_ID || "34";
@@ -19,7 +19,7 @@ async function addToBaserow(data: {
 
     if (!token) {
       console.error("BASEROW_TOKEN no configurado");
-      return;
+      return false;
     }
 
     // Mapear "Cómo nos conocieron" a los IDs de Canal en Baserow
@@ -65,25 +65,45 @@ async function addToBaserow(data: {
     if (!response.ok) {
       const error = await response.text();
       console.error("Error Baserow:", error);
+      return false;
     }
+    return true;
   } catch (error) {
     console.error("Error agregando a Baserow:", error);
+    return false;
   }
 }
 
 export async function POST(request: NextRequest) {
+  let body;
   try {
-    const body = await request.json();
-    const { couple, email, phone, date, venue, guests, source, message } = body;
+    body = await request.json();
+  } catch {
+    return NextResponse.json({ error: "Solicitud inválida" }, { status: 400 });
+  }
 
-    // Validate required fields
-    if (!couple || !email || !message) {
-      return NextResponse.json(
-        { error: "Campos requeridos faltantes" },
-        { status: 400 }
-      );
-    }
+  const { couple, email, phone, date, venue, guests, source, message } = body;
 
+  // Validate required fields
+  if (!couple || !email || !message) {
+    return NextResponse.json(
+      { error: "Campos requeridos faltantes" },
+      { status: 400 }
+    );
+  }
+
+  // 1. PRIORIDAD: guardar el lead en Baserow (nunca perder un contacto,
+  //    aunque el correo de notificación falle)
+  let leadSaved = false;
+  try {
+    leadSaved = await addToBaserow({ couple, email, phone, date, venue, guests, source, message });
+  } catch (error) {
+    console.error("Error guardando lead en Baserow:", error);
+  }
+
+  // 2. Enviar email de notificación (secundario; su fallo no debe perder el lead)
+  let emailSent = false;
+  try {
     // Create transporter
     const transporter = nodemailer.createTransport({
       host: process.env.SMTP_HOST,
@@ -98,8 +118,8 @@ export async function POST(request: NextRequest) {
     // Email content
     const mailOptions = {
       from: `"Arrebol Weddings Web" <${process.env.SMTP_USER}>`,
-      to: process.env.CONTACT_EMAIL || "hola@arrebolweddings.com",
-      cc: "anthony@arrebol.com.mx",
+      to: "anthony@arrebol.com.mx",
+      cc: "hola@arrebolweddings.com",
       replyTo: email,
       subject: `💍 Nueva consulta de ${couple}`,
       html: `
@@ -167,16 +187,20 @@ export async function POST(request: NextRequest) {
 
     // Send email
     await transporter.sendMail(mailOptions);
-
-    // Add to Baserow CRM
-    await addToBaserow({ couple, email, phone, date, venue, guests, source, message });
-
-    return NextResponse.json({ success: true });
+    emailSent = true;
   } catch (error) {
-    console.error("Error sending email:", error);
-    return NextResponse.json(
-      { error: "Error al enviar el mensaje" },
-      { status: 500 }
-    );
+    console.error("Error enviando email de notificación:", error);
   }
+
+  // Éxito si al menos se capturó el lead (o se envió el correo).
+  // Solo fallamos si TODO falló, para no mostrarle error al cliente
+  // cuando su contacto sí quedó registrado.
+  if (leadSaved || emailSent) {
+    return NextResponse.json({ success: true, leadSaved, emailSent });
+  }
+
+  return NextResponse.json(
+    { error: "Error al enviar el mensaje" },
+    { status: 500 }
+  );
 }
