@@ -136,18 +136,22 @@ export default function Contacto() {
                       className="w-full py-3 bg-transparent border-b border-[var(--foreground)]/20 focus:border-[var(--foreground)] outline-none transition-colors placeholder:text-[var(--foreground)]/40 placeholder:text-sm text-[var(--foreground)]"
                     />
                   </div>
-                  <div className="group">
+                  <div className="group relative">
                     <input
-                      type="text"
+                      type="date"
                       id="date"
                       name="date"
-                      placeholder={contacto.fields.date}
                       value={formData.date}
                       onChange={handleChange}
-                      onFocus={(e) => e.target.type = 'date'}
-                      onBlur={(e) => { if (!e.target.value) e.target.type = 'text' }}
-                      className="w-full py-3 bg-transparent border-b border-[var(--foreground)]/20 focus:border-[var(--foreground)] outline-none transition-colors placeholder:text-[var(--foreground)]/40 placeholder:text-sm text-[var(--foreground)]"
+                      className={`w-full py-3 bg-transparent border-b border-[var(--foreground)]/20 focus:border-[var(--foreground)] outline-none transition-colors text-sm text-[var(--foreground)] [color-scheme:light] ${
+                        !formData.date ? "text-transparent focus:text-[var(--foreground)]" : ""
+                      }`}
                     />
+                    {!formData.date && (
+                      <span className="pointer-events-none absolute inset-y-0 left-0 flex items-center text-sm text-[var(--foreground)]/40 group-focus-within:hidden">
+                        {contacto.fields.date}
+                      </span>
+                    )}
                   </div>
                 </div>
 
