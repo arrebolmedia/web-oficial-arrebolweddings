@@ -37,7 +37,7 @@ const options = [
       "1 videógrafo",
       "Video de 20–25 minutos",
       "Versión 1 minuto",
-      'Álbum impreso 8.5x11" (50 páginas)',
+      "Álbum impreso (50 páginas)",
     ],
     price: "$41,300",
   },
@@ -162,7 +162,7 @@ export default function ColeccionesSaraDavid() {
                     <tr className="border-b border-[var(--border-subtle)]">
                       <td className="p-4 text-[var(--foreground)]/70">Álbum impreso</td>
                       <td className="p-4 text-center text-[var(--foreground)]">—</td>
-                      <td className="p-4 text-center text-[var(--foreground)] text-sm">8.5x11&quot; (50 pág)</td>
+                      <td className="p-4 text-center text-[var(--foreground)]">50 pág</td>
                     </tr>
                     <tr className="bg-[var(--background)]">
                       <td className="p-4 font-[var(--font-heading)] text-lg text-[var(--foreground)]">Precio</td>
