@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Colecciones - Sara & David | Arrebol Weddings",
     description:
-      "Propuesta especial de fotografía y video para tu boda. Colección Uno con descuento, 13 de febrero 2027 · Las Mañanitas.",
+      "Propuesta especial de fotografía y video para tu boda. Colección Uno · 13 de febrero 2027 · Las Mañanitas.",
     type: "website",
     images: [
       {

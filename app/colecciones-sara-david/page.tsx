@@ -13,7 +13,7 @@ const options = [
   {
     name: "Colección Uno",
     description:
-      "Nuestra Colección Uno completa —fotografía y video— con un descuento especial del 40% para su boda.",
+      "Nuestra Colección Uno completa —fotografía y video— para capturar cada momento de su boda.",
     features: [
       "8 horas de cobertura",
       "1 fotógrafo",
@@ -23,14 +23,12 @@ const options = [
       "Video de 20–25 minutos",
       "Versión 1 minuto",
     ],
-    originalPrice: "$59,000",
     price: "$35,400",
-    off: "40% OFF",
   },
   {
     name: "Colección Uno",
     description:
-      "La misma Colección Uno con 30% de descuento, ampliando la cobertura de 8 a 10 horas para no perder ningún momento de la fiesta.",
+      "La misma Colección Uno, ampliando la cobertura de 8 a 10 horas y añadiendo un álbum impreso para conservar sus mejores fotografías.",
     features: [
       "10 horas de cobertura",
       "1 fotógrafo",
@@ -39,10 +37,9 @@ const options = [
       "1 videógrafo",
       "Video de 20–25 minutos",
       "Versión 1 minuto",
+      'Álbum impreso 8.5x11" (50 páginas)',
     ],
-    originalPrice: "$59,000",
     price: "$41,300",
-    off: "30% OFF",
   },
 ];
 
@@ -68,8 +65,8 @@ export default function ColeccionesSaraDavid() {
             <FadeIn delay={200}>
               <p className="mb-12 text-lg text-[var(--foreground)]/80 leading-relaxed text-center max-w-3xl mx-auto">
                 Preparamos dos versiones de nuestra Colección Uno —fotografía y video—
-                pensadas especialmente para su boda. Elijan entre un mayor descuento o
-                más horas de cobertura; el precio ya incluye la promoción.
+                pensadas especialmente para su boda. Elijan la que mejor se ajuste: la
+                esencial, o una ampliada con más horas de cobertura y álbum impreso.
               </p>
             </FadeIn>
 
@@ -94,17 +91,11 @@ export default function ColeccionesSaraDavid() {
                     </div>
 
                     <div className="pt-6 border-t border-[var(--border-subtle)] text-center">
-                      <p className="text-lg text-[var(--foreground)]/40 line-through mb-1">
-                        {option.originalPrice} MXN
-                      </p>
                       <p className="text-2xl font-light text-[var(--foreground)]">
                         {option.price}{" "}
                         <span className="text-sm text-[var(--foreground)]/50 uppercase tracking-wider">
                           MXN
                         </span>
-                      </p>
-                      <p className="text-sm text-[#C67B5C] font-semibold mt-2">
-                        {option.off}
                       </p>
                     </div>
                   </div>
@@ -168,17 +159,20 @@ export default function ColeccionesSaraDavid() {
                       <td className="p-4 text-center text-[var(--foreground)]">✓</td>
                       <td className="p-4 text-center text-[var(--foreground)]">✓</td>
                     </tr>
+                    <tr className="border-b border-[var(--border-subtle)]">
+                      <td className="p-4 text-[var(--foreground)]/70">Álbum impreso</td>
+                      <td className="p-4 text-center text-[var(--foreground)]">—</td>
+                      <td className="p-4 text-center text-[var(--foreground)] text-sm">8.5x11&quot; (50 pág)</td>
+                    </tr>
                     <tr className="bg-[var(--background)]">
                       <td className="p-4 font-[var(--font-heading)] text-lg text-[var(--foreground)]">Precio</td>
                       <td className="p-4 text-center">
-                        <div className="text-base text-[var(--foreground)]/40 line-through">$59,000</div>
                         <div className="text-2xl font-light text-[var(--foreground)]">$35,400</div>
-                        <div className="text-xs text-[#C67B5C] font-semibold">40% OFF</div>
+                        <div className="text-xs text-[var(--foreground)]/60 uppercase">MXN</div>
                       </td>
                       <td className="p-4 text-center">
-                        <div className="text-base text-[var(--foreground)]/40 line-through">$59,000</div>
                         <div className="text-2xl font-light text-[var(--foreground)]">$41,300</div>
-                        <div className="text-xs text-[#C67B5C] font-semibold">30% OFF</div>
+                        <div className="text-xs text-[var(--foreground)]/60 uppercase">MXN</div>
                       </td>
                     </tr>
                   </tbody>
