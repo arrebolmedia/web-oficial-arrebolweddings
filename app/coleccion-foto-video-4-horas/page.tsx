@@ -17,11 +17,11 @@ const collection = {
     "Video de 15–20 minutos",
     "Versión 1 minuto",
   ],
-  price: "$16,500",
+  price: "$15,000",
 };
 
 const whatsappMessage =
-  "¡Hola! Deseo más información sobre la Colección Esencial de foto y video (4 horas, $16,500 MXN).";
+  "¡Hola! Deseo más información sobre la Colección Esencial de foto y video (4 horas, $15,000 MXN).";
 
 export default function ColeccionFotoVideo4Horas() {
   return (
