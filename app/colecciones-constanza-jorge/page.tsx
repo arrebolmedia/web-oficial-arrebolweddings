@@ -17,8 +17,8 @@ export default function ColeccionesConstanzaJorge() {
 
   const whatsappMessage =
     language === "es"
-      ? "¡Hola! Somos Constanza y Jorge (boda 23 de enero 2027, Aztlán). Nos interesan sus colecciones de fotografía y video con 30% de descuento. ¿Está disponible nuestra fecha?"
-      : "Hello! We're Constanza and Jorge (wedding January 23, 2027, Aztlán). We're interested in your photography and video collections with 30% off. Is our date available?";
+      ? "¡Hola! Somos Constanza y Jorge (boda 23 de enero 2027, Aztlán). Nos interesan sus colecciones de fotografía y video con 50% de descuento. ¿Está disponible nuestra fecha?"
+      : "Hello! We're Constanza and Jorge (wedding January 23, 2027, Aztlán). We're interested in your photography and video collections with 50% off. Is our date available?";
 
   return (
     <div>
@@ -31,7 +31,7 @@ export default function ColeccionesConstanzaJorge() {
       </FadeIn>
       <CollectionsView
         adjustmentType="percentage"
-        adjustmentValue={-30}
+        adjustmentValue={-50}
         showDiscount={true}
         whatsappMessage={whatsappMessage}
       />

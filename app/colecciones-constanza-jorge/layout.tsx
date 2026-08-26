@@ -4,11 +4,11 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://arrebolweddings.com"),
   title: "Colecciones - Constanza & Jorge | Arrebol Weddings",
   description:
-    "Colecciones exclusivas de fotografía y video para Constanza & Jorge - 23 de enero 2027, Aztlán. 30% de descuento en fotografía y video.",
+    "Colecciones exclusivas de fotografía y video para Constanza & Jorge - 23 de enero 2027, Aztlán. 50% de descuento en fotografía y video.",
   openGraph: {
     title: "Colecciones - Constanza & Jorge | Arrebol Weddings",
     description:
-      "Propuesta especial de fotografía y video para su boda. 23 de enero 2027 · Aztlán · 30% de descuento.",
+      "Propuesta especial de fotografía y video para su boda. 23 de enero 2027 · Aztlán · 50% de descuento.",
     type: "website",
     url: "https://arrebolweddings.com/colecciones-constanza-jorge",
     siteName: "Arrebol Weddings",
