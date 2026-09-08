@@ -57,6 +57,15 @@ export async function getLandingConfig(slug: string): Promise<LandingConfig | nu
   }
 }
 
+/**
+ * Ruta pública de una landing. El slug se guarda con el prefijo "colecciones-"
+ * (convención de las landings existentes) pero la URL ya lo lleva, así que
+ * anteponerlo otra vez produciría /colecciones-colecciones-<algo>.
+ */
+export function publicPath(slug: string): string {
+  return slug.startsWith("colecciones-") ? slug : `colecciones-${slug}`;
+}
+
 /** URL absoluta para OpenGraph; acepta rutas relativas o absolutas. */
 export function absoluteUrl(pathOrUrl: string): string {
   return pathOrUrl.startsWith("http") ? pathOrUrl : `${SITE_URL}${pathOrUrl}`;

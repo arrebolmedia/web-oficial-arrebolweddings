@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import DynamicLandingClient from "./DynamicLandingClient";
-import { getLandingConfig, absoluteUrl, SITE_URL } from "./landingConfig";
+import { getLandingConfig, absoluteUrl, publicPath, SITE_URL } from "./landingConfig";
 
 // Ruta interna. El público llega por la URL plana /colecciones-<slug>,
 // reescrita a esta ruta en next.config.ts.
@@ -18,7 +18,7 @@ export async function generateMetadata({
 
   const title = config.seo_title ?? `${config.title} | Arrebol Weddings`;
   const description = config.seo_description_es ?? config.subtitle ?? undefined;
-  const url = `${SITE_URL}/colecciones-${config.slug}`;
+  const url = `${SITE_URL}/${publicPath(config.slug)}`;
   const image = absoluteUrl(config.hero_image ?? "");
 
   return {
