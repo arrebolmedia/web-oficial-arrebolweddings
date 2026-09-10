@@ -63,8 +63,14 @@ export default function CustomPackagesView({
   const { language, content } = useLanguage();
   const t = language === "en" ? TEXTOS.en : TEXTOS.es;
   // Un solo paquete va centrado y ancho, como la tarjeta de Ginna & Carlos;
-  // varios se acomodan en rejilla, como las colecciones del catálogo.
+  // varios se acomodan en rejilla, como las colecciones del catálogo. Tres
+  // caben en una fila en escritorio; en dos columnas el tercero quedaba solo.
   const solo = packages.length === 1;
+  const rejilla = solo
+    ? ""
+    : packages.length === 3
+      ? "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+      : "grid grid-cols-1 md:grid-cols-2 gap-8";
 
   return (
     <>
@@ -76,7 +82,7 @@ export default function CustomPackagesView({
             </p>
           </FadeIn>
 
-          <div className={solo ? "" : "grid grid-cols-1 md:grid-cols-2 gap-8"}>
+          <div className={rejilla}>
             {packages.map((pkg, i) => (
               <FadeIn key={i} delay={300 + i * 100}>
                 <div
