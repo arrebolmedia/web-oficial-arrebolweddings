@@ -5,6 +5,22 @@ const LANDINGS_API = "https://suite.arrebolweddings.com/api/landings/slug";
 
 export const SITE_URL = "https://arrebolweddings.com";
 
+/** Paquete a la medida (custom_packages en la suite). */
+export interface CustomPackage {
+  name: string;
+  tagline?: string;
+  description?: string;
+  features: string[];
+  price: number;
+  original_price?: number;
+}
+
+/** Cifra destacada bajo los paquetes a la medida. */
+export interface Highlight {
+  value: string;
+  label: string;
+}
+
 export interface LandingConfig {
   slug: string;
   title: string;
@@ -20,9 +36,38 @@ export interface LandingConfig {
   seo_description_es: string | null;
   seo_description_en: string | null;
   noindex: boolean;
+  /** Vacío = la landing muestra el catálogo de colecciones. */
+  custom_packages: CustomPackage[];
+  highlights: Highlight[];
+  intro: string | null;
 }
 
 const DEFAULT_HERO = "/images/gallery/TOP-SyP-324-hero.webp";
+
+// La suite valida al guardar, pero la página que ve el cliente no debe romperse
+// por un registro viejo o editado a mano: un paquete sin nombre o sin precio
+// numérico se descarta en vez de salir como "$NaN".
+function paquetesValidos(v: unknown): CustomPackage[] {
+  if (!Array.isArray(v)) return [];
+  return v
+    .filter((p: any) => p && typeof p.name === "string" && Number.isFinite(Number(p.price)))
+    .map((p: any) => ({
+      name: p.name,
+      tagline: typeof p.tagline === "string" && p.tagline ? p.tagline : undefined,
+      description: typeof p.description === "string" && p.description ? p.description : undefined,
+      features: Array.isArray(p.features) ? p.features.filter((f: unknown) => typeof f === "string") : [],
+      price: Number(p.price),
+      original_price:
+        p.original_price != null && Number.isFinite(Number(p.original_price))
+          ? Number(p.original_price)
+          : undefined,
+    }));
+}
+
+function cifrasValidas(v: unknown): Highlight[] {
+  if (!Array.isArray(v)) return [];
+  return v.filter((h: any) => h && typeof h.value === "string" && typeof h.label === "string");
+}
 
 export async function getLandingConfig(slug: string): Promise<LandingConfig | null> {
   try {
@@ -51,6 +96,9 @@ export async function getLandingConfig(slug: string): Promise<LandingConfig | nu
       seo_description_es: raw.seo_description_es ?? null,
       seo_description_en: raw.seo_description_en ?? null,
       noindex: raw.noindex ?? false,
+      custom_packages: paquetesValidos(raw.custom_packages),
+      highlights: cifrasValidas(raw.highlights),
+      intro: raw.intro ?? null,
     };
   } catch {
     return null;
