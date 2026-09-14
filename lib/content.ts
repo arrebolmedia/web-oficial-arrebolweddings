@@ -249,7 +249,6 @@ export const contentEs = {
       "SyP-109.webp",
       "SyP-217.webp",
       "SyP-273.webp",
-      "TandM-115.webp",
       "TandM-188.webp",
       "TandM-643.webp",
       "TOP-AyJ-178.webp",
