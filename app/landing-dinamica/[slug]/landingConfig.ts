@@ -21,6 +21,19 @@ export interface Highlight {
   label: string;
 }
 
+/**
+ * Galería de ejemplo enlazada desde la landing (sample_galleries en la suite):
+ * el entregable real de otra boda, para que la propuesta se vea antes de
+ * contratarla. `image` es la portada que ya publica el proveedor.
+ */
+export interface SampleGallery {
+  kind: "photo" | "video";
+  title: string;
+  url: string;
+  image?: string;
+  meta?: string;
+}
+
 export interface LandingConfig {
   slug: string;
   title: string;
@@ -40,6 +53,8 @@ export interface LandingConfig {
   custom_packages: CustomPackage[];
   highlights: Highlight[];
   intro: string | null;
+  /** Vacío = la landing no muestra la sección de ejemplos. */
+  sample_galleries: SampleGallery[];
 }
 
 const DEFAULT_HERO = "/images/gallery/TOP-SyP-324-hero.webp";
@@ -70,6 +85,40 @@ function paquetesValidos(v: unknown): CustomPackage[] {
 function cifrasValidas(v: unknown): Highlight[] {
   if (!Array.isArray(v)) return [];
   return v.filter((h: any) => h && typeof h.value === "string" && typeof h.label === "string");
+}
+
+// Estos enlaces salen como href y como src en la página del cliente: un valor
+// que no sea http(s) —un "javascript:" escrito a mano en la BD— no debe llegar
+// al navegador.
+function esEnlaceWeb(v: unknown): v is string {
+  if (typeof v !== "string" || v.trim() === "") return false;
+  try {
+    const u = new URL(v);
+    return u.protocol === "https:" || u.protocol === "http:";
+  } catch {
+    return false;
+  }
+}
+
+function galeriasValidas(v: unknown): SampleGallery[] {
+  if (!Array.isArray(v)) return [];
+  return v
+    .filter(
+      (g: any) =>
+        g &&
+        (g.kind === "photo" || g.kind === "video") &&
+        typeof g.title === "string" &&
+        g.title.trim() !== "" &&
+        esEnlaceWeb(g.url)
+    )
+    .map((g: any) => ({
+      kind: g.kind as "photo" | "video",
+      title: g.title.trim(),
+      url: g.url,
+      // Sin portada la tarjeta sigue sirviendo: cae a un fondo con el nombre.
+      image: esEnlaceWeb(g.image) ? g.image : undefined,
+      meta: typeof g.meta === "string" && g.meta.trim() ? g.meta.trim() : undefined,
+    }));
 }
 
 export async function getLandingConfig(slug: string): Promise<LandingConfig | null> {
@@ -103,6 +152,7 @@ export async function getLandingConfig(slug: string): Promise<LandingConfig | nu
       highlights: cifrasValidas(raw.highlights),
       // Un intro en blanco dejaba un párrafo vacío en vez del texto por defecto.
       intro: typeof raw.intro === "string" && raw.intro.trim() ? raw.intro.trim() : null,
+      sample_galleries: galeriasValidas(raw.sample_galleries),
     };
   } catch {
     return null;

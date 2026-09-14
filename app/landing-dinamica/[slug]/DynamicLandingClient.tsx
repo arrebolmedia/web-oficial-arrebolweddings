@@ -4,6 +4,7 @@ import FadeIn from "@/components/FadeIn";
 import SectionHeader from "@/components/SectionHeader";
 import CollectionsView from "@/components/CollectionsView";
 import CustomPackagesView from "./CustomPackagesView";
+import SampleGalleriesSection from "./SampleGalleriesSection";
 import { useLanguage } from "../../context/LanguageContext";
 import type { LandingConfig } from "./landingConfig";
 
@@ -49,6 +50,9 @@ export default function DynamicLandingClient({ config }: { config: LandingConfig
           whatsappMessage={whatsappMessage}
         />
       )}
+      {/* Los ejemplos van después de los precios: primero la propuesta, luego
+          la prueba de cómo se ve entregada. */}
+      <SampleGalleriesSection galerias={config.sample_galleries} />
     </div>
   );
 }
