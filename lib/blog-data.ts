@@ -4616,6 +4616,174 @@ Debe sentirse como tu día.
     category: "Tips",
     date: "Enero 14, 2026",
   },
+  {
+    id: "37",
+    slug: "golden-hour-escapada-breve",
+    title: "El Golden Hour: quince minutos que son solo de ustedes",
+    excerpt: "Ocurre justo antes de que se meta el sol, dura muy poco, y es la razón por la que miramos el reloj toda la tarde. Nuestra propuesta es simple: escaparse diez o quince minutos, solos ustedes dos, fuera de la fiesta.",
+    content: `Hay un momento del día de la boda que casi nadie pide, y que después casi todos agradecen.
+
+Ocurre justo antes de que se meta el sol. Dura muy poco —a veces veinte minutos, a veces menos— y es la razón por la que miramos el reloj toda la tarde.
+
+## Qué es la hora dorada
+
+Cuando el sol está bajo, su luz atraviesa más atmósfera antes de llegar a nosotros. Eso hace dos cosas: la vuelve cálida y la vuelve suave. Deja de caer a plomo sobre la cara y empieza a envolverla.
+
+No hay equipo que reproduzca eso del todo. Podemos imitarla, y lo hacemos cuando hace falta, pero no es lo mismo. La luz de esa hora tiene una calidad que se reconoce sin saber nombrarla.
+
+## Por qué les proponemos escaparse
+
+Nuestra propuesta es simple: diez o quince minutos, solos ustedes dos, fuera de la fiesta.
+
+No es una sesión. No hay lista de poses ni cambio de vestuario. Salimos, caminan un poco, y los dejamos estar. Nos mantenemos a distancia, igual que en el First Look.
+
+Y aquí viene lo que de verdad importa, que no tiene que ver con la fotografía: ese suele ser de los pocos ratos del día en que van a estar los dos solos, ya casados. Desde que empieza el getting ready hasta el último baile, el día de una boda es de todos —de la familia, de los amigos, del protocolo. Esos quince minutos son de ustedes.
+
+## Cómo funciona en la práctica
+
+Si les late, lo apuntamos en el timeline y le avisamos al equipo de coordinación. Se acomoda según la hora a la que se meta el sol ese día en ese lugar, que cambia con la estación.
+
+En una boda que fluye bien, quince minutos no se notan. Si el día viene retrasado, lo recortamos o lo movemos. Nunca vamos a sacarlos de un momento importante por una foto.
+
+## Y si no se puede
+
+A veces no se puede. Llueve, se nubla, la ceremonia se recorrió una hora, el venue no tiene hacia dónde salir.
+
+No pasa nada. La hora dorada es un regalo, no un requisito, y hemos entregado bodas preciosas sin ella.
+
+Pero cuando se puede, casi siempre vale los quince minutos.`,
+    coverImage: "/images/gallery/AyJ-493.webp",
+    category: "Tips",
+    date: "Agosto 28, 2026",
+  },
+  {
+    id: "38",
+    slug: "como-escribir-sus-votos",
+    title: "Los votos: una estructura simple para escribir lo que cuesta decir",
+    excerpt: "No se cotizan, no aparecen en ningún timeline y no se le pueden pedir a ningún proveedor. Y sin embargo, cuando existen, suelen ser lo mejor del video. Si están frente a la hoja en blanco, seis preguntas casi siempre destraban.",
+    content: `Hay una parte de la boda que no se cotiza, no aparece en ningún timeline y no se le puede pedir a ningún proveedor. Y sin embargo, cuando existe, suele ser lo mejor del video.
+
+Los votos.
+
+## Por qué cuestan tanto
+
+Casi todas las parejas que se sientan a escribirlos se topan con lo mismo: la hoja en blanco.
+
+No es falta de amor ni falta de palabras. Es que se les está pidiendo condensar años en un par de minutos, decirlos en voz alta, y hacerlo sin sonar a tarjeta de felicitación. Son palabras que salen de lo más profundo y honesto del corazón, y justo por eso cuestan.
+
+Lo que hemos visto es que el bloqueo casi nunca viene de no saber qué sienten. Viene de no saber por dónde empezar.
+
+## Una estructura simple
+
+No es una fórmula, y no hay que seguirla al pie de la letra. Pero si están frente a la hoja en blanco, contestar estas seis cosas casi siempre destraba:
+
+**Cómo se conocieron.** El día, el lugar, quién dio el primer paso. Empezar por el principio ordena todo lo demás.
+
+**Qué les gustó del otro.** No lo que admiran hoy, sino lo que les llamó la atención entonces. Suelen ser detalles chiquitos y muy específicos.
+
+**Cómo inició su relación.** El momento en que dejó de ser otra cosa y se volvió esto.
+
+**Un momento divertido o complicado que vivieron juntos.** Aquí está el corazón. Una pareja se define más por lo que atravesó junta que por lo que planeó.
+
+**Lo hermoso de la pedida de mano.** Cómo fue, qué sintieron, qué recuerdan de ese día.
+
+**Lo que esperan para el futuro.** No promesas grandilocuentes: lo que de verdad imaginan.
+
+## Dónde leerlos
+
+Mucha gente asume que los votos van en la ceremonia, frente a todos. No tiene que ser así.
+
+Pueden leerlos **en la ceremonia**, como parte del rito.
+
+Pueden leerlos **en privado, frente a frente**, en un momento aparte del día. Se dicen cosas distintas cuando no hay doscientas personas escuchando.
+
+O pueden **escribirlos como carta** y entregárselos durante los preparativos, para leerlos en voz alta cada quien por su lado antes de verse.
+
+Las tres funcionan. Las tres se pueden documentar. Ustedes eligen cuál se parece más a como son.`,
+    coverImage: "/images/gallery/CyD-42.webp",
+    category: "Tips",
+    date: "Agosto 28, 2026",
+  },
+  {
+    id: "39",
+    slug: "guia-completa-acompanamiento",
+    title: "Todo lo que les vamos a contar, en un solo lugar",
+    excerpt: "Una lista completa de las recomendaciones que estaremos dándoles para que su boda sea el momento que siempre soñaron.",
+    content: `No hace falta leer nada de esto hoy. Cada tema les va a llegar por su cuenta cuando toque, con semanas de por medio y tiempo de sobra para pensarlo sin prisa.
+
+Pero si prefieren adelantarse, aquí está todo.
+
+## 1. La sesión pre boda
+
+Puede ser su Save The Date, la boda civil si se hace antes, o un ice breaker para que los más cercanos se conozcan. Dura entre cuarenta y cinco minutos y una hora, y el escenario lo eligen ustedes: el bosque, la ciudad, su casa, un café que signifique algo.
+
+No es examen de poses. Las mejores fotos salen de los momentos más auténticos entre ambos.
+
+[Recomendaciones para sus fotos de Save The Date](/blog/recomendaciones-fotos-save-the-date)
+
+## 2. El First Look
+
+Verse a solas antes de la ceremonia, lejos del ruido y con calma. Siempre lo proponemos porque hace el día más ligero: bajan los nervios y podemos tomar sus retratos sin prisa, cuando aún están impecables.
+
+Pero si prefieren esperar hasta el altar, también es hermoso. Esa emoción es otra y la respetamos igual.
+
+[El First Look: por qué puede ayudar](/blog/el-first-look-por-que-ayuda)
+
+## 3. Los horarios del día
+
+En qué momento llegamos, cuánto dura el getting ready, cuándo hacemos sus retratos, cuándo las fotos con la familia. Les compartimos algunos escenarios como punto de partida, y ustedes los mueven, los recortan, los acomodan.
+
+Lo armamos nosotros para que no tengan que pensarlo desde cero. Y si ya tienen planner, con gusto lo trabajamos directo con ella.
+
+[Timeline de foto y video](/blog/horarios-foto-video-bodas)
+
+## 4. El Golden Hour
+
+La última hora de luz antes del atardecer. Les proponemos una escapada breve: diez o quince minutos, solo ustedes dos.
+
+Esa luz es cálida y suave, y dura muy poco. Aunque no lo proponemos solo por la foto: sería de los pocos momentos del día en que van a estar los dos solos, ya casados.
+
+[El Golden Hour: quince minutos que son solo de ustedes](/blog/golden-hour-escapada-breve)
+
+## 5. Los votos
+
+Son una de las cosas que más enriquecen el video, y justo por eso a veces cuesta escribirlos. Si les sirve, una estructura simple ayuda: cómo se conocieron, qué les gustó del otro, cómo inició su relación, un momento que vivieron juntos, la pedida de mano, lo que esperan del futuro.
+
+Y no tienen que leerlos en la ceremonia. Pueden hacerlo en privado, frente a frente, o escribirlos como carta y leerlos en voz alta durante los preparativos.
+
+[Una estructura simple para escribir lo que cuesta decir](/blog/como-escribir-sus-votos)
+
+## 6. El brindis
+
+Si los votos no van con ustedes, hay otra forma de que esas palabras existan. Pueden venir de alguien más: un familiar, un amigo cercano, o los dos. El brindis del banquete es el momento natural para eso.
+
+Y no son excluyentes. Pueden ir sus votos en algún momento del día y alguien más en el brindis.
+
+## 7. Los momentos y las personas
+
+Hay algo que nos ayuda muchísimo y que solo ustedes pueden decirnos: qué momentos y qué personas no pueden faltar en su video.
+
+El amigo que viene de lejos. Algo que perteneció a alguien que ya no está. A veces hay cosas que parecen estar fuera del protocolo pero que importan justamente por lo que significan.
+
+## 8. La entrega
+
+Cuando pasa la boda empieza la parte que no se ve. La entrega digital toma entre seis y ocho semanas: en ese tiempo hacemos la selección, la edición y la corrección de color.
+
+En un par de semanas tras la boda les hacemos llegar un primer adelanto, y les vamos avisando cómo va el proceso.
+
+## 9. El photobook
+
+Las fotos preferidas las eligen ustedes, dando clic en el corazón que aparece en la esquina de cada imagen de la galería digital. Caben alrededor de cien, para que conserven buen tamaño.
+
+## Cómo usar esta guía
+
+No hay que leerla toda hoy. Cada tema les va a llegar por su cuenta cuando toque, con tiempo suficiente para pensarlo sin prisa.
+
+Esto es para quien quiera adelantarse, o para volver cuando una duda aparezca a destiempo. Y para lo que no esté aquí, estamos nosotros.`,
+    coverImage: "/images/gallery/AyJ-493.webp",
+    category: "Tips",
+    date: "Septiembre 17, 2026"
+  },
 ];
 
 // Spanish blog posts
