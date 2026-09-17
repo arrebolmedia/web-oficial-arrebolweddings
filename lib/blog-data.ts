@@ -4759,6 +4759,8 @@ Si los votos no van con ustedes, hay otra forma de que esas palabras existan. Pu
 
 Y no son excluyentes. Pueden ir sus votos en algún momento del día y alguien más en el brindis.
 
+[Quién habla en el brindis, qué decir y cuánto dura](/blog/el-brindis-quien-habla)
+
 ## 7. Los momentos y las personas
 
 Hay algo que nos ayuda muchísimo y que solo ustedes pueden decirnos: qué momentos y qué personas no pueden faltar en su video.
@@ -4781,6 +4783,42 @@ No hay que leerla toda hoy. Cada tema les va a llegar por su cuenta cuando toque
 
 Esto es para quien quiera adelantarse, o para volver cuando una duda aparezca a destiempo. Y para lo que no esté aquí, estamos nosotros.`,
     coverImage: "/images/gallery/AyJ-493.webp",
+    category: "Tips",
+    date: "Septiembre 17, 2026"
+  },
+  {
+    id: "40",
+    slug: "el-brindis-quien-habla",
+    title: "El brindis: si hablar no va con ustedes, alguien más puede decirlo",
+    excerpt: "Hay parejas que escriben sus votos en una tarde, y parejas que llevan meses evitando el tema. Si hablar frente a ciento veinte personas no va con ustedes, esas palabras pueden existir igual: dichas por alguien que los conoce.",
+    content: `Hay parejas que escriben sus votos en una tarde, y parejas que llevan meses evitando el tema. Las dos cosas están bien, y la segunda es más común de lo que parece.
+
+Si hablar frente a ciento veinte personas no va con ustedes, esas palabras pueden existir igual. Solo que dichas por alguien más.
+
+El brindis.
+
+## Quién
+
+Un familiar, un amigo cercano, o los dos. No tiene que ser quien mejor hable: tiene que ser quien mejor los conozca. Un hermano que se traba pero cuenta la anécdota correcta deja mejor recuerdo que alguien elocuente que no estuvo en las historias.
+
+Y si dudan entre dos personas, pueden hablar las dos. Dos intervenciones cortas funcionan mejor que una larga.
+
+## Qué decir
+
+A quien le toque le sirve saber que no tiene que resumir una vida. Con una historia basta: cómo los conoció, un momento en que vio algo de la relación que los demás no vieron, y una línea sobre lo que les desea.
+
+Lo que casi nunca funciona es el discurso que enumera cualidades, la broma interna que entienden cuatro personas, y el texto sacado de internet.
+
+## Cuándo y cuánto
+
+El brindis del banquete es el momento natural: la gente ya está sentada, con copa en mano, y hay una pausa entre tiempos.
+
+Dos o tres minutos por persona. Pasando de cinco la atención se va, por buena que sea la historia.
+
+Si nos dicen quién va a hablar, podemos estar en posición cuando tome el micrófono en vez de buscar el ángulo mientras habla.
+
+Y no son excluyentes: pueden ir sus votos en algún momento del día y alguien más en el brindis.`,
+    coverImage: "/images/gallery/CyD-80.webp",
     category: "Tips",
     date: "Septiembre 17, 2026"
   },
