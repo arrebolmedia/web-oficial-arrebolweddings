@@ -10,13 +10,12 @@ export default function ColeccionesDeFoto2026() {
   const { content } = useLanguage();
   const { colecciones, coleccionesFoto } = content;
 
-  // Colecciones solo de fotografía con precios actualizados (+$20k sobre el precio base)
+  // Colecciones solo de fotografía: la mitad del precio de la colección completa
   const photoCollections = colecciones.collections.map(col => {
     const priceStr = col.price.split(' ')[0].replace(/[^0-9]/g, '');
     const priceNum = parseInt(priceStr);
-    const halfPrice = Math.round(priceNum / 2);
-    const finalPrice = halfPrice + 20000; // Precio base de foto + $20k
-    
+    const finalPrice = Math.round(priceNum / 2);
+
     return {
       name: col.name,
       features: col.features.filter(f => 
