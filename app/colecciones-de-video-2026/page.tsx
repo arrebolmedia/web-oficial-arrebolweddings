@@ -10,13 +10,12 @@ export default function ColeccionesDeVideo2026() {
   const { content } = useLanguage();
   const { colecciones, coleccionesVideo } = content;
 
-  // Colecciones solo de video con precios actualizados (+$20k sobre el precio base)
+  // Colecciones solo de video: la mitad del precio de la colección completa
   const videoCollections = colecciones.collections.map(col => {
     const priceStr = col.price.split(' ')[0].replace(/[^0-9]/g, '');
     const priceNum = parseInt(priceStr);
-    const halfPrice = Math.round(priceNum / 2);
-    const finalPrice = halfPrice + 20000; // Precio base de video + $20k
-    
+    const finalPrice = Math.round(priceNum / 2);
+
     return {
       name: col.name,
       features: col.features.filter(f => 
