@@ -256,8 +256,6 @@ It's not an editorial session, but it's not casual Sunday either. We recommend:
 
 • Comfortable outfits to move in
 
-• A second change for variety
-
 The key is looking authentic, not costumed.
 
 3. Come relaxed: this isn't a posing test
@@ -330,7 +328,7 @@ You provide the connection and energy. We provide the light, framing, gentle dir
 
 The result appears when both parts flow.
 
-In summary
+## In summary
 
 • Choose a place that resonates with you.
 
@@ -484,13 +482,13 @@ When you wait until the ceremony, everything accumulates: the nerves, the antici
 
 Sometimes I see how one of them's eyes fill with tears of joy before walking. Or how they breathe deeply when they hear the first chords. That instant has something ritual, something that can't be recreated at any other point of the day. For some couples, that's the moment. The one they've imagined forever. The one they don't want to advance for anything in the world.
 
-The beauty of this type of encounter
+## The beauty of this type of encounter
 
 Waiting until the altar allows emotion to arrive unfiltered. There's no prior preparation, no intimate silence or private space: it's the force of the instant as it is. That total surprise can be overwhelming... but in the best sense. It's like letting your heart leap without warning.
 
 I've seen honest tears, nervous laughs, smiles that illuminate the entire ceremony. I've seen how the entire atmosphere transforms when that first encounter happens. Not only does the couple feel it: the energy in the space changes. Guests perceive it, the music feels different, even the light seems to adjust.
 
-The practical advantages (which also exist)
+## The practical advantages (which also exist)
 
 Although the encounter is more emotional than practical, it has its benefits:
 
@@ -498,7 +496,7 @@ You don't have to set aside time before the ceremony. The getting ready flows mo
 
 Everything feels more linear and traditional. It's ideal for those who value the classic structure.
 
-And the disadvantages (because it's also fair to mention them)
+## And the disadvantages (because it's also fair to mention them)
 
 After the ceremony, we normally do the couple photos. That means missing part or all of the cocktail hour.
 
@@ -506,7 +504,7 @@ If many guests want to greet you, dinner can become more interrupted, because co
 
 Still, for many couples it's completely worth it. The intensity of the moment overcomes everything.
 
-In contrast with the First Look
+## In contrast with the First Look
 
 While the First Look offers intimacy, calm, and control of time, waiting for the altar offers pure emotional impact. One doesn't substitute the other: they simply respond to different personalities and dreams.
 
@@ -4064,5 +4062,691 @@ And when both are worked with the same sensitivity, the result isn't just a reco
 it's an experience that can be felt again and again.`,
     category: "Tips",
     date: "December 18, 2025",
+  },
+  "35": {
+    title: "The complete guide: 8 essential articles to read before your wedding",
+    excerpt: "We've gathered the most valuable posts on our blog to help you plan your wedding with clarity and confidence. From important decisions to practical tips that will make all the difference on your wedding day.",
+    content: `Planning a wedding can feel overwhelming. With so many decisions, vendors, and details, it's easy to get lost or to put off what matters.
+
+That's why we've gathered the 8 most valuable blog posts every couple should read before the big day. Whatever stage of planning you're at, these articles will give you clarity, peace of mind, and perspective.
+
+## 1. The doubts all couples have (even if they don't always say them)
+
+[Read the full article](/blog/dudas-que-todos-los-novios-tienen)
+
+**Why it's essential:**
+This article answers the most common objections to hiring professional photo and video. If you've ever asked yourself "is it really worth it?", here you'll find honest answers based on the experience of dozens of couples.
+
+**What you'll learn:**
+• Why investing in photo and video is different from other expenses
+• How to tell a hobby apart from professional experience
+• What to really expect from the service
+• Why making the decision in time makes a difference
+
+## 2. Recommendations for perfect Save The Date photos
+
+[Read the full article](/blog/recomendaciones-fotos-save-the-date)
+
+**Why it's essential:**
+Your Save The Date is the first visual impression of your wedding. This guide helps you plan a session that truly represents you both, without forced poses or awkwardness.
+
+**What you'll learn:**
+• How to choose the location and outfits
+• Tips for feeling comfortable in front of the camera
+• What to do (and what to avoid) on the day of the session
+• Creative ideas for a one-of-a-kind result
+
+## 3. The First Look: why it really helps
+
+[Read the full article](/blog/el-first-look-por-que-ayuda)
+
+**Why it's essential:**
+One of the most emotional and practical decisions you'll make. This article explores the pros and cons honestly, so you can decide from clarity, not from social pressure.
+
+**What you'll learn:**
+• The emotional and logistical advantages of the First Look
+• How to keep the moment spontaneous
+• Alternatives if you'd rather not do it
+• Real stories from couples who lived it
+
+## 4. Tips for enjoying your wedding (and your photos at the same time)
+
+[Read the full article](/blog/consejos-disfrutar-boda-fotos)
+
+**Why it's essential:**
+The day flies by. This guide gives you concrete strategies to stay present, enjoy every moment, and still have incredible photos, without the camera stealing the spotlight.
+
+**What you'll learn:**
+• How to relax in front of the camera
+• The perfect balance between spontaneity and direction
+• Key moments you shouldn't miss
+• How to trust your photo and video team
+
+## 5. Bridesmaids: their true role in your wedding
+
+[Read the full article](/blog/damas-de-honor-verdadero-papel)
+
+**Why it's essential:**
+Choosing bridesmaids can lead to conflict when things aren't clear. This article helps you define expectations, roles, and boundaries with love and honesty.
+
+**What you'll learn:**
+• What to really expect from your bridesmaids
+• How to communicate responsibilities without pressure
+• Modern alternatives to traditional roles
+• How to handle delicate situations
+
+## 6. The importance of making decisions on time
+
+[Read the full article](/blog/importancia-tomar-decisiones-a-tiempo)
+
+**Why it's essential:**
+Putting off decisions doesn't make them easier: it makes them more expensive and more stressful. This guide shows you why deciding ahead of time gives you leverage, options, and peace of mind.
+
+**What you'll learn:**
+• When to book each key vendor
+• The real consequences of postponing decisions
+• How to prioritize when everything feels urgent
+• Strategies for deciding without pressure
+
+## 7. The timeline: the secret to a smooth wedding
+
+[Read the full article](/blog/timeline-secreto-boda-fluida)
+
+**Why it's essential:**
+A well-thought-out timeline is the difference between a wedding that flows and one that feels chaotic. This practical guide gives you the tools to build a realistic, workable schedule.
+
+**What you'll learn:**
+• How to estimate real times (not ideal ones)
+• Common scheduling mistakes
+• How to coordinate with vendors
+• When to be flexible and when to hold firm
+
+## 8. The definitive getting ready guide
+
+[Read the full article](/blog/guia-definitiva-getting-ready)
+
+**Why it's essential:**
+Getting ready is the most intimate and emotional moment before the ceremony. This guide helps you plan it so it's memorable, photogenic, and above all, enjoyable.
+
+**What you'll learn:**
+• What to include in your getting ready
+• How to prepare the space for beautiful photos
+• Logistics and timing tips
+• How to handle nerves and emotions
+• Ideas for special moments with your family
+
+## Why these 8 articles
+
+We didn't pick them at random.
+
+They're the topics couples ask about most, the most frequent doubts, the decisions with the biggest impact, and the advice that really makes a difference.
+
+Each one covers a different side of your wedding: from the emotional to the logistical, from the planning to the day itself.
+
+Together, they make up a complete guide to walk with you through every stage.
+
+## How to use this guide
+
+**If you're just starting to plan:**
+Read them all in order. They'll give you a complete picture of what's ahead.
+
+**If you already have a date:**
+Prioritize the articles on decisions and the timeline. Time is on your side if you use it well.
+
+**If your wedding is close:**
+Focus on the advice for the day itself: getting ready, enjoying the moment, trusting your team.
+
+**If you're feeling pressure or doubts:**
+Start with "The doubts all couples have" and "The importance of making decisions on time." They'll give you clarity and peace of mind.
+
+## One more thing we want to tell you
+
+Planning a wedding doesn't have to be perfect.
+It has to be yours.
+
+These articles aren't here to tell you what to do, but to give you tools, perspective, and confidence.
+
+Your wedding will be unique because it's yours.
+And these resources are here so you can live it with clarity, without unnecessary stress, and with the certainty that you made the best decisions for the two of you.
+
+Have other questions, or topics you'd like us to cover? Write to us. We're here for you.`,
+    category: "Tips",
+    date: "January 9, 2026",
+  },
+  "36": {
+    title: "Photo and video timeline: adapting to your story",
+    excerpt: "Every wedding has its own rhythm. See the approximate photo and video times for scenarios with and without a First Look, and how we adapt to your timeline to document every moment without pressure.",
+    content: `Every wedding is unique, and so is its timeline.
+
+No two weddings are the same: the venue, the light, the special moments, the size of the family, the energy of the day… all of it shapes how the photo and video coverage flows.
+
+That's why we don't work with rigid schedules, but with a flexible structure that adapts to you.
+
+Below are two typical scenarios, with the approximate time we usually give each moment. They're references, not rules. What matters is that the day feels smooth, natural, and free of pressure.
+
+## Scenario WITH a First Look
+
+The First Look is that private moment when you see each other before the ceremony. It's intimate and emotional, and it lets you enjoy your photos calmly before the formal celebration begins.
+
+**Robe session with the bridesmaids (when applicable)**
+⏱ About 30 min
+A relaxed, fun moment, full of that easy closeness between friends.
+
+**Groom's getting ready**
+⏱ About 30 min (sometimes less)
+Natural moments as they get dressed, talk, and get ready.
+
+**Bride's getting ready**
+⏱ About 30 min (sometimes a little more)
+The final details: the dress, the veil, the excitement before heading out.
+
+**First Look + couple session + family + bridesmaids and groomsmen**
+⏱ About 1 hour
+This block includes that first moment between the two of you, photos as a couple, and then with family and friends. We aim to finish at least 30 minutes before the ceremony so you can rest, drink some water, and breathe.
+
+**Ceremony**
+⏱ About 1 hour
+The heart of the day. Here we document every gesture, every vow, every tear.
+
+**Cocktail hour**
+⏱ About 1 hour
+Time to mingle while you enjoy yourselves and we capture the atmosphere.
+
+**Grand entrance + dinner**
+⏱ About 1 hour 30 min
+From the moment you walk in until dinner wraps up and the most emotional moments begin.
+
+**Dances**
+⏱ About 20 min
+First dance, the waltz with your parents, a surprise dance… the moments everyone is waiting for.
+
+**Party**
+⏱ Varies, until we wrap up
+By now it's pure energy. We move with the rhythm of the day.
+
+**Shots + bouquet + garter**
+⏱ About 30 min
+The last rituals before the night ends.
+
+## Scenario WITHOUT a First Look
+
+If you'd rather see each other for the first time at the ceremony, the timeline changes a little. The formal photos happen during cocktail hour, while your guests enjoy themselves.
+
+**Robe session with the bridesmaids (when applicable)**
+⏱ About 30 min
+
+**Groom's getting ready**
+⏱ About 30 min (sometimes less)
+
+**Bride's getting ready**
+⏱ About 30 min (sometimes a little more)
+
+**Ceremony**
+⏱ About 1 hour
+We aim to be free at least 15 minutes beforehand, so the processional can line up and you can freshen up and get ready.
+
+**Couple session + family + bridesmaids and groomsmen (during cocktail hour)**
+⏱ About 1 hour
+While your guests mingle, we take the formal photos without rushing.
+
+**Cocktail hour (partly, while photos are taken)**
+⏱ About 1 hour
+You're at your photo session, but the celebration has already begun.
+
+**Grand entrance + dinner**
+⏱ About 1 hour 30 min
+
+**Dances**
+⏱ About 20 min
+
+**Party**
+⏱ Varies, until we wrap up
+
+**Shots + bouquet + garter**
+⏱ About 30 min
+
+## Scenarios side by side
+
+Here's a quick look at how the blocks are distributed across different lengths of coverage:
+
+### Coverage scenarios — WITH a First Look
+
+<div class="overflow-x-auto my-8 -mx-6 md:-mx-12">
+  <div class="inline-block min-w-full px-6 md:px-12">
+    <table class="w-full bg-white border border-gray-200">
+    <thead>
+      <tr class="border-b border-gray-200">
+        <th class="p-4 text-left font-semibold text-gray-900 bg-gray-50">Block</th>
+        <th class="p-4 text-center font-semibold text-gray-900 bg-gray-50 min-w-[140px]">8 hours</th>
+        <th class="p-4 text-center font-semibold text-gray-900 bg-gray-50 min-w-[140px]">10 hours</th>
+        <th class="p-4 text-center font-semibold text-gray-900 bg-gray-50 min-w-[140px]">12 hours</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="border-b border-gray-200">
+        <td class="p-4 text-gray-700">Robe session (if applicable)</td>
+        <td class="p-4 text-center text-gray-900">Depends on logistics</td>
+        <td class="p-4 text-center text-gray-900">Comfortable</td>
+        <td class="p-4 text-center text-gray-900">Comfortable</td>
+      </tr>
+      <tr class="border-b border-gray-200">
+        <td class="p-4 text-gray-700">Groom getting ready</td>
+        <td class="p-4 text-center text-gray-900">Included</td>
+        <td class="p-4 text-center text-gray-900">Included</td>
+        <td class="p-4 text-center text-gray-900">Included</td>
+      </tr>
+      <tr class="border-b border-gray-200">
+        <td class="p-4 text-gray-700">Bride getting ready</td>
+        <td class="p-4 text-center text-gray-900">Included</td>
+        <td class="p-4 text-center text-gray-900">Included</td>
+        <td class="p-4 text-center text-gray-900">Included</td>
+      </tr>
+      <tr class="border-b border-gray-200">
+        <td class="p-4 text-gray-700">First look + couple session + family + bridesmaids/groomsmen</td>
+        <td class="p-4 text-center text-gray-900">Compact flow</td>
+        <td class="p-4 text-center text-gray-900">Comfortable flow</td>
+        <td class="p-4 text-center text-gray-900">Relaxed flow</td>
+      </tr>
+      <tr class="border-b border-gray-200">
+        <td class="p-4 text-gray-700">Buffer before the ceremony</td>
+        <td class="p-4 text-center text-gray-900">Short</td>
+        <td class="p-4 text-center text-gray-900">Adequate</td>
+        <td class="p-4 text-center text-gray-900">Generous</td>
+      </tr>
+      <tr class="border-b border-gray-200">
+        <td class="p-4 text-gray-700">Ceremony</td>
+        <td class="p-4 text-center text-gray-900">Full</td>
+        <td class="p-4 text-center text-gray-900">Full</td>
+        <td class="p-4 text-center text-gray-900">Full</td>
+      </tr>
+      <tr class="border-b border-gray-200">
+        <td class="p-4 text-gray-700">Cocktail hour (where the couple is)</td>
+        <td class="p-4 text-center text-gray-900">With guests</td>
+        <td class="p-4 text-center text-gray-900">With guests</td>
+        <td class="p-4 text-center text-gray-900">With guests</td>
+      </tr>
+      <tr class="border-b border-gray-200">
+        <td class="p-4 text-gray-700">Grand entrance + dinner</td>
+        <td class="p-4 text-center text-gray-900">Included</td>
+        <td class="p-4 text-center text-gray-900">Included</td>
+        <td class="p-4 text-center text-gray-900">Included</td>
+      </tr>
+      <tr class="border-b border-gray-200">
+        <td class="p-4 text-gray-700">Dances</td>
+        <td class="p-4 text-center text-gray-900">Included</td>
+        <td class="p-4 text-center text-gray-900">Included</td>
+        <td class="p-4 text-center text-gray-900">Included</td>
+      </tr>
+      <tr class="border-b border-gray-200">
+        <td class="p-4 text-gray-700">Party</td>
+        <td class="p-4 text-center text-gray-900">Short</td>
+        <td class="p-4 text-center text-gray-900">Moderate</td>
+        <td class="p-4 text-center text-gray-900">Long</td>
+      </tr>
+      <tr class="border-b border-gray-200">
+        <td class="p-4 text-gray-700">Shots + bouquet + garter</td>
+        <td class="p-4 text-center text-gray-900">End of coverage</td>
+        <td class="p-4 text-center text-gray-900">End of coverage</td>
+        <td class="p-4 text-center text-gray-900">May not be the end</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+</div>
+
+### Coverage scenarios — WITHOUT a First Look
+
+<div class="overflow-x-auto my-8 -mx-6 md:-mx-12">
+  <div class="inline-block min-w-full px-6 md:px-12">
+    <table class="w-full bg-white border border-gray-200">
+    <thead>
+      <tr class="border-b border-gray-200">
+        <th class="p-4 text-left font-semibold text-gray-900 bg-gray-50">Block</th>
+        <th class="p-4 text-center font-semibold text-gray-900 bg-gray-50 min-w-[140px]">8 hours</th>
+        <th class="p-4 text-center font-semibold text-gray-900 bg-gray-50 min-w-[140px]">10 hours</th>
+        <th class="p-4 text-center font-semibold text-gray-900 bg-gray-50 min-w-[140px]">12 hours</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="border-b border-gray-200">
+        <td class="p-4 text-gray-700">Robe session (if applicable)</td>
+        <td class="p-4 text-center text-gray-900">Depends on logistics</td>
+        <td class="p-4 text-center text-gray-900">Possible</td>
+        <td class="p-4 text-center text-gray-900">Comfortable</td>
+      </tr>
+      <tr class="border-b border-gray-200">
+        <td class="p-4 text-gray-700">Groom getting ready</td>
+        <td class="p-4 text-center text-gray-900">Included</td>
+        <td class="p-4 text-center text-gray-900">Included</td>
+        <td class="p-4 text-center text-gray-900">Included</td>
+      </tr>
+      <tr class="border-b border-gray-200">
+        <td class="p-4 text-gray-700">Bride getting ready</td>
+        <td class="p-4 text-center text-gray-900">Included</td>
+        <td class="p-4 text-center text-gray-900">Included</td>
+        <td class="p-4 text-center text-gray-900">Included</td>
+      </tr>
+      <tr class="border-b border-gray-200">
+        <td class="p-4 text-gray-700">Buffer before the ceremony (15 min)</td>
+        <td class="p-4 text-center text-gray-900">Short</td>
+        <td class="p-4 text-center text-gray-900">Adequate</td>
+        <td class="p-4 text-center text-gray-900">Generous</td>
+      </tr>
+      <tr class="border-b border-gray-200">
+        <td class="p-4 text-gray-700">Ceremony</td>
+        <td class="p-4 text-center text-gray-900">Full</td>
+        <td class="p-4 text-center text-gray-900">Full</td>
+        <td class="p-4 text-center text-gray-900">Full</td>
+      </tr>
+      <tr class="border-b border-gray-200">
+        <td class="p-4 text-gray-700">Couple session + family + bridesmaids/groomsmen</td>
+        <td class="p-4 text-center text-gray-900">During cocktail hour</td>
+        <td class="p-4 text-center text-gray-900">During cocktail hour</td>
+        <td class="p-4 text-center text-gray-900">During cocktail hour</td>
+      </tr>
+      <tr class="border-b border-gray-200">
+        <td class="p-4 text-gray-700">Cocktail hour (where the couple is)</td>
+        <td class="p-4 text-center text-gray-900">At photo session</td>
+        <td class="p-4 text-center text-gray-900">At photo session</td>
+        <td class="p-4 text-center text-gray-900">Back with guests sooner</td>
+      </tr>
+      <tr class="border-b border-gray-200">
+        <td class="p-4 text-gray-700">Grand entrance + dinner</td>
+        <td class="p-4 text-center text-gray-900">Included</td>
+        <td class="p-4 text-center text-gray-900">Included</td>
+        <td class="p-4 text-center text-gray-900">Included</td>
+      </tr>
+      <tr class="border-b border-gray-200">
+        <td class="p-4 text-gray-700">Dances</td>
+        <td class="p-4 text-center text-gray-900">Included</td>
+        <td class="p-4 text-center text-gray-900">Included</td>
+        <td class="p-4 text-center text-gray-900">Included</td>
+      </tr>
+      <tr class="border-b border-gray-200">
+        <td class="p-4 text-gray-700">Party</td>
+        <td class="p-4 text-center text-gray-900">Short</td>
+        <td class="p-4 text-center text-gray-900">Moderate</td>
+        <td class="p-4 text-center text-gray-900">Long</td>
+      </tr>
+      <tr class="border-b border-gray-200">
+        <td class="p-4 text-gray-700">Shots + bouquet + garter</td>
+        <td class="p-4 text-center text-gray-900">End of coverage</td>
+        <td class="p-4 text-center text-gray-900">End of coverage</td>
+        <td class="p-4 text-center text-gray-900">May not be the end</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+</div>
+
+## What matters most: flexibility
+
+These times are guidelines, not limits.
+
+If your family is large, we adjust.
+If the light is perfect and you want more couple photos, we make the most of it.
+If dinner runs long, we adapt.
+If you need a breather, we respect it.
+
+Our job isn't to control the timeline: it's to move with it.
+
+Your wedding shouldn't feel like a production.
+It should feel like your day.
+
+Not sure how to put your timeline together, or which option works best for you? Write to us. We'll gladly help you plan your day with clarity and without pressure.`,
+    category: "Tips",
+    date: "January 14, 2026",
+  },
+  "37": {
+    title: "The Golden Hour: fifteen minutes that are just yours",
+    excerpt: "It happens just before the sun goes down, it's over quickly, and it's the reason we keep an eye on the clock all afternoon. Our suggestion is simple: slip away for ten or fifteen minutes, just the two of you, away from the party.",
+    content: `There's a moment on the wedding day that almost nobody asks for, and almost everybody is grateful for afterward.
+
+It happens just before the sun goes down. It's very brief—sometimes twenty minutes, sometimes less—and it's the reason we keep an eye on the clock all afternoon.
+
+## What golden hour is
+
+When the sun is low, its light travels through more atmosphere before it reaches us. That does two things: it turns the light warm, and it turns it soft. It stops beating straight down on your face and starts to wrap around it.
+
+No equipment can fully reproduce that. We can imitate it, and we do when we need to, but it isn't the same. The light at that hour has a quality you recognize without being able to name it.
+
+## Why we suggest slipping away
+
+Our suggestion is simple: ten or fifteen minutes, just the two of you, away from the party.
+
+It isn't a photo shoot. There's no list of poses and no outfit change. We step outside, you walk a little, and we let you be. We keep our distance, just as we do at the First Look.
+
+And here's what really matters, which has nothing to do with photography: it's usually one of the few moments of the day when the two of you will be alone, already married. From the start of getting ready to the last dance, a wedding day belongs to everyone—to your family, your friends, the protocol. Those fifteen minutes belong to you.
+
+## How it works in practice
+
+If you like the idea, we add it to the timeline and let the coordination team know. We fit it around the time the sun sets that day in that place, which changes with the seasons.
+
+At a wedding that's running smoothly, fifteen minutes go unnoticed. If the day is running late, we shorten it or move it. We will never pull you out of an important moment for a photo.
+
+## And if it's not possible
+
+Sometimes it isn't. It rains, it clouds over, the ceremony got pushed back an hour, the venue has nowhere to step out to.
+
+That's okay. Golden hour is a gift, not a requirement, and we've delivered beautiful weddings without it.
+
+But when it is possible, it's almost always worth the fifteen minutes.`,
+    category: "Tips",
+    date: "August 28, 2026",
+  },
+  "38": {
+    title: "Your vows: a simple structure for writing what's hard to say",
+    excerpt: "They don't come with a price quote, they don't show up on any timeline, and no vendor can provide them. And yet, when they're there, they're usually the best part of the video. If you're staring at a blank page, six questions almost always get you unstuck.",
+    content: `There's a part of the wedding that doesn't come with a price quote, doesn't show up on any timeline, and can't be asked of any vendor. And yet, when it's there, it's usually the best part of the video.
+
+The vows.
+
+## Why they're so hard
+
+Almost every couple who sits down to write them runs into the same thing: the blank page.
+
+It isn't a lack of love, or a lack of words. It's that you're being asked to fit years into a couple of minutes, say them out loud, and do it without sounding like a greeting card. They're words that come from the deepest, most honest place in the heart, and that's exactly why they're hard.
+
+What we've seen is that the block almost never comes from not knowing what you feel. It comes from not knowing where to begin.
+
+## A simple structure
+
+It isn't a formula, and you don't have to follow it to the letter. But if you're facing the blank page, answering these six things almost always gets you unstuck:
+
+**How you met.** The day, the place, who made the first move. Starting at the beginning puts everything else in order.
+
+**What you liked about each other.** Not what you admire today, but what caught your attention back then. It's usually tiny, very specific details.
+
+**How your relationship began.** The moment it stopped being something else and became this.
+
+**A funny or difficult moment you went through together.** This is the heart of it. A couple is defined more by what they've been through together than by what they planned.
+
+**What was beautiful about the proposal.** How it happened, what you felt, what you remember about that day.
+
+**What you hope for in the future.** Not grandiose promises: what you truly imagine.
+
+## Where to read them
+
+Many people assume vows go in the ceremony, in front of everyone. It doesn't have to be that way.
+
+You can read them **at the ceremony**, as part of the rite.
+
+You can read them **in private, face to face**, at a separate moment of the day. People say different things when there aren't two hundred people listening.
+
+Or you can **write them as a letter** and have them delivered while you're getting ready, so each of you reads the other's aloud, separately, before you see each other.
+
+All three work. All three can be documented. You choose the one that's most like you.`,
+    category: "Tips",
+    date: "August 28, 2026",
+  },
+  "39": {
+    title: "Everything we'll be telling you, in one place",
+    excerpt: "A complete list of the recommendations we'll be sharing with you so your wedding is the moment you always dreamed of.",
+    content: `You don't need to read any of this today. Each topic will reach you on its own when the time comes, weeks apart, with plenty of time to think it over without rushing.
+
+But if you'd rather get ahead, here it all is.
+
+## 1. The pre-wedding session
+
+It can be your Save The Date, your civil wedding if it takes place beforehand, or an icebreaker get-together so the people closest to you can meet each other. It lasts between forty-five minutes and an hour, and you choose the setting: the woods, the city, your home, a café that means something to you.
+
+It's not a posing test. The best photos come from the most genuine moments between the two of you.
+
+[Recommendations for your Save The Date photos](/blog/recomendaciones-fotos-save-the-date)
+
+## 2. The First Look
+
+Seeing each other alone before the ceremony, away from the noise and without hurry. We always suggest it because it makes the day lighter: nerves settle, and we can take your portraits without rushing, while you still look impeccable.
+
+But if you'd rather wait until the altar, that's beautiful too. It's a different kind of emotion, and we respect it just the same.
+
+[The First Look: why it can help](/blog/el-first-look-por-que-ayuda)
+
+## 3. The day's schedule
+
+When we arrive, how long getting ready takes, when we do your portraits, when the family photos happen. We share a few scenarios as a starting point, and you move them around, trim them, rearrange them.
+
+We put it together so you don't have to start from scratch. And if you already have a planner, we're glad to work on it directly with your planner.
+
+[Photo and video timeline](/blog/horarios-foto-video-bodas)
+
+## 4. The Golden Hour
+
+The last hour of light before sunset. We suggest a short escape: ten or fifteen minutes, just the two of you.
+
+That light is warm and soft, and it doesn't last long. But we don't suggest it only for the photo: it would be one of the few moments of the day when the two of you are alone, already married.
+
+[The Golden Hour: fifteen minutes that are just yours](/blog/golden-hour-escapada-breve)
+
+## 5. The vows
+
+They're one of the things that enrich the video most, and that's exactly why they can be hard to write. If it helps, a simple structure makes it easier: how you met, what you liked about each other, how your relationship began, a moment you lived through together, the proposal, what you hope for the future.
+
+And you don't have to read them at the ceremony. You can do it in private, face to face, or write them as a letter and read them aloud while you're getting ready.
+
+[A simple structure for writing what's hard to say](/blog/como-escribir-sus-votos)
+
+## 6. The toast
+
+If vows aren't your thing, there's another way for those words to exist. They can come from someone else: a relative, a close friend, or both. The toast during dinner is the natural moment for it.
+
+And it's not one or the other. You can say your vows at some point in the day and have someone else give the toast.
+
+[Who speaks at the toast, what to say, and how long it lasts](/blog/el-brindis-quien-habla)
+
+## 7. The moments and the people
+
+There's something that helps us enormously, and only you can tell us: which moments and which people can't be missing from your video.
+
+The friend coming from far away. Something that belonged to someone who's no longer with us. Sometimes there are things that seem to fall outside the protocol but matter precisely because of what they mean.
+
+## 8. The delivery
+
+Once the wedding is over, the part you don't see begins. Digital delivery takes between six and eight weeks: in that time we do the selection, the editing, and the color correction.
+
+A couple of weeks after the wedding, we send you a first sneak peek, and we keep you posted on how the process is going.
+
+## 9. The photobook
+
+You pick your favorite photos by clicking the heart in the corner of each image in the digital gallery. Around a hundred fit, so they keep a good size.
+
+## How to use this guide
+
+You don't have to read it all today. Each topic will reach you on its own when the time comes, with enough time to think it over without rushing.
+
+This is for anyone who wants to get ahead, or for coming back when a question shows up out of turn. And for anything that isn't here, you have us.`,
+    category: "Tips",
+    date: "September 17, 2026",
+  },
+  "40": {
+    title: "The toast: if speaking isn't your thing, someone else can say it",
+    excerpt: "It isn't the consolation prize for vows. It's another way for those words to exist: spoken by someone who was there for the stories and can tell them better than anyone. Who to choose, what to say, and how long it should last.",
+    content: `Some couples write their vows in an afternoon, and some spend months avoiding the subject. Both are fine, and the second is more common than it seems.
+
+If speaking in front of a hundred and twenty people isn't your thing, those words can still exist. Just spoken by someone else.
+
+The toast.
+
+## Who
+
+A relative, a close friend, or both. It doesn't have to be the best speaker: it has to be the person who knows you best. A brother who stumbles over his words but tells the right story leaves a better memory than someone eloquent who wasn't there for the stories.
+
+And if you're torn between two people, both can speak. Two short speeches work better than one long one.
+
+## What to say
+
+Whoever is asked will be glad to know they don't have to sum up a whole life. One story is enough: how they met you, a moment when they saw something in your relationship that others didn't, and one line about what they wish for you.
+
+What almost never works: the speech that lists your virtues, the inside joke that four people understand, and the text pulled from the internet.
+
+## When and how long
+
+The toast during dinner is the natural moment: people are already seated, glass in hand, and there's a pause between courses.
+
+Two or three minutes per person. Past five, people's attention drifts, however good the story is.
+
+If you tell us who's going to speak, we can be in position when they take the microphone, instead of looking for the angle while they're talking.
+
+And it's not one or the other: you can say your vows at some point in the day and have someone else give the toast.`,
+    category: "Tips",
+    date: "September 17, 2026",
+  },
+  "41": {
+    title: "Your digital invitation: what we need from you (and why)",
+    excerpt: "The design is our part; the names, the times, the hotels, and the guest list are things only you have. What we'll ask you for, what each item is for, and the rule that prevents almost every problem with the list.",
+    content: `A digital invitation is built from what you tell us. The design and the coding are our part; the names, the times, the hotels, and the guest list are things only you have.
+
+This is the list of what we'll ask you for, with the reason behind each item. You don't need all of it to get started: whatever's missing gets added during the rounds of revisions. But the more that arrives clearly from the start, the less back and forth there will be.
+
+When you're ready, it all goes in [our template](/downloads/informacion-invitacion-digital.csv).
+
+## The basics
+
+- **Your names, exactly as you want them to appear.** It seems obvious, but "Alejandra" and "Ale" don't look the same on a cover, and it's one of the changes we're asked for most afterward.
+- **Date and start time.** The countdown is based on the time.
+- **The domain.** Something like anaandcarlos.com. If you haven't bought it yet, we'll sort it out together.
+- **The style.** The wedding colors or a couple of references are enough.
+
+## Photos
+
+Three to five horizontal photos for the cover, and twelve to fifteen for the gallery, mixing vertical and horizontal. In the best resolution you have, in a shared folder that can be opened without requesting access.
+
+## The day
+
+For each moment—ceremony, cocktail hour, reception—the time, the place, and the address or Google Maps link. If the wedding is adults-only, say so here; the note goes at the end of the itinerary, which is where people read it.
+
+For the dress code: the type, any guidance for women and for men, and the colors to avoid. The more specific, the fewer questions you'll get on WhatsApp.
+
+## Accommodation
+
+Name, address, phone number, and website for each hotel, plus the group code if you negotiated a rate.
+
+The phone number is what we miss most often. It's the first thing an out-of-town guest looks for, and it isn't always online: sometimes what shows up belongs to another hotel with a similar name. If you have it, even better.
+
+If you'd like to recommend the venue itself but rooms aren't guaranteed, we mark it as subject to availability.
+
+## Gift registry
+
+Store, event number, and a direct link to your registry.
+
+If you'd like to include a bank transfer, we need the bank, the account holder, and the CLABE (the 18-digit Mexican interbank number). Just keep in mind that the invitation is a public page: anyone with the link can see the account, not only your guests.
+
+## The guest list
+
+This is where things get most complicated, so it's worth slowing down.
+
+Each guest opens the page, looks up their name, and RSVPs. For that to work, the list has to come in [our guest template](/downloads/plantilla-invitados.csv) and follow one simple rule: **one row per invitation, not per person**. It's a separate file from the one with the wedding information.
+
+- If someone is bringing a plus-one, it's a single row with a 1 in the additional guests column. Not a second row that says "Plus one."
+- If a couple RSVPs together, one row with 1 additional guest. If each RSVPs separately, two rows with 0.
+- Names as each guest would write them. That's how they'll search for themselves.
+
+## After it's published
+
+The invitation has a dashboard for adding guests and seeing who has already confirmed. It's worth agreeing from the start on who will use it: when you and we change things at the same time, sooner or later something gets overwritten.
+
+Everything else fits in [a single template](/downloads/informacion-invitacion-digital.csv). And if you don't have your invitation yet, [here's how it works](/invitaciones-digitales/).`,
+    category: "Tips",
+    date: "September 21, 2026",
   },
 };
