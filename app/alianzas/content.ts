@@ -133,7 +133,7 @@ const plannersEs: AlianzasContent = {
     items: [
       {
         title: "Seguimos tu timeline",
-        description: "Lo revisamos contigo antes de la boda, marcamos los momentos clave y nos movemos a tu ritmo.",
+        description: "Lo revisamos contigo antes de la boda, marcamos los momentos clave y lo seguimos al pie de la letra.",
       },
       {
         title: "Tu montaje, bien retratado",
@@ -160,7 +160,7 @@ const plannersEs: AlianzasContent = {
   offers: {
     subtitle: "Alianza comercial",
     title: "¿Qué te ofrecemos?",
-    description: "Depende de lo que necesites. Toma una, dos o las tres.",
+    description: "Depende de lo que necesites. Elige una, dos o las tres.",
     cardCta: "Me interesa",
     otherText: "¿Necesitas algo distinto?",
     otherCta: "Cuéntanos",
@@ -206,7 +206,7 @@ const plannersEs: AlianzasContent = {
       {
         number: "03",
         title: "El día de la boda",
-        description: "Llegamos antes y trabajamos discretamente, al ritmo de tu equipo.",
+        description: "Llegamos antes y trabajamos discretamente, coordinados con tu equipo.",
       },
       {
         number: "04",
@@ -247,7 +247,7 @@ const plannersEs: AlianzasContent = {
   },
   contact: {
     title: "¿Hacemos equipo?",
-    description: "Escríbenos por donde te acomode y agendamos una llamada.",
+    description: "Escríbenos por WhatsApp, correo o Instagram y agendamos una llamada.",
     whatsapp: "WhatsApp",
     email: "Correo",
     instagram: "Instagram",
@@ -305,7 +305,7 @@ const plannersEn: AlianzasContent = {
     items: [
       {
         title: "We follow your timeline",
-        description: "We go over it with you before the wedding, mark the key moments and move at your pace.",
+        description: "We go over it with you before the wedding, mark the key moments and stick to it.",
       },
       {
         title: "Your setup, well photographed",
@@ -332,7 +332,7 @@ const plannersEn: AlianzasContent = {
   offers: {
     subtitle: "Partnership",
     title: "What we offer you",
-    description: "It depends on what you need. Take one, two or all three.",
+    description: "It depends on what you need. Pick one, two or all three.",
     cardCta: "I'm interested",
     otherText: "Need something different?",
     otherCta: "Tell us",
@@ -378,7 +378,7 @@ const plannersEn: AlianzasContent = {
       {
         number: "03",
         title: "The wedding day",
-        description: "We arrive early and work discreetly, at your team's pace.",
+        description: "We arrive early and work discreetly, in sync with your team.",
       },
       {
         number: "04",
@@ -419,7 +419,7 @@ const plannersEn: AlianzasContent = {
   },
   contact: {
     title: "Shall we team up?",
-    description: "Reach us however suits you and we'll set up a call.",
+    description: "Message us on WhatsApp, email or Instagram and we'll set up a call.",
     whatsapp: "WhatsApp",
     email: "Email",
     instagram: "Instagram",
@@ -462,7 +462,7 @@ const venuesEs: AlianzasContent = {
       },
       {
         title: "Nos coordinamos con tu equipo",
-        description: "Hablamos con tu coordinador antes de la boda y el día del evento nos movemos a su ritmo.",
+        description: "Hablamos con tu coordinador antes de la boda y el día del evento seguimos sus indicaciones.",
       },
       {
         title: "Tu espacio sale bien",
@@ -487,7 +487,7 @@ const venuesEs: AlianzasContent = {
         description: "Con cada boda conocemos mejor tu venue: dónde cae la luz a cada hora y cuáles son sus mejores rincones.",
       },
       {
-        title: "Cero fricción",
+        title: "Sin interrupciones",
         description: "Llegamos a tiempo, seguimos tus lineamientos y no interferimos con el servicio ni con el montaje.",
       },
       {
@@ -507,7 +507,7 @@ const venuesEs: AlianzasContent = {
   offers: {
     subtitle: "Alianza comercial",
     title: "¿Qué te ofrecemos?",
-    description: "Depende de lo que necesite tu venue. Toma una, dos o las tres.",
+    description: "Depende de lo que necesite tu venue. Elige una, dos o las tres.",
     cardCta: "Me interesa",
     otherText: "¿Necesitas algo distinto?",
     otherCta: "Cuéntanos",
@@ -553,7 +553,7 @@ const venuesEs: AlianzasContent = {
       {
         number: "03",
         title: "El día de la boda",
-        description: "Trabajamos discretamente, siguiendo tus reglas y al ritmo de tu equipo.",
+        description: "Trabajamos discretamente, siguiendo tus reglas y coordinados con tu equipo.",
       },
       {
         number: "04",
@@ -590,7 +590,7 @@ const venuesEs: AlianzasContent = {
   },
   contact: {
     title: "¿Hacemos equipo?",
-    description: "Escríbenos por donde te acomode y agendamos una llamada.",
+    description: "Escríbenos por WhatsApp, correo o Instagram y agendamos una llamada.",
     whatsapp: "WhatsApp",
     email: "Correo",
     instagram: "Instagram",
@@ -629,7 +629,7 @@ const venuesEn: AlianzasContent = {
       },
       {
         title: "We work with your team",
-        description: "We talk to your coordinator before the wedding and on the day we move at their pace.",
+        description: "We talk to your coordinator before the wedding and on the day we follow their lead.",
       },
       {
         title: "Your space looks good",
@@ -654,7 +654,7 @@ const venuesEn: AlianzasContent = {
         description: "With every wedding we know your venue better: where the light falls at each hour and which corners work best.",
       },
       {
-        title: "Zero friction",
+        title: "No interruptions",
         description: "We arrive on time, follow your guidelines and don't get in the way of service or setup.",
       },
       {
@@ -674,7 +674,7 @@ const venuesEn: AlianzasContent = {
   offers: {
     subtitle: "Partnership",
     title: "What we offer you",
-    description: "It depends on what your venue needs. Take one, two or all three.",
+    description: "It depends on what your venue needs. Pick one, two or all three.",
     cardCta: "I'm interested",
     otherText: "Need something different?",
     otherCta: "Tell us",
@@ -720,7 +720,7 @@ const venuesEn: AlianzasContent = {
       {
         number: "03",
         title: "The wedding day",
-        description: "We work discreetly, following your rules and at your team's pace.",
+        description: "We work discreetly, following your rules and in sync with your team.",
       },
       {
         number: "04",
@@ -757,7 +757,7 @@ const venuesEn: AlianzasContent = {
   },
   contact: {
     title: "Shall we team up?",
-    description: "Reach us however suits you and we'll set up a call.",
+    description: "Message us on WhatsApp, email or Instagram and we'll set up a call.",
     whatsapp: "WhatsApp",
     email: "Email",
     instagram: "Instagram",
