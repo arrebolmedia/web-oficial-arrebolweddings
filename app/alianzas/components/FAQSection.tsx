@@ -14,11 +14,11 @@ export default function FAQSection({ variant }: { variant: AlianzaVariant }) {
   };
 
   return (
-    <section className="py-24 md:py-32 bg-[var(--background)]">
+    <section className="py-24 md:py-32 bg-white">
       <div className="max-w-4xl mx-auto px-5 md:px-8 lg:px-12">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <p className="text-xs tracking-[0.3em] uppercase text-[var(--accent-wine)] mb-4">
+          <p className="text-xs tracking-[0.3em] uppercase text-[var(--foreground)]/60 mb-4">
             {faq.subtitle}
           </p>
           <h2 className="font-[var(--font-heading)] text-3xl md:text-4xl lg:text-5xl text-[var(--foreground)] leading-tight">
@@ -31,7 +31,7 @@ export default function FAQSection({ variant }: { variant: AlianzaVariant }) {
           {faq.items.map((item, index) => (
             <div
               key={index}
-              className="bg-white border border-[var(--foreground)]/10 overflow-hidden"
+              className="bg-[var(--background)] border border-[var(--border-subtle)] overflow-hidden"
             >
               <button
                 onClick={() => toggleQuestion(index)}
@@ -41,7 +41,7 @@ export default function FAQSection({ variant }: { variant: AlianzaVariant }) {
                   {item.question}
                 </span>
                 <span
-                  className={`text-[var(--accent-wine)] transition-transform duration-300 ${
+                  className={`text-[var(--foreground)]/50 transition-transform duration-300 ${
                     openIndex === index ? "rotate-180" : ""
                   }`}
                 >

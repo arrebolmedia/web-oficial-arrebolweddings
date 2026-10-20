@@ -159,7 +159,7 @@ export default function AlianzasGallerySection({ variant }: { variant: AlianzaVa
   // Loading state
   if (mediaItems.length === 0) {
     return (
-      <section id="galeria" className="py-16 bg-[var(--background)]">
+      <section id="galeria" className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-center items-center min-h-[400px]">
             <p className="text-[var(--foreground)]/50">{content.gallery.loading}</p>
@@ -170,7 +170,7 @@ export default function AlianzasGallerySection({ variant }: { variant: AlianzaVa
   }
 
   return (
-    <section id="galeria" className="py-16 bg-[var(--background)]">
+    <section id="galeria" className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex gap-4">
           {mediaColumns.map((column, colIndex) => (

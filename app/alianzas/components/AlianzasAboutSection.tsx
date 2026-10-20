@@ -13,7 +13,7 @@ export default function AlianzasAboutSection({ variant }: { variant: AlianzaVari
         <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-start">
           {/* Left Column - Main Content */}
           <div>
-            <p className="text-xs tracking-[0.3em] uppercase text-[var(--accent-wine)] mb-4">
+            <p className="text-xs tracking-[0.3em] uppercase text-[var(--foreground)]/60 mb-4">
               {about.subtitle}
             </p>
             <h2 className="font-[var(--font-heading)] text-3xl md:text-4xl lg:text-5xl text-[var(--foreground)] leading-tight mb-8">
@@ -42,7 +42,7 @@ export default function AlianzasAboutSection({ variant }: { variant: AlianzaVari
             {about.values.map((value, index) => (
               <div
                 key={index}
-                className="bg-white p-6 border-l-2 border-[var(--accent-wine)]"
+                className="bg-white p-6 border border-[var(--border-subtle)]"
               >
                 <h3 className="font-[var(--font-heading)] text-lg text-[var(--foreground)] mb-2">
                   {value.title}

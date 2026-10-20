@@ -15,7 +15,7 @@ export default function FloatingWhatsApp({ variant }: { variant: AlianzaVariant 
       target="_blank"
       rel="noopener noreferrer"
       aria-label={contact.floatingLabel}
-      className="fixed bottom-5 right-5 z-40 px-5 py-3 bg-[var(--accent-wine)] border border-white/60 text-white text-xs tracking-widest uppercase rounded-full shadow-lg hover:bg-[var(--foreground)] transition-colors duration-300"
+      className="fixed bottom-5 right-5 z-40 px-5 py-3 bg-[var(--foreground)] border border-white/40 text-white text-xs tracking-widest uppercase shadow-lg hover:bg-white hover:text-[var(--foreground)] hover:border-[var(--foreground)] transition-colors duration-300"
     >
       {contact.whatsapp}
     </a>

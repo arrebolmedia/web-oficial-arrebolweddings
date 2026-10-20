@@ -40,7 +40,7 @@ export default function AlianzasHero({ variant }: { variant: AlianzaVariant }) {
         <div className="max-w-2xl">
           {/* Badge */}
           <div className="inline-block mb-6">
-            <span className="text-xs tracking-[0.25em] uppercase text-white/80 border border-white/30 px-4 py-2 rounded-full">
+            <span className="text-xs tracking-[0.3em] uppercase text-white/80">
               {hero.badge}
             </span>
           </div>
@@ -61,7 +61,7 @@ export default function AlianzasHero({ variant }: { variant: AlianzaVariant }) {
               href={whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="group px-8 py-4 bg-white text-[var(--foreground)] text-sm tracking-widest uppercase font-medium rounded-sm hover:bg-[var(--accent-wine)] hover:text-white transition-all duration-300 text-center"
+              className="group px-8 py-4 border border-white bg-white text-[var(--foreground)] text-sm tracking-widest uppercase hover:bg-transparent hover:text-white transition-all duration-300 text-center"
             >
               {hero.ctaPrimary}
               <span className="inline-block ml-2 group-hover:translate-x-1 transition-transform">
@@ -70,7 +70,7 @@ export default function AlianzasHero({ variant }: { variant: AlianzaVariant }) {
             </a>
             <button
               onClick={() => scrollToSection("galeria")}
-              className="px-8 py-4 border border-white/50 text-white text-sm tracking-widest uppercase hover:bg-white/10 transition-all duration-300 rounded-sm"
+              className="px-8 py-4 border border-white/60 text-white text-sm tracking-widest uppercase hover:bg-white hover:text-[var(--foreground)] transition-all duration-300"
             >
               {hero.ctaSecondary}
             </button>

@@ -8,11 +8,11 @@ export default function BenefitsSection({ variant }: { variant: AlianzaVariant }
   const { benefits } = getAlianzasContent(variant, language);
 
   return (
-    <section className="py-24 md:py-32 bg-white">
+    <section className="py-24 md:py-32 bg-[var(--background)]">
       <div className="max-w-6xl mx-auto px-5 md:px-8 lg:px-12">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <p className="text-xs tracking-[0.3em] uppercase text-[var(--accent-wine)] mb-4">
+          <p className="text-xs tracking-[0.3em] uppercase text-[var(--foreground)]/60 mb-4">
             {benefits.subtitle}
           </p>
           <h2 className="font-[var(--font-heading)] text-3xl md:text-4xl lg:text-5xl text-[var(--foreground)] leading-tight mb-6">
@@ -28,13 +28,11 @@ export default function BenefitsSection({ variant }: { variant: AlianzaVariant }
           {benefits.items.map((item, index) => (
             <div
               key={index}
-              className="p-8 bg-[var(--background)] hover:shadow-lg transition-shadow duration-300"
+              className="p-8 bg-white border border-[var(--border-subtle)]"
             >
-              <div className="w-12 h-12 bg-[var(--accent-wine)]/10 rounded-full flex items-center justify-center mb-6">
-                <span className="text-[var(--accent-wine)] font-bold">
-                  {String(index + 1).padStart(2, "0")}
-                </span>
-              </div>
+              <p className="font-[var(--font-heading)] text-sm text-[var(--foreground)]/40 mb-4">
+                {String(index + 1).padStart(2, "0")}
+              </p>
               <h3 className="font-[var(--font-heading)] text-xl text-[var(--foreground)] mb-3">
                 {item.title}
               </h3>

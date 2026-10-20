@@ -15,7 +15,7 @@ export default function OffersSection({ variant }: { variant: AlianzaVariant }) 
       <div className="max-w-6xl mx-auto px-5 md:px-8 lg:px-12">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <p className="text-xs tracking-[0.3em] uppercase text-[var(--accent-wine)] mb-4">
+          <p className="text-xs tracking-[0.3em] uppercase text-[var(--foreground)]/60 mb-4">
             {offers.subtitle}
           </p>
           <h2 className="font-[var(--font-heading)] text-3xl md:text-4xl lg:text-5xl text-[var(--foreground)] leading-tight mb-6">
@@ -31,9 +31,9 @@ export default function OffersSection({ variant }: { variant: AlianzaVariant }) 
           {offers.items.map((offer, index) => (
             <div
               key={index}
-              className="flex flex-col p-8 bg-[var(--background)] border-l-4 border-[var(--accent-wine)]"
+              className="flex flex-col p-8 bg-[var(--background)] border border-[var(--border-subtle)]"
             >
-              <span className="font-[var(--font-heading)] text-sm text-[var(--accent-wine)] mb-4">
+              <span className="font-[var(--font-heading)] text-sm text-[var(--foreground)]/40 mb-4">
                 {String(index + 1).padStart(2, "0")}
               </span>
               <h3 className="font-[var(--font-heading)] text-2xl text-[var(--foreground)] mb-4">
@@ -46,7 +46,7 @@ export default function OffersSection({ variant }: { variant: AlianzaVariant }) 
                 href={whatsappUrl(offer.whatsappMessage)}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group mt-auto self-start px-6 py-3 border border-[var(--accent-wine)] text-[var(--accent-wine)] text-xs tracking-widest uppercase hover:bg-[var(--accent-wine)] hover:text-white transition-all duration-300"
+                className="group mt-auto self-start px-6 py-3 border border-[var(--foreground)] text-[var(--foreground)] text-xs tracking-widest uppercase hover:bg-[var(--foreground)] hover:text-white transition-all duration-300"
               >
                 {offers.cardCta}
                 <span className="inline-block ml-2 group-hover:translate-x-1 transition-transform">
@@ -64,7 +64,7 @@ export default function OffersSection({ variant }: { variant: AlianzaVariant }) 
             href={whatsappUrl(offers.otherWhatsappMessage)}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[var(--accent-wine)] underline underline-offset-4 hover:text-[var(--foreground)] transition-colors"
+            className="text-[var(--foreground)] underline underline-offset-4 hover:text-[var(--foreground)]/60 transition-colors"
           >
             {offers.otherCta}
           </a>
