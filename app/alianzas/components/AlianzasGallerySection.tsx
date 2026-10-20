@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import { useLanguage } from "@/app/context/LanguageContext";
-import { alianzasContentEs, alianzasContentEn } from "../content";
+import { getAlianzasContent, type AlianzaVariant } from "../content";
 
 interface MediaItem {
   filename: string;
@@ -127,9 +127,9 @@ const galleryVideos = [
   "clip5_00090626.mp4",
 ];
 
-export default function AlianzasGallerySection() {
+export default function AlianzasGallerySection({ variant }: { variant: AlianzaVariant }) {
   const { language } = useLanguage();
-  const content = language === "es" ? alianzasContentEs : alianzasContentEn;
+  const content = getAlianzasContent(variant, language);
 
   const [columns, setColumns] = useState(3);
   const [mediaItems, setMediaItems] = useState<MediaItem[]>([]);

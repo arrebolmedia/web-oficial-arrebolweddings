@@ -1,12 +1,11 @@
 "use client";
 
 import { useLanguage } from "@/app/context/LanguageContext";
-import { alianzasContentEs, alianzasContentEn } from "../content";
+import { getAlianzasContent, type AlianzaVariant } from "../content";
 
-export default function AlianzasAboutSection() {
+export default function AlianzasAboutSection({ variant }: { variant: AlianzaVariant }) {
   const { language } = useLanguage();
-  const content = language === "es" ? alianzasContentEs : alianzasContentEn;
-  const { about } = content;
+  const { about } = getAlianzasContent(variant, language);
 
   return (
     <section id="about" className="py-24 md:py-32 bg-[var(--background)]">

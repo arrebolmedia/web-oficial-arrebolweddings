@@ -2,14 +2,12 @@
 
 import Image from "next/image";
 import { useLanguage } from "@/app/context/LanguageContext";
-import { alianzasContentEs, alianzasContentEn } from "../content";
+import { WHATSAPP_BASE } from "@/lib/config";
+import { getAlianzasContent, type AlianzaVariant } from "../content";
 
-const WHATSAPP_BASE = "https://wa.me/5217775001071?text=";
-
-export default function AlianzasHero() {
+export default function AlianzasHero({ variant }: { variant: AlianzaVariant }) {
   const { language } = useLanguage();
-  const content = language === "es" ? alianzasContentEs : alianzasContentEn;
-  const { hero } = content;
+  const { hero } = getAlianzasContent(variant, language);
 
   const whatsappUrl = WHATSAPP_BASE + encodeURIComponent(hero.whatsappMessage);
 
@@ -25,8 +23,9 @@ export default function AlianzasHero() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/gallery/TOP-SyP-324-hero.webp"
-          alt="Arrebol Weddings - Alianzas con Wedding Planners"
+          // Codificada: un acento en el nombre se corrompe en la cabecera de precarga.
+          src={encodeURI(hero.image)}
+          alt={hero.imageAlt}
           fill
           className="object-cover"
           priority

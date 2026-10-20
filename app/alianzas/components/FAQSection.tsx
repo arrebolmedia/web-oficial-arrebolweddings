@@ -2,12 +2,11 @@
 
 import { useState } from "react";
 import { useLanguage } from "@/app/context/LanguageContext";
-import { alianzasContentEs, alianzasContentEn } from "../content";
+import { getAlianzasContent, type AlianzaVariant } from "../content";
 
-export default function FAQSection() {
+export default function FAQSection({ variant }: { variant: AlianzaVariant }) {
   const { language } = useLanguage();
-  const content = language === "es" ? alianzasContentEs : alianzasContentEn;
-  const { faq } = content;
+  const { faq } = getAlianzasContent(variant, language);
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   const toggleQuestion = (index: number) => {

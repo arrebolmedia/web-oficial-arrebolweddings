@@ -1,14 +1,12 @@
 "use client";
 
 import { useLanguage } from "@/app/context/LanguageContext";
-import { alianzasContentEs, alianzasContentEn } from "../content";
-
 import { WHATSAPP_BASE } from "@/lib/config";
+import { getAlianzasContent, type AlianzaVariant } from "../content";
 
-export default function HowWeWorkSection() {
+export default function HowWeWorkSection({ variant }: { variant: AlianzaVariant }) {
   const { language } = useLanguage();
-  const content = language === "es" ? alianzasContentEs : alianzasContentEn;
-  const { howWeWork } = content;
+  const { howWeWork } = getAlianzasContent(variant, language);
 
   const whatsappUrl = WHATSAPP_BASE + encodeURIComponent(howWeWork.whatsappMessage);
 
@@ -55,7 +53,7 @@ export default function HowWeWorkSection() {
             rel="noopener noreferrer"
             className="inline-block px-8 py-4 bg-[var(--accent-wine)] text-white text-sm tracking-widest uppercase hover:bg-[var(--foreground)] transition-all duration-300"
           >
-            {language === "es" ? "Agendar llamada" : "Schedule a call"}
+            {howWeWork.cta}
           </a>
         </div>
       </div>
