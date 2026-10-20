@@ -95,8 +95,8 @@ const plannersEs: AlianzasContent = {
     ctaSecondary: "Ver nuestro trabajo",
     trustBadge: "Más de 200 bodas documentadas",
     whatsappMessage: "¡Hola! Soy wedding planner y quiero platicar sobre una alianza con Arrebol.",
-    image: "/images/gallery/KandE-151.webp",
-    imageAlt: "Ceremonia en jardín fotografiada por Arrebol Weddings",
+    image: "/images/gallery/SyP-109.webp",
+    imageAlt: "Entrada de la novia por el pasillo de una ceremonia en hacienda, por Arrebol Weddings",
   },
   about: {
     subtitle: "Quiénes somos",
@@ -267,8 +267,8 @@ const plannersEn: AlianzasContent = {
     ctaSecondary: "See our work",
     trustBadge: "Over 200 weddings documented",
     whatsappMessage: "Hi! I'm a wedding planner and I'd like to talk about partnering with Arrebol.",
-    image: "/images/gallery/KandE-151.webp",
-    imageAlt: "Garden ceremony photographed by Arrebol Weddings",
+    image: "/images/gallery/SyP-109.webp",
+    imageAlt: "Bride walking down the aisle at a hacienda ceremony, by Arrebol Weddings",
   },
   about: {
     subtitle: "Who we are",
@@ -443,8 +443,8 @@ const venuesEs: AlianzasContent = {
     ctaSecondary: "Ver nuestro trabajo",
     trustBadge: "Más de 200 bodas documentadas",
     whatsappMessage: "¡Hola! Escribo de parte de un venue y quiero platicar sobre una alianza con Arrebol.",
-    image: "/images/gallery/Sofía-y-Pablo-276.webp",
-    imageAlt: "Ceremonia frente a la fachada de una hacienda, por Arrebol Weddings",
+    image: "/images/gallery/_MG_1245.webp",
+    imageAlt: "Los novios salen de su ceremonia en un jardín, por Arrebol Weddings",
   },
   about: {
     subtitle: "Quiénes somos",
@@ -610,8 +610,8 @@ const venuesEn: AlianzasContent = {
     ctaSecondary: "See our work",
     trustBadge: "Over 200 weddings documented",
     whatsappMessage: "Hi! I'm writing on behalf of a venue and I'd like to talk about partnering with Arrebol.",
-    image: "/images/gallery/Sofía-y-Pablo-276.webp",
-    imageAlt: "Ceremony in front of a hacienda façade, by Arrebol Weddings",
+    image: "/images/gallery/_MG_1245.webp",
+    imageAlt: "Couple walking back down the aisle at a garden ceremony, by Arrebol Weddings",
   },
   about: {
     subtitle: "Who we are",

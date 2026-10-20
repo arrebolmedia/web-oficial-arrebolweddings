@@ -12,16 +12,19 @@ interface MediaItem {
   type: "image" | "video";
 }
 
-// Lista de imágenes de la galería (verificadas)
+// Solo tres bodas: SyP (incluye "Sofía-y-Pablo"), CyD y TyJ (las "_MG_").
 const galleryImages = [
-  "AyJ-109.webp",
-  "AyJ-149.webp",
-  "AyJ-394.webp",
-  "AyJ-447.webp",
-  "AyJ-493.webp",
-  "AyJ-93.webp",
-  "aym-76.webp",
-  "aym-84.webp",
+  // SyP
+  "SyP-109.webp",
+  "SyP-217.webp",
+  "SyP-273.webp",
+  "TOP-SyP-116.webp",
+  "TOP-SyP-324.webp",
+  "Sofía-y-Pablo-118.webp",
+  "Sofía-y-Pablo-276.webp",
+  "Sofía-y-Pablo-286.webp",
+  "Sofía-y-Pablo-452.webp",
+  // CyD
   "CyD-21.webp",
   "CyD-24.webp",
   "CyD-38.webp",
@@ -33,99 +36,26 @@ const galleryImages = [
   "CyD-75.webp",
   "CyD-80.webp",
   "CyD-82.webp",
-  "KandE-102.webp",
-  "KandE-145.webp",
-  "KandE-151.webp",
-  "KandE-157.webp",
-  "KandE-337.webp",
-  "KandE-430.webp",
-  "KandE-474.webp",
-  "KyB-1.webp",
-  "KyB-235.webp",
-  "KyB-285.webp",
-  "KyB-304.webp",
-  "KyB-463.webp",
-  "KyB-564.webp",
-  "KyB-607.webp",
-  "PyC-174.webp",
-  "PyC-259.webp",
-  "PyC-275.webp",
-  "PyC-59.webp",
-  "PyP-110.webp",
-  "PyP-128.webp",
-  "PyP-14.webp",
-  "PyP-154.webp",
-  "PyP-370.webp",
-  "PyP-395.webp",
-  "PyP-432.webp",
-  "PyP-535.webp",
-  "PyP-80.webp",
-  "RandK-102.webp",
-  "RandK-112.webp",
-  "RandK-76.webp",
-  "RandK-84.webp",
-  "SandJ-207.webp",
-  "SandJ-214.webp",
-  "SandJ-404.webp",
-  "SandJ-414.webp",
-  "SandJ-857.webp",
-  "Sofía-y-Pablo-118.webp",
-  "Sofía-y-Pablo-276.webp",
-  "Sofía-y-Pablo-286.webp",
-  "Sofía-y-Pablo-452.webp",
-  "SyD-96.webp",
-  "SYO-221.webp",
-  "SYO-532.webp",
-  "SYO-654.webp",
-  "SYO-716.webp",
-  "SYO-726.webp",
-  "SYO-792.webp",
-  "SYO-796.webp",
-  "SYO-832.webp",
-  "SyP-109.webp",
-  "SyP-217.webp",
-  "SyP-273.webp",
-  "TandM-188.webp",
-  "TandM-643.webp",
-  "TOP-AyJ-178.webp",
-  "TOP-AyJ-500.webp",
   "TOP-CyD-41.webp",
   "TOP-CyD-67.webp",
-  "TOP-KyB-23.webp",
-  "TOP-KyB-236.webp",
-  "TOP-MG1228.webp",
-  "TOP-PyC-312.webp",
-  "TOP-PyP-505.webp",
-  "TOP-SyD-125.webp",
-  "TOP-SyD-162.webp",
-  "TOP-SyP-116.webp",
-  "TOP-SyP-324.webp",
+  // TyJ
   "_MG_0739.webp",
+  "_MG_0928.webp",
   "_MG_0967.webp",
   "_MG_1134.webp",
+  "_MG_1163.webp",
   "_MG_1174.webp",
+  "_MG_1228.webp",
+  "_MG_1245.webp",
   "_MG_1308.webp",
   "_MG_1430.webp",
+  "_MG_1434.webp",
   "_MG_1471.webp",
+  "_MG_1498.webp",
 ];
 
-// Lista de videos optimizados
-const galleryVideos = [
-  "clip00086729.mp4",
-  "clip00088550.mp4",
-  "clip00088938.mp4",
-  "clip2_00086400.mp4",
-  "clip2_00086546.mp4",
-  "clip2_00086810.mp4",
-  "clip2_00086973.mp4",
-  "clip2_00087810.mp4",
-  "clip4_00086769.mp4",
-  "clip4_00087082.mp4",
-  "clip4_00087271.mp4",
-  "clip5_00086622.mp4",
-  "clip5_00088046.mp4",
-  "clip5_00090626.mp4",
-];
+// Clips de video de estas bodas (los de la galería general no dicen de qué boda son).
+const galleryVideos: string[] = [];
 
 export default function AlianzasGallerySection({ variant }: { variant: AlianzaVariant }) {
   const { language } = useLanguage();
@@ -272,7 +202,7 @@ export default function AlianzasGallerySection({ variant }: { variant: AlianzaVa
                     className={`relative overflow-hidden bg-gray-200 ${isVertical ? "aspect-[4/5]" : "aspect-[3/2]"}`}
                   >
                     <Image
-                      src={`/images/gallery/${item.filename}`}
+                      src={encodeURI(`/images/gallery/${item.filename}`)}
                       alt="Arrebol Weddings"
                       fill
                       className="object-cover"
