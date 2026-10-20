@@ -241,7 +241,7 @@ const plannersEs: AlianzasContent = {
       },
       {
         question: "¿Trabajan fuera de Morelos?",
-        answer: "Sí, en todo México; solo se suman viáticos según el lugar. Hemos trabajado en CDMX, Guerrero, Puebla, Oaxaca y más.",
+        answer: "Sí, en todo México; solo se suman viáticos según el lugar. Hemos trabajado en Puebla, San Miguel de Allende, Ciudad de México y Querétaro, entre otros lugares.",
       },
     ],
   },
@@ -413,7 +413,7 @@ const plannersEn: AlianzasContent = {
       },
       {
         question: "Do you work outside Morelos?",
-        answer: "Yes, all over Mexico; we only add travel expenses depending on the location. We've worked in CDMX, Guerrero, Puebla, Oaxaca and more.",
+        answer: "Yes, all over Mexico; we only add travel expenses depending on the location. We've worked in Puebla, San Miguel de Allende, Mexico City and Querétaro, among other places.",
       },
     ],
   },
@@ -584,7 +584,7 @@ const venuesEs: AlianzasContent = {
       },
       {
         question: "¿Trabajan fuera de Morelos?",
-        answer: "Sí, en todo México; solo se suman viáticos según el lugar. Hemos trabajado en CDMX, Guerrero, Puebla, Oaxaca y más.",
+        answer: "Sí, en todo México; solo se suman viáticos según el lugar. Hemos trabajado en Puebla, San Miguel de Allende, Ciudad de México y Querétaro, entre otros lugares.",
       },
     ],
   },
@@ -751,7 +751,7 @@ const venuesEn: AlianzasContent = {
       },
       {
         question: "Do you work outside Morelos?",
-        answer: "Yes, all over Mexico; we only add travel expenses depending on the location. We've worked in CDMX, Guerrero, Puebla, Oaxaca and more.",
+        answer: "Yes, all over Mexico; we only add travel expenses depending on the location. We've worked in Puebla, San Miguel de Allende, Mexico City and Querétaro, among other places.",
       },
     ],
   },
