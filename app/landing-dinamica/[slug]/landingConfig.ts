@@ -37,6 +37,8 @@ export interface SampleGallery {
 export interface LandingConfig {
   slug: string;
   title: string;
+  /** null = en inglés se usa el título en español (p. ej. nombres de novios). */
+  title_en: string | null;
   subtitle: string | null;
   subtitle_en: string | null;
   hero_image: string | null;
@@ -134,6 +136,7 @@ export async function getLandingConfig(slug: string): Promise<LandingConfig | nu
     return {
       slug: raw.slug,
       title: raw.title,
+      title_en: typeof raw.title_en === "string" && raw.title_en.trim() ? raw.title_en.trim() : null,
       subtitle: raw.subtitle ?? null,
       subtitle_en: raw.subtitle_en ?? null,
       hero_image: raw.hero_image || DEFAULT_HERO,

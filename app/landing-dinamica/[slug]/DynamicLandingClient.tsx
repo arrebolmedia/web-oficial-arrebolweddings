@@ -14,6 +14,8 @@ import type { LandingConfig } from "./landingConfig";
 export default function DynamicLandingClient({ config }: { config: LandingConfig }) {
   const { language } = useLanguage();
 
+  const title = language === "en" ? config.title_en ?? config.title : config.title;
+
   const subtitle =
     language === "es"
       ? config.subtitle ?? undefined
@@ -28,7 +30,7 @@ export default function DynamicLandingClient({ config }: { config: LandingConfig
     <div>
       <FadeIn>
         <SectionHeader
-          title={config.title}
+          title={title}
           subtitle={subtitle}
           backgroundImage={config.hero_image ?? undefined}
         />

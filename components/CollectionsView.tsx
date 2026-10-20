@@ -18,10 +18,15 @@ export interface Package {
   video_duration: string;
   features: string[];
   description: string;
+  // Inglés escrito en la suite; si falta, se muestra el español.
+  name_en?: string;
+  description_en?: string;
+  features_en?: string[];
   comparison: {
     short_video: boolean;
     one_minute_video: boolean;
     photobook: string | null;
+    photobook_en?: string | null;
     pre_wedding: boolean;
     post_wedding: boolean;
     drone: boolean;
@@ -71,9 +76,19 @@ export default function CollectionsView({
   showDiscount = false,
   whatsappMessage,
 }: CollectionsViewProps) {
-  const { content } = useLanguage();
+  const { content, language } = useLanguage();
   const { colecciones } = content;
+  const en = language === "en";
   const [packages, setPackages] = useState<Package[]>([]);
+
+  // Textos de un paquete en el idioma activo, campo por campo: un paquete con
+  // solo parte del inglés escrito muestra esa parte y el resto en español.
+  const nombre = (p: Package) => (en && p.name_en) || p.name;
+  const descripcion = (p: Package) => (en && p.description_en) || p.description;
+  const entregables = (p: Package) =>
+    en && p.features_en?.length ? p.features_en : p.features;
+  const photobook = (p: Package) =>
+    (en && p.comparison.photobook_en) || p.comparison.photobook;
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -125,7 +140,7 @@ export default function CollectionsView({
     },
     {
       label: colecciones.comparisonLabels.photobook,
-      getValue: (p: Package) => p.comparison.photobook ?? DASH,
+      getValue: (p: Package) => photobook(p) ?? DASH,
     },
     {
       label: colecciones.comparisonLabels.preWedding,
@@ -173,16 +188,16 @@ export default function CollectionsView({
                   <div className="bg-white border border-[var(--border-subtle)] p-10 h-full flex flex-col">
                     <div className="mb-6">
                       <h3 className="font-[var(--font-heading)] text-3xl text-[var(--foreground)] mb-4">
-                        {pkg.name}
+                        {nombre(pkg)}
                       </h3>
                     </div>
 
                     <p className="text-[var(--foreground)]/60 leading-relaxed mb-8 italic text-sm">
-                      {pkg.description}
+                      {descripcion(pkg)}
                     </p>
 
                     <div className="space-y-2 mb-8 flex-grow text-sm text-[var(--foreground)]/70">
-                      {pkg.features.map((feature, fIndex) => (
+                      {entregables(pkg).map((feature, fIndex) => (
                         <p key={fIndex}>{feature}</p>
                       ))}
                     </div>
@@ -235,7 +250,7 @@ export default function CollectionsView({
                         key={pkg.id}
                         className="p-4 text-center font-[var(--font-heading)] text-lg text-[var(--foreground)] bg-[var(--background)] min-w-[180px]"
                       >
-                        {pkg.name}
+                        {nombre(pkg)}
                       </th>
                     ))}
                   </tr>
