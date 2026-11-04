@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+<meta name="googlebot" content="noindex, nofollow, noimageindex">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Summer Love · Propuesta editorial · Arrebol Weddings</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..600&family=Manrope:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: revista editorial en una columna; cada escena = foto real a sangre + texto corto + tira de referencias + barra de aprobación */
+:root{
+  --bg:#FBFAF5; --paper:#FFFFFF; --ink:#24271F; --muted:#6B6E60; --line:#E4E1D3;
+  --butter:#F3E3A0; --lemon:#E2CB3C; --sage:#9FAF8F; --coral:#E07F62; --ivory:#F4EEDD;
+  --ok:#4E7A45; --ok-bg:#E5EEDC; --warn:#A6562F; --warn-bg:#F8E4D8;
+  --display:"Bodoni Moda", "Didot", Georgia, serif;
+  --body:"Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono:"IBM Plex Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --bg:#171812; --paper:#1F211A; --ink:#EEEBDD; --muted:#A3A592; --line:#34372C;
+  --butter:#5A5226; --lemon:#E8D45A; --sage:#93A585; --coral:#EB8F72; --ivory:#2A2B22;
+  --ok:#9CCB8E; --ok-bg:#24321F; --warn:#F0A27E; --warn-bg:#3A2619; color-scheme:dark }}
+:root[data-theme="dark"]{
+  --bg:#171812; --paper:#1F211A; --ink:#EEEBDD; --muted:#A3A592; --line:#34372C;
+  --butter:#5A5226; --lemon:#E8D45A; --sage:#93A585; --coral:#EB8F72; --ivory:#2A2B22;
+  --ok:#9CCB8E; --ok-bg:#24321F; --warn:#F0A27E; --warn-bg:#3A2619; color-scheme:dark }
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.6;margin:0}
+.wrap{max-width:1080px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--display);font-weight:500;text-wrap:balance;margin:0}
+a{color:inherit}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+/* Portada */
+.cover{padding-block:56px 40px;display:grid;gap:28px}
+.cover h1{font-size:clamp(44px,8vw,96px);line-height:.95;letter-spacing:-.01em}
+.cover h1 em{font-style:italic;font-weight:400}
+.cover .sub{font-family:var(--display);font-style:italic;font-size:clamp(20px,3vw,30px);color:var(--muted)}
+.meta{display:flex;flex-wrap:wrap;gap:8px 28px;font-family:var(--mono);font-size:13px;color:var(--muted)}
+.hero{width:100%;aspect-ratio:21/9;object-fit:cover;border-radius:2px;display:block}
+/* Secciones */
+section{border-top:1px solid var(--line);padding-block:48px}
+.sec-head{display:grid;grid-template-columns:auto 1fr;gap:6px 18px;align-items:baseline;margin-bottom:22px}
+.sec-head .num{font-family:var(--display);font-style:italic;font-size:44px;line-height:1;color:var(--lemon)}
+.sec-head h2{font-size:clamp(28px,4.5vw,44px);line-height:1.05}
+.sec-head .when{grid-column:2;font-family:var(--mono);font-size:13px;color:var(--muted)}
+.lead{max-width:62ch;font-size:17px;margin:0 0 26px}
+.lead strong{font-weight:600}
+.label{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:0 0 10px;display:flex;align-items:center;gap:10px}
+.label::after{content:"";flex:1;height:1px;background:var(--line)}
+figure{margin:0}
+figcaption{font-size:12.5px;color:var(--muted);margin-top:6px;line-height:1.4}
+figcaption a{text-decoration-color:var(--line)}
+.site{display:grid;grid-template-columns:1fr;gap:14px;margin-bottom:28px}
+.site img,.duo img{width:100%;display:block;object-fit:cover;border-radius:2px}
+.site .real img{aspect-ratio:16/10}
+.site .sketch img{aspect-ratio:3/2}
+.tag{display:inline-block;font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;padding:2px 7px;border-radius:2px;margin-right:6px;vertical-align:1px}
+.tag.real{background:var(--ink);color:var(--bg)}
+.tag.ia{background:var(--butter);color:var(--ink)}
+.refs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.refs img{width:100%;aspect-ratio:4/5;object-fit:cover;display:block;border-radius:2px;background:var(--ivory)}
+.refs.three{grid-template-columns:repeat(3,minmax(0,1fr))}
+/* Paleta */
+.palette{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;margin:0 0 30px}
+.sw{display:grid;gap:8px}
+.chip{aspect-ratio:1/1.15;border-radius:2px;border:1px solid var(--line)}
+.sw b{font-family:var(--display);font-weight:500;font-size:18px;line-height:1}
+.sw span{font-family:var(--mono);font-size:11.5px;color:var(--muted)}
+.uses{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin:0 0 30px}
+.uses div{min-width:0}
+.uses h3{font-size:19px;margin-bottom:4px}
+.uses p{margin:0;font-size:14.5px;color:var(--muted)}
+/* Aprobación */
+.decide{margin-top:30px;background:var(--paper);border:1px solid var(--line);border-radius:3px;padding:16px;display:grid;gap:12px}
+.decide .row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.state{font-family:var(--mono);font-size:12px;padding:4px 10px;border-radius:99px;background:var(--ivory);color:var(--muted)}
+.state.ok{background:var(--ok-bg);color:var(--ok)}
+.state.cambio{background:var(--warn-bg);color:var(--warn)}
+button{font:600 14px var(--body);border-radius:3px;padding:9px 16px;cursor:pointer;border:1px solid var(--ink);background:transparent;color:var(--ink)}
+button.primary{background:var(--ink);color:var(--bg)}
+button:disabled{opacity:.45;cursor:not-allowed}
+button:focus-visible,textarea:focus-visible{outline:2px solid var(--lemon);outline-offset:2px}
+textarea{width:100%;min-height:72px;font:15px/1.5 var(--body);color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:3px;padding:10px;resize:vertical}
+.note-saved{font-size:14px;color:var(--ink);background:var(--ivory);padding:8px 10px;border-radius:3px;white-space:pre-wrap}
+.note-saved.reply{background:transparent;border-left:3px solid var(--lemon);border-radius:0}
+.state.ajustado{background:var(--butter);color:var(--ink)}
+.hint{font-size:12.5px;color:var(--muted)}
+.summary{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+footer{border-top:1px solid var(--line);padding-block:28px 48px;font-size:13px;color:var(--muted)}
+@media (max-width:760px){
+  .site{grid-template-columns:1fr}
+  .refs,.refs.three{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .palette{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .uses{grid-template-columns:1fr}
+  .hero{aspect-ratio:4/3}
+}
+@media (prefers-reduced-motion:no-preference){ .refs img{transition:transform .3s} .refs a:hover img{transform:scale(1.015)} }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="cover">
+    <div class="eyebrow">Arrebol Weddings · Editorial 02 · Jardines de México</div>
+    <h1>Summer <em>Love</em></h1>
+    <div class="sub">A Hidden Gem to Celebrate Love</div>
+    <div class="meta">
+      <span>Jardines de México</span><span>Entre el 9 y el 20 de noviembre de 2026</span><span>Sesión de 4 horas · 15:50 a 19:50</span><span>Paleta Limoncello</span>
+    </div>
+    <img class="hero" src="img/boceto-cactaceas.jpg" alt="Boceto: pareja caminando frente al cactus candelabro al atardecer">
+  </header>
+
+  <!-- CONCEPTO -->
+  <section id="concepto" data-key="concepto">
+    <div class="sec-head"><span class="num">00</span><h2>El concepto</h2><span class="when">Propuesta general</span></div>
+    <p class="lead">Un día de boda completo contado como un verano que no se acaba: luz de tarde, telas que se mueven, limones y flores amarillas, y una noche que cierra con fuegos artificiales. Jardines de México es la joya escondida: en un solo lugar pasamos de un jardín japonés a un desierto de cactus, a una cúpula de bambú y a una fuente renacentista. <strong>Cada jardín es un capítulo; la luz marca el orden.</strong></p>
+
+    <p class="label">Paleta Limoncello</p>
+    <div class="palette">
+      <div class="sw"><div class="chip" style="background:#F6F0E1"></div><b>Marfil</b><span>Vestido, mantel, sillas</span></div>
+      <div class="sw"><div class="chip" style="background:#F3E3A0"></div><b>Mantequilla</b><span>Traje del novio, papelería</span></div>
+      <div class="sw"><div class="chip" style="background:#E2CB3C"></div><b>Limón</b><span>Ranúnculos, limones reales</span></div>
+      <div class="sw"><div class="chip" style="background:#A9B79A"></div><b>Salvia</b><span>Follaje, caminos de mesa</span></div>
+      <div class="sw"><div class="chip" style="background:#E9876B"></div><b>Coral</b><span>Solo como acento</span></div>
+    </div>
+
+    <div class="uses">
+      <div><h3>Flores</h3><p>Ranúnculos amarillos, rosas de jardín blancas, manzanilla, ramas de limón con fruta y follaje salvia.</p></div>
+      <div><h3>Vestuario</h3><p>Solo pedimos tonos, no materiales. Novia en marfil con velo largo. Novio en amarillo mantequilla con camisa blanca.</p></div>
+      <div><h3>Luz</h3><p>Sol de tarde y atardecer para el día; de noche, solo velas y la iluminación de la fuente.</p></div>
+    </div>
+
+    <p class="label">Referencias del concepto</p>
+    <div class="refs">
+      <figure><img src="img/propia-01.jpg" alt="La novia sola en el Jardín Italiano, de día" loading="lazy"></figure>
+      <figure><img src="img/propia-02.jpg" alt="Mesa larga entre flores, de día" loading="lazy"></figure>
+      <figure><img src="img/propia-03.jpg" alt="Abrazo entre limones y ranúnculos" loading="lazy"></figure>
+      <figure><img src="img/propia-04.jpg" alt="Lugar de mesa Limoncello" loading="lazy"></figure>
+    </div>
+  </section>
+
+  <!-- 01 JAPONÉS -->
+  <section id="japones" data-key="japones">
+    <div class="sec-head"><span class="num">01</span><h2>Caminata en el Jardín Japonés</h2><span class="when">15:50 a 16:20 · Look 1, casual</span></div>
+    <p class="lead">Arrancamos ligeros: la pareja cruza el puente rojo y recorre el jardín como en una tarde cualquiera de verano. Nada posado; risas, jalones de mano, pelo suelto.</p>
+    <div class="site">
+      <figure class="sketch"><img src="img/boceto-japones.jpg" alt="Boceto de la pareja corriendo en el puente rojo"></figure>
+    </div>
+    <p class="label">Referencias</p>
+    <div class="refs">
+      <figure><img src="img/propia-05.jpg" alt="Caminando juntos hacia la casa de té" loading="lazy"></figure>
+      <figure><img src="img/propia-06.jpg" alt="Beso entre arbustos en flor" loading="lazy"></figure>
+      <figure><img src="img/propia-07.jpg" alt="Risa y complicidad, look casual" loading="lazy"></figure>
+      <figure><img src="img/propia-23.jpg" alt="Caminando junto al estanque" loading="lazy"></figure>
+    </div>
+  </section>
+
+  <!-- 02 TROPICAL -->
+  <section id="ceremonia" data-key="ceremonia">
+    <div class="sec-head"><span class="num">02</span><h2>Ceremonia mini en el Jardín Tropical</h2><span class="when">16:50 a 17:20 · Look 2, vestido principal · de día</span></div>
+    <p class="lead">Una ceremonia íntima con la cascada y el estanque de fondo: ocho sillas blancas, un pasillo corto de pasto con pétalos y dos arreglos bajos en Limoncello a los lados. Luz de tarde entre las palmeras.</p>
+    <div class="site">
+      <figure class="sketch"><img src="img/boceto-tropical.jpg" alt="Boceto de la ceremonia mini con la cascada al fondo"></figure>
+    </div>
+    <p class="label">Referencias de ceremonia mini</p>
+    <div class="refs">
+      <figure><img src="img/propia-08.jpg" alt="Pasillo corto con flores bajas" loading="lazy"></figure>
+      <figure><img src="img/propia-09.jpg" alt="Arreglo bajo junto a la cascada" loading="lazy"></figure>
+      <figure><img src="img/propia-10.jpg" alt="La pareja en el altar, vista lateral" loading="lazy"></figure>
+      <figure><img src="img/propia-11.jpg" alt="Manos y ramo durante los votos" loading="lazy"></figure>
+    </div>
+  </section>
+
+  <!-- 03 CACTÁCEAS -->
+  <section id="cactaceas" data-key="cactaceas">
+    <div class="sec-head"><span class="num">03</span><h2>Cactáceas al atardecer</h2><span class="when">17:25 a 17:57 · Look 2 · el sol se pone cerca de las 17:57</span></div>
+    <p class="lead">La toma más fuerte del día: la pareja camina frente al cactus candelabro a contraluz, con el velo y el vestido moviéndose con el aire. Moda pura contra la forma del desierto.</p>
+    <div class="site">
+      <figure class="sketch"><img src="img/boceto-cactaceas.jpg" alt="Boceto de la pareja frente al cactus al atardecer"></figure>
+    </div>
+    <p class="label">Referencias</p>
+    <div class="refs">
+      <figure><img src="img/propia-12.jpg" alt="La novia sola entre cactus" loading="lazy"></figure>
+      <figure><img src="img/propia-13.jpg" alt="Caminando entre cactus columnares" loading="lazy"></figure>
+      <figure><img src="img/propia-14.jpg" alt="Flores sobre el cactus" loading="lazy"></figure>
+      <figure><img src="img/propia-15.jpg" alt="Velo y vestido con el viento" loading="lazy"></figure>
+    </div>
+  </section>
+
+  <!-- 04 SALÓN BAMBÚ -->
+  <section id="bambu" data-key="bambu">
+    <div class="sec-head"><span class="num">04</span><h2>Cena en el Salón Bambú</h2><span class="when">18:35 a 19:05 · Look 3, noche</span></div>
+    <p class="lead">Una sola mesa larga para diez bajo la cúpula, de noche y encendida solo con velas: velas altas en la mesa y grupos de velas en el piso. La estructura de bambú queda limpia, sin nada colgando. Los detalles de mesa se fotografían antes, de día y sin modelos.</p>
+    <div class="site">
+      <figure class="sketch"><img src="img/boceto-bambu.jpg" alt="Boceto de la cena de noche con velas"></figure>
+    </div>
+    <p class="label">Referencias de decoración Limoncello</p>
+    <div class="refs">
+      <figure><img src="img/propia-16.jpg" alt="La mesa larga antes de los invitados" loading="lazy"></figure>
+      <figure><img src="img/propia-17.jpg" alt="Velas altas, flor y limón en el plato" loading="lazy"></figure>
+      <figure><img src="img/propia-18.jpg" alt="Limones en charola tejida" loading="lazy"></figure>
+      <figure><img src="img/propia-19.jpg" alt="Brindis con limoncello" loading="lazy"></figure>
+    </div>
+  </section>
+
+  <!-- 05 NEPTUNO -->
+  <section id="neptuno" data-key="neptuno">
+    <div class="sec-head"><span class="num">05</span><h2>Celebración en la Fuente de Neptuno</h2><span class="when">19:30 a 19:50 · Look 3 · pirotecnia cerca de las 19:40</span></div>
+    <p class="lead">El cierre: la pareja sola frente a la fuente iluminada, con champaña, bailando y riendo mientras sale la pirotecnia. Sin sillas ni montaje; solo ellos, la fuente y el cielo.</p>
+    <div class="site">
+      <figure class="sketch"><img src="img/boceto-neptuno.jpg" alt="Boceto de la pareja celebrando con fuegos artificiales"></figure>
+    </div>
+    <p class="label">Referencias</p>
+    <div class="refs three">
+      <figure><img src="img/propia-20.jpg" alt="De espaldas frente a los fuegos" loading="lazy"></figure>
+      <figure><img src="img/propia-21.jpg" alt="Beso bajo los fuegos" loading="lazy"></figure>
+      <figure><img src="img/propia-22.jpg" alt="Mirando el cielo desde la balaustrada" loading="lazy"></figure>
+    </div>
+  </section>
+</div>
+</body>
+</html>
