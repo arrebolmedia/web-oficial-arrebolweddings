@@ -99,6 +99,25 @@ footer{border-top:1px solid var(--line);padding-block:28px 48px;font-size:13px;c
 }
 @media (prefers-reduced-motion:no-preference){ .refs img{transition:transform .3s} .refs a:hover img{transform:scale(1.015)} }
 </style>
+<link rel="stylesheet" href="https://use.typekit.net/kan4vqt.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Playfair+Display&display=swap">
+<style>
+.aw-footer{border-top:1px solid #E8E3DD;background:#FAF8F5;color:#2B2B2B;font-family:"Poppins",system-ui,sans-serif;margin-top:48px}
+.aw-footer a{color:inherit;text-decoration:none;transition:color .2s}
+.aw-footer a:hover{color:#8B5A6F}
+.aw-in{max-width:80rem;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.aw-nav{padding-block:48px;display:flex;flex-wrap:wrap;justify-content:center;gap:16px 48px}
+.aw-nav a{font-size:14px;letter-spacing:.1em;text-transform:uppercase}
+.aw-bottom{border-top:1px solid #E8E3DD;padding-block:32px}
+.aw-row{display:flex;flex-direction:column;align-items:center;gap:16px;text-align:center}
+.aw-brand{font-family:"benton-modern-display-conden","Playfair Display",Georgia,serif;font-size:18px;margin:0}
+.aw-tag{font-size:12px;font-style:italic;color:rgba(43,43,43,.6);margin:4px 0 0}
+.aw-contact{font-size:14px;color:rgba(43,43,43,.7)}
+.aw-contact span{margin:0 8px}
+.aw-copy{font-size:12px;color:rgba(43,43,43,.6);margin:0}
+.aw-priv{display:block;font-size:10px;color:rgba(43,43,43,.4)!important;margin-top:4px}
+@media (min-width:768px){.aw-row{flex-direction:row;justify-content:space-between}.aw-row>div:first-child{text-align:left}.aw-row>div:last-child{text-align:right}}
+</style>
 </head>
 <body>
 <div class="wrap">
@@ -220,5 +239,15 @@ footer{border-top:1px solid var(--line);padding-block:28px 48px;font-size:13px;c
     </div>
   </section>
 </div>
+<footer class="aw-footer">
+  <div class="aw-in"><nav class="aw-nav" aria-label="Arrebol Weddings">
+    <a href="/">Home</a><a href="/galeria/">Galería</a><a href="/el-proceso/">El proceso</a><a href="/blog/">Blog</a><a href="/contacto/">Contacto</a>
+  </nav></div>
+  <div class="aw-bottom"><div class="aw-in"><div class="aw-row">
+    <div><p class="aw-brand">Arrebol Weddings</p><p class="aw-tag">Recuerdos que se vuelven más valiosos con el tiempo</p></div>
+    <div class="aw-contact"><a href="mailto:hola@arrebolweddings.com">hola@arrebolweddings.com</a><span>•</span><a href="https://instagram.com/arrebolweddings" target="_blank" rel="noopener noreferrer">@arrebolweddings</a></div>
+    <div><p class="aw-copy">© 2025 Arrebol Weddings. Todos los derechos reservados.</p><a class="aw-priv" href="/politica-de-privacidad/">Política de Privacidad</a></div>
+  </div></div></div>
+</footer>
 </body>
 </html>
