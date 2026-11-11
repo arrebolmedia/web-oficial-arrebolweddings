@@ -24,7 +24,6 @@ export interface AlianzasContent {
     subheadline: string;
     ctaPrimary: string;
     ctaSecondary: string;
-    trustBadge: string;
     whatsappMessage: string;
     image: string;
     imageAlt: string;
@@ -93,7 +92,6 @@ const plannersEs: AlianzasContent = {
       "Foto y video de bodas que sigue tu timeline, se coordina con tu equipo y deja a tus parejas contentas de haberte hecho caso.",
     ctaPrimary: "Escríbenos",
     ctaSecondary: "Ver nuestro trabajo",
-    trustBadge: "Más de 200 bodas documentadas",
     whatsappMessage: "¡Hola! Soy wedding planner y quiero platicar sobre una alianza con Arrebol.",
     image: "/images/gallery/SyP-109.webp",
     imageAlt: "Entrada de la novia por el pasillo de una ceremonia en hacienda, por Arrebol Weddings",
@@ -102,8 +100,9 @@ const plannersEs: AlianzasContent = {
     subtitle: "Quiénes somos",
     title: "Somos Brenda y Anthony",
     paragraphs: [
-      "Hacemos foto y video de bodas, y sabemos que cuando nos recomiendas pones tu nombre de por medio. Si un proveedor falla, la pareja se acuerda de quién se lo sugirió.",
-      "Por eso cuidamos lo mismo que tú: llegar a tiempo, seguir el timeline, no estorbarle a tu equipo y entregar en la fecha que dijimos.",
+      "Hacemos foto y video de bodas, y sabemos que cuando nos recomiendas nos confías algo muy valioso: tu nombre y la tranquilidad de tus parejas.",
+      "Por eso cuidamos lo mismo que tú: llegar a tiempo, seguir el timeline, sumarnos a tu equipo con respeto y entregar en la fecha prometida.",
+      "Además de foto y video, llevamos años haciendo marketing para bodas. Si lo que necesitas es que más parejas te encuentren, también podemos ayudarte con eso.",
     ],
     quote: "Cuando nos recomiendas, también cuidamos tu nombre.",
     signature: "— Brenda & Anthony",
@@ -129,7 +128,7 @@ const plannersEs: AlianzasContent = {
     subtitle: "Para planners",
     title: "¿Por qué con nosotros?",
     description:
-      "Porque una boda bien planeada merece verse así de bien, y porque trabajar con nosotros te quita pendientes en vez de sumarte.",
+      "Porque una boda bien planeada merece verse así de bien, y porque queremos que trabajar con nosotros te dé tranquilidad.",
     items: [
       {
         title: "Seguimos tu timeline",
@@ -145,7 +144,7 @@ const plannersEs: AlianzasContent = {
       },
       {
         title: "Entregas en fecha",
-        description: "Teaser en 2 a 3 semanas, fotos en 6 a 8 y video completo en 10 a 12. Tus parejas no te van a llamar para preguntar por qué no llega.",
+        description: "Teaser en 2 a 3 semanas, fotos en 6 a 8 y video completo en 10 a 12. Así tus parejas disfrutan la espera con toda tranquilidad.",
       },
       {
         title: "Hablas directo con nosotros",
@@ -160,7 +159,7 @@ const plannersEs: AlianzasContent = {
   offers: {
     subtitle: "Alianza comercial",
     title: "¿Qué te ofrecemos?",
-    description: "Depende de lo que necesites. Elige una, dos o las tres.",
+    description: "Cada planner necesita algo distinto. Cuéntanos qué te hace falta: puede ser una, dos o las tres.",
     cardCta: "Me interesa",
     otherText: "¿Necesitas algo distinto?",
     otherCta: "Cuéntanos",
@@ -169,7 +168,7 @@ const plannersEs: AlianzasContent = {
       {
         title: "10% de comisión",
         description:
-          "Por cada pareja que nos recomiendes y nos contrate, te llevas el 10% del servicio. Lo pagamos nosotros: la pareja paga lo mismo que cualquier otro cliente.",
+          "Por cada pareja que nos recomiendes y nos contrate, te comisionamos el 10% del servicio. Sale de nosotros: la pareja paga lo mismo que cualquier otro cliente.",
         whatsappMessage: "¡Hola! Soy wedding planner y me interesa la comisión por recomendarlos.",
       },
       {
@@ -189,7 +188,7 @@ const plannersEs: AlianzasContent = {
   howWeWork: {
     subtitle: "Cómo trabajamos",
     title: "Así hacemos equipo",
-    description: "Cuatro pasos, sin trámites de más.",
+    description: "Cuatro pasos sencillos, de la mano contigo.",
     cta: "Agendar llamada",
     whatsappMessage: "¡Hola! Soy wedding planner y me gustaría agendar una llamada con ustedes.",
     steps: [
@@ -221,7 +220,7 @@ const plannersEs: AlianzasContent = {
     items: [
       {
         question: "¿Cómo funciona la comisión?",
-        answer: "Por cada pareja que nos recomiendes y firme contrato, recibes el 10% del servicio contratado. Sale de nosotros: el precio para la pareja no cambia.",
+        answer: "Por cada pareja que nos recomiendes y firme contrato, te comisionamos el 10% del servicio contratado. Sale de nosotros: el precio para la pareja no cambia.",
       },
       {
         question: "¿Cómo manejan la comunicación con mis parejas?",
@@ -265,7 +264,6 @@ const plannersEn: AlianzasContent = {
       "Wedding photo and video that follows your timeline, works with your team and leaves your couples glad they took your advice.",
     ctaPrimary: "Message us",
     ctaSecondary: "See our work",
-    trustBadge: "Over 200 weddings documented",
     whatsappMessage: "Hi! I'm a wedding planner and I'd like to talk about partnering with Arrebol.",
     image: "/images/gallery/SyP-109.webp",
     imageAlt: "Bride walking down the aisle at a hacienda ceremony, by Arrebol Weddings",
@@ -274,8 +272,9 @@ const plannersEn: AlianzasContent = {
     subtitle: "Who we are",
     title: "We're Brenda and Anthony",
     paragraphs: [
-      "We do wedding photo and video, and we know that when you recommend us, your name is on the line. If a vendor lets them down, the couple remembers who suggested them.",
-      "So we care about the same things you do: showing up on time, following the timeline, staying out of your team's way and delivering on the date we said.",
+      "We do wedding photo and video, and we know that when you recommend us you're trusting us with something precious: your name and your couples' peace of mind.",
+      "So we care about the same things you do: showing up on time, following the timeline, joining your team respectfully and delivering on the date we promised.",
+      "Beyond photo and video, we've spent years doing marketing for weddings. If what you need is for more couples to find you, we can help with that too.",
     ],
     quote: "When you recommend us, we look after your name too.",
     signature: "— Brenda & Anthony",
@@ -301,7 +300,7 @@ const plannersEn: AlianzasContent = {
     subtitle: "For planners",
     title: "Why us?",
     description:
-      "Because a well-planned wedding deserves to look this good, and because working with us takes things off your plate instead of adding to it.",
+      "Because a well-planned wedding deserves to look this good, and because we want working with us to give you peace of mind.",
     items: [
       {
         title: "We follow your timeline",
@@ -317,7 +316,7 @@ const plannersEn: AlianzasContent = {
       },
       {
         title: "Deliveries on time",
-        description: "Teaser in 2 to 3 weeks, photos in 6 to 8 and the full film in 10 to 12. Your couples won't be calling you to ask where it is.",
+        description: "Teaser in 2 to 3 weeks, photos in 6 to 8 and the full film in 10 to 12. So your couples can enjoy the wait with total peace of mind.",
       },
       {
         title: "You talk to us directly",
@@ -332,7 +331,7 @@ const plannersEn: AlianzasContent = {
   offers: {
     subtitle: "Partnership",
     title: "What we offer you",
-    description: "It depends on what you need. Pick one, two or all three.",
+    description: "Every planner needs something different. Tell us what you're missing: it can be one, two or all three.",
     cardCta: "I'm interested",
     otherText: "Need something different?",
     otherCta: "Tell us",
@@ -341,7 +340,7 @@ const plannersEn: AlianzasContent = {
       {
         title: "10% commission",
         description:
-          "For every couple you refer who books us, you get 10% of the service. We pay it: the couple pays the same as any other client.",
+          "For every couple you refer who books us, we pay you a 10% commission on the service. It comes from us: the couple pays the same as any other client.",
         whatsappMessage: "Hi! I'm a wedding planner and I'm interested in the referral commission.",
       },
       {
@@ -361,7 +360,7 @@ const plannersEn: AlianzasContent = {
   howWeWork: {
     subtitle: "How we work",
     title: "How we team up",
-    description: "Four steps, no red tape.",
+    description: "Four simple steps, side by side with you.",
     cta: "Schedule a call",
     whatsappMessage: "Hi! I'm a wedding planner and I'd like to schedule a call with you.",
     steps: [
@@ -393,7 +392,7 @@ const plannersEn: AlianzasContent = {
     items: [
       {
         question: "How does the commission work?",
-        answer: "For every couple you refer who signs with us, you get 10% of the contracted service. It comes from us: the couple's price doesn't change.",
+        answer: "For every couple you refer who signs with us, we pay you a 10% commission on the contracted service. It comes from us: the couple's price doesn't change.",
       },
       {
         question: "How do you handle communication with my couples?",
@@ -441,7 +440,6 @@ const venuesEs: AlianzasContent = {
       "Foto y video de bodas que respeta tus reglas, se coordina con tu equipo y muestra tu espacio como merece verse.",
     ctaPrimary: "Escríbenos",
     ctaSecondary: "Ver nuestro trabajo",
-    trustBadge: "Más de 200 bodas documentadas",
     whatsappMessage: "¡Hola! Escribo de parte de un venue y quiero platicar sobre una alianza con Arrebol.",
     image: "/images/gallery/_MG_1245.webp",
     imageAlt: "Los novios salen de su ceremonia en un jardín, por Arrebol Weddings",
@@ -450,8 +448,9 @@ const venuesEs: AlianzasContent = {
     subtitle: "Quiénes somos",
     title: "Somos Brenda y Anthony",
     paragraphs: [
-      "Hacemos foto y video de bodas. Y cada boda que se celebra en tu venue también habla de ti: de tu espacio, de tu servicio y de los proveedores que dejas entrar.",
+      "Hacemos foto y video de bodas. Y cada boda que se celebra en tu venue también habla de ti: de tu espacio, de tu servicio y de los proveedores a los que les abres la puerta.",
       "Por eso trabajamos como invitados que conocen la casa: respetamos tus horarios y tus zonas, nos coordinamos con tu equipo y dejamos todo como lo encontramos.",
+      "Además de foto y video, llevamos años haciendo marketing para bodas y venues. Sabemos qué busca una pareja cuando elige dónde casarse, y podemos ayudarte a mostrárselo.",
     ],
     quote: "Cada boda en tu venue también es una foto de tu venue.",
     signature: "— Brenda & Anthony",
@@ -507,7 +506,7 @@ const venuesEs: AlianzasContent = {
   offers: {
     subtitle: "Alianza comercial",
     title: "¿Qué te ofrecemos?",
-    description: "Depende de lo que necesite tu venue. Elige una, dos o las tres.",
+    description: "Cada venue necesita algo distinto. Cuéntanos qué les hace falta: puede ser una, dos o las tres.",
     cardCta: "Me interesa",
     otherText: "¿Necesitas algo distinto?",
     otherCta: "Cuéntanos",
@@ -516,7 +515,7 @@ const venuesEs: AlianzasContent = {
       {
         title: "10% de comisión",
         description:
-          "Por cada pareja que nos recomiendes y nos contrate, te llevas el 10% del servicio. Lo pagamos nosotros: la pareja paga lo mismo que cualquier otro cliente.",
+          "Por cada pareja que nos recomiendes y nos contrate, te comisionamos el 10% del servicio. Sale de nosotros: la pareja paga lo mismo que cualquier otro cliente.",
         whatsappMessage: "¡Hola! Escribo de parte de un venue y me interesa la comisión por recomendarlos.",
       },
       {
@@ -536,7 +535,7 @@ const venuesEs: AlianzasContent = {
   howWeWork: {
     subtitle: "Cómo trabajamos",
     title: "Así hacemos equipo",
-    description: "Cuatro pasos, sin trámites de más.",
+    description: "Cuatro pasos sencillos, de la mano contigo.",
     cta: "Agendar llamada",
     whatsappMessage: "¡Hola! Escribo de parte de un venue y me gustaría agendar una llamada con ustedes.",
     steps: [
@@ -568,7 +567,7 @@ const venuesEs: AlianzasContent = {
     items: [
       {
         question: "¿Cómo funciona la comisión?",
-        answer: "Por cada pareja que nos recomiendes y firme contrato, recibes el 10% del servicio contratado. Sale de nosotros: el precio para la pareja no cambia.",
+        answer: "Por cada pareja que nos recomiendes y firme contrato, te comisionamos el 10% del servicio contratado. Sale de nosotros: el precio para la pareja no cambia.",
       },
       {
         question: "¿Respetan los lineamientos del venue?",
@@ -608,7 +607,6 @@ const venuesEn: AlianzasContent = {
       "Wedding photo and video that respects your rules, works with your team and shows your space the way it deserves to be seen.",
     ctaPrimary: "Message us",
     ctaSecondary: "See our work",
-    trustBadge: "Over 200 weddings documented",
     whatsappMessage: "Hi! I'm writing on behalf of a venue and I'd like to talk about partnering with Arrebol.",
     image: "/images/gallery/_MG_1245.webp",
     imageAlt: "Couple walking back down the aisle at a garden ceremony, by Arrebol Weddings",
@@ -617,8 +615,9 @@ const venuesEn: AlianzasContent = {
     subtitle: "Who we are",
     title: "We're Brenda and Anthony",
     paragraphs: [
-      "We do wedding photo and video. And every wedding held at your venue says something about you: your space, your service and the vendors you let in.",
+      "We do wedding photo and video. And every wedding held at your venue says something about you: your space, your service and the vendors you open your doors to.",
       "So we work like guests who know the house: we respect your schedules and your areas, coordinate with your team and leave everything as we found it.",
+      "Beyond photo and video, we've spent years doing marketing for weddings and venues. We know what a couple looks for when choosing where to get married, and we can help you show it.",
     ],
     quote: "Every wedding at your venue is also a photo of your venue.",
     signature: "— Brenda & Anthony",
@@ -674,7 +673,7 @@ const venuesEn: AlianzasContent = {
   offers: {
     subtitle: "Partnership",
     title: "What we offer you",
-    description: "It depends on what your venue needs. Pick one, two or all three.",
+    description: "Every venue needs something different. Tell us what you're missing: it can be one, two or all three.",
     cardCta: "I'm interested",
     otherText: "Need something different?",
     otherCta: "Tell us",
@@ -683,7 +682,7 @@ const venuesEn: AlianzasContent = {
       {
         title: "10% commission",
         description:
-          "For every couple you refer who books us, you get 10% of the service. We pay it: the couple pays the same as any other client.",
+          "For every couple you refer who books us, we pay you a 10% commission on the service. It comes from us: the couple pays the same as any other client.",
         whatsappMessage: "Hi! I'm writing on behalf of a venue and I'm interested in the referral commission.",
       },
       {
@@ -703,7 +702,7 @@ const venuesEn: AlianzasContent = {
   howWeWork: {
     subtitle: "How we work",
     title: "How we team up",
-    description: "Four steps, no red tape.",
+    description: "Four simple steps, side by side with you.",
     cta: "Schedule a call",
     whatsappMessage: "Hi! I'm writing on behalf of a venue and I'd like to schedule a call with you.",
     steps: [
@@ -735,7 +734,7 @@ const venuesEn: AlianzasContent = {
     items: [
       {
         question: "How does the commission work?",
-        answer: "For every couple you refer who signs with us, you get 10% of the contracted service. It comes from us: the couple's price doesn't change.",
+        answer: "For every couple you refer who signs with us, we pay you a 10% commission on the contracted service. It comes from us: the couple's price doesn't change.",
       },
       {
         question: "Do you follow the venue's guidelines?",

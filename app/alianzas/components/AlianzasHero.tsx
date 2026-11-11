@@ -56,7 +56,7 @@ export default function AlianzasHero({ variant }: { variant: AlianzaVariant }) {
           </p>
 
           {/* CTAs */}
-          <div className="flex flex-col sm:flex-row gap-4 mb-6">
+          <div className="flex flex-col sm:flex-row gap-4">
             <a
               href={whatsappUrl}
               target="_blank"
@@ -75,11 +75,6 @@ export default function AlianzasHero({ variant }: { variant: AlianzaVariant }) {
               {hero.ctaSecondary}
             </button>
           </div>
-
-          {/* Trust Badge */}
-          <p className="text-sm text-white/70 flex items-center gap-2">
-            ✓ {hero.trustBadge}
-          </p>
         </div>
       </div>
 
