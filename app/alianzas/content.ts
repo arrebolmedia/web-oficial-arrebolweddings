@@ -108,16 +108,16 @@ const plannersEs: AlianzasContent = {
     signature: "— Brenda & Anthony",
     values: [
       {
-        title: "Puntuales",
-        description: "Llegamos antes de la hora acordada y respetamos cada bloque del timeline.",
+        title: "Parte de tu equipo",
+        description: "Trabajamos con tu timeline y tu manera de dirigir el día. Tú marcas el ritmo; nosotros lo seguimos con discreción.",
       },
       {
-        title: "Sin sorpresas",
-        description: "Antes, durante y después de la boda sabes qué estamos haciendo y cuándo llega cada entrega.",
+        title: "Tus parejas, bien cuidadas",
+        description: "Las acompañamos desde la primera llamada hasta la entrega, con la misma atención que tú les das.",
       },
       {
-        title: "Trabajo que te luce",
-        description: "Las parejas comparten sus fotos y su video, y con ellos se ve también tu trabajo.",
+        title: "Tu trabajo, bien contado",
+        description: "Cada montaje y cada detalle que diseñaste queda documentado con el cuidado que merece, listo para tu portafolio.",
       },
     ],
   },
@@ -280,16 +280,16 @@ const plannersEn: AlianzasContent = {
     signature: "— Brenda & Anthony",
     values: [
       {
-        title: "On time",
-        description: "We arrive before the agreed time and respect every block of the timeline.",
+        title: "Part of your team",
+        description: "We work with your timeline and the way you run the day. You set the pace; we follow it discreetly.",
       },
       {
-        title: "No surprises",
-        description: "Before, during and after the wedding you know what we're doing and when each delivery arrives.",
+        title: "Your couples, well looked after",
+        description: "We stay with them from the first call to the final delivery, with the same care you give them.",
       },
       {
-        title: "Work that makes you look good",
-        description: "Couples share their photos and video, and your work shows in them too.",
+        title: "Your work, beautifully told",
+        description: "Every setup and every detail you designed is documented with the care it deserves, ready for your portfolio.",
       },
     ],
   },
@@ -456,16 +456,16 @@ const venuesEs: AlianzasContent = {
     signature: "— Brenda & Anthony",
     values: [
       {
-        title: "Respetamos tus reglas",
-        description: "Horarios, accesos, zonas restringidas y tiempos de montaje: los conocemos antes de llegar.",
+        title: "Conocemos la casa",
+        description: "Antes de la boda visitamos tu espacio y hablamos con tu coordinación, para trabajar a su ritmo.",
       },
       {
-        title: "Nos coordinamos con tu equipo",
-        description: "Hablamos con tu coordinador antes de la boda y el día del evento seguimos sus indicaciones.",
+        title: "Un equipo discreto",
+        description: "Nos movemos con cuidado entre tus invitados y tu personal. La boda es la protagonista.",
       },
       {
-        title: "Tu espacio sale bien",
-        description: "Arquitectura, jardines y rincones: en cada boda, tu venue aparece en su mejor versión.",
+        title: "Tu espacio, en su mejor luz",
+        description: "Arquitectura, jardines y rincones quedan retratados como merecen, en imágenes que puedes usar.",
       },
     ],
   },
@@ -623,16 +623,16 @@ const venuesEn: AlianzasContent = {
     signature: "— Brenda & Anthony",
     values: [
       {
-        title: "We respect your rules",
-        description: "Schedules, access, restricted areas and setup times: we know them before we arrive.",
+        title: "We know the house",
+        description: "Before the wedding we visit your space and talk with your coordinators, so we work at their pace.",
       },
       {
-        title: "We work with your team",
-        description: "We talk to your coordinator before the wedding and on the day we follow their lead.",
+        title: "A discreet team",
+        description: "We move carefully among your guests and your staff. The wedding is the star.",
       },
       {
-        title: "Your space looks good",
-        description: "Architecture, gardens and corners: at every wedding, your venue shows at its best.",
+        title: "Your space, in its best light",
+        description: "Architecture, gardens and corners are captured the way they deserve, in images you can use.",
       },
     ],
   },
