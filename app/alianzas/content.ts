@@ -104,7 +104,7 @@ const plannersEs: AlianzasContent = {
       "Por eso cuidamos lo mismo que tú: llegar a tiempo, seguir el timeline, sumarnos a tu equipo con respeto y entregar en la fecha prometida.",
       "Además de foto y video, llevamos años haciendo marketing para bodas. Si lo que necesitas es que más parejas te encuentren, también podemos ayudarte con eso.",
     ],
-    quote: "Cuando nos recomiendas, también cuidamos tu nombre.",
+    quote: "Tus parejas confían en ti. Nosotros cuidamos esa confianza.",
     signature: "— Brenda & Anthony",
     values: [
       {
@@ -276,7 +276,7 @@ const plannersEn: AlianzasContent = {
       "So we care about the same things you do: showing up on time, following the timeline, joining your team respectfully and delivering on the date we promised.",
       "Beyond photo and video, we've spent years doing marketing for weddings. If what you need is for more couples to find you, we can help with that too.",
     ],
-    quote: "When you recommend us, we look after your name too.",
+    quote: "Your couples trust you. We take care of that trust.",
     signature: "— Brenda & Anthony",
     values: [
       {
