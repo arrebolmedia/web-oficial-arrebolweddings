@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+<meta name="googlebot" content="noindex, nofollow, noimageindex">
+<meta name="description" content="Propuesta de Arrebol Weddings para administrar las redes sociales de Rancho La Joya: nueva imagen, publicaciones, anuncios y leads.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Arrebol Weddings">
+<meta property="og:title" content="Redes sociales · Propuesta para Rancho La Joya">
+<meta property="og:description" content="Nueva imagen, publicaciones, anuncios y leads para Rancho La Joya.">
+<meta property="og:url" content="https://arrebolweddings.com/propuestas/redes-rancho-la-joya/">
+<meta property="og:image" content="https://arrebolweddings.com/images/RLJ/L%26A-363_websize.jpg">
+<meta property="og:locale" content="es_MX">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/icon.png">
+<title>Redes sociales · Propuesta para Rancho La Joya · Arrebol Weddings</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Figtree:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Mismo cuaderno de una columna que las propuestas editoriales (bajo-la-acacia) */
+:root{
+  padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+  --bg:#F5F2EA; --paper:#FBF9F4; --ink:#26291F; --muted:#696A58; --line:#DEDACB;
+  --raw:#EFE7D6; --sand:#D8C7A6; --accent:#5E6B45; --on-accent:#FBF9F4;
+  --noise-a:#C9553D; --noise-b:#E0B23A; --noise-c:#3F6FA8; --noise-d:#8E4C9A;
+  --display:"Instrument Serif", "Iowan Old Style", Georgia, serif;
+  --body:"Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono:"IBM Plex Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --bg:#161812; --paper:#1E2019; --ink:#ECE8DB; --muted:#A4A491; --line:#33362B;
+  --raw:#2A2C22; --sand:#5A5340; --accent:#A9B98A; --on-accent:#161812; color-scheme:dark }}
+:root[data-theme="dark"]{
+  --bg:#161812; --paper:#1E2019; --ink:#ECE8DB; --muted:#A4A491; --line:#33362B;
+  --raw:#2A2C22; --sand:#5A5340; --accent:#A9B98A; --on-accent:#161812; color-scheme:dark }
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+img{max-width:100%}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.6;margin:0}
+.wrap{max-width:1080px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--display);font-weight:400;text-wrap:balance;margin:0}
+p{margin:0}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.cover{padding-block:56px 40px;display:grid;gap:24px}
+.cover h1{font-size:clamp(46px,8.4vw,104px);line-height:.94;letter-spacing:-.01em}
+.cover h1 em{font-style:italic;color:var(--accent)}
+.cover .sub{font-family:var(--display);font-style:italic;font-size:clamp(20px,3vw,28px);line-height:1.25;color:var(--muted);max-width:38ch}
+.meta{display:flex;flex-wrap:wrap;gap:8px 28px;font-family:var(--mono);font-size:13px;color:var(--muted)}
+.hero{width:100%;aspect-ratio:21/9;object-fit:cover;object-position:50% 55%;border-radius:2px;display:block}
+section{border-top:1px solid var(--line);padding-block:48px}
+.sec-head{display:grid;grid-template-columns:auto 1fr;gap:6px 18px;align-items:baseline;margin-bottom:22px}
+.sec-head .num{font-family:var(--display);font-style:italic;font-size:46px;line-height:1;color:var(--accent)}
+.sec-head h2{font-size:clamp(30px,4.6vw,46px);line-height:1.05}
+.sec-head .when{grid-column:2;font-family:var(--mono);font-size:13px;color:var(--muted)}
+.lead{max-width:62ch;font-size:17px;margin:0 0 30px}
+.lead strong{font-weight:600}
+.label{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:0 0 12px;display:flex;align-items:center;gap:10px}
+.label::after{content:"";flex:1;height:1px;background:var(--line)}
+
+/* Antes / después del perfil */
+.feeds{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;margin-bottom:8px}
+.feed{min-width:0}
+.grid9{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:4px;background:var(--paper);border:1px solid var(--line);border-radius:3px;padding:4px}
+.grid9>*{aspect-ratio:4/5;border-radius:1px;overflow:hidden;display:block;width:100%}
+.grid9 img{object-fit:cover;height:100%}
+.busy{display:flex;flex-direction:column;justify-content:center;gap:5%;padding:10%;position:relative}
+.busy i{display:block;height:7%;border-radius:1px;background:#fff;opacity:.92}
+.busy i:nth-child(2){width:70%;height:12%}
+.busy i:nth-child(3){width:88%}
+.busy i:nth-child(4){width:52%;background:#111}
+.busy i:nth-child(5){width:80%}
+.busy::after{content:"";position:absolute;right:7%;top:7%;width:22%;aspect-ratio:1;border-radius:50%;background:#fff;opacity:.85}
+.busy.a{background:var(--noise-a)} .busy.b{background:var(--noise-b)} .busy.c{background:var(--noise-c)} .busy.d{background:var(--noise-d)}
+.busy.e{background:#2b2b2b} .busy.f{background:#d9d9d9}
+.busy.f i{background:var(--noise-a)}
+.feed h3{font-size:24px;margin:14px 0 4px}
+.feed p{font-size:14.5px;color:var(--muted)}
+
+/* Dos mitades de la etapa 1 */
+.pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin:0 0 34px}
+.card{min-width:0;background:var(--paper);border:1px solid var(--line);border-radius:3px;padding:18px 20px}
+.card h3{font-size:26px;margin-bottom:8px}
+.card ul{margin:0;padding-left:18px;font-size:15px}
+.card li{margin-bottom:6px}
+.card li::marker{color:var(--accent)}
+
+/* Ritmo de publicación */
+.rhythm{display:grid;gap:22px;margin-bottom:6px}
+.rrow{display:grid;grid-template-columns:150px minmax(0,1fr);gap:8px 18px;align-items:center}
+.rrow b{font-family:var(--display);font-weight:400;font-size:22px;line-height:1.1;display:block}
+.rrow small{font-family:var(--mono);font-size:12px;color:var(--muted)}
+.days{display:grid;grid-template-columns:repeat(30,minmax(0,1fr));gap:3px}
+.days span{aspect-ratio:1/1.6;border-radius:1px;background:var(--raw);border:1px solid var(--line)}
+.days span.on{background:var(--accent);border-color:var(--accent)}
+
+/* Tres frentes */
+.uses{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.uses .card h3{font-size:24px}
+.uses .card p{font-size:15px;color:var(--muted)}
+.uses .big{font-family:var(--display);font-style:italic;font-size:44px;line-height:1;color:var(--accent);display:block;margin-bottom:10px}
+
+/* Camino del lead */
+.flow{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;margin-top:34px;counter-reset:f}
+.flow div{min-width:0;padding:14px 16px 0 0;border-top:2px solid var(--accent);position:relative;counter-increment:f}
+.flow div::before{content:counter(f, decimal-leading-zero);font-family:var(--mono);font-size:12px;color:var(--muted);display:block;margin-bottom:4px}
+.flow b{font-family:var(--display);font-weight:400;font-size:21px;line-height:1.15;display:block;margin-bottom:4px}
+.flow span{font-size:14px;color:var(--muted);display:block}
+
+/* Inversión */
+.price{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:28px;align-items:start}
+.amount{background:var(--ink);color:var(--bg);border-radius:3px;padding:26px 24px}
+.amount .eyebrow{color:inherit;opacity:.7}
+.amount strong{font-family:var(--display);font-weight:400;font-size:clamp(60px,10vw,96px);line-height:1;display:block;margin:10px 0 4px;font-variant-numeric:tabular-nums}
+.amount span{font-family:var(--mono);font-size:13px;opacity:.8}
+.incl{list-style:none;margin:0;padding:0}
+.incl li{padding:12px 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:22px 1fr;gap:8px;font-size:15.5px}
+.incl li::before{content:"✓";color:var(--accent);font-weight:600}
+.incl li:first-child{padding-top:0}
+.fine{font-size:13.5px;color:var(--muted);margin-top:16px;max-width:60ch}
+
+/* Cierre */
+.cta{text-align:center;padding-block:64px}
+.cta h2{font-size:clamp(34px,5.6vw,60px);line-height:1.02;margin-bottom:12px}
+.cta h2 em{font-style:italic;color:var(--accent)}
+.cta p{color:var(--muted);max-width:46ch;margin:0 auto 26px}
+.btn{display:inline-block;font:600 15px var(--body);border-radius:3px;padding:13px 24px;background:var(--accent);color:var(--on-accent);text-decoration:none}
+.btn:hover{filter:brightness(1.08)}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+@media (max-width:760px){
+  .feeds,.pair,.uses,.price{grid-template-columns:1fr}
+  .hero{aspect-ratio:4/3}
+  .rrow{grid-template-columns:1fr}
+  .days{grid-template-columns:repeat(15,minmax(0,1fr))}
+  .flow{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:22px}
+}
+</style>
+<link rel="stylesheet" href="https://use.typekit.net/kan4vqt.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Playfair+Display&display=swap">
+<style>
+.aw-footer{border-top:1px solid #E8E3DD;background:#FAF8F5;color:#2B2B2B;font-family:"Poppins",system-ui,sans-serif}
+.aw-footer a{color:inherit;text-decoration:none;transition:color .2s}
+.aw-footer a:hover{color:#8B5A6F}
+.aw-in{max-width:80rem;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.aw-nav{padding-block:48px;display:flex;flex-wrap:wrap;justify-content:center;gap:16px 48px}
+.aw-nav a{font-size:14px;letter-spacing:.1em;text-transform:uppercase}
+.aw-bottom{border-top:1px solid #E8E3DD;padding-block:32px}
+.aw-row{display:flex;flex-direction:column;align-items:center;gap:16px;text-align:center}
+.aw-brand{font-family:"benton-modern-display-conden","Playfair Display",Georgia,serif;font-size:18px;margin:0}
+.aw-tag{font-size:12px;font-style:italic;color:rgba(43,43,43,.6);margin:4px 0 0}
+.aw-contact{font-size:14px;color:rgba(43,43,43,.7)}
+.aw-contact span{margin:0 8px}
+.aw-copy{font-size:12px;color:rgba(43,43,43,.6);margin:0}
+.aw-priv{display:block;font-size:10px;color:rgba(43,43,43,.4)!important;margin-top:4px}
+@media (min-width:768px){.aw-row{flex-direction:row;justify-content:space-between}.aw-row>div:first-child{text-align:left}.aw-row>div:last-child{text-align:right}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="cover">
+    <div class="eyebrow">Arrebol Weddings · Propuesta · Redes sociales</div>
+    <h1>Un perfil a la altura del <em>rancho</em></h1>
+    <div class="sub">Administración de las redes sociales de Rancho La Joya: nueva imagen, publicaciones, anuncios y leads</div>
+    <div class="meta">
+      <span>Rancho La Joya, Xochitepec</span><span>Dos etapas</span><span>$4,500 MXN al mes</span>
+    </div>
+    <img class="hero" src="/images/RLJ/L%26A-363_websize.jpg" alt="Una pareja de novios abrazada entre los árboles de Rancho La Joya">
+  </header>
+
+  <section id="idea">
+    <div class="sec-head"><span class="num">00</span><h2>La idea</h2><span class="when">Por qué empezar por la imagen</span></div>
+    <p class="lead">Antes de pedir una cotización, una pareja ya recorrió su perfil. Esa es hoy la primera visita al rancho, y tiene que sentirse como el lugar: amplio, verde, tranquilo. <strong>Proponemos encargarnos de sus redes en dos etapas:</strong> primero dejamos el perfil limpio y con contenido nuevo; después lo mantenemos, lo anunciamos y les entregamos los contactos que lleguen.</p>
+
+    <div class="feeds">
+      <div class="feed">
+        <p class="label">Antes</p>
+        <div class="grid9" role="img" aria-label="Esquema de un perfil con publicaciones llenas de texto y colores distintos">
+          <div class="busy a"><i></i><i></i><i></i><i></i><i></i></div>
+          <div class="busy f"><i></i><i></i><i></i><i></i><i></i></div>
+          <div class="busy c"><i></i><i></i><i></i><i></i><i></i></div>
+          <div class="busy b"><i></i><i></i><i></i><i></i><i></i></div>
+          <div class="busy e"><i></i><i></i><i></i><i></i><i></i></div>
+          <div class="busy d"><i></i><i></i><i></i><i></i><i></i></div>
+          <div class="busy c"><i></i><i></i><i></i><i></i><i></i></div>
+          <div class="busy a"><i></i><i></i><i></i><i></i><i></i></div>
+          <div class="busy b"><i></i><i></i><i></i><i></i><i></i></div>
+        </div>
+        <h3>Mucho texto, poca vista</h3>
+        <p>Flyers, tipografías y colores que compiten entre sí. El lugar casi no se ve.</p>
+      </div>
+      <div class="feed">
+        <p class="label">Después</p>
+        <div class="grid9">
+          <img src="/propuestas/bajo-la-acacia/img/e2a-ceremonia-abierta.jpg" alt="Ceremonia bajo el árbol del rancho" loading="lazy">
+          <img src="/propuestas/bajo-la-acacia/img/e1c-detalle-mesa.jpg" alt="Detalle de ramo y anillos" loading="lazy">
+          <img src="/propuestas/bajo-la-acacia/img/e3a-caminata-abierta.jpg" alt="Pareja caminando por la pradera" loading="lazy">
+          <img src="/propuestas/bajo-la-acacia/img/e1a-novia-ventanal.jpg" alt="Novia frente a los ventanales" loading="lazy">
+          <img src="/images/RLJ/L%26A-363_websize.jpg" alt="Novios entre los árboles del rancho" loading="lazy">
+          <img src="/propuestas/bajo-la-acacia/img/e2c-sillas.jpg" alt="Sillas de madera frente a la plataforma" loading="lazy">
+          <img src="/propuestas/bajo-la-acacia/img/e3c-detalle-pasto.jpg" alt="Detalle del vestido sobre el pasto" loading="lazy">
+          <img src="/propuestas/bajo-la-acacia/img/e2b-votos.jpg" alt="Los votos, tomados de las manos" loading="lazy">
+          <img src="/propuestas/bajo-la-acacia/img/e3b-risa-capa.jpg" alt="La pareja ríe en la pradera" loading="lazy">
+        </div>
+        <h3>El rancho, primero</h3>
+        <p>Una sola línea visual: fotografía, luz natural y muy poco texto. Ejemplo ilustrativo.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="etapa-1">
+    <div class="sec-head"><span class="num">01</span><h2>Limpieza y carga</h2><span class="when">Etapa 1 · primeros 30 días</span></div>
+    <p class="lead">Un mes intensivo para renovar el perfil completo. Retiramos lo que no ayuda y, al mismo tiempo, <strong>publicamos todos los días</strong> hasta que quien entre al perfil vea solo la nueva imagen.</p>
+
+    <div class="pair">
+      <div class="card">
+        <h3>Limpiar</h3>
+        <ul>
+          <li>Revisamos el perfil publicación por publicación.</li>
+          <li>Archivamos el contenido poco estético o saturado de texto.</li>
+          <li>Ordenamos lo que se queda: foto de perfil, biografía, enlaces e historias destacadas.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Cargar</h3>
+        <ul>
+          <li>Definimos una imagen curada, limpia y elegante.</li>
+          <li>Publicamos a diario durante 30 días para completar la curaduría.</li>
+          <li>Al terminar, el perfil queda listo para recibir anuncios.</li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="label">Ritmo de publicación</p>
+    <div class="rhythm">
+      <div class="rrow">
+        <div><b>Etapa 1</b><small>30 de 30 días</small></div>
+        <div class="days" role="img" aria-label="Treinta días seguidos con publicación" id="d1"></div>
+      </div>
+      <div class="rrow">
+        <div><b>Etapa 2</b><small>2 por semana</small></div>
+        <div class="days" role="img" aria-label="Dos publicaciones por semana" id="d2"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="etapa-2">
+    <div class="sec-head"><span class="num">02</span><h2>Administración continua</h2><span class="when">Etapa 2 · a partir del segundo mes</span></div>
+    <p class="lead">Con el perfil ya en orden, el trabajo de cada mes tiene tres frentes.</p>
+
+    <div class="uses">
+      <div class="card"><span class="big">2×</span><h3>Publicar</h3><p>Dos publicaciones por semana, con la misma línea visual de la primera etapa.</p></div>
+      <div class="card"><span class="big">Ads</span><h3>Anunciar</h3><p>Administramos sus campañas: a quién se muestran, con qué imágenes y cómo van rindiendo.</p></div>
+      <div class="card"><span class="big">→</span><h3>Canalizar</h3><p>Cada persona interesada que llega por las redes pasa a su equipo para que la atiendan.</p></div>
+    </div>
+
+    <div class="flow" aria-label="Camino de un lead">
+      <div><b>Ve el rancho</b><span>En una publicación o en un anuncio.</span></div>
+      <div><b>Escribe</b><span>Pregunta por fecha, espacios o precios.</span></div>
+      <div><b>Lo registramos</b><span>Queda como lead, con sus datos.</span></div>
+      <div><b>Llega a ustedes</b><span>Su equipo cotiza y cierra.</span></div>
+    </div>
+  </section>
+
+  <section id="inversion">
+    <div class="sec-head"><span class="num">03</span><h2>Inversión</h2><span class="when">Un solo plan</span></div>
+    <div class="price">
+      <div class="amount">
+        <div class="eyebrow">Plan de redes sociales</div>
+        <strong>$4,500</strong>
+        <span>MXN al mes</span>
+      </div>
+      <div>
+        <ul class="incl">
+          <li>Limpieza del perfil y nueva imagen</li>
+          <li>Publicación diaria durante los primeros 30 días</li>
+          <li>Dos publicaciones por semana después</li>
+          <li>Administración de anuncios</li>
+          <li>Generación y canalización de leads</li>
+        </ul>
+        <p class="fine">El presupuesto de los anuncios es aparte: se define con ustedes y se paga directo a la plataforma.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta" id="siguiente">
+    <h2>¿Empezamos por la <em>limpieza</em>?</h2>
+    <p>Con su visto bueno arrancamos la primera etapa. Cualquier duda o ajuste, lo vemos por WhatsApp.</p>
+    <a class="btn" href="https://wa.me/5217775001071?text=Hola%2C%20vimos%20la%20propuesta%20de%20redes%20sociales%20para%20Rancho%20La%20Joya." target="_blank" rel="noopener noreferrer">Escribir por WhatsApp</a>
+  </section>
+</div>
+<footer class="aw-footer">
+  <div class="aw-in"><nav class="aw-nav" aria-label="Arrebol Weddings">
+    <a href="/">Home</a><a href="/galeria/">Galería</a><a href="/el-proceso/">El proceso</a><a href="/blog/">Blog</a><a href="/contacto/">Contacto</a>
+  </nav></div>
+  <div class="aw-bottom"><div class="aw-in"><div class="aw-row">
+    <div><p class="aw-brand">Arrebol Weddings</p><p class="aw-tag">Recuerdos que se vuelven más valiosos con el tiempo</p></div>
+    <div class="aw-contact"><a href="mailto:hola@arrebolweddings.com">hola@arrebolweddings.com</a><span>•</span><a href="https://instagram.com/arrebolweddings" target="_blank" rel="noopener noreferrer">@arrebolweddings</a></div>
+    <div><p class="aw-copy">© 2026 Arrebol Weddings. Todos los derechos reservados.</p><a class="aw-priv" href="/politica-de-privacidad/">Política de Privacidad</a></div>
+  </div></div></div>
+</footer>
+<script>
+// Ritmo: 30 días seguidos frente a dos por semana (martes y viernes como ejemplo)
+(function(){
+  function fill(id, isOn){
+    var el = document.getElementById(id), html = '';
+    for (var i = 0; i < 30; i++) html += '<span' + (isOn(i) ? ' class="on"' : '') + '></span>';
+    el.innerHTML = html;
+  }
+  fill('d1', function(){ return true; });
+  fill('d2', function(i){ var d = i % 7; return d === 1 || d === 4; });
+})();
+</script>
+</body>
+</html>
