@@ -95,6 +95,15 @@ section{border-top:1px solid var(--line);padding-block:48px}
 .needs{margin:0 0 30px;padding-left:18px;max-width:66ch;font-size:15.5px}
 .needs li{margin-bottom:6px}
 
+/* Película: una tarjeta por formato, enlazada a la compra */
+.films{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin:0 0 4px}
+.film{min-width:0;display:flex;flex-direction:column;gap:6px;background:var(--paper);border:1px solid var(--line);border-top:3px solid var(--accent);padding:16px 18px;text-decoration:none;color:var(--ink);transition:border-color .2s}
+.film:hover{border-color:var(--ink)}
+.film .k{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.film b{font-family:var(--display);font-weight:300;letter-spacing:.02em;font-size:26px;line-height:1.1}
+.film span{font-size:14.5px;line-height:1.55}
+.film .go{margin-top:auto;padding-top:6px;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink)}
+
 /* Calculadora */
 .calc{background:var(--paper);border:1px solid var(--line);border-radius:0;padding:18px;display:grid;gap:18px;margin:0 0 8px}
 .calc .ctl{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
@@ -150,7 +159,7 @@ input:focus-visible,select:focus-visible,a:focus-visible{outline:2px solid var(-
 }
 @media (max-width:760px){
   .steps,.steps.three{grid-template-columns:1fr}
-  .pc,.extras{grid-template-columns:1fr}
+  .pc,.extras,.films{grid-template-columns:1fr}
   .facts{grid-template-columns:repeat(2,minmax(0,1fr))}
   .calc .ctl{grid-template-columns:1fr}
   .calc .out{grid-template-columns:repeat(2,minmax(0,1fr))}
@@ -220,11 +229,26 @@ input:focus-visible,select:focus-visible,a:focus-visible{outline:2px solid var(-
 
     <p class="label">Qué se necesita</p>
     <ul class="needs">
-      <li><strong>Cámaras.</strong> Proponemos Fujifilm Instax y no Polaroid clásica: la película es más accesible, trae 10 fotos por cartucho en lugar de 8 y se revela en minuto y medio, no en varios minutos. El look de marco blanco es el mismo.</li>
-      <li><strong>Película suficiente</strong> y un margen extra para fotos fallidas.</li>
-      <li><strong>Pilas de repuesto.</strong> Un par de pilas AA rinde alrededor de 10 cartuchos por cámara.</li>
-      <li><strong>Un letrero</strong> con instrucciones sencillas.</li>
+      <li><strong>Cámaras Fujifilm Instax.</strong> Las ponemos nosotros, del formato que elijan, con pilas de repuesto y el letrero con instrucciones.</li>
+      <li><strong>La película la compran ustedes.</strong> Cada cartucho trae 10 fotos; con el número de invitados les decimos cuántos paquetes conviene tener, con un margen para fotos fallidas.</li>
     </ul>
+
+    <p class="label">Película · elijan formato</p>
+    <div class="films">
+      <a class="film" href="https://www.amazon.com.mx/dp/B015IY34FA" target="_blank" rel="noopener noreferrer">
+        <span class="k">Instax Mini</span>
+        <b>Tamaño cartera</b>
+        <span>Paquete de 50 fotos (5 cartuchos de 10). La foto mide 8.6&nbsp;×&nbsp;5.4&nbsp;cm, como una tarjeta de crédito: se guarda en la cartera o en el celular.</span>
+        <span class="go">Ver en Amazon →</span>
+      </a>
+      <a class="film" href="https://www.amazon.com.mx/dp/B095SYK5FZ" target="_blank" rel="noopener noreferrer">
+        <span class="k">Instax Wide</span>
+        <b>Formato ancho</b>
+        <span>Paquete de 50 fotos (5 cartuchos de 10). La foto mide 10.8&nbsp;×&nbsp;8.6&nbsp;cm, con más del doble de imagen que la Mini: cabe un grupo grande en una sola toma.</span>
+        <span class="go">Ver en Amazon →</span>
+      </a>
+    </div>
+    <p class="hint">Los enlaces son una referencia: el precio cambia de una tienda o marketplace a otro, así que conviene comparar. Sirve cualquier película Fujifilm Instax original del formato que elijan.</p>
   </section>
 
   <section id="asistida">
@@ -256,8 +280,8 @@ input:focus-visible,select:focus-visible,a:focus-visible{outline:2px solid var(-
       <table class="cmp">
         <thead><tr><th>Opción</th><th>Qué se llevan</th><th>Quién toma la foto</th><th>Cuándo</th><th>Calidad</th><th>Copia para ustedes</th><th>Qué pide en sitio</th><th>Inversión</th></tr></thead>
         <tbody>
-          <tr><th><small>01 · idea base</small>Instantáneas en sus manos</th><td data-label="Qué se llevan"><b>Foto instantánea</b> tamaño cartera</td><td data-label="Quién toma la foto">Los invitados</td><td data-label="Cuándo">Coctel y fiesta</td><td data-label="Calidad">Con encanto, impredecible</td><td data-label="Copia para ustedes">No</td><td data-label="Qué pide en sitio">Una mesa</td><td data-label="Inversión">Por cotizar</td></tr>
-          <tr><th><small>02</small>Instantánea asistida</th><td data-label="Qué se llevan"><b>Foto instantánea</b> tamaño cartera</td><td data-label="Quién toma la foto"><b>Nuestro equipo</b></td><td data-label="Cuándo">Durante el coctel</td><td data-label="Calidad">Con encanto, más cuidada</td><td data-label="Copia para ustedes">No</td><td data-label="Qué pide en sitio">Una persona dedicada</td><td data-label="Inversión">Por cotizar</td></tr>
+          <tr><th><small>01 · idea base</small>Instantáneas en sus manos</th><td data-label="Qué se llevan"><b>Foto instantánea</b> con marco blanco</td><td data-label="Quién toma la foto">Los invitados</td><td data-label="Cuándo">Coctel y fiesta</td><td data-label="Calidad">Con encanto, impredecible</td><td data-label="Copia para ustedes">No</td><td data-label="Qué pide en sitio">Una mesa</td><td data-label="Inversión">Por cotizar</td></tr>
+          <tr><th><small>02</small>Instantánea asistida</th><td data-label="Qué se llevan"><b>Foto instantánea</b> con marco blanco</td><td data-label="Quién toma la foto"><b>Nuestro equipo</b></td><td data-label="Cuándo">Durante el coctel</td><td data-label="Calidad">Con encanto, más cuidada</td><td data-label="Copia para ustedes">No</td><td data-label="Qué pide en sitio">Una persona dedicada</td><td data-label="Inversión">Por cotizar</td></tr>
           <tr><th><small>03</small>Un rincón de fotos</th><td data-label="Qué se llevan"><b>Foto impresa</b> con su diseño, o video al celular</td><td data-label="Quién toma la foto">Proveedor externo</td><td data-label="Cuándo">Durante la fiesta</td><td data-label="Calidad">La más alta</td><td data-label="Copia para ustedes">Normalmente sí, digital</td><td data-label="Qué pide en sitio">Espacio para el set y corriente</td><td data-label="Inversión">Por cotizar con el proveedor</td></tr>
         </tbody>
       </table>
