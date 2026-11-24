@@ -8,3 +8,5 @@ out-es
 .env*.local
 .vscode
 scripts
+
+data
