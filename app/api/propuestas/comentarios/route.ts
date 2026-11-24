@@ -59,9 +59,9 @@ async function avisar(prop: string, c: Comentario) {
     await t.sendMail({
       from: `"Arrebol Weddings Web" <${process.env.SMTP_USER}>`,
       to: "anthony@arrebol.com.mx",
-      subject: `${prop}: comentario de ${c.nombre} (${donde})`,
-      text: `${c.nombre} · ${donde}\n\n${c.texto}`,
-      html: `<p><b>${esc(c.nombre)}</b> · ${esc(donde)}</p><p style="white-space:pre-line">${esc(c.texto)}</p>`,
+      subject: `${prop}: comentario${c.nombre ? ` de ${c.nombre}` : ""} (${donde})`,
+      text: `${c.nombre ? `${c.nombre} · ` : ""}${donde}\n\n${c.texto}`,
+      html: `<p>${c.nombre ? `<b>${esc(c.nombre)}</b> · ` : ""}${esc(donde)}</p><p style="white-space:pre-line">${esc(c.texto)}</p>`,
     });
   } catch (e) {
     console.error("Aviso de comentario no enviado:", e);
@@ -89,8 +89,8 @@ export async function POST(req: NextRequest) {
     const texto = String(body.texto || "").trim().slice(0, MAX_TEXTO);
     const nombre = String(body.nombre || "").trim().slice(0, MAX_NOMBRE);
     const post = Number.isInteger(body.post) ? (body.post as number) : 0;
-    if (!texto || !nombre) {
-      return NextResponse.json({ error: "Escribe tu nombre y tu comentario." }, { status: 400 });
+    if (!texto) {
+      return NextResponse.json({ error: "Escribe tu comentario." }, { status: 400 });
     }
     if (post < 0 || post > 500) {
       return NextResponse.json({ error: "Publicación inválida" }, { status: 400 });
