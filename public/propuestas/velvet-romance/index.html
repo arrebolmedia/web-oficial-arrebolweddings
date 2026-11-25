@@ -67,6 +67,8 @@ section{padding:clamp(56px,8vw,96px) 0;border-top:1px solid var(--line)}
 .list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 48px;margin:0;padding:0;list-style:none;max-width:860px}
 .list li{padding:14px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:16px;font-size:16px}
 .list li span{color:var(--muted);font-size:14px;text-align:right}
+.list li span a{color:var(--ink);text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:4px;transition:text-decoration-color .2s}
+.list li span a:hover{text-decoration-color:var(--label)}
 .disclaimer{font-size:13px;color:var(--muted);padding:32px 0 0;margin:0}
 @media (max-width:900px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.palette{grid-template-columns:repeat(2,minmax(0,1fr))}.list{grid-template-columns:1fr}}
 @media (max-width:520px){.cover{grid-template-columns:repeat(2,minmax(0,1fr))}.cover img:nth-child(3){display:none}.sw i{height:88px}}
@@ -177,13 +179,13 @@ section{padding:clamp(56px,8vw,96px) 0;border-top:1px solid var(--line)}
       <h2>Quién lo hace</h2>
     </div>
     <ul class="list">
-      <li>Foto y video <span>Arrebol Weddings</span></li>
-      <li>Vestidos de novia <span>Daniela Ferrari Brides</span></li>
-      <li>Maquillaje y peinado <span>Jo Makeup Artist</span></li>
-      <li>Diseño floral <span>Blümingflür</span></li>
-      <li>Planner y coordinación <span>Casa Catán</span></li>
-      <li>Ceremonia simbólica <span>Liz Guerrero · VibraBonito33</span></li>
-      <li>Venue <span>The University Club of Mexico</span></li>
+      <li>Foto y video <span><a href="https://www.instagram.com/arrebolweddings/" target="_blank" rel="noopener">Arrebol Weddings</a></span></li>
+      <li>Vestidos de novia <span><a href="https://www.instagram.com/danielaferraribrides/" target="_blank" rel="noopener">Daniela Ferrari Brides</a></span></li>
+      <li>Maquillaje y peinado <span><a href="https://www.instagram.com/jomakeupartist.mx/" target="_blank" rel="noopener">Jo Makeup Artist</a></span></li>
+      <li>Diseño floral <span><a href="https://www.instagram.com/blumingflur/" target="_blank" rel="noopener">Blümingflür</a></span></li>
+      <li>Planner y coordinación <span><a href="https://www.instagram.com/casa_catan/" target="_blank" rel="noopener">Casa Catán</a></span></li>
+      <li>Ceremonia simbólica <span><a href="https://www.instagram.com/vibrabonito33/" target="_blank" rel="noopener">Liz Guerrero · VibraBonito33</a></span></li>
+      <li>Venue <span><a href="https://www.instagram.com/universityclubmx/" target="_blank" rel="noopener">The University Club of Mexico</a></span></li>
       <li>Modelos <span>Por confirmar</span></li>
       <li>Mobiliario y mantelería <span>Por confirmar</span></li>
       <li>Traje del novio <span>Por confirmar</span></li>
