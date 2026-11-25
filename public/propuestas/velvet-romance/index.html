@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+<meta name="googlebot" content="noindex, nofollow, noimageindex">
+<meta name="description" content="Propuesta editorial de Arrebol Weddings: una boda íntima en una casona porfiriana de la Ciudad de México en 1950. Concepto, paleta y tres actos.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Arrebol Weddings">
+<meta property="og:title" content="Velvet Romance · Propuesta editorial">
+<meta property="og:description" content="Una boda íntima en una casona porfiriana de la Ciudad de México en 1950. Un brindis, un pastel de gala y la última canción.">
+<meta property="og:url" content="https://arrebolweddings.com/propuestas/velvet-romance/">
+<meta property="og:image" content="https://arrebolweddings.com/propuestas/velvet-romance/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="es_MX">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Velvet Romance · Propuesta editorial">
+<meta name="twitter:image" content="https://arrebolweddings.com/propuestas/velvet-romance/og.jpg">
+<link rel="icon" href="/icon.png">
+<title>Velvet Romance · Propuesta editorial · Arrebol Weddings</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&family=Poppins:wght@300;400;500&display=swap">
+<link rel="stylesheet" href="https://use.typekit.net/kan4vqt.css">
+<style>
+/* Velvet Romance: revista en una columna con el fondo claro y las tipografías de arrebolweddings.com; paleta medida del Editorial Las Mañanitas */
+:root{
+  --bg:#FAF8F5; --ink:#2B2B2B; --soft:#4A4642; --muted:#776F67; --label:#86683D; --line:#E8E3DD;
+  --blanco:#E3E0E3; --arena:#D0C3BE; --piel:#C19D8D; --oro:#A1804E; --olivo:#6F7844;
+  --verde:#204026; --vino:#5C0C15; --negro:#11120E;
+  --display:"benton-modern-display-conden", "Playfair Display", Georgia, serif;
+  --body:"Poppins", system-ui, -apple-system, "Segoe UI", sans-serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-weight:300;line-height:1.7;letter-spacing:.01em}
+img{max-width:100%;height:auto;display:block}
+.wrap{max-width:1200px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.eyebrow{margin:0;font-size:12px;font-weight:400;letter-spacing:.28em;text-transform:uppercase;color:var(--label)}
+h1,h2{font-family:var(--display);font-weight:300;letter-spacing:.02em;margin:0;line-height:1}
+.hero{padding-top:clamp(56px,10vw,120px);padding-bottom:clamp(40px,6vw,72px)}
+.hero h1{font-size:clamp(64px,13vw,150px);letter-spacing:-.01em;margin:20px 0 28px}
+.hero h1 em{font-style:italic}
+.lede{font-size:clamp(18px,2.2vw,22px);color:var(--soft);max-width:640px;margin:0}
+.meta{display:flex;flex-wrap:wrap;gap:8px 28px;margin-top:32px;font-size:14px;color:var(--muted)}
+.meta b{font-weight:400;color:var(--ink)}
+.cover{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:8px}
+.cover img{aspect-ratio:3/4;object-fit:cover;width:100%}
+section{padding:clamp(56px,8vw,96px) 0;border-top:1px solid var(--line)}
+.sec-head{display:grid;gap:16px;margin-bottom:36px;max-width:720px}
+.sec-head h2{font-size:clamp(40px,6vw,64px);font-style:italic}
+.sec-head p{margin:0;color:var(--soft);font-size:17px}
+.palette{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px 20px}
+.sw{display:flex;flex-direction:column;gap:6px}
+.sw i{display:block;height:120px;border-radius:2px}
+.sw .n{font-size:16px;font-weight:400;color:var(--ink)}
+.sw .h{font-size:13px;color:var(--muted);letter-spacing:.06em}
+.sw i{box-shadow:inset 0 0 0 1px rgba(43,43,43,.08)}
+.note{margin-top:28px;font-size:14px;color:var(--muted);max-width:720px}
+.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.grid figure{margin:0}
+.grid img{aspect-ratio:3/4;object-fit:cover;width:100%}
+.grid figcaption{font-size:13px;color:var(--muted);margin-top:8px;line-height:1.4}
+.list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 48px;margin:0;padding:0;list-style:none;max-width:860px}
+.list li{padding:14px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:16px;font-size:16px}
+.list li span{color:var(--muted);font-size:14px;text-align:right}
+.disclaimer{font-size:13px;color:var(--muted);padding:32px 0 0;margin:0}
+@media (max-width:900px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.palette{grid-template-columns:repeat(2,minmax(0,1fr))}.list{grid-template-columns:1fr}}
+@media (max-width:520px){.cover{grid-template-columns:repeat(2,minmax(0,1fr))}.cover img:nth-child(3){display:none}.sw i{height:88px}}
+/* Pie de página del sitio */
+.aw-footer{border-top:1px solid var(--line);background:var(--bg);color:var(--ink);margin-top:48px}
+.aw-footer a{color:inherit;text-decoration:none;transition:color .2s}
+.aw-footer a:hover{color:var(--ink)}
+.aw-in{max-width:80rem;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.aw-nav{padding-block:48px;display:flex;flex-wrap:wrap;justify-content:center;gap:16px 48px}
+.aw-nav a{font-size:14px;letter-spacing:.1em;text-transform:uppercase}
+.aw-bottom{border-top:1px solid var(--line);padding-block:32px}
+.aw-row{display:flex;flex-direction:column;align-items:center;gap:16px;text-align:center}
+.aw-brand{font-family:var(--display);font-size:18px;margin:0;color:var(--ink)}
+.aw-tag{font-size:12px;font-style:italic;color:var(--muted);margin:4px 0 0}
+.aw-contact{font-size:14px}
+.aw-contact span{margin:0 8px}
+.aw-copy{font-size:12px;color:var(--muted);margin:0}
+.aw-priv{display:block;font-size:10px;color:var(--muted)!important;margin-top:4px}
+@media (min-width:768px){.aw-row{flex-direction:row;justify-content:space-between}.aw-row>div:first-child{text-align:left}.aw-row>div:last-child{text-align:right}}
+</style>
+</head>
+<body>
+<main>
+<header class="wrap hero">
+  <p class="eyebrow">Propuesta editorial · Arrebol Weddings</p>
+  <h1>Velvet <em>Romance</em></h1>
+  <p class="lede">Una boda íntima en una casona porfiriana de la Ciudad de México en 1950. Una cena de gala para pocos, un brindis, un pastel de gala, y la noche que termina cuando los novios bailan solos la última canción.</p>
+  <div class="meta"><span>Fecha <b>lunes 14 de diciembre</b></span><span>Lugar <b>casona porfiriana, CDMX</b></span><span>Vestidos <b>Daniela Ferrari</b></span></div>
+</header>
+<div class="wrap cover">
+  <img src="img/mesa-gala.jpg" alt="Mesa de gala bajo el candil con cortinas de terciopelo verde" width="880" height="1168">
+  <img src="img/copas.jpg" alt="Copas coupe, gardenia y cerezas frente al terciopelo verde" width="880" height="1168" loading="lazy">
+  <img src="img/escalera-bn.jpg" alt="Escalera de la casona en blanco y negro con la pareja bailando sola" width="880" height="1168" loading="lazy">
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Paleta</p>
+      <h2>Blancos limpios y terciopelo</h2>
+      <p>La paleta sale de nuestro Editorial Las Mañanitas: el blanco del encaje, dos terciopelos de color como protagonistas y el oro como acento. El blanco y negro aparece solo al final de la noche.</p>
+    </div>
+    <div class="palette">
+      <div class="sw"><i style="background:#E3E0E3"></i><span class="n">Blanco encaje</span><span class="h">#E3E0E3 · vestido, velo, manteles</span></div>
+      <div class="sw"><i style="background:#D0C3BE"></i><span class="n">Arena</span><span class="h">#D0C3BE · muros y piedra</span></div>
+      <div class="sw"><i style="background:#C19D8D"></i><span class="n">Piel</span><span class="h">#C19D8D · rubor, rosas, barro</span></div>
+      <div class="sw"><i style="background:#A1804E"></i><span class="n">Oro</span><span class="h">#A1804E · aretes, candelabros</span></div>
+      <div class="sw"><i style="background:#6F7844"></i><span class="n">Olivo</span><span class="h">#6F7844 · follaje</span></div>
+      <div class="sw"><i style="background:#204026"></i><span class="n">Verde terciopelo</span><span class="h">#204026 · cortinas del salón</span></div>
+      <div class="sw"><i style="background:#5C0C15"></i><span class="n">Vino terciopelo</span><span class="h">#5C0C15 · telón, sillas, tapete</span></div>
+      <div class="sw dark"><i style="background:#11120E"></i><span class="n">Negro esmoquin</span><span class="h">#11120E · esmoquin y noche</span></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Acto 1</p>
+      <h2>Getting ready</h2>
+      <p>La recámara de la casona con luz de día. Muros blancos, un diván de terciopelo verde, perlas, guantes y aretes de oro. Un disco sonando. El acto más claro del editorial.</p>
+    </div>
+    <div class="grid">
+      <figure><img src="img/vestidor.jpg" alt="Vestidor de la casona con diván de terciopelo verde y el vestido colgado" width="880" height="1168" loading="lazy"><figcaption>El vestidor</figcaption></figure>
+      <figure><img src="img/tocador.jpg" alt="Tocador con perlas, guantes, aretes de oro y joyero de terciopelo vino" width="880" height="1168" loading="lazy"><figcaption>Perlas, guantes y oro</figcaption></figure>
+      <figure><img src="img/novia-tocador.jpg" alt="Novia de espaldas frente al tocador con cortinas de terciopelo verde" width="880" height="1168" loading="lazy"><figcaption>La novia en el tocador</figcaption></figure>
+      <figure><img src="img/novio-mono.jpg" alt="Novio ajustándose el moño junto a una cortina de terciopelo vino" width="880" height="1168" loading="lazy"><figcaption>El novio junto al ventanal</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Acto 2</p>
+      <h2>La cena</h2>
+      <p>El salón con cortinas de terciopelo verde de piso a techo, manteles blancos y candelabros de oro. El brindis con copas coupe, el corte de un pastel de gala frente al telón de terciopelo vino, y el primer baile entre las mesas.</p>
+    </div>
+    <div class="grid">
+      <figure><img src="img/mesa-gala.jpg" alt="Mesa de gala bajo el candil con cortinas de terciopelo verde" width="880" height="1168" loading="lazy"><figcaption>La mesa de gala</figcaption></figure>
+      <figure><img src="img/copas.jpg" alt="Copas coupe, gardenia y cerezas frente al terciopelo verde" width="880" height="1168" loading="lazy"><figcaption>El brindis</figcaption></figure>
+      <figure><img src="img/pastel.jpg" alt="Los novios cortan el pastel de gala frente al telón de terciopelo vino" width="880" height="1168" loading="lazy"><figcaption>El pastel de gala</figcaption></figure>
+      <figure><img src="img/primer-baile.jpg" alt="Los novios bailando entre las mesas" width="880" height="1168" loading="lazy"><figcaption>El primer baile</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Acto 3</p>
+      <h2>Después de la fiesta</h2>
+      <p>Velas consumidas, pétalos en la duela, un guante caído. La escalera y el ventanal en blanco y negro, con claroscuro. Los novios bailan solos la última canción.</p>
+    </div>
+    <div class="grid">
+      <figure><img src="img/escalera-bn.jpg" alt="Escalera de la casona en blanco y negro con la pareja bailando sola" width="880" height="1168" loading="lazy"><figcaption>La escalera</figcaption></figure>
+      <figure><img src="img/velas.jpg" alt="Velas consumidas, pétalos y un guante en la duela junto al terciopelo verde" width="880" height="1168" loading="lazy"><figcaption>Lo que queda de la noche</figcaption></figure>
+      <figure><img src="img/escalera-descalza.jpg" alt="La novia descalza en la escalera con el saco del novio" width="880" height="1168" loading="lazy"><figcaption>Descalza, con su saco</figcaption></figure>
+      <figure><img src="img/ventanal-bn.jpg" alt="Silueta de la pareja frente al ventanal en blanco y negro" width="880" height="1168" loading="lazy"><figcaption>La última canción</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Equipo</p>
+      <h2>Quién lo hace</h2>
+    </div>
+    <ul class="list">
+      <li>Foto y video <span>Arrebol Weddings</span></li>
+      <li>Vestidos <span>Daniela Ferrari</span></li>
+      <li>Maquillaje y peinado <span>Confirmado</span></li>
+      <li>Diseño floral <span>Confirmado</span></li>
+      <li>Planner <span>Confirmado</span></li>
+      <li>Venue <span>Por confirmar</span></li>
+      <li>Modelos <span>Por confirmar</span></li>
+      <li>Mobiliario y mantelería <span>Por confirmar</span></li>
+      <li>Traje del novio <span>Por confirmar</span></li>
+      <li>Iluminación <span>Por confirmar</span></li>
+      <li>Pastel de gala <span>Por confirmar</span></li>
+      <li>Joyería y accesorios <span>Por confirmar</span></li>
+    </ul>
+    <p class="disclaimer">Las imágenes de esta página son referencias generadas para el moodboard; no son fotografías de Arrebol Weddings.</p>
+  </div>
+</section>
+</main>
+
+<footer class="aw-footer">
+  <div class="aw-in"><nav class="aw-nav" aria-label="Arrebol Weddings">
+    <a href="/">Home</a><a href="/galeria/">Galería</a><a href="/el-proceso/">El proceso</a><a href="/blog/">Blog</a><a href="/contacto/">Contacto</a>
+  </nav></div>
+  <div class="aw-bottom"><div class="aw-in"><div class="aw-row">
+    <div><p class="aw-brand">Arrebol Weddings</p><p class="aw-tag">Recuerdos que se vuelven más valiosos con el tiempo</p></div>
+    <div class="aw-contact"><a href="mailto:hola@arrebolweddings.com">hola@arrebolweddings.com</a><span>•</span><a href="https://instagram.com/arrebolweddings" target="_blank" rel="noopener noreferrer">@arrebolweddings</a></div>
+    <div><p class="aw-copy">© 2026 Arrebol Weddings. Todos los derechos reservados.</p><a class="aw-priv" href="/politica-de-privacidad/">Política de Privacidad</a></div>
+  </div></div></div>
+</footer>
+</body>
+</html>
