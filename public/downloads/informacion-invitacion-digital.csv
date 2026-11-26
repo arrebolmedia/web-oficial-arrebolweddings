@@ -1,64 +1,34 @@
-﻿### DATOS DE CONTACTO
+﻿### INFORMACIÓN GENERAL,,
 Campo,Tu respuesta,Notas
-Nombre de quien llena esto,,
-Correo,,
-WhatsApp,,
-
-### INFORMACIÓN GENERAL
-Campo,Tu respuesta,Notas
-Nombre 1,,Exactamente como quieren que aparezca en la portada. Ej: Alejandra o Ale
-Nombre 2,,En la portada van en este orden: Nombre 1 & Nombre 2
-Fecha de la boda,,Ej: 15 de junio de 2026
-Hora de inicio,,De aquí sale la cuenta regresiva
-Dominio deseado,,"Ej: anaycarlos.com. Si ya lo compraron, díganos"
-Estilo / colores,,Colores de la boda o ligas a referencias que les gusten
-Mensaje de bienvenida,,Opcional. Unas líneas de ustedes para sus invitados
-Fecha límite para confirmar asistencia,,Ej: 1 de mayo de 2026
-¿Mostrar la fecha límite en la invitación?,,Sí / No
-¿Evento solo para adultos?,,"Sí / No. Si es sí, ponemos el aviso al final del itinerario"
-
-### FOTOS
-Campo,Tu respuesta,Notas
-Link a carpeta de fotos,,Google Drive / Dropbox / WeTransfer. Que se pueda abrir sin pedir permiso
-Foto favorita para la portada,,"Nombre del archivo. Portada: 3 a 5 horizontales. Galería: 12 a 15, verticales y horizontales"
-
-### PROGRAMA DEL DÍA
-Momento,Fecha,Hora,Lugar,Dirección o link de Google Maps
-Ceremonia,,,,
-Cóctel,,,,
-Recepción,,,,
-Fiesta,,,,
-,,,,(Agrega o borra filas según su día. La fecha solo si la boda dura más de un día)
-
-### CÓDIGO DE VESTIMENTA
-Día,Tipo,Indicaciones para ellas,Indicaciones para ellos
-,Ej: Etiqueta formal,Ej: Vestido largo,Ej: Traje oscuro
-Colores a evitar / nota,,,Ej: Evitar el blanco y los tonos muy claros
-
-### HOSPEDAJE SUGERIDO
-Nombre del hotel,Dirección,Teléfono,Link de reserva,Código o tarifa de grupo,Nota
-,,,,,
-,,,,,Ej: Sujeto a disponibilidad
-,,,,,(Agrega tantas filas como hoteles quieras incluir. El teléfono es lo primero que buscan los invitados)
-
-### MESA DE REGALOS
-Tienda,Número de evento,Link directo a la mesa
+Nombre(s) de los novios,,Ej: Ana & Carlos
+Fecha del evento,,Ej: 15 de junio de 2026
+Nombre del venue,,Ej: Hacienda San Gabriel
+Dirección del venue,,Calle / Colonia / Ciudad
+Link de Google Maps,,Pega aquí el link de Maps (opcional)
+Fecha límite de confirmación de asistencia,,Ej: 1 de junio de 2026
 ,,
+### PROGRAMA DEL DÍA,,
+Momento,Hora,Lugar
+Ceremonia,,Ej: Parroquia San José
+Coctel,,Ej: Jardín del venue
+Banquete,,Ej: Salón principal
+Fiesta,,Ej: Salón principal
+,,
+### CÓDIGO DE VESTIMENTA,,
+Campo,Tu respuesta,Notas
+Código de vestimenta,,Ej: Etiqueta formal / Cocktail / Casual elegante
+Nota adicional,,Ej: Se solicita evitar el color blanco (opcional)
+,,
+### HOSPEDAJE SUGERIDO,,
+Nombre del hotel,Teléfono,Código de reserva,Link de reserva
+,,,(Agrega tantas filas como hoteles quieras incluir)
+,,
+### MESA DE REGALOS,,
+Tienda,Link,Número de evento o código
 ,,(Agrega tantas filas como tiendas quieras incluir)
-
-### TRANSFERENCIA BANCARIA (OPCIONAL)
-Banco,Titular,CLABE
 ,,
-,,Ojo: la cuenta queda visible para cualquiera que tenga la liga de la invitación. En Excel escriban la CLABE con un apóstrofo al inicio ('012...) para que no le borre dígitos
-
-### DESPUÉS DE PUBLICAR
+### FOTOS DE LA PAREJA,,
 Campo,Tu respuesta,Notas
-Correo para acceder al panel,,Desde el panel se agregan invitados y se ve quién confirmó
-¿Quién hará los cambios?,,Ustedes / Arrebol / la planner. Para no editar al mismo tiempo
-
-### LISTA DE INVITADOS
-"Va aparte, en la plantilla de invitados (plantilla-invitados.csv)"
-"Un renglón por invitación, no por persona. Los acompañantes van en la columna invitados_adicionales_permitidos"
-
-### COMENTARIOS
-Cualquier detalle que quieran que tomemos en cuenta,,
+Link a carpeta de fotos,,Google Drive / Dropbox / WeTransfer
+Foto favorita (portada),,Si tienes una preferida para el hero de la página
+,,
