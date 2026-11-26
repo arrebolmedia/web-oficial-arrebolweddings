@@ -4790,7 +4790,7 @@ Esto es para quien quiera adelantarse, o para volver cuando una duda aparezca a 
     id: "40",
     slug: "el-brindis-quien-habla",
     title: "El brindis: si hablar no va con ustedes, alguien más puede decirlo",
-    excerpt: "Hay parejas que escriben sus votos en una tarde, y parejas que llevan meses evitando el tema. Si hablar frente a ciento veinte personas no va con ustedes, esas palabras pueden existir igual: dichas por alguien que los conoce.",
+    excerpt: "No es el premio de consolación de los votos. Es otra forma de que esas palabras existan: dichas por alguien que estuvo en las historias y puede contarlas mejor que nadie. Quién elegir, qué decir y cuánto debe durar.",
     content: `Hay parejas que escriben sus votos en una tarde, y parejas que llevan meses evitando el tema. Las dos cosas están bien, y la segunda es más común de lo que parece.
 
 Si hablar frente a ciento veinte personas no va con ustedes, esas palabras pueden existir igual. Solo que dichas por alguien más.
@@ -4821,6 +4821,67 @@ Y no son excluyentes: pueden ir sus votos en algún momento del día y alguien m
     coverImage: "/images/gallery/CyD-80.webp",
     category: "Tips",
     date: "Septiembre 17, 2026"
+  },
+  {
+    id: "41",
+    slug: "datos-invitacion-digital",
+    title: "Su invitación digital: qué necesitamos de ustedes (y por qué)",
+    excerpt: "El diseño es nuestra parte; los nombres, las horas, los hoteles y la lista de invitados solo los tienen ustedes. Lo que les vamos a pedir, para qué sirve cada cosa y la regla que evita casi todos los problemas con la lista.",
+    content: `Una invitación digital se arma con lo que ustedes nos cuentan. El diseño y la programación son nuestra parte; los nombres, las horas, los hoteles y la lista de invitados solo los tienen ustedes.
+
+Esta es la lista de lo que les vamos a pedir, con el porqué de cada cosa. No hace falta tenerla completa para empezar: lo que falte se agrega en las rondas de ajustes. Pero entre más llegue claro desde el principio, menos idas y vueltas.
+
+Cuando estén listos, todo va en [nuestra plantilla](/downloads/informacion-invitacion-digital.csv).
+
+## Lo básico
+
+- **Sus nombres, exactamente como quieren que aparezcan.** Parece obvio, pero «Alejandra» y «Ale» no se ven igual en una portada, y es de los cambios que más nos piden después.
+- **Fecha y hora de inicio.** De la hora sale la cuenta regresiva.
+- **El dominio.** Algo como anaycarlos.com. Si todavía no lo compran, lo vemos juntos.
+- **El estilo.** Con los colores de la boda o un par de referencias es suficiente.
+
+## Fotos
+
+De tres a cinco horizontales para la portada, y entre doce y quince para la galería, mezclando verticales y horizontales. En la mejor resolución que tengan, en una carpeta compartida que se pueda abrir sin pedir permiso.
+
+## El día
+
+Por cada momento —ceremonia, cóctel, recepción—: hora, lugar y dirección o liga de Maps. Si la boda es solo para adultos, díganlo aquí; el aviso va al final del itinerario, que es donde la gente lo lee.
+
+Para el código de vestimenta: el tipo, indicaciones para ellas y para ellos si las hay, y los colores a evitar. Entre más concreto, menos preguntas les van a llegar por WhatsApp.
+
+## Hospedaje
+
+Nombre, dirección, teléfono y sitio de cada hotel, más el código de grupo si negociaron tarifa.
+
+El teléfono es lo que más se nos escapa. Es lo primero que busca un invitado que viene de fuera, y no siempre está en internet: a veces lo que aparece es el de otro hotel con un nombre parecido. Si ustedes lo tienen, mejor.
+
+Si quieren recomendar el propio venue pero no está garantizado que haya cuartos, lo marcamos como sujeto a disponibilidad.
+
+## Mesa de regalos
+
+Tienda, número de evento y liga directa a su mesa.
+
+Si quieren incluir transferencia, necesitamos banco, titular y CLABE. Solo tengan en cuenta que la invitación es una página pública: la cuenta la ve cualquiera que tenga la liga, no solo sus invitados.
+
+## La lista de invitados
+
+Aquí es donde más se complican las cosas, así que vale la pena detenerse.
+
+Cada invitado entra a la página, se busca por su nombre y confirma. Para que eso funcione, la lista tiene que venir en [nuestra plantilla de invitados](/downloads/plantilla-invitados.csv) y con una regla sencilla: **un renglón por invitación, no por persona**. Es un archivo aparte del de la información de la boda.
+
+- Si alguien viene con acompañante, es un solo renglón con 1 en la columna de adicionales. No un segundo renglón que diga «Acompañante».
+- Si una pareja confirma junta, un renglón con 1 adicional. Si cada quien confirma por su lado, dos renglones con 0.
+- Los nombres, como cada invitado los escribiría. Así es como se van a buscar.
+
+## Después de publicar
+
+La invitación tiene un panel para agregar invitados y ver quién ya confirmó. Conviene acordar desde el principio quién lo va a usar: cuando ustedes y nosotros cambiamos cosas al mismo tiempo, tarde o temprano algo se pisa.
+
+Todo lo demás cabe en [una sola plantilla](/downloads/informacion-invitacion-digital.csv). Y si todavía no tienen su invitación, [aquí les contamos cómo funciona](/invitaciones-digitales/).`,
+    coverImage: "/images/gallery/SyP-109.webp",
+    category: "Tips",
+    date: "Septiembre 21, 2026"
   },
 ];
 
